@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/aboutus"
+	"github.com/GeorgiChalakov01/ntg/backend/app/pages/contact"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/documents"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/documents/components/mock"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/home"
@@ -30,6 +31,10 @@ func main() {
 	// Add route for partners page
 	http.HandleFunc("/partners", func(w http.ResponseWriter, r *http.Request) {
 		partners.Partners().Render(r.Context(), w)
+	})
+	// Add route for contact page
+	http.HandleFunc("/contact", func(w http.ResponseWriter, r *http.Request) {
+		contact.Contact().Render(r.Context(), w)
 	})
 	// Add route for about us page
 	http.HandleFunc("/about-us2", func(w http.ResponseWriter, r *http.Request) {

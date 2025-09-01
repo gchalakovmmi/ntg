@@ -1,0 +1,430 @@
+package contact
+
+import (
+	"github.com/GeorgiChalakov01/ntg/backend/app/pages/base"
+)
+
+// Main Contact page template
+templ Contact() {
+	@base.Base("Контакти - НТГ", ContactPage(), ContactStyles(), ContactScripts())
+}
+
+// Contact page content
+templ ContactPage() {
+	<!-- Hero Section -->
+	<section class="contact-hero-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center animate__animated animate__fadeIn">
+					<h1 class="display-4 fw-bold text-white">Контакти</h1>
+					<p class="lead text-white">Свържете се с нас за повече информация</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Information Section -->
+	<section class="contact-info-section">
+		<div class="container py-5">
+			<div class="row mb-4">
+				<div class="col-12">
+					<h2 class="section-title text-center mb-5">Информация за контакт</h2>
+				</div>
+			</div>
+			
+			<!-- Main Contact Information -->
+			<div class="row g-4 justify-content-center mb-5">
+				<!-- Address Card -->
+				<div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp">
+					<div class="contact-card h-100 d-flex flex-column align-items-center">
+						<div class="contact-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<h3 class="contact-title">Адрес</h3>
+						<p class="contact-text text-center">
+							ул. „Никола Мушанов" 147<br/>
+							София 1330
+						</p>
+					</div>
+				</div>
+
+				<!-- Office Card -->
+				<div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+					<div class="contact-card h-100 d-flex flex-column align-items-center">
+						<div class="contact-icon">
+							<i class="fas fa-briefcase"></i>
+						</div>
+						<h3 class="contact-title">Канцелария</h3>
+						<p class="contact-text text-center">
+							<a href="mailto:office@pitagor-school.eu" class="contact-link">office@pitagor-school.eu</a><br/>
+							<a href="tel:024232327" class="contact-link">02/ 423 23 27</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Working Hours Card -->
+				<div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+					<div class="contact-card h-100 d-flex flex-column align-items-center">
+						<div class="contact-icon">
+							<i class="fas fa-clock"></i>
+						</div>
+						<h3 class="contact-title">Работно време</h3>
+						<p class="contact-text text-center">
+							От Понеделник до Петък<br/>
+							09:00 – 18:00
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Department Contacts -->
+			<div class="row mb-4">
+				<div class="col-12">
+					<h3 class="department-title text-center mb-4">Отдели и услуги</h3>
+				</div>
+			</div>
+			
+			<div class="row g-4">
+				<!-- Department Contact Items -->
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-comments"></i></div>
+						<h4>Връзки с обществеността</h4>
+						<a href="mailto:communications@pitagor-school.eu" class="department-link">communications@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-calculator"></i></div>
+						<h4>Счетоводство и ТРЗ</h4>
+						<a href="mailto:accounting@pitagor-school.eu" class="department-link">accounting@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-comment-medical"></i></div>
+						<h4>Логопед</h4>
+						<a href="mailto:logoped@pitagor-school.eu" class="department-link">logoped@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-wrench"></i></div>
+						<h4>Поддръжка</h4>
+						<a href="mailto:maintenance@pitagor-school.eu" class="department-link">maintenance@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-first-aid"></i></div>
+						<h4>Медицинска сестра</h4>
+						<a href="mailto:medical@pitagor-school.eu" class="department-link">medical@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-brain"></i></div>
+						<h4>Психолог (ПУК-4)</h4>
+						<a href="mailto:psychology.puk-4@pitagor-school.eu" class="department-link">psychology.puk-4@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-brain"></i></div>
+						<h4>Психолог (5-8)</h4>
+						<a href="mailto:psychology.5-8@pitagor-school.eu" class="department-link">psychology.5-8@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-shield-alt"></i></div>
+						<h4>Охрана</h4>
+						<a href="tel:0882260989" class="department-link">088 226 0989</a><br/>
+						<a href="mailto:security@pitagor-school.eu" class="department-link">security@pitagor-school.eu</a>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Google Maps Section -->
+	<section class="map-section">
+		<div class="container-fluid p-0">
+			<div class="row g-0">
+				<div class="col-12">
+					<div class="map-container animate__animated animate__fadeIn">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.826092161782!2d24.741450715442344!3d42.14698897920113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd1a7f058c81f%3A0x1c2f30e13a147efa!2z0J3QsNGG0LjQvtC90LDQu9C90LAg0KLRitGA0LPQvtCy0YHQutCwINCT0LjQvNC90LDQt9C40Y8!5e0!3m2!1sbg!2sbg!4v1630050000000!5m2!1sbg!2sbg" 
+							width="100%" 
+							height="450" 
+							style="border:0;" 
+							allowfullscreen="" 
+							loading="lazy">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
+
+// Styles for the Contact page
+templ ContactStyles() {
+	<style>
+		/* Hero Section Styles */
+		.contact-hero-section {
+			background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80');
+			background-size: cover;
+			background-position: center;
+			padding: 120px 0;
+			margin-bottom: 30px;
+			position: relative;
+		}
+
+		/* Contact Info Section Styles */
+		.contact-info-section {
+			background-color: #fff;
+			padding: 50px 0;
+		}
+
+		.section-title {
+			color: var(--primary-red);
+			position: relative;
+			padding-bottom: 15px;
+		}
+
+		.section-title:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80px;
+			height: 3px;
+			background: var(--primary-gold);
+		}
+
+		.department-title {
+			color: var(--dark-red);
+			position: relative;
+			padding-bottom: 15px;
+		}
+
+		.department-title:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 60px;
+			height: 2px;
+			background: var(--primary-gold);
+		}
+
+		/* Main contact cards styles */
+		.contact-card {
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 30px 20px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.contact-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+		}
+
+		.contact-icon {
+			width: 70px;
+			height: 70px;
+			background: var(--primary-red);
+			color: white;
+			font-size: 28px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+			box-shadow: 0 5px 15px rgba(178, 34, 34, 0.3);
+			transition: transform 0.3s ease;
+		}
+
+		.contact-card:hover .contact-icon {
+			transform: rotateY(180deg);
+		}
+
+		.contact-title {
+			color: #333;
+			font-size: 1.25rem;
+			margin-bottom: 15px;
+			font-weight: 600;
+		}
+
+		.contact-text {
+			color: #666;
+			line-height: 1.7;
+			margin-bottom: 0;
+		}
+
+		.contact-link {
+			color: var(--primary-red);
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+
+		.contact-link:hover {
+			color: var(--dark-red);
+			text-decoration: underline;
+		}
+
+		/* Department cards styles */
+		.department-card {
+			background-color: #fff;
+			border-radius: 8px;
+			padding: 20px 15px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+			transition: all 0.3s ease;
+			text-align: center;
+			border-left: 3px solid transparent;
+		}
+
+		.department-card:hover {
+			border-left: 3px solid var(--primary-gold);
+			transform: translateX(5px);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+		}
+
+		.department-icon {
+			width: 50px;
+			height: 50px;
+			background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+			color: white;
+			font-size: 20px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 15px;
+			transition: transform 0.3s ease;
+		}
+
+		.department-card:hover .department-icon {
+			transform: scale(1.1);
+		}
+
+		.department-card h4 {
+			color: #333;
+			font-size: 1rem;
+			margin-bottom: 10px;
+			font-weight: 600;
+			min-height: 2.2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.department-link {
+			color: var(--primary-red);
+			text-decoration: none;
+			font-size: 0.9rem;
+			word-break: break-word;
+			transition: color 0.3s ease;
+			display: block;
+			margin-top: 5px;
+		}
+
+		.department-link:hover {
+			color: var(--dark-red);
+			text-decoration: underline;
+		}
+
+		/* Map Section Styles */
+		.map-section {
+			background-color: #f8f9fa;
+			padding-bottom: 50px;
+		}
+
+		.map-container {
+			width: 100%;
+			position: relative;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Responsive styles */
+		@media (max-width: 767px) {
+			.contact-hero-section {
+				padding: 80px 0;
+			}
+
+			.contact-card {
+				margin-bottom: 30px;
+			}
+		}
+
+		@media (max-width: 575px) {
+			.contact-hero-section {
+				padding: 60px 0;
+			}
+
+			.contact-icon {
+				width: 60px;
+				height: 60px;
+				font-size: 24px;
+			}
+		}
+	</style>
+}
+
+// Scripts for the Contact page
+templ ContactScripts() {
+	<script>
+		// Add animation classes on scroll
+		document.addEventListener('DOMContentLoaded', function() {
+			// Apply initial animations
+			const animateElements = document.querySelectorAll('.animate__animated');
+			
+			// Function to check if element is in view
+			const isInViewport = function(element) {
+				const rect = element.getBoundingClientRect();
+				return (
+					rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85 &&
+					rect.bottom >= 0
+				);
+			};
+
+			// Function to add animation classes when element is in viewport
+			const handleScrollAnimation = function() {
+				animateElements.forEach(function(element) {
+					if (isInViewport(element)) {
+						if (!element.classList.contains('animate__fadeIn') && 
+							!element.classList.contains('animate__fadeInUp')) {
+							// If element doesn't already have any of these classes
+							if (element.classList.contains('contact-card')) {
+								element.classList.add('animate__fadeInUp');
+							} else {
+								element.classList.add('animate__fadeIn');
+							}
+						}
+					}
+				});
+			};
+
+			// Run once on initial load
+			handleScrollAnimation();
+
+			// Run on scroll
+			window.addEventListener('scroll', handleScrollAnimation);
+		});
+	</script>
+}
