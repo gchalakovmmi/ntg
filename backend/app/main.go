@@ -21,6 +21,10 @@ func main() {
 	http.HandleFunc("/about-us", func(w http.ResponseWriter, r *http.Request) {
 		aboutus.AboutUs().Render(r.Context(), w)
 	})
+	// Add route for programs and projects page
+	http.HandleFunc("/programs-projects", func(w http.ResponseWriter, r *http.Request) {
+		programsandprojects.programsandprojects().Render(r.Context(), w)
+	})
 	// Add route for about us page
 	http.HandleFunc("/about-us2", func(w http.ResponseWriter, r *http.Request) {
 		aboutus.AboutUs2().Render(r.Context(), w)
