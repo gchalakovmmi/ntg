@@ -9,6 +9,7 @@ import (
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/contact"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/documents"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/documents/components/mock"
+	"github.com/GeorgiChalakov01/ntg/backend/app/pages/hbo"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/home"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/partners"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/programsandprojects"
@@ -35,6 +36,10 @@ func main() {
 	// Add route for contact page
 	http.HandleFunc("/contact", func(w http.ResponseWriter, r *http.Request) {
 		contact.Contact().Render(r.Context(), w)
+	})
+	// Add route for HBO page
+	http.HandleFunc("/hbo", func(w http.ResponseWriter, r *http.Request) {
+		hbo.HBO().Render(r.Context(), w)
 	})
 	// Add route for about us page
 	http.HandleFunc("/about-us2", func(w http.ResponseWriter, r *http.Request) {

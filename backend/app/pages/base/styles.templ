@@ -131,6 +131,36 @@ templ Styles() {
     right: 0;
     left: auto;
   }
+  
+  /* Nested dropdown (submenu) styles */
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -8px;
+    margin-left: 1px;
+  }
+  
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  /* Arrow for submenu */
+  .dropdown-submenu .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid transparent;
+    border-right: 0;
+    border-bottom: 0.3em solid transparent;
+    border-left: 0.3em solid;
+    float: right;
+    margin-top: 8px;
+  }
 
   /* Hero Carousel */
   .hero-carousel {

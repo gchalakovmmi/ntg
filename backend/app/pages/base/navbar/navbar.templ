@@ -56,8 +56,26 @@ templ Navbar() {
           <li class="nav-item">
             <a class="nav-link" href="/programs-projects">Програми и проекти</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Училищен живот</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="schoolLifeDropdown" role="button" data-bs-toggle="dropdown">Училищен живот</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">График на учебното време</a></li>
+              <li><a class="dropdown-item" href="#">ДЗИ</a></li>
+              <li><a class="dropdown-item" href="#">ЗДИППК</a></li>
+              <li><a class="dropdown-item" href="/hbo">НВО</a></li>
+              <li><a class="dropdown-item" href="#">Образци на документи</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Обучение</a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li><a class="dropdown-item" href="#">Професионална подготовка</a></li>
+                  <li><a class="dropdown-item" href="#">Общообразователна подготовка</a></li>
+                  <li><a class="dropdown-item" href="#">Занимания по интереси</a></li>
+                  <li><a class="dropdown-item" href="#">Електронен дневник</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Униформи</a></li>
+              <li><a class="dropdown-item" href="#">Ученически стипендии</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/partners">Партньори</a>

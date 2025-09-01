@@ -46,6 +46,33 @@ templ Scripts() {
             this.querySelector('.dropdown-menu').classList.remove('show');
           });
         });
+        
+        // Handle nested dropdowns
+        const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+        dropdownSubmenus.forEach(submenu => {
+          submenu.addEventListener('mouseenter', function() {
+            this.querySelector('.dropdown-menu').classList.add('show');
+          });
+          submenu.addEventListener('mouseleave', function() {
+            this.querySelector('.dropdown-menu').classList.remove('show');
+          });
+          
+          // Prevent dropdown submenu from closing when clicking toggle
+          const dropdownToggle = submenu.querySelector('.dropdown-toggle');
+          if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', function(e) {
+              e.stopPropagation();
+              e.preventDefault();
+              
+              const submenuDropdown = this.nextElementSibling;
+              if (submenuDropdown.classList.contains('show')) {
+                submenuDropdown.classList.remove('show');
+              } else {
+                submenuDropdown.classList.add('show');
+              }
+            });
+          }
+        });
       }
       // Ensure quick links are fully visible
       function adjustQuickLinks() {
