@@ -11,19 +11,6 @@ services:
     networks:
       - net
 
-  database:
-    image: postgres:alpine
-    restart: unless-stopped
-    env_file:
-      - env.vars
-    networks:
-      - net
-    volumes:
-      - ntg_database:/var/lib/postgresql/data
-
 networks:
   net:
     external: false
-
-volumes:
-  ntg_database:
