@@ -41,56 +41,47 @@ templ hero() {
 }
 
 templ infoSection() {
-	<section class="section bg-light">
+	<section class="section bg-gradient">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 mx-auto">
-					<div class="info-card animate-on-scroll">
-						<div class="text-center mb-4">
-							<i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
-							<h2 class="section-title">Информация за секцията</h2>
-						</div>
-						<div class="info-content">
-							<h4 class="text-primary mb-3">Кратко описание</h4>
-							<div class="row">
-								<div class="col-md-6">
-									<ul class="list-unstyled">
-										<li class="mb-2">
-											<i class="fas fa-check-circle text-success me-2"></i>
-											Учебни планове и програми
-										</li>
-										<li class="mb-2">
-											<i class="fas fa-check-circle text-success me-2"></i>
-											Годишни работни планове
-										</li>
-										<li class="mb-2">
-											<i class="fas fa-check-circle text-success me-2"></i>
-											Правилници и наредби
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-6">
-									<ul class="list-unstyled">
-										<li class="mb-2">
-											<i class="fas fa-check-circle text-success me-2"></i>
-											Учебно време и графици
-										</li>
-										<li class="mb-2">
-											<i class="fas fa-check-circle text-success me-2"></i>
-											Етични кодекси
-										</li>
-										<li class="mb-2">
-											<i class="fas fa-check-circle text-success me-2"></i>
-											Дневни режими
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="alert alert-info mt-4" role="alert">
-								<i class="fas fa-info-circle me-2"></i>
-								Всички документи са актуални за учебната 2024/2025 година и са одобрени от Министерството на образованието и науката.
-							</div>
-						</div>
+      <div class="row mt-5 mb-5">
+          <div class="col-12">
+            <div class="modern-card-static animate-on-scroll delay-2">
+              <div class="card-gradient"></div>
+              <div class="card-content">
+                <div class="row align-items-center">
+                  <div class="col-md-2 text-center mb-3 mb-md-0">
+                    <div class="floating-icon">
+                      <i class="fas fa-graduation-cap fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3 class="card-title">Официални документи за учебната 2024/2025 година</h3>
+                    <p class="card-text">
+                      Всички документи в тази секция са актуални и одобрени от Министерството на образованието и науката. 
+                      Те включват учебни планове, правилници, графици и други нормативни актове, които регламентират 
+                      образователната дейност в нашето училище.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="info-content animate-on-scroll">
+						<h2 class="modern-title mb-4">Защо правово боядисване?</h2>
+						<p class="modern-text mb-4">
+							За разлика от процеса на нанасяне на течно покритие, праховото боядисване е сух довършителен процес, в който се използва прахообразен материал за покритие. По време на процеса прахът се нанася върху предварително обработената повърхност на детайла, разтопява се и след което се изсушава, втвърдява и се превръща в защитно-декоративно покритие.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="info-content animate-on-scroll delay-1">
+						<h2 class="modern-title mb-4">Специализирано за алуминий</h2>
+						<p class="modern-text mb-4">
+							Цялото оборудване и технология са направени специално само за боядисване на алуминиеви отливки, като са спазени всички стандарти за качество на самия процес, което дава гаранция на произведените от нас продукти.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -317,18 +308,102 @@ templ styles() {
 			transform: translateY(-5px);
 		}
 
-		.info-card {
-			background: white;
-			border-radius: 20px;
-			padding: 3rem 2rem;
-			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-			border: 1px solid rgba(0, 0, 0, 0.05);
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		.bg-gradient {
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+			position: relative;
 		}
 
-		.info-card:hover {
+		.modern-title {
+			color: var(--primary-red);
+			font-weight: 700;
+			font-size: 2rem;
+			position: relative;
+			display: inline-block;
+		}
+
+		.modern-title::after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 60px;
+			height: 4px;
+			background: linear-gradient(90deg, var(--primary-gold), var(--dark-gold));
+			border-radius: 2px;
+		}
+
+		.modern-text {
+			font-size: 1.1rem;
+			line-height: 1.7;
+			color: #555;
+		}
+
+		.modern-card {
+			background: white;
+			border-radius: 20px;
+			padding: 0;
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			position: relative;
+			transition: all 0.4s ease;
+		}
+
+		.modern-card:hover {
 			transform: translateY(-10px);
-			box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+			box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+		}
+		
+		.modern-card-static {
+			background: white;
+			border-radius: 20px;
+			padding: 0;
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			position: relative;
+		}
+
+		.card-gradient {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 5px;
+			background: linear-gradient(90deg, var(--primary-red), var(--primary-gold), var(--primary-red));
+		}
+
+		.card-content {
+			padding: 2rem;
+		}
+
+		.floating-icon {
+			width: 80px;
+			height: 80px;
+			background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			margin: 0 auto;
+			animation: float-icon 3s ease-in-out infinite;
+			box-shadow: 0 10px 25px rgba(178, 34, 34, 0.3);
+		}
+
+		@keyframes float-icon {
+			0%, 100% { transform: translateY(0) scale(1); }
+			50% { transform: translateY(-10px) scale(1.05); }
+		}
+
+		.card-title {
+			color: var(--dark-red);
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		.card-text {
+			color: #666;
+			line-height: 1.6;
+			margin-bottom: 0;
 		}
 
 		.documents-container {
