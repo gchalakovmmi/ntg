@@ -1,0 +1,970 @@
+
+package partners
+
+templ Partners() {
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Партньори - Национална Търговска Гимназия</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <style>
+        /* ===== BASE DESIGN SYSTEM VARIABLES ===== */
+        :root {
+            --primary-red: #b22222;
+            --primary-gold: #d4af37;
+            --dark-red: #8b0000;
+            --light-gold: #f0e68c;
+            --dark-bg: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 70px;
+            scroll-behavior: smooth;
+        }
+
+        /* ===== HEADER NAVIGATION ===== */
+        .header {
+            background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            height: 70px;
+        }
+
+        .navbar { height: 70px; }
+
+        .logo { height: 50px; border-radius: 8px; }
+        .innovative-logo { 
+            height: 40px; 
+            border-radius: 8px; 
+            transition: transform 0.3s ease;
+        }
+        .innovative-logo:hover { transform: scale(1.05); }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            height: 70px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover:after, .nav-link.active:after {
+            width: calc(100% - 30px);
+        }
+
+        /* ===== HERO CAROUSEL ANIMATIONS ===== */
+        .partners-hero {
+            height: 60vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .carousel-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(178, 34, 34, 0.8) 0%, rgba(139, 0, 0, 0.6) 100%);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .carousel-caption {
+            bottom: 50%;
+            transform: translateY(50%);
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slideInDown 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            animation: slideInUp 1s ease-out 0.3s both;
+        }
+
+        /* ===== STATISTICS WITH MODERN ANIMATIONS ===== */
+        .partners-stats {
+            background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
+            color: white;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(45deg, var(--primary-gold), transparent, var(--primary-gold));
+            border-radius: 15px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-card:hover::before { opacity: 1; }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-gold);
+            animation: bounceIn 1s ease-out;
+        }
+
+        /* ===== PARTNER CARDS WITH ENHANCED ANIMATIONS ===== */
+        .partner-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transition: left 0.6s ease;
+            z-index: 1;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(178, 34, 34, 0.15);
+        }
+
+        .partner-card:hover::before { left: 100%; }
+
+        .partner-logo-container {
+            background: #fffaf0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .partner-logo {
+            max-width: 100%;
+            max-height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .partner-card:hover .partner-logo { transform: scale(1.05); }
+
+        .partner-type {
+            background: var(--primary-red);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            width: fit-content;
+        }
+
+        .partner-name {
+            color: var(--dark-red);
+            font-weight: 700;
+        }
+
+        .partner-contribution {
+            background: var(--light-gold);
+            border-left: 4px solid var(--primary-gold);
+            border-radius: 10px;
+        }
+
+        .partner-contribution h6 {
+            color: var(--dark-red);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .partner-contribution p {
+            color: #b8860b;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        /* ===== BENEFIT ITEMS WITH FLOATING ANIMATIONS ===== */
+        .benefit-item {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            position: relative;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(178, 34, 34, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--primary-red);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover .benefit-icon {
+            color: var(--primary-gold);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .benefit-title { color: var(--dark-red); font-weight: 700; }
+
+        /* ===== CTA SECTION WITH GEOMETRIC ANIMATION ===== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(212,175,55,0.1)" points="0,0 1000,0 800,1000 0,1000"/></svg>') center/cover;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .cta-content { position: relative; z-index: 2; }
+
+        .btn-cta {
+            background: var(--primary-gold);
+            color: var(--dark-red);
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .btn-cta:hover {
+            background: var(--light-gold);
+            color: var(--dark-red);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-cta:hover::before { transform: translateX(100%); }
+
+        .btn-cta i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-cta:hover i { transform: translateX(5px); }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark-bg);
+            color: #ddd;
+        }
+
+        .footer-title {
+            color: var(--primary-gold);
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-red);
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-gold);
+            transform: translateX(5px);
+        }
+
+        .contact-info i { color: var(--primary-gold); }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-red);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* ===== MODERN CSS ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-10px) rotate(1deg); }
+            66% { transform: translateY(5px) rotate(-1deg); }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+
+        /* ===== SCROLL REVEAL ANIMATIONS ===== */
+        .animate-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInUp 0.6s ease-out forwards;
+        }
+
+        .animate-scroll.delay-1 { animation-delay: 0.1s; }
+        .animate-scroll.delay-2 { animation-delay: 0.2s; }
+        .animate-scroll.delay-3 { animation-delay: 0.3s; }
+        .animate-scroll.delay-4 { animation-delay: 0.4s; }
+
+        /* Auto-trigger animations on page load */
+        .partners-section .animate-scroll { animation-delay: 0.5s; }
+        .benefits-section .animate-scroll { animation-delay: 1s; }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .hero-title { font-size: 2.5rem; }
+            .partner-content { flex-direction: column !important; }
+            .navbar-collapse {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: var(--dark-red);
+                padding: 15px;
+                border-radius: 0 0 10px 10px;
+                z-index: 1000;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .partners-hero { height: 50vh; }
+            .hero-title { font-size: 2rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .carousel-caption { padding: 20px; bottom: 40%; }
+            .stat-number { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== HEADER NAVIGATION ===== -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a href="/home">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt="НТГ Лого" class="logo me-3">
+                    </a>
+                    <a href="https://www.ischools.bg/" target="_blank">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt="Иновативно училище" class="innovative-logo ms-3">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="/home">Начало</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="/about-us">За нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="/documents">Документи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="#">Прием</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="/programs-projects">Програми и проекти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="#">Училищен живот</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active px-3 d-flex align-items-center" href="#">Партньори</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 d-flex align-items-center" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO CAROUSEL SECTION ===== -->
+    <section class="partners-hero">
+        <div id="partnersCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100" style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1426&q=80');">
+                    <div class="carousel-caption">
+                        <h1 class="hero-title animate__animated animate__fadeInDown">Нашите партньори</h1>
+                        <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s mb-0">
+                            Заедно строим бъдещето на българското образование
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');">
+                    <div class="carousel-caption">
+                        <h1 class="hero-title">Стратегически съюзи</h1>
+                        <p class="hero-subtitle mb-0">
+                            Партньорства, които обогатяват образователния опит
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');">
+                    <div class="carousel-caption">
+                        <h1 class="hero-title">Благодарим за подкрепата</h1>
+                        <p class="hero-subtitle mb-0">
+                            Вашето доверие прави възможно качественото образование
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== STATISTICS SECTION ===== -->
+    <section class="partners-stats py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white mb-3">Партньорства в цифри</h2>
+                <p class="lead text-white-50">Резултати от нашето сътрудничество</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card p-4 text-center animate-scroll">
+                        <div class="stat-number mb-2">45</div>
+                        <div class="h5 fw-semibold mb-0">Активни партньори</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card p-4 text-center animate-scroll delay-1">
+                        <div class="stat-number mb-2">2.5М</div>
+                        <div class="h5 fw-semibold mb-0">лв. дарения</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card p-4 text-center animate-scroll delay-2">
+                        <div class="stat-number mb-2">15</div>
+                        <div class="h5 fw-semibold mb-0">години партньорство</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card p-4 text-center animate-scroll delay-3">
+                        <div class="stat-number mb-2">12</div>
+                        <div class="h5 fw-semibold mb-0">успешни проекта</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARTNERS GRID SECTION ===== -->
+    <section class="partners-section py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5 animate-scroll">
+                <h2 class="display-5 fw-bold mb-3" style="color: var(--dark-red);">Нашите партньори</h2>
+                <p class="lead text-muted">Компании и организации, които подкрепят развитието на НТГ</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Partner 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F03%2FLidl_logo.png&f=1&nofb=1&ipt=011675ed521f4c80cbb29b031fa3d7d10a0cabe56ae8e202734ca68f3a9d8072" alt="Lidl Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Корпоративен партньор</div>
+                                <h4 class="partner-name mb-3">Lidl България</h4>
+                                <p class="text-muted mb-3 small">
+                                    Водеща верига супермаркети в България, която активно подкрепя образованието.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Стипендии, модерно оборудване, програми за стажове</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2019 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll delay-1">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F5031.jpg&f=1&nofb=1&ipt=7bcf7afc931fe4425a6feb444a2fd84c6a8e793aee6a8736c01a4d8a4b363ecb" alt="Samsung Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Технологичен партньор</div>
+                                <h4 class="partner-name mb-3">Samsung Electronics</h4>
+                                <p class="text-muted mb-3 small">
+                                    Глобален лидер в технологиите, който подпомага дигитализацията.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Интерактивни дъски, таблети, мултимедийни системи</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2020 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll delay-2">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F021%2F514%2F825%2Foriginal%2Fmicrosoft-software-brand-logo-symbol-with-name-design-illustration-with-black-background-free-vector.jpg&f=1&nofb=1&ipt=a3aa185474a3dcb9e3d80d2775312d736486551bac84e08e754053d5301387ad" alt="Microsoft Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Софтуерен партньор</div>
+                                <h4 class="partner-name mb-3">Microsoft България</h4>
+                                <p class="text-muted mb-3 small">
+                                    Водещата технологична компания предоставя софтуерни решения.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Office 365 лицензи, Azure кредити, обучения</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2018 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2017%2F02%2FColors-HP-Logo.jpg&f=1&nofb=1&ipt=28e2f4c070653e24574936c655e8fcad0a5dec75e2ee11738fd787722b9ba74f" alt="HP Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Хардуерен партньор</div>
+                                <h4 class="partner-name mb-3">HP Inc.</h4>
+                                <p class="text-muted mb-3 small">
+                                    Международна компания за компютърни технологии.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Лаптопи и компютри, принтери, техническа поддръжка</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2021 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll delay-1">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F09%2FOracle-Logo.png&f=1&nofb=1&ipt=089c88f2a1ffe8dfe2abd14e6c02eb0b5f8b0d6b07a3c9d5b3fd10c4f6c9f6ad" alt="Oracle Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Образователен партньор</div>
+                                <h4 class="partner-name mb-3">Oracle България</h4>
+                                <p class="text-muted mb-3 small">
+                                    Световен лидер в база данни технологиите.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Курсове по бази данни, сертификати, стажове</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2022 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll delay-2">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F11%2FAdobe-Logo.png&f=1&nofb=1&ipt=d5f5a6e7f8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4" alt="Adobe Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Креативен партньор</div>
+                                <h4 class="partner-name mb-3">Adobe Systems</h4>
+                                <p class="text-muted mb-3 small">
+                                    Лидер в креативните софтуерни решения.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Creative Cloud лицензи, обучения по дизайн</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2023 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogospng.org%2Fdownload%2Fvivacom%2Flogo-vivacom-256.png&f=1&nofb=1&ipt=b1c2d3e4f5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1g2" alt="Vivacom Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Телеком партньор</div>
+                                <h4 class="partner-name mb-3">Vivacom</h4>
+                                <p class="text-muted mb-3 small">
+                                    Водеща телекомуникационна компания в България.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Интернет, мрежово оборудване, поддръжка</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2017 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll delay-1">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Ffibank1836.jpg&f=1&nofb=1&ipt=c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4" alt="Fibank Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Финансов партньор</div>
+                                <h4 class="partner-name mb-3">Първа инвестиционна банка</h4>
+                                <p class="text-muted mb-3 small">
+                                    Водеща банкова институция в България.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Финансови курсове, стипендии, симулации</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2020 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="partner-card animate-scroll delay-2">
+                        <div class="d-flex h-100">
+                            <div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F12%2FDeloitte-Logo.png&f=1&nofb=1&ipt=e4f5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1g2h3i4j5" alt="Deloitte Logo" class="partner-logo">
+                            </div>
+                            <div class="col-7 p-4">
+                                <div class="partner-type mb-3">Консултантски партньор</div>
+                                <h4 class="partner-name mb-3">Deloitte България</h4>
+                                <p class="text-muted mb-3 small">
+                                    Водеща консултантска компания.
+                                </p>
+                                <div class="partner-contribution p-3 mb-3">
+                                    <h6 class="mb-1">Принос към училището:</h6>
+                                    <p class="mb-0">Бизнес семинари, менторски програми</p>
+                                </div>
+                                <div class="small text-muted">
+                                    <i class="fas fa-handshake me-2"></i>Партньори от 2021 г.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARTNERSHIP BENEFITS SECTION ===== -->
+    <section class="benefits-section py-5" style="background-color: #fffaf0;">
+        <div class="container">
+            <div class="text-center mb-5 animate-scroll">
+                <h2 class="display-5 fw-bold mb-3" style="color: var(--dark-red);">Ползи от партньорството</h2>
+                <p class="lead text-muted">Как нашите партньори допринасят за качественото образование</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-item p-5 text-center animate-scroll">
+                        <div class="benefit-icon mb-4">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4 class="benefit-title h5 mb-3">Модерни технологии</h4>
+                        <p class="text-muted mb-0">
+                            Достъп до най-новите технологии и софтуерни решения за интерактивно обучение.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-item p-5 text-center animate-scroll delay-1">
+                        <div class="benefit-icon mb-4">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="benefit-title h5 mb-3">Стипендии и награди</h4>
+                        <p class="text-muted mb-0">
+                            Финансова подкрепа за талантливи ученици чрез стипендии и образователни награди.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-item p-5 text-center animate-scroll delay-2">
+                        <div class="benefit-icon mb-4">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="benefit-title h5 mb-3">Стажове и практики</h4>
+                        <p class="text-muted mb-0">
+                            Реални възможности за професионален опит в водещи компании.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-item p-5 text-center animate-scroll delay-3">
+                        <div class="benefit-icon mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="benefit-title h5 mb-3">Експертни лектори</h4>
+                        <p class="text-muted mb-0">
+                            Семинари и лекции от водещи специалисти в различни области.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION SECTION ===== -->
+    <section class="cta-section py-5 text-center">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Станете наш партньор</h2>
+                <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-1s">
+                    Присъединете се към нашата мисия за качествено образование и инвестирайте в бъдещето на младите хора
+                </p>
+                <button class="btn btn-cta btn-lg px-5 py-3 animate__animated animate__fadeInUp animate__delay-2s">
+                    Свържете се с нас <span class="ms-2">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h4 class="footer-title mb-4">НТГ - Национална Търговска Гимназия</h4>
+                    <p class="mb-4">Създаваме бъдещите лидери в икономиката и бизнеса чрез иновативно образование и практическа подготовка.</p>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title mb-4">Бързи връзки</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer-links d-flex flex-column gap-2">
+                                <a href="#" class="d-block">Начало</a>
+                                <a href="#" class="d-block">За нас</a>
+                                <a href="#" class="d-block">Документи</a>
+                                <a href="#" class="d-block">Прием</a>
+                                <a href="#" class="d-block">Програми</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-links d-flex flex-column gap-2">
+                                <a href="#" class="d-block">Училищен живот</a>
+                                <a href="#" class="d-block">Партньори</a>
+                                <a href="#" class="d-block">Новини</a>
+                                <a href="#" class="d-block">Контакти</a>
+                                <a href="#" class="d-block">Карта на сайта</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title mb-4">Контакти</h4>
+                    <div class="contact-info d-flex align-items-start mb-3">
+                        <i class="fas fa-map-marker-alt mt-1 me-3"></i>
+                        <div>
+                            <p class="mb-0">бул. Руски №50, Пловдив 4000</p>
+                        </div>
+                    </div>
+                    <div class="contact-info d-flex align-items-center mb-3">
+                        <i class="fas fa-phone-alt me-3"></i>
+                        <div>
+                            <p class="mb-0">+359 2 987 6543</p>
+                        </div>
+                    </div>
+                    <div class="contact-info d-flex align-items-center mb-3">
+                        <i class="fas fa-envelope me-3"></i>
+                        <div>
+                            <p class="mb-0">info@ntg-school.bg</p>
+                        </div>
+                    </div>
+                    <div class="contact-info d-flex align-items-start">
+                        <i class="fas fa-clock mt-1 me-3"></i>
+                        <div>
+                            <p class="mb-0">Понеделник-Петък: 8:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-5 border-top border-secondary">
+                <p class="text-muted mb-0">&copy; 2025 НАЦИОНАЛНА ТЪРГОВСКА ГИМНАЗИЯ. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+}

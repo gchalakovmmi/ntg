@@ -9,6 +9,7 @@ import (
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/documents"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/documents/components/mock"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/home"
+	"github.com/GeorgiChalakov01/ntg/backend/app/pages/partners"
 	"github.com/GeorgiChalakov01/ntg/backend/app/pages/programsandprojects"
 	"github.com/a-h/templ"
 )
@@ -25,6 +26,10 @@ func main() {
 	// Add route for programs and projects page
 	http.HandleFunc("/programs-projects", func(w http.ResponseWriter, r *http.Request) {
 		programsandprojects.ProgramsAndProjects().Render(r.Context(), w)
+	})
+	// Add route for partners page
+	http.HandleFunc("/partners", func(w http.ResponseWriter, r *http.Request) {
+		partners.Partners().Render(r.Context(), w)
 	})
 	// Add route for about us page
 	http.HandleFunc("/about-us2", func(w http.ResponseWriter, r *http.Request) {
