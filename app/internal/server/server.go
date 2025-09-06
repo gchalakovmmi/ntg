@@ -3,8 +3,7 @@ package server
 import (
 	"net/http"
 	"NTG/internal/config"
-	"github.com/a-h/templ"
-	"NTG/web/templates/pages/home"
+	"NTG/internal/handlers"
 )
 
 // Holds server specific configs
@@ -21,10 +20,10 @@ func (srv *Server) CreateHandlers() (http.Handler) {
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./web/static/"))))
 	
 	// Health check endpoint
-	// mux.HandleFunc("/health", health.Handler)
+	mux.Handle("/health", handlers.Health())
 	
 	// Home page
-	mux.Handle("/home", templ.Handler(home.Handler()))
+	mux.Handle("/home", handlers.Home())
 
 	// Root
 	mux.Handle("/", http.RedirectHandler("/home", http.StatusSeeOther))
