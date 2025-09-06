@@ -5,7 +5,6 @@ import "os"
 type Config struct {
     Port         string
     InstanceName string
-    // Add other configuration fields as needed
 }
 
 func Load() *Config {
@@ -24,3 +23,4 @@ func Load() *Config {
         InstanceName: instanceName,
     }
 }
+

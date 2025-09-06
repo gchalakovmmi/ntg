@@ -1,0 +1,20 @@
+package home
+
+import (
+	"NTG/web/templates/base"
+)
+
+templ components() {
+	<link rel="stylesheet" href="/static/css/home.css">
+	@carousel()
+	@quicklinks()
+	@news()
+	@virtualtour()
+	@stats()
+	@partners()
+	<script src="/static/js/home.js"></script>
+}
+
+templ Handler() {
+	@base.Base("НТГ - Национална Търговска Гимназия", components())
+}

@@ -1,0 +1,8 @@
+services:
+  app:
+    image: ntg-app
+    build: ./app
+    restart: unless-stopped
+    env_file: env.vars
+    ports: 
+      - 8080:8080

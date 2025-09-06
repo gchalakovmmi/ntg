@@ -1,6 +1,6 @@
 FROM alpine:latest
 WORKDIR /app
-COPY bin/app ./app
-COPY web/static/ ./static/
+COPY cmd/app .
+COPY web/static/ ./web/static
 EXPOSE 8080
-ENTRYPOINT ["./app"]
+ENTRYPOINT ["/app/app"]

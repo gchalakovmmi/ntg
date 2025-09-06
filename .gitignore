@@ -1,2 +1,2 @@
-/app/bin/app
+/app/cmd/app/app
 *_templ.go

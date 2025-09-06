@@ -1,0 +1,139 @@
+:root {
+    --primary-red: #b22222;
+    --primary-gold: #d4af37;
+    --dark-red: #8b0000;
+    --light-gold: #f0e68c;
+    --dark-gold: #b8860b;
+    --light-bg: #fffaf0;
+    --dark-bg: #1a1a1a;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-top: 70px;
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-weight: 800;
+    color: var(--dark-red);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-gold);
+}
+
+.view-all {
+    display: block;
+    margin-top: 15px;
+    color: var(--primary-red);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.view-all:hover {
+    color: var(--dark-red);
+    transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(212, 175, 55, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .view-all {
+        margin-top: 15px;
+    }
+}
