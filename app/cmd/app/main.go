@@ -14,8 +14,8 @@ func main() {
 	// Load configuration
 	cfg := config.Load()
 
-	// Initialize logger
-	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
+	// Initialize logger with config level
+	logger := slog.New(slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{Level: cfg.LogLevel}))
 	slog.SetDefault(logger)
 
 	// Create and start server
