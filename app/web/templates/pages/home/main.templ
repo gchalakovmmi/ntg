@@ -15,6 +15,6 @@ templ components(phrases map[string]map[string]string) {
 	<script src="/static/js/home.js"></script>
 }
 
-templ Handler(phrases map[string]map[string]string) {
-	@base.Base(phrases, components(phrases))
+templ Handler(language string, phrases map[string]map[string]string) {
+	@base.Base(language, phrases, components(phrases))
 }

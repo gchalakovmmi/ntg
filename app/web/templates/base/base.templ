@@ -2,9 +2,9 @@ package base
 
 import()
 
-templ Base(phrases map[string]map[string]string, content templ.Component) {
+templ Base(language string, phrases map[string]map[string]string, content templ.Component) {
 <!DOCTYPE html>
-<html lang="bg">
+<html lang={ language }>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
