@@ -36,7 +36,7 @@ func GetPhrases(db *sql.DB, language, page string) (map[string]map[string]string
 	rows, err := db.Query(`
 		SELECT section, key, phrase 
 		FROM phrases 
-		WHERE language = ? AND page = ?
+		WHERE language = ? AND (page IN(?, 'base'))
 	`, language, page)
 	
 	if err != nil {

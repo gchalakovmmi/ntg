@@ -1,58 +1,58 @@
 package base
 
-templ navbar() {
+templ navbar(phrases map[string]map[string]string) {
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <div class="logo-container">
-            <a href="/home"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt="НТГ Лого" class="logo"></a>
-            <a href="https://www.ischools.bg/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt="Иновативно училище" class="innovative-logo"></a>
-        </div>
-        <div class="navbar-toggler-container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="/home">Начало</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/about-us" id="aboutDropdown" role="button" data-bs-toggle="dropdown">За нас</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/about-us#history">История</a></li>
-                        <li><a class="dropdown-item" href="/about-us#leadership">Екип</a></li>
-                        <li><a class="dropdown-item" href="/about-us#qualifications">Квалификация</a></li>
-                        <li><a class="dropdown-item" href="/about-us#values">Нашите ценности</a></li>
-                        <li><a class="dropdown-item" href="/about-us#public-council">Обществен съвет</a></li>
-                        <li><a class="dropdown-item" href="/about-us#school-board">Настоятелство</a></li>
-                        <li><a class="dropdown-item" href="/about-us#cooperation">УК Съгласие 2004</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="docsDropdown" role="button" data-bs-toggle="dropdown">Документи</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/documents#regulations-plans">Правилници и планове</a></li>
-                        <li><a class="dropdown-item" href="/documents#curriculum">Учебни планове</a></li>
-                        <li><a class="dropdown-item" href="/documents#education-type">Форми на обучение</a></li>
-                        <li><a class="dropdown-item" href="/documents#budget">Бюджет</a></li>
-                        <li><a class="dropdown-item" href="/documents#schedule">Графици</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Прием</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Програми и проекти</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Училищен живот</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Партньори</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Новини</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">БГ</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">EN</a></li>
-                        <li><a class="dropdown-item" href="#">DE</a></li>
-                        <li><a class="dropdown-item" href="#">FR</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<div class="container">
+		<div class="logo-container">
+			<a href="/home"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt="НТГ Лого" class="logo"></a>
+			<a href="https://www.ischools.bg/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt="Иновативно училище" class="innovative-logo"></a>
+		</div>
+		<div class="navbar-toggler-container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item"><a class="nav-link active" href="/home">{ phrases["navbar"]["home"] }</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="/about-us" id="aboutDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["about"] }</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/about-us#history">{ phrases["navbar"]["history"] }</a></li>
+						<li><a class="dropdown-item" href="/about-us#leadership">{ phrases["navbar"]["leadership"] }</a></li>
+						<li><a class="dropdown-item" href="/about-us#qualifications">{ phrases["navbar"]["qualifications"] }</a></li>
+						<li><a class="dropdown-item" href="/about-us#values">{ phrases["navbar"]["values"] }</a></li>
+						<li><a class="dropdown-item" href="/about-us#public_council">{ phrases["navbar"]["public_council"] }</a></li>
+						<li><a class="dropdown-item" href="/about-us#school_board">{ phrases["navbar"]["school_board"] }</a></li>
+						<li><a class="dropdown-item" href="/about-us#cooperation">{ phrases["navbar"]["cooperation"] }</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="" id="docsDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["documents"] }</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/documents#regulations-plans">{ phrases["navbar"]["regulations_plans"] }</a></li>
+						<li><a class="dropdown-item" href="/documents#curriculum">{ phrases["navbar"]["curriculum"] }</a></li>
+						<li><a class="dropdown-item" href="/documents#education-type">{ phrases["navbar"]["education_type"] }</a></li>
+						<li><a class="dropdown-item" href="/documents#budget">{ phrases["navbar"]["budget"] }</a></li>
+						<li><a class="dropdown-item" href="/documents#schedule">{ phrases["navbar"]["schedule"] }</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["admission"] }</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["programs"] }</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["school_life"] }</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["partners"] }</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["news"] }</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["contacts"] }</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["language"] }</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">EN</a></li>
+						<li><a class="dropdown-item" href="#">DE</a></li>
+						<li><a class="dropdown-item" href="#">FR</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 }
