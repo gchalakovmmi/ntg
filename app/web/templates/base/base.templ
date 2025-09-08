@@ -2,7 +2,7 @@ package base
 
 import()
 
-templ Base(language string, phrases map[string]map[string]string, content templ.Component) {
+templ Base(page, language string, phrases map[string]map[string]string, content templ.Component) {
 <!DOCTYPE html>
 <html lang={ language }>
 <head>
@@ -17,7 +17,7 @@ templ Base(language string, phrases map[string]map[string]string, content templ.
 </head>
 <body>
 	<header class="header">
-		@navbar(phrases)
+		@navbar(page, phrases)
 	</header>
 	<main>
 		@content

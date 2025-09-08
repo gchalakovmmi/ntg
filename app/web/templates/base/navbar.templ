@@ -1,6 +1,6 @@
 package base
 
-templ navbar(phrases map[string]map[string]string) {
+templ navbar(page string, phrases map[string]map[string]string) {
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container">
 		<div class="logo-container">
@@ -45,10 +45,11 @@ templ navbar(phrases map[string]map[string]string) {
 				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["contacts"] }</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["language"] }</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">EN</a></li>
-						<li><a class="dropdown-item" href="#">DE</a></li>
-						<li><a class="dropdown-item" href="#">FR</a></li>
+					<ul class="dropdown-menu"> 
+						<li><a class="dropdown-item" href={ templ.URL("/bg/" + page) }>BG</a></li>
+						<li><a class="dropdown-item" href={ templ.URL("/en/" + page) }>EN</a></li>
+						<li><a class="dropdown-item" href={ templ.URL("/de/" + page) }>DE</a></li>
+						<li><a class="dropdown-item" href={ templ.URL("/fr/" + page) }>FR</a></li>
 					</ul>
 				</li>
 			</ul>

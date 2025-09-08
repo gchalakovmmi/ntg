@@ -10,9 +10,10 @@ import (
 
 func Home() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		page := r.Context().Value(middleware.PageKey).(string)
 		language := r.Context().Value(middleware.LanguageKey).(string)
 		phrases := r.Context().Value(middleware.PhrasesKey).(map[string]map[string]string)
 		
-		templ.Handler(home.Handler(language, phrases)).ServeHTTP(w, r)
+		templ.Handler(home.Handler(page, language, phrases)).ServeHTTP(w, r)
 	})
 }

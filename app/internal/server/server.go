@@ -11,9 +11,9 @@ import (
 
 // Holds server specific configs
 type Server struct {
-	config *config.Config
-	db	 *sql.DB
-	routes []Route
+	config		*config.Config
+	db				*sql.DB
+	routes		[]Route
 }
 
 // A method of the Server struct creating all http handlers
