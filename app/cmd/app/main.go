@@ -8,6 +8,8 @@ import (
 	"log/slog"
 	"NTG/internal/config"
 	"NTG/internal/server"
+	"database/sql"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
@@ -18,8 +20,24 @@ func main() {
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{Level: cfg.LogLevel}))
 	slog.SetDefault(logger)
 
+	// Initialize database connection
+	db, err := sql.Open("sqlite3", "data/app.db")
+	if err != nil {
+		slog.Error("Failed to open database", "error", err)
+		os.Exit(1)
+	}
+	defer db.Close()
+
+	// Test database connection
+	if err := db.Ping(); err != nil {
+		slog.Error("Failed to connect to database", "error", err)
+		os.Exit(1)
+	}
+
+	slog.Info("Database connection established")
+
 	// Create and start server
-	srv := server.New(cfg)
+	srv := server.New(cfg, db)
 	mux := srv.CreateHandlers()
 
 	// Start the server

@@ -4,17 +4,17 @@ import (
 	"NTG/web/templates/base"
 )
 
-templ components() {
+templ components(phrases map[string]map[string]string) {
 	<link rel="stylesheet" href="/static/css/home.css">
-	@carousel()
-	@quicklinks()
-	@news()
-	@virtualtour()
-	@stats()
-	@partners()
+	@carousel(phrases)
+	@quicklinks(phrases)
+	@news(phrases)
+	@virtualtour(phrases)
+	@stats(phrases)
+	@partners(phrases)
 	<script src="/static/js/home.js"></script>
 }
 
-templ Handler() {
-	@base.Base("НТГ - Национална Търговска Гимназия", components())
+templ Handler(phrases map[string]map[string]string) {
+	@base.Base(phrases, components(phrases))
 }

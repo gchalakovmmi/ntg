@@ -8,7 +8,7 @@ generate:
 
 build: generate
 	@echo "Building binary..."
-	CGO_ENABLED=0 go build -o cmd/app/app cmd/app/main.go
+	CGO_ENABLED=1 go build -o cmd/app/app cmd/app/main.go
 
 run: generate
 	@echo "Running Application..."
