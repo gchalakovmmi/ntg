@@ -1,5 +1,5 @@
 -- Navbar phrases
-INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'navbar', 'ntg_logo_alt', 'НТГ Лого'),
 ('bg', 'base', 'navbar', 'innovative_logo_alt', 'Иновативно училище лого'),
 ('bg', 'base', 'navbar', 'home', 'Начало'),

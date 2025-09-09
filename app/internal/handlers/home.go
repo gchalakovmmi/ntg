@@ -3,6 +3,7 @@ package handlers
 import (
 	"net/http"
 
+	"log/slog"
 	"github.com/a-h/templ"
 	"NTG/internal/middleware"
 	"NTG/web/templates/pages/home"
@@ -13,6 +14,8 @@ func Home() http.Handler {
 		page := r.Context().Value(middleware.PageKey).(string)
 		language := r.Context().Value(middleware.LanguageKey).(string)
 		phrases := r.Context().Value(middleware.PhrasesKey).(map[string]map[string]string)
+
+		slog.Debug(phrases["footer"]["school_name"])
 		
 		templ.Handler(home.Handler(page, language, phrases)).ServeHTTP(w, r)
 	})

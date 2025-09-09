@@ -18,10 +18,9 @@ func GetRoutes() []Route {
             Path:    "home",
             Handler: handlers.Home(),
         },
-        // Add more routes here as you create them
-        // {
-        // 	Path:    "about",
-        // 	Handler: handlers.About(),
-        // },
+        {
+            Path:    "schedule",
+            Handler: handlers.Schedule(),
+        },
     }
 }

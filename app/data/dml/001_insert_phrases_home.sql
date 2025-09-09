@@ -1,5 +1,5 @@
 -- Title
-INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'header', 'title', 'НТГ - Национална Търговска Гимназия'),
 ('en', 'home', 'header', 'title', 'NTS - National Trade School'),
 
@@ -131,7 +131,7 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'home', 'partners', 'partner3_name', 'Microsoft Bulgaria'),
 ('en', 'home', 'partners', 'partner3_description', 'Software solutions'),
 ('en', 'home', 'partners', 'partner4_name', 'HP Inc.'),
-('en', 'home', 'partners', 'partner4_description', 'Hardware donations');
+('en', 'home', 'partners', 'partner4_description', 'Hardware donations'),
 ('en', 'home', 'partners', 'partner1_alt', 'Lidl Bulgaria Logo'),
 ('en', 'home', 'partners', 'partner2_alt', 'Samsung Electronics Logo'),
 ('en', 'home', 'partners', 'partner3_alt', 'Microsoft Bulgaria Logo'),

@@ -1,5 +1,5 @@
 -- Footer phrases
-INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'footer', 'school_name', 'НТГ - Национална Търговска Гимназия'),
 ('bg', 'base', 'footer', 'school_description', 'Създаваме бъдещите лидери в икономиката и бизнеса чрез иновативно образование и практическа подготовка.'),
 ('bg', 'base', 'footer', 'quick_links', 'Бързи връзки'),
@@ -12,7 +12,6 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'footer', 'school_life', 'Училищен живот'),
 ('bg', 'base', 'footer', 'partners', 'Партньори'),
 ('bg', 'base', 'footer', 'news', 'Новини'),
-('bg', 'base', 'footer', 'contacts', 'Контакти'),
 ('bg', 'base', 'footer', 'sitemap', 'Карта на сайта'),
 ('bg', 'base', 'footer', 'address', 'бул. Руски №50, Пловдив 4000'),
 ('bg', 'base', 'footer', 'phone', '+359 2 987 6543'),
@@ -31,7 +30,6 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'base', 'footer', 'school_life', 'School Life'),
 ('en', 'base', 'footer', 'partners', 'Partners'),
 ('en', 'base', 'footer', 'news', 'News'),
-('en', 'base', 'footer', 'contacts', 'Contacts'),
 ('en', 'base', 'footer', 'sitemap', 'Sitemap'),
 ('en', 'base', 'footer', 'address', '50 Ruski Blvd, Plovdiv 4000'),
 ('en', 'base', 'footer', 'phone', '+359 2 987 6543'),

@@ -1,9 +1,9 @@
 CREATE TABLE IF NOT EXISTS phrases (
-	language			TEXT NOT NULL,
-	page TEXT		NOT NULL,
-	section			TEXT NOT NULL,
-	key TEXT			NOT NULL,
-	phrase			TEXT NOT NULL,
+	language		TEXT	NOT NULL,
+	page			TEXT	NOT NULL,
+	section		TEXT	NOT NULL,
+	key			TEXT	NOT NULL,
+	phrase		TEXT	NOT NULL,
 
 	PRIMARY KEY (language, page, section, key)
 );
