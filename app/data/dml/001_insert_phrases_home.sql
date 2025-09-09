@@ -13,6 +13,9 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'carousel', 'slide3_title', 'Иновативно Училище'),
 ('bg', 'home', 'carousel', 'slide3_subtitle', 'Модерни методи и технологии в образованието'),
 ('bg', 'home', 'carousel', 'slide3_button', 'Виртуална разходка'),
+('bg', 'home', 'carousel', 'slide_indicator', 'Слайд'),
+('bg', 'home', 'carousel', 'prev_slide', 'Предишен слайд'),
+('bg', 'home', 'carousel', 'next_slide', 'Следващ слайд'),
 ('en', 'home', 'carousel', 'slide1_title', 'NTS - National Trade School'),
 ('en', 'home', 'carousel', 'slide1_subtitle', 'Creating future leaders in economics and business'),
 ('en', 'home', 'carousel', 'slide1_button', 'Virtual Tour'),
@@ -22,6 +25,9 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'home', 'carousel', 'slide3_title', 'Innovative School'),
 ('en', 'home', 'carousel', 'slide3_subtitle', 'Modern methods and technologies in education'),
 ('en', 'home', 'carousel', 'slide3_button', 'Virtual Tour'),
+('en', 'home', 'carousel', 'slide_indicator', 'Slide'),
+('en', 'home', 'carousel', 'prev_slide', 'Previous slide'),
+('en', 'home', 'carousel', 'next_slide', 'Next slide'),
 
 -- Quicklinks
 ('bg', 'home', 'quicklinks', 'projects', 'Проекти'),
@@ -112,6 +118,10 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'partners', 'partner3_description', 'Софтуерни решения'),
 ('bg', 'home', 'partners', 'partner4_name', 'HP Inc.'),
 ('bg', 'home', 'partners', 'partner4_description', 'Хардуерни донации'),
+('bg', 'home', 'partners', 'partner1_alt', 'Лого на Lidl България'),
+('bg', 'home', 'partners', 'partner2_alt', 'Лого на Samsung Electronics'),
+('bg', 'home', 'partners', 'partner3_alt', 'Лого на Microsoft България'),
+('bg', 'home', 'partners', 'partner4_alt', 'Лого на HP Inc.'),
 ('en', 'home', 'partners', 'title', 'Our Donors'),
 ('en', 'home', 'partners', 'subtitle', 'Thanks to everyone who supports the development of NTS'),
 ('en', 'home', 'partners', 'partner1_name', 'Lidl Bulgaria'),
@@ -122,3 +132,7 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'home', 'partners', 'partner3_description', 'Software solutions'),
 ('en', 'home', 'partners', 'partner4_name', 'HP Inc.'),
 ('en', 'home', 'partners', 'partner4_description', 'Hardware donations');
+('en', 'home', 'partners', 'partner1_alt', 'Lidl Bulgaria Logo'),
+('en', 'home', 'partners', 'partner2_alt', 'Samsung Electronics Logo'),
+('en', 'home', 'partners', 'partner3_alt', 'Microsoft Bulgaria Logo'),
+('en', 'home', 'partners', 'partner4_alt', 'HP Inc. Logo');

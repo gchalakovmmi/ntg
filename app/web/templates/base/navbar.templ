@@ -4,8 +4,8 @@ templ navbar(page string, phrases map[string]map[string]string) {
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container">
 		<div class="logo-container">
-			<a href="/home"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt="НТГ Лого" class="logo"></a>
-			<a href="https://www.ischools.bg/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt="Иновативно училище" class="innovative-logo"></a>
+			<a href="/home"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo"></a>
+			<a href="https://www.ischools.bg/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt={ phrases["navbar"]["innovative_logo_alt"] } class="innovative-logo"></a>
 		</div>
 		<div class="navbar-toggler-container">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

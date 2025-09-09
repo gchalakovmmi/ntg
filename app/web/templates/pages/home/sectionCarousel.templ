@@ -2,39 +2,39 @@ package home
 
 templ carousel(phrases map[string]map[string]string) {
 <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');">
-            <div class="carousel-caption">
-                <h1 class="hero-title animate__animated animate__fadeInDown">{ phrases["carousel"]["slide1_title"] }</h1>
-                <p class="hero-subtitle animate__animated animate__fadeIn">{ phrases["carousel"]["slide1_subtitle"] }</p>
-                <a href="#virtual-tour" class="btn btn-outline-custom animate__animated animate__fadeInUp">{ phrases["carousel"]["slide1_button"] }</a>
-            </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');">
-            <div class="carousel-caption">
-                <h1 class="hero-title">{ phrases["carousel"]["slide2_title"] }</h1>
-                <p class="hero-subtitle">{ phrases["carousel"]["slide2_subtitle"] }</p>
-                <a href="#virtual-tour" class="btn btn-outline-custom">{ phrases["carousel"]["slide2_button"] }</a>
-            </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');">
-            <div class="carousel-caption">
-                <h1 class="hero-title">{ phrases["carousel"]["slide3_title"] }</h1>
-                <p class="hero-subtitle">{ phrases["carousel"]["slide3_subtitle"] }</p>
-                <a href="#virtual-tour" class="btn btn-outline-custom">{ phrases["carousel"]["slide3_button"] }</a>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label={ phrases["carousel"]["slide_indicator"] + " 1" }></button>
+		<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label={ phrases["carousel"]["slide_indicator"] + " 2" }></button>
+		<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label={ phrases["carousel"]["slide_indicator"] + " 3" }></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');">
+			<div class="carousel-caption">
+				<h1 class="hero-title animate__animated animate__fadeInDown">{ phrases["carousel"]["slide1_title"] }</h1>
+				<p class="hero-subtitle animate__animated animate__fadeIn">{ phrases["carousel"]["slide1_subtitle"] }</p>
+				<a href="#virtual-tour" class="btn btn-outline-custom animate__animated animate__fadeInUp">{ phrases["carousel"]["slide1_button"] }</a>
+			</div>
+		</div>
+		<div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');">
+			<div class="carousel-caption">
+				<h1 class="hero-title">{ phrases["carousel"]["slide2_title"] }</h1>
+				<p class="hero-subtitle">{ phrases["carousel"]["slide2_subtitle"] }</p>
+				<a href="#virtual-tour" class="btn btn-outline-custom">{ phrases["carousel"]["slide2_button"] }</a>
+			</div>
+		</div>
+		<div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');">
+			<div class="carousel-caption">
+				<h1 class="hero-title">{ phrases["carousel"]["slide3_title"] }</h1>
+				<p class="hero-subtitle">{ phrases["carousel"]["slide3_subtitle"] }</p>
+				<a href="#virtual-tour" class="btn btn-outline-custom">{ phrases["carousel"]["slide3_button"] }</a>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label={ phrases["carousel"]["prev_slide"] }>
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label={ phrases["carousel"]["next_slide"] }>
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	</button>
 </div>
 }

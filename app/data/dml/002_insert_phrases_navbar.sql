@@ -1,5 +1,7 @@
 -- Navbar phrases
 INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
+('bg', 'base', 'navbar', 'ntg_logo_alt', 'НТГ Лого'),
+('bg', 'base', 'navbar', 'innovative_logo_alt', 'Иновативно училище лого'),
 ('bg', 'base', 'navbar', 'home', 'Начало'),
 ('bg', 'base', 'navbar', 'about', 'За нас'),
 ('bg', 'base', 'navbar', 'documents', 'Документи'),
@@ -22,6 +24,8 @@ INSERT OR IGNORE INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'navbar', 'education_type', 'Форми на обучение'),
 ('bg', 'base', 'navbar', 'budget', 'Бюджет'),
 ('bg', 'base', 'navbar', 'schedule', 'Графици'),
+('en', 'base', 'navbar', 'ntg_logo_alt', 'NTS Logo'),
+('en', 'base', 'navbar', 'innovative_logo_alt', 'Innovative School Logo'),
 ('en', 'base', 'navbar', 'home', 'Home'),
 ('en', 'base', 'navbar', 'about', 'About Us'),
 ('en', 'base', 'navbar', 'documents', 'Documents'),
