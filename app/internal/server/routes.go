@@ -22,5 +22,9 @@ func GetRoutes() []Route {
             Path:    "schedule",
             Handler: handlers.Schedule(),
         },
+        {
+            Path:    "general_education",
+            Handler: handlers.GeneralEducation(),
+        },
     }
 }

@@ -1,0 +1,17 @@
+package general_education
+
+import (
+	"NTG/web/templates/base"
+)
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/general_education.css">
+	@banner(phrases)
+	@intro(phrases)
+	@features(phrases)
+	@subjects(phrases)
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}

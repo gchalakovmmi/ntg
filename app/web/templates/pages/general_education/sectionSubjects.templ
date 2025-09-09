@@ -1,0 +1,113 @@
+package general_education
+
+templ subjects(phrases map[string]map[string]string) {
+	<section class="section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["subjects"]["title"] }</h2>
+				<p>{ phrases["subjects"]["subtitle"] }</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll">
+						<div class="subject-icon">
+							<i class="fas fa-square-root-alt"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["math_title"] }</h4>
+							<p>{ phrases["subjects"]["math_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll delay-1">
+						<div class="subject-icon">
+							<i class="fas fa-flask"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["chemistry_title"] }</h4>
+							<p>{ phrases["subjects"]["chemistry_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll delay-2">
+						<div class="subject-icon">
+							<i class="fas fa-atom"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["physics_title"] }</h4>
+							<p>{ phrases["subjects"]["physics_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll">
+						<div class="subject-icon">
+							<i class="fas fa-dna"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["biology_title"] }</h4>
+							<p>{ phrases["subjects"]["biology_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll delay-1">
+						<div class="subject-icon">
+							<i class="fas fa-globe-europe"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["geography_title"] }</h4>
+							<p>{ phrases["subjects"]["geography_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll delay-2">
+						<div class="subject-icon">
+							<i class="fas fa-landmark"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["history_title"] }</h4>
+							<p>{ phrases["subjects"]["history_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll">
+						<div class="subject-icon">
+							<i class="fas fa-book"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["bulgarian_title"] }</h4>
+							<p>{ phrases["subjects"]["bulgarian_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll delay-1">
+						<div class="subject-icon">
+							<i class="fas fa-language"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["english_title"] }</h4>
+							<p>{ phrases["subjects"]["english_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="subject-card animate-on-scroll delay-2">
+						<div class="subject-icon">
+							<i class="fas fa-paint-brush"></i>
+						</div>
+						<div class="subject-content">
+							<h4 class="subject-title">{ phrases["subjects"]["art_title"] }</h4>
+							<p>{ phrases["subjects"]["art_desc"] }</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
