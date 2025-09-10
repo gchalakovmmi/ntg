@@ -1,0 +1,55 @@
+package about_us
+
+templ publicCouncil(phrases map[string]map[string]string) {
+	<section id="public-council" class="section public-council-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["public_council"]["title"] }</h2>
+				<p>{ phrases["public_council"]["subtitle"] }</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="council-info-card animate-on-scroll">
+						<div class="council-icon">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3>{ phrases["public_council"]["title"] }</h3>
+						<p>{ phrases["public_council"]["description"] }</p>
+						<div class="council-features">
+							<div class="row g-3">
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["public_council"]["control"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["public_council"]["advice"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["public_council"]["support"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["public_council"]["community"] }</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn-danger btn-lg mt-4">
+							<i class="fas fa-users me-2"></i>
+							{ phrases["public_council"]["button_text"] }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

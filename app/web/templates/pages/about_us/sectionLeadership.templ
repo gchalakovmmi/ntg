@@ -1,0 +1,54 @@
+package about_us
+
+templ leadership(phrases map[string]map[string]string) {
+	<section id="leadership" class="section leadership-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["leadership"]["title"] }</h2>
+				<p>{ phrases["leadership"]["subtitle"] }</p>
+			</div>
+			<div class="row g-4">
+				<div class="col-lg-3 col-md-6">
+					<div class="leader-card animate-on-scroll">
+						<div class="leader-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1b%2F2e%2F31%2F1b2e314e767a957a44ed8f992c6d9098.jpg&f=1&nofb=1&ipt=15fa6ad9f7e124e77af77a6e9f9ad823da215356728d0af05b4ee0033ab92772');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["leadership"]["director_name"] }</h4>
+							<div class="position">{ phrases["leadership"]["director_position"] }</div>
+							<p>{ phrases["leadership"]["director_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="leader-card animate-on-scroll delay-1">
+						<div class="leader-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1b%2F2e%2F31%2F1b2e314e767a957a44ed8f992c6d9098.jpg&f=1&nofb=1&ipt=15fa6ad9f7e124e77af77a6e9f9ad823da215356728d0af05b4ee0033ab92772');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["leadership"]["deputy1_name"] }</h4>
+							<div class="position">{ phrases["leadership"]["deputy1_position"] }</div>
+							<p>{ phrases["leadership"]["deputy1_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="leader-card animate-on-scroll delay-2">
+						<div class="leader-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1b%2F2e%2F31%2F1b2e314e767a957a44ed8f992c6d9098.jpg&f=1&nofb=1&ipt=15fa6ad9f7e124e77af77a6e9f9ad823da215356728d0af05b4ee0033ab92772');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["leadership"]["deputy2_name"] }</h4>
+							<div class="position">{ phrases["leadership"]["deputy2_position"] }</div>
+							<p>{ phrases["leadership"]["deputy2_desc"] }</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="leader-card animate-on-scroll delay-3">
+						<div class="leader-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1b%2F2e%2F31%2F1b2e314e767a957a44ed8f992c6d9098.jpg&f=1&nofb=1&ipt=15fa6ad9f7e124e77af77a6e9f9ad823da215356728d0af05b4ee0033ab92772');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["leadership"]["deputy3_name"] }</h4>
+							<div class="position">{ phrases["leadership"]["deputy3_position"] }</div>
+							<p>{ phrases["leadership"]["deputy3_desc"] }</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

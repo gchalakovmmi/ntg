@@ -1,0 +1,570 @@
+/* About Us Page Styles */
+
+/* Hero Section */
+.about-hero {
+	background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
+	color: white;
+	padding: 120px 0 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+.about-hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80') center/cover;
+	opacity: 0.1;
+	z-index: 1;
+}
+
+.about-hero .container {
+	position: relative;
+	z-index: 2;
+}
+
+.about-hero h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero p {
+	font-size: 1.3rem;
+	margin-bottom: 40px;
+	opacity: 0.9;
+}
+
+/* History Section */
+.history-section {
+	background: var(--light-bg);
+}
+
+.timeline {
+	position: relative;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 4px;
+	background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
+	transform: translateX(-50%);
+}
+
+.timeline-item {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+	margin-right: calc(50% + 40px);
+	text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+	margin-left: calc(50% + 40px);
+	text-align: left;
+}
+
+.timeline-content {
+	background: white;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	position: relative;
+	transition: var(--transition);
+}
+
+.timeline-content:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-year {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--primary-red);
+	color: white;
+	padding: 10px 20px;
+	border-radius: 25px;
+	font-weight: 700;
+	font-size: 1.1rem;
+	z-index: 10;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h4 {
+	color: var(--primary-red);
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+/* Leadership Section */
+.leadership-section {
+	background: white;
+}
+
+.leader-card {
+	background: white;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	transition: var(--transition);
+	height: 100%;
+}
+
+.leader-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.leader-image {
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.leader-content {
+	padding: 25px;
+}
+
+.leader-content h4 {
+	color: var(--dark-red);
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.leader-content .position {
+	color: var(--primary-red);
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.leader-content p {
+	color: var(--secondary-color);
+	font-size: 0.95rem;
+}
+
+/* Values Section */
+.values-section {
+	background: var(--light-bg);
+}
+
+.value-card {
+	text-align: center;
+	padding: 40px 20px;
+	background: white;
+	border-radius: 15px;
+	height: 100%;
+	transition: var(--transition);
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.value-card:hover {
+	background: var(--primary-red);
+	color: white;
+	transform: translateY(-10px);
+	box-shadow: 0 15px 40px rgba(178, 34, 34, 0.2);
+}
+
+.value-card .icon {
+	font-size: 3rem;
+	color: var(--primary-red);
+	margin-bottom: 25px;
+	transition: color 0.3s ease;
+}
+
+.value-card:hover .icon {
+	color: white;
+}
+
+.value-card h4 {
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+/* Qualifications Section */
+.qualifications-section {
+	background: white;
+	position: relative;
+}
+
+.qualifications-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 200px;
+	background: linear-gradient(135deg, rgba(178, 34, 34, 0.05) 0%, rgba(220, 53, 69, 0.03) 100%);
+	z-index: 1;
+}
+
+.qualifications-section .container {
+	position: relative;
+	z-index: 2;
+}
+
+.qualification-stat-card {
+	background: white;
+	padding: 30px 20px;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	transition: var(--transition);
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	border: 2px solid transparent;
+}
+
+.qualification-stat-card:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 20px 50px rgba(178, 34, 34, 0.15);
+	border-color: var(--primary-red);
+}
+
+.qualification-stat-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+}
+
+.stat-icon {
+	font-size: 3rem;
+	color: var(--primary-red);
+	margin-bottom: 20px;
+	transition: all 0.3s ease;
+}
+
+.qualification-stat-card:hover .stat-icon {
+	transform: scale(1.1);
+	color: var(--dark-red);
+}
+
+.stat-number {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: var(--dark-red);
+	margin-bottom: 10px;
+	display: block;
+}
+
+.stat-label {
+	font-size: 1rem;
+	color: var(--secondary-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Public Council Section */
+.public-council-section {
+	background: var(--light-bg);
+}
+
+.council-info-card {
+	background: white;
+	padding: 50px;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.council-info-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+}
+
+.council-icon {
+	font-size: 4rem;
+	color: var(--primary-red);
+	margin-bottom: 30px;
+}
+
+.council-info-card h3 {
+	color: var(--dark-red);
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+
+.council-features {
+	margin: 30px 0;
+}
+
+.feature-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+/* School Board Section */
+.school-board-section {
+	background: white;
+}
+
+.board-info-card {
+	background: var(--light-bg);
+	padding: 50px;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.board-info-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+}
+
+.board-icon {
+	font-size: 4rem;
+	color: var(--primary-red);
+	margin-bottom: 30px;
+}
+
+.board-info-card h3 {
+	color: var(--dark-red);
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+
+.board-features {
+	margin: 30px 0;
+}
+
+/* Cooperation Section */
+.cooperation-section {
+	background: var(--light-bg);
+}
+
+.cooperation-card {
+	background: white;
+	padding: 50px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cooperation-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+}
+
+.cooperation-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.cooperation-icon {
+	font-size: 3rem;
+	color: var(--primary-red);
+	margin-bottom: 25px;
+}
+
+.cooperation-content h3 {
+	color: var(--dark-red);
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.cooperation-services {
+	margin-top: 25px;
+}
+
+.service-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+	font-weight: 500;
+}
+
+.cooperation-section .contact-info {
+	background: var(--light-bg);
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+	min-height: 100%;
+}
+
+.cooperation-section .contact-info h4 {
+	color: var(--dark-red);
+	margin-bottom: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.cooperation-section .contact-details {
+	margin-bottom: 20px;
+}
+
+.cooperation-section .contact-item {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+	display: block;
+	width: 100%;
+}
+
+.cooperation-section .contact-label {
+	font-weight: 600;
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	margin-bottom: 8px;
+	display: block;
+	width: 100%;
+}
+
+.cooperation-section .contact-value {
+	color: var(--dark-red);
+	font-weight: 500;
+	font-size: 1rem;
+	display: block;
+	width: 100%;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+.cooperation-section .iban-info {
+	margin-top: auto;
+	padding-top: 20px;
+	border-top: 2px solid var(--primary-red);
+}
+
+.cooperation-section .iban-info h5 {
+	color: var(--dark-red);
+	margin-bottom: 15px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.cooperation-section .iban-box {
+	background: var(--primary-red);
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.cooperation-section .iban-label {
+	font-size: 0.9rem;
+	opacity: 0.9;
+}
+
+.cooperation-section .iban-code {
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+
+.cooperation-section .bank-info {
+	text-align: center;
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+	.about-hero h1 {
+		font-size: 2.5rem;
+	}
+
+	.about-hero p {
+		font-size: 1.1rem;
+	}
+
+	.timeline::before {
+		left: 30px;
+	}
+
+	.timeline-item:nth-child(odd) .timeline-content,
+	.timeline-item:nth-child(even) .timeline-content {
+		margin-left: 70px;
+		margin-right: 0;
+		text-align: left;
+	}
+
+	.timeline-year {
+		left: 30px;
+		transform: translateX(-50%);
+	}
+
+	.leader-card {
+		margin-bottom: 30px;
+	}
+
+	.value-card {
+		margin-bottom: 30px;
+		padding: 30px 20px;
+	}
+
+	.qualification-stat-card {
+		margin-bottom: 30px;
+		padding: 25px 15px;
+	}
+
+	.council-info-card,
+	.board-info-card,
+	.cooperation-card {
+		padding: 30px 20px;
+	}
+
+	.cooperation-section .contact-info {
+		margin-top: 30px;
+	}
+
+	.cooperation-section .contact-item {
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+	}
+
+	.cooperation-section .contact-label {
+		font-size: 0.85rem;
+	}
+
+	.cooperation-section .contact-value {
+		font-size: 0.9rem;
+	}
+}

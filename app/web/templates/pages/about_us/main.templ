@@ -1,0 +1,20 @@
+package about_us
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/about_us.css"/>
+	@hero(phrases)
+	@history(phrases)
+	@leadership(phrases)
+	@values(phrases)
+	@qualifications(phrases)
+	@publicCouncil(phrases)
+	@schoolBoard(phrases)
+	@cooperation(phrases)
+	<script src="/static/js/about_us.js"></script>
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}

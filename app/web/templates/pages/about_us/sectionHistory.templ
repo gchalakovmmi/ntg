@@ -1,0 +1,49 @@
+package about_us
+
+templ history(phrases map[string]map[string]string) {
+	<section id="history" class="section history-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["history"]["title"] }</h2>
+				<p>{ phrases["history"]["subtitle"] }</p>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item animate-on-scroll">
+					<div class="timeline-year">1910</div>
+					<div class="timeline-content">
+						<h4>{ phrases["history"]["1910_title"] }</h4>
+						<p>{ phrases["history"]["1910_desc"] }</p>
+					</div>
+				</div>
+				<div class="timeline-item animate-on-scroll delay-1">
+					<div class="timeline-year">1945</div>
+					<div class="timeline-content">
+						<h4>{ phrases["history"]["1945_title"] }</h4>
+						<p>{ phrases["history"]["1945_desc"] }</p>
+					</div>
+				</div>
+				<div class="timeline-item animate-on-scroll delay-2">
+					<div class="timeline-year">1989</div>
+					<div class="timeline-content">
+						<h4>{ phrases["history"]["1989_title"] }</h4>
+						<p>{ phrases["history"]["1989_desc"] }</p>
+					</div>
+				</div>
+				<div class="timeline-item animate-on-scroll delay-3">
+					<div class="timeline-year">2010</div>
+					<div class="timeline-content">
+						<h4>{ phrases["history"]["2010_title"] }</h4>
+						<p>{ phrases["history"]["2010_desc"] }</p>
+					</div>
+				</div>
+				<div class="timeline-item animate-on-scroll">
+					<div class="timeline-year">2025</div>
+					<div class="timeline-content">
+						<h4>{ phrases["history"]["2025_title"] }</h4>
+						<p>{ phrases["history"]["2025_desc"] }</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

@@ -1,0 +1,55 @@
+package about_us
+
+templ schoolBoard(phrases map[string]map[string]string) {
+	<section id="school-board" class="section school-board-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["school_board"]["title"] }</h2>
+				<p>{ phrases["school_board"]["subtitle"] }</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="board-info-card animate-on-scroll">
+						<div class="board-icon">
+							<i class="fas fa-university"></i>
+						</div>
+						<h3>Участие в управлението</h3>
+						<p>{ phrases["school_board"]["description"] }</p>
+						<div class="board-features">
+							<div class="row g-3">
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_board"]["planning"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_board"]["budget"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_board"]["partnerships"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_board"]["quality"] }</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn-danger btn-lg mt-4">
+							<i class="fas fa-university me-2"></i>
+							{ phrases["school_board"]["button_text"] }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

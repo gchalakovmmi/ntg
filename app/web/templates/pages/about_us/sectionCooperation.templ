@@ -1,0 +1,88 @@
+package about_us
+
+templ cooperation(phrases map[string]map[string]string) {
+	<section id="cooperation" class="section cooperation-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["cooperation"]["title"] }</h2>
+				<p>{ phrases["cooperation"]["subtitle"] }</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="cooperation-card animate-on-scroll">
+						<div class="row g-4 align-items-stretch">
+							<div class="col-lg-6">
+								<div class="cooperation-content h-100">
+									<div class="cooperation-icon">
+										<i class="fas fa-handshake"></i>
+									</div>
+									<h3>Учебна кооперация "Съгласие 2004"</h3>
+									<p>{ phrases["cooperation"]["description"] }</p>
+									<div class="cooperation-services">
+										<div class="service-item">
+											<i class="fas fa-graduation-cap text-danger me-2"></i>
+											<span>{ phrases["cooperation"]["courses"] }</span>
+										</div>
+										<div class="service-item">
+											<i class="fas fa-certificate text-danger me-2"></i>
+											<span>{ phrases["cooperation"]["certification"] }</span>
+										</div>
+										<div class="service-item">
+											<i class="fas fa-laptop text-danger me-2"></i>
+											<span>{ phrases["cooperation"]["digital"] }</span>
+										</div>
+										<div class="service-item">
+											<i class="fas fa-briefcase text-danger me-2"></i>
+											<span>{ phrases["cooperation"]["business"] }</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="contact-info h-100 d-flex flex-column">
+									<h4>{ phrases["cooperation"]["contact_title"] }</h4>
+									<div class="contact-details flex-grow-1">
+										<div class="contact-item">
+											<span class="contact-label">Лице за контакт:</span>
+											<span class="contact-value">{ phrases["cooperation"]["contact_person"] }</span>
+										</div>
+										<div class="contact-item">
+											<span class="contact-label">Длъжност:</span>
+											<span class="contact-value">{ phrases["cooperation"]["position"] }</span>
+										</div>
+										<div class="contact-item">
+											<span class="contact-label">Телефон:</span>
+											<span class="contact-value">{ phrases["cooperation"]["phone"] }</span>
+										</div>
+										<div class="contact-item">
+											<span class="contact-label">Email:</span>
+											<span class="contact-value">{ phrases["cooperation"]["email"] }</span>
+										</div>
+									</div>
+									<div class="iban-info mt-auto">
+										<h5>{ phrases["cooperation"]["bank_info"] }</h5>
+										<div class="iban-box">
+											<div class="iban-label">IBAN:</div>
+											<div class="iban-code">{ phrases["cooperation"]["iban"] }</div>
+										</div>
+										<div class="bank-info">
+											<strong>{ phrases["cooperation"]["bank_name"] }</strong>
+											<br/>
+											УК "Съгласие 2004"
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center mt-4">
+							<a href="#" class="btn btn-danger btn-lg">
+								<i class="fas fa-info-circle me-2"></i>
+								{ phrases["cooperation"]["button_text"] }
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
