@@ -43,8 +43,8 @@ func GetRoutes() []Route {
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"schedule",
-			Handler: handlers.Schedule(),
+			Path:	"academic_schedule",
+			Handler: handlers.AcademicSchedule(),
 		},
 		{
 			Path:	"parent_consultation",
