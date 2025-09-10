@@ -50,7 +50,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-						if page == "documents" {
+						if page == "documents" || page == "regulations_plans" || page == "curriculum" || page == "education_type" || page == "budget" || page == "parent_consultation" || page == "student_consultation" || page == "class_tests" || page == "olympiads" || page == "exams" {
 							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
 								{ phrases["navbar"]["documents"] }
 							</a>
@@ -64,24 +64,16 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/curriculum") }>{ phrases["navbar"]["curriculum"] }</a></li>
 							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/education_type") }>{ phrases["navbar"]["education_type"] }</a></li>
 							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/budget") }>{ phrases["navbar"]["budget"] }</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						if page == "schedule" || page == "parent_consultation" || page == "student_consultation" || page == "class_tests" || page == "olympiads" || page == "exams" {
-							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/schedule") } id="scheduleDropdown" role="button" data-bs-toggle="dropdown">
-								{ phrases["navbar"]["schedule"] }
-							</a>
-						} else {
-							<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/schedule") } id="scheduleDropdown" role="button" data-bs-toggle="dropdown">
-								{ phrases["navbar"]["schedule"] }
-							</a>
-						}
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/parent_consultation") }>{ phrases["navbar"]["parent_consultation"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/student_consultation") }>{ phrases["navbar"]["student_consultation"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/class_tests") }>{ phrases["navbar"]["class_tests"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/olympiads") }>{ phrases["navbar"]["olympiads"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/exams") }>{ phrases["navbar"]["exams"] }</a></li>
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" href={ templ.URL("/" + language + "/parent_consultation") }>{ phrases["navbar"]["schedule"] }</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/parent_consultation") }>{ phrases["navbar"]["parent_consultation"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/student_consultation") }>{ phrases["navbar"]["student_consultation"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/class_tests") }>{ phrases["navbar"]["class_tests"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/olympiads") }>{ phrases["navbar"]["olympiads"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/exams") }>{ phrases["navbar"]["exams"] }</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -107,7 +99,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 						}
 					</li>
 					<li class="nav-item dropdown">
-						if page == "school_life" || page == "education" || page == "professional_education" || page == "general_education" || page == "interest_activities" || page == "e_diary" || page == "uniforms" || page == "document_templates" || page == "nvo" || page == "dzi" || page == "zdippk" || page == "academic_schedule" {
+						if page == "school_life" || page == "education" || page == "professional_education" || page == "general_education" || page == "interest_activities" || page == "e_diary" || page == "uniforms" || page == "document_templates" || page == "scholarships" || page == "nvo" || page == "dzi" || page == "zdippk" || page == "academic_schedule" {
 							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/school_life") } id="schoolLifeDropdown" role="button" data-bs-toggle="dropdown">
 								{ phrases["navbar"]["school_life"] }
 							</a>
