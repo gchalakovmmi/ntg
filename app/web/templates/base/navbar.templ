@@ -1,59 +1,186 @@
 package base
 
-templ navbar(page string, phrases map[string]map[string]string) {
-<nav class="navbar navbar-expand-lg navbar-dark">
-	<div class="container">
-		<div class="logo-container">
-			<a href="/home"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo"></a>
-			<a href="https://www.ischools.bg/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt={ phrases["navbar"]["innovative_logo_alt"] } class="innovative-logo"></a>
+templ navbar(page, language string, phrases map[string]map[string]string) {
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<div class="logo-container">
+				<a href={ templ.URL("/" + language + "/home") }>
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo">
+				</a>
+				<a href="https://www.ischools.bg/" target="_blank">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt={ phrases["navbar"]["innovative_logo_alt"] } class="innovative-logo">
+				</a>
+			</div>
+			<div class="navbar-toggler-container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						if page == "home" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/home") }>
+								{ phrases["navbar"]["home"] }
+							</a>
+						} else {
+							<a class="nav-link" href={ templ.URL("/" + language + "/home") }>
+								{ phrases["navbar"]["home"] }
+							</a>
+						}
+					</li>
+					<li class="nav-item dropdown">
+						if page == "about_us" {
+							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/about_us") } id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["about"] }
+							</a>
+						} else {
+							<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/about_us") } id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["about"] }
+							</a>
+						}
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#history") }>{ phrases["navbar"]["history"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#leadership") }>{ phrases["navbar"]["leadership"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#qualifications") }>{ phrases["navbar"]["qualifications"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#values") }>{ phrases["navbar"]["values"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#public_council") }>{ phrases["navbar"]["public_council"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#school_board") }>{ phrases["navbar"]["school_board"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/about_us#cooperation") }>{ phrases["navbar"]["cooperation"] }</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						if page == "documents" {
+							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["documents"] }
+							</a>
+						} else {
+							<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["documents"] }
+							</a>
+						}
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/regulations_plans") }>{ phrases["navbar"]["regulations_plans"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/curriculum") }>{ phrases["navbar"]["curriculum"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/education_type") }>{ phrases["navbar"]["education_type"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/budget") }>{ phrases["navbar"]["budget"] }</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						if page == "schedule" || page == "parent_consultation" || page == "student_consultation" || page == "class_tests" || page == "olympiads" || page == "exams" {
+							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/schedule") } id="scheduleDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["schedule"] }
+							</a>
+						} else {
+							<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/schedule") } id="scheduleDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["schedule"] }
+							</a>
+						}
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/parent_consultation") }>{ phrases["navbar"]["parent_consultation"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/student_consultation") }>{ phrases["navbar"]["student_consultation"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/class_tests") }>{ phrases["navbar"]["class_tests"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/olympiads") }>{ phrases["navbar"]["olympiads"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/exams") }>{ phrases["navbar"]["exams"] }</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						if page == "admission" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/admission") }>
+								{ phrases["navbar"]["admission"] }
+							</a>
+						} else {
+							<a class="nav-link" href={ templ.URL("/" + language + "/admission") }>
+								{ phrases["navbar"]["admission"] }
+							</a>
+						}
+					</li>
+					<li class="nav-item">
+						if page == "programs" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/programs") }>
+								{ phrases["navbar"]["programs"] }
+							</a>
+						} else {
+							<a class="nav-link" href={ templ.URL("/" + language + "/programs") }>
+								{ phrases["navbar"]["programs"] }
+							</a>
+						}
+					</li>
+					<li class="nav-item dropdown">
+						if page == "school_life" || page == "education" || page == "professional_education" || page == "general_education" || page == "interest_activities" || page == "e_diary" || page == "uniforms" || page == "document_templates" || page == "nvo" || page == "dzi" || page == "zdippk" || page == "academic_schedule" {
+							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/school_life") } id="schoolLifeDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["school_life"] }
+							</a>
+						} else {
+							<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/school_life") } id="schoolLifeDropdown" role="button" data-bs-toggle="dropdown">
+								{ phrases["navbar"]["school_life"] }
+							</a>
+						}
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" href={ templ.URL("/" + language + "/education") }>Обучение</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/professional_education") }>Професионална подготовка</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/general_education") }>Общообразователна подготовка</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/interest_activities") }>Занимания по интереси</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/e_diary") }>Електронен дневник</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/uniforms") }>Униформи</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/document_templates") }>Образци на документи</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/document_templates#scholarships") }>Ученически стипендии</a></li>
+							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/nvo") }>НВО</a></li>
+							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/dzi") }>ДЗИ</a></li>
+							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/zdippk") }>ЗДИППК</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/academic_schedule") }>График на учебното време</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						if page == "partners" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/partners") }>
+								{ phrases["navbar"]["partners"] }
+							</a>
+						} else {
+							<a class="nav-link" href={ templ.URL("/" + language + "/partners") }>
+								{ phrases["navbar"]["partners"] }
+							</a>
+						}
+					</li>
+					<li class="nav-item">
+						if page == "news" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/news") }>
+								{ phrases["navbar"]["news"] }
+							</a>
+						} else {
+							<a class="nav-link" href={ templ.URL("/" + language + "/news") }>
+								{ phrases["navbar"]["news"] }
+							</a>
+						}
+					</li>
+					<li class="nav-item">
+						if page == "contacts" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/contacts") }>
+								{ phrases["navbar"]["contacts"] }
+							</a>
+						} else {
+							<a class="nav-link" href={ templ.URL("/" + language + "/contacts") }>
+								{ phrases["navbar"]["contacts"] }
+							</a>
+						}
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+							{ phrases["navbar"]["language"] }
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href={ templ.URL("/bg/" + page) }>Български</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/en/" + page) }>English</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/de/" + page) }>Deutsch</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/fr/" + page) }>Français</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="navbar-toggler-container">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item"><a class="nav-link active" href="/home">{ phrases["navbar"]["home"] }</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="/about-us" id="aboutDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["about"] }</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="/about-us#history">{ phrases["navbar"]["history"] }</a></li>
-						<li><a class="dropdown-item" href="/about-us#leadership">{ phrases["navbar"]["leadership"] }</a></li>
-						<li><a class="dropdown-item" href="/about-us#qualifications">{ phrases["navbar"]["qualifications"] }</a></li>
-						<li><a class="dropdown-item" href="/about-us#values">{ phrases["navbar"]["values"] }</a></li>
-						<li><a class="dropdown-item" href="/about-us#public_council">{ phrases["navbar"]["public_council"] }</a></li>
-						<li><a class="dropdown-item" href="/about-us#school_board">{ phrases["navbar"]["school_board"] }</a></li>
-						<li><a class="dropdown-item" href="/about-us#cooperation">{ phrases["navbar"]["cooperation"] }</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="" id="docsDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["documents"] }</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="/regulations-plans">{ phrases["navbar"]["regulations_plans"] }</a></li>
-						<li><a class="dropdown-item" href="/curriculum">{ phrases["navbar"]["curriculum"] }</a></li>
-						<li><a class="dropdown-item" href="/education-type">{ phrases["navbar"]["education_type"] }</a></li>
-						<li><a class="dropdown-item" href="/budget">{ phrases["navbar"]["budget"] }</a></li>
-						<li><a class="dropdown-item" href="/schedule">{ phrases["navbar"]["schedule"] }</a></li>
-					</ul>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["admission"] }</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["programs"] }</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["school_life"] }</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["partners"] }</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["news"] }</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">{ phrases["navbar"]["contacts"] }</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">{ phrases["navbar"]["language"] }</a>
-					<ul class="dropdown-menu"> 
-						<li><a class="dropdown-item" href={ templ.URL("/bg/" + page) }>BG</a></li>
-						<li><a class="dropdown-item" href={ templ.URL("/en/" + page) }>EN</a></li>
-						<li><a class="dropdown-item" href={ templ.URL("/de/" + page) }>DE</a></li>
-						<li><a class="dropdown-item" href={ templ.URL("/fr/" + page) }>FR</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+	</nav>
 }
