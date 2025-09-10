@@ -1,4 +1,4 @@
-/* About Us Page Styles */
+/* About Us Page Styles - Fixed for Reconstruction Branch */
 
 /* Hero Section */
 .about-hero {
@@ -39,40 +39,50 @@
 	opacity: 0.9;
 }
 
-/* History Section */
+/* History Section - Fixed Timeline */
 .history-section {
 	background: var(--light-bg);
+	position: relative;
+	overflow: visible;
+	/* Changed from hidden */
 }
 
 .timeline {
 	position: relative;
-	padding: 0;
+	padding: 40px 0;
 	list-style: none;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .timeline::before {
 	content: '';
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	top: 40px;
+	bottom: 40px;
 	left: 50%;
 	width: 4px;
 	background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
 	transform: translateX(-50%);
+	border-radius: 2px;
 }
 
 .timeline-item {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
+	/* Increased spacing */
+	width: 100%;
+	min-height: 120px;
+	/* Ensure minimum height */
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-	margin-right: calc(50% + 40px);
+	margin-right: calc(50% + 60px);
 	text-align: right;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-	margin-left: calc(50% + 40px);
+	margin-left: calc(50% + 60px);
 	text-align: left;
 }
 
@@ -83,6 +93,7 @@
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 	position: relative;
 	transition: var(--transition);
+	border: 1px solid rgba(178, 34, 34, 0.1);
 }
 
 .timeline-content:hover {
@@ -90,24 +101,56 @@
 	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
+/* Arrow connectors */
+.timeline-item:nth-child(odd) .timeline-content::after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	right: -20px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: white;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left: -20px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: white;
+}
+
 .timeline-year {
 	position: absolute;
 	left: 50%;
+	top: 20px;
 	transform: translateX(-50%);
 	background: var(--primary-red);
 	color: white;
-	padding: 10px 20px;
+	padding: 12px 24px;
 	border-radius: 25px;
 	font-weight: 700;
 	font-size: 1.1rem;
 	z-index: 10;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	white-space: nowrap;
 }
 
 .timeline-content h4 {
 	color: var(--primary-red);
 	margin-bottom: 15px;
 	font-weight: 600;
+	font-size: 1.3rem;
+}
+
+.timeline-content p {
+	color: var(--dark-color);
+	line-height: 1.6;
+	margin-bottom: 0;
 }
 
 /* Leadership Section */
@@ -122,6 +165,7 @@
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 	transition: var(--transition);
 	height: 100%;
+	border: 1px solid rgba(178, 34, 34, 0.05);
 }
 
 .leader-card:hover {
@@ -150,11 +194,13 @@
 	color: var(--primary-red);
 	font-weight: 500;
 	margin-bottom: 15px;
+	font-size: 0.9rem;
 }
 
 .leader-content p {
 	color: var(--secondary-color);
 	font-size: 0.95rem;
+	line-height: 1.5;
 }
 
 /* Values Section */
@@ -172,6 +218,7 @@
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(178, 34, 34, 0.05);
 }
 
 .value-card:hover {
@@ -276,69 +323,33 @@
 	letter-spacing: 1px;
 }
 
-/* Public Council Section */
-.public-council-section {
+/* Info Cards (Public Council, School Board) */
+.public-council-section,
+.school-board-section {
 	background: var(--light-bg);
 }
 
-.council-info-card {
-	background: white;
-	padding: 50px;
-	border-radius: 20px;
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.council-info-card::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 5px;
-	background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
-}
-
-.council-icon {
-	font-size: 4rem;
-	color: var(--primary-red);
-	margin-bottom: 30px;
-}
-
-.council-info-card h3 {
-	color: var(--dark-red);
-	margin-bottom: 25px;
-	font-weight: 600;
-}
-
-.council-features {
-	margin: 30px 0;
-}
-
-.feature-item {
-	display: flex;
-	align-items: center;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-
-/* School Board Section */
 .school-board-section {
 	background: white;
 }
 
+.council-info-card,
 .board-info-card {
-	background: var(--light-bg);
+	background: white;
 	padding: 50px;
 	border-radius: 20px;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	border: 1px solid rgba(178, 34, 34, 0.05);
 }
 
+.board-info-card {
+	background: var(--light-bg);
+}
+
+.council-info-card::before,
 .board-info-card::before {
 	content: '';
 	position: absolute;
@@ -349,20 +360,35 @@
 	background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
 }
 
+.council-icon,
 .board-icon {
 	font-size: 4rem;
 	color: var(--primary-red);
 	margin-bottom: 30px;
 }
 
+.council-info-card h3,
 .board-info-card h3 {
 	color: var(--dark-red);
 	margin-bottom: 25px;
 	font-weight: 600;
 }
 
+.council-features,
 .board-features {
 	margin: 30px 0;
+}
+
+.feature-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	font-weight: 500;
+	justify-content: center;
+}
+
+.feature-item i {
+	margin-right: 10px;
 }
 
 /* Cooperation Section */
@@ -377,6 +403,7 @@
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	border: 1px solid rgba(178, 34, 34, 0.05);
 }
 
 .cooperation-card::before {
@@ -515,6 +542,7 @@
 		font-size: 1.1rem;
 	}
 
+	/* Mobile Timeline Fix */
 	.timeline::before {
 		left: 30px;
 	}
@@ -526,9 +554,28 @@
 		text-align: left;
 	}
 
+	.timeline-item:nth-child(odd) .timeline-content::after,
+	.timeline-item:nth-child(even) .timeline-content::after {
+		display: none;
+	}
+
 	.timeline-year {
 		left: 30px;
 		transform: translateX(-50%);
+		font-size: 1rem;
+		padding: 8px 16px;
+	}
+
+	.timeline-item {
+		margin-bottom: 60px;
+	}
+
+	.timeline-content {
+		padding: 20px;
+	}
+
+	.timeline-content h4 {
+		font-size: 1.1rem;
 	}
 
 	.leader-card {
