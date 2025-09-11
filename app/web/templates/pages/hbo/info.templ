@@ -1,0 +1,30 @@
+package hbo
+
+templ infoSection(phrases map[string]map[string]string) {
+	<section class="section bg-gradient">
+		<div class="container">
+			<div class="row mt-5 mb-5">
+				<div class="col-12">
+					<div class="modern-card-static animate-on-scroll delay-2">
+						<div class="card-gradient"></div>
+						<div class="card-content">
+							<div class="row align-items-center">
+								<div class="col-md-2 text-center mb-3 mb-md-0">
+									<div class="floating-icon">
+										<i class="fas fa-graduation-cap fa-3x"></i>
+									</div>
+								</div>
+								<div class="col-md-10">
+									<h3 class="card-title">{ phrases["info"]["title"] }</h3>
+									<p class="card-text">
+										{ phrases["info"]["description"] }
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

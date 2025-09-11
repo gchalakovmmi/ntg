@@ -5,10 +5,10 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 		<div class="container">
 			<div class="logo-container">
 				<a href={ templ.URL("/" + language + "/home") }>
-					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo"/>
 				</a>
 				<a href="https://www.ischools.bg/" target="_blank">
-					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt={ phrases["navbar"]["innovative_logo_alt"] } class="innovative-logo">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fschool2.transform.bg%2Fwp-content%2Fuploads%2F2022%2F11%2Finovayivno-1024x1024.jpg&f=1&nofb=1&ipt=432b2fc7253ae50cfab5607032f3ed8f4fe104d1387aff136792af7093ce59c5" alt={ phrases["navbar"]["innovative_logo_alt"] } class="innovative-logo"/>
 				</a>
 			</div>
 			<div class="navbar-toggler-container">
@@ -50,7 +50,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-						if page == "documents" || page == "regulations_plans" || page == "curriculum" || page == "education_type" || page == "budget" || page == "parent_consultation" || page == "student_consultation" || page == "class_tests" || page == "olympiads" || page == "exams" {
+						if page == "documents" || page == "parent_consultation" || page == "student_consultation" || page == "class_tests" || page == "olympiads" || page == "exams" {
 							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
 								{ phrases["navbar"]["documents"] }
 							</a>
@@ -60,18 +60,18 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</a>
 						}
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/regulations_plans") }>{ phrases["navbar"]["regulations_plans"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/curriculum") }>{ phrases["navbar"]["curriculum"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/education_type") }>{ phrases["navbar"]["education_type"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/budget") }>{ phrases["navbar"]["budget"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#regulations_plans") }>{ phrases["navbar"]["regulations_plans"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#curriculum") }>{ phrases["navbar"]["curriculum"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#education_type") }>{ phrases["navbar"]["education_type"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#budget") }>{ phrases["navbar"]["budget"] }</a></li>
 							<li class="dropdown-submenu">
-								<a class="dropdown-item dropdown-toggle" href={ templ.URL("/" + language + "/parent_consultation") }>{ phrases["navbar"]["schedule"] }</a>
+								<a class="dropdown-item dropdown-toggle" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["schedule"] }</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/parent_consultation") }>{ phrases["navbar"]["parent_consultation"] }</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/student_consultation") }>{ phrases["navbar"]["student_consultation"] }</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/class_tests") }>{ phrases["navbar"]["class_tests"] }</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/olympiads") }>{ phrases["navbar"]["olympiads"] }</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/exams") }>{ phrases["navbar"]["exams"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["parent_consultation"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["student_consultation"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["class_tests"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["olympiads"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["exams"] }</a></li>
 								</ul>
 							</li>
 						</ul>

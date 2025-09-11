@@ -27,22 +27,6 @@ func GetRoutes() []Route {
 			Handler: handlers.Documents(),
 		},
 		{
-			Path:    "regulations_plans",
-			Handler: handlers.Documents(),
-		},
-		{
-			Path:    "curriculum",
-			Handler: handlers.TempPage(),
-		},
-		{
-			Path:    "education_type",
-			Handler: handlers.TempPage(),
-		},
-		{
-			Path:    "budget",
-			Handler: handlers.TempPage(),
-		},
-		{
 			Path:    "academic_schedule",
 			Handler: handlers.AcademicSchedule(),
 		},
@@ -108,7 +92,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "nvo",
-			Handler: handlers.TempPage(),
+			Handler: handlers.HBO(),
 		},
 		{
 			Path:    "dzi",

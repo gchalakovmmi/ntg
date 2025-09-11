@@ -147,3 +147,60 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'documents', 'common', 'modal_title', 'Document Preview'),
 ('en', 'documents', 'common', 'modal_close', 'Close'),
 ('en', 'documents', 'common', 'modal_download', 'Download');
+
+-- -- Migration: app/data/dml/009_fix_documents_routes.sql
+-- -- Fix documents page routes by duplicating phrases for all route variants
+
+-- -- Copy all existing 'documents' phrases to 'documents'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'documents', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'curriculum' 
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'curriculum', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'education_type'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'education_type', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'budget'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'budget', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'parent_consultation'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'parent_consultation', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'student_consultation'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'student_consultation', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'class_tests'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'class_tests', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'olympiads'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'olympiads', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
+
+-- -- Copy all existing 'documents' phrases to 'exams'
+-- INSERT INTO phrases (language, page, section, key, phrase)
+-- SELECT language, 'exams', section, key, phrase 
+-- FROM phrases 
+-- WHERE page = 'documents';
