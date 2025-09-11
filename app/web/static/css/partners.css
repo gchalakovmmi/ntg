@@ -1,0 +1,412 @@
+/* ===== PARTNERS PAGE STYLES ===== */
+.partners-hero {
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(178, 34, 34, 0.8) 0%, rgba(139, 0, 0, 0.6) 100%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideInDown 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    animation: slideInUp 1s ease-out 0.3s both;
+}
+
+/* ===== STATISTICS ===== */
+.partners-stats {
+    background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
+    color: white;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, var(--primary-gold), transparent, var(--primary-gold));
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-card:hover::before {
+    opacity: 1;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-gold);
+    animation: bounceIn 1s ease-out;
+}
+
+/* ===== PARTNER CARDS ===== */
+.partner-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.6s ease;
+    z-index: 1;
+}
+
+.partner-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(178, 34, 34, 0.15);
+}
+
+.partner-card:hover::before {
+    left: 100%;
+}
+
+.partner-logo-container {
+    background: #fffaf0;
+    position: relative;
+    z-index: 2;
+}
+
+.partner-logo {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover .partner-logo {
+    transform: scale(1.05);
+}
+
+.partner-type {
+    background: var(--primary-red);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.partner-name {
+    color: var(--dark-red);
+    font-weight: 700;
+}
+
+.partner-contribution {
+    background: var(--light-gold);
+    border-left: 4px solid var(--primary-gold);
+    border-radius: 10px;
+}
+
+.partner-contribution h6 {
+    color: var(--dark-red);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.partner-contribution p {
+    color: #b8860b;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+/* ===== BENEFIT ITEMS ===== */
+.benefit-item {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    position: relative;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(178, 34, 34, 0.1);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    color: var(--primary-red);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+    color: var(--primary-gold);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.benefit-title {
+    color: var(--dark-red);
+    font-weight: 700;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(212,175,55,0.1)" points="0,0 1000,0 800,1000 0,1000"/></svg>') center/cover;
+    animation: float 6s ease-in-out infinite;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-cta {
+    background: var(--primary-gold);
+    color: var(--dark-red);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.btn-cta:hover {
+    background: var(--light-gold);
+    color: var(--dark-red);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+}
+
+.btn-cta:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-cta i {
+    transition: transform 0.3s ease;
+}
+
+.btn-cta:hover i {
+    transform: translateX(5px);
+}
+
+/* ===== MODERN CSS ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+
+    66% {
+        transform: translateY(5px) rotate(-1deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(212, 175, 55, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+.animate-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+.animate-scroll.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.animate-scroll.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.animate-scroll.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.animate-scroll.delay-4 {
+    animation-delay: 0.4s;
+}
+
+/* Auto-trigger animations on page load */
+.partners-section .animate-scroll {
+    animation-delay: 0.5s;
+}
+
+.benefits-section .animate-scroll {
+    animation-delay: 1s;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .partner-content {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-hero {
+        height: 50vh;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption {
+        padding: 20px;
+        bottom: 40%;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }   
+}

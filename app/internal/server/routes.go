@@ -108,7 +108,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "partners",
-			Handler: handlers.TempPage(),
+			Handler: handlers.Partners(),
 		},
 		{
 			Path:    "news",
