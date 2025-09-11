@@ -8,7 +8,7 @@ import (
 	"github.com/a-h/templ"
 )
 
-func Hbo() http.Handler {
+func Zdippk() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		page := r.Context().Value(middleware.PageKey).(string)
 		language := r.Context().Value(middleware.LanguageKey).(string)

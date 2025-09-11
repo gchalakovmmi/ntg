@@ -92,15 +92,15 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "nvo",
-			Handler: handlers.HBO(),
+			Handler: handlers.Hbo(),
 		},
 		{
 			Path:    "dzi",
-			Handler: handlers.TempPage(),
+			Handler: handlers.Dzi(),
 		},
 		{
 			Path:    "zdippk",
-			Handler: handlers.TempPage(),
+			Handler: handlers.Zdippk(),
 		},
 		{
 			Path:    "academic_schedule",
