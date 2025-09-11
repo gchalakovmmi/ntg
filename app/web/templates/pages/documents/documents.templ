@@ -1,0 +1,690 @@
+package documents
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/documents.css"/>
+	<!-- HERO SECTION START -->
+	<section class="documents-hero">
+		<div class="container">
+			<h1 class="animate-on-scroll">{ phrases["hero"]["title"] }</h1>
+			<p class="animate-on-scroll delay-1">{ phrases["hero"]["subtitle"] }</p>
+		</div>
+	</section>
+	<!-- HERO SECTION END -->
+	<!-- FILTER SECTION START -->
+	<section class="document-section">
+		<div class="container">
+			<div class="document-filter animate-on-scroll">
+				<h4 class="filter-title"><i class="fas fa-filter me-2"></i>{ phrases["filter"]["title"] }</h4>
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label class="form-label">{ phrases["filter"]["search_button"] }</label>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder={ phrases["filter"]["search_placeholder"] }/>
+							<button class="btn btn-outline-danger" type="button"><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label class="form-label">{ phrases["filter"]["category_label"] }</label>
+						<select class="form-select">
+							<option selected>{ phrases["filter"]["category_all"] }</option>
+							<option>{ phrases["regulations"]["title"] }</option>
+							<option>{ phrases["curriculum"]["title"] }</option>
+							<option>{ phrases["education_types"]["title"] }</option>
+							<option>{ phrases["budget"]["title"] }</option>
+							<option>{ phrases["schedules"]["title"] }</option>
+						</select>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label class="form-label">{ phrases["filter"]["year_label"] }</label>
+						<select class="form-select">
+							<option selected>{ phrases["filter"]["year_current"] }</option>
+							<option>{ phrases["filter"]["year_2024"] }</option>
+							<option>{ phrases["filter"]["year_2023"] }</option>
+							<option>{ phrases["filter"]["year_2022"] }</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FILTER SECTION END -->
+	<!-- DOCUMENTS CONTENT START -->
+	<section class="document-section">
+		<div class="container">
+			<div class="documents-container">
+				<!-- REGULATIONS SECTION START -->
+				<div id="regulations-plans" class="document-category animate-on-scroll">
+					<h3 class="category-title">
+						<i class="fas fa-book me-2"></i>{ phrases["regulations"]["title"] }
+					</h3>
+					<span class="category-badge">{ phrases["regulations"]["count"] }</span>
+					<div class="row">
+						<!-- Document 1 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll">
+								<div class="document-icon">
+									<i class="fas fa-file-alt"></i>
+								</div>
+								<h4 class="document-title">{ phrases["regulations"]["internal_rules_title"] }</h4>
+								<p class="document-description">{ phrases["regulations"]["internal_rules_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 15.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.2MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="pravilnik.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="pravilnik.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 2 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-1">
+								<div class="document-icon">
+									<i class="fas fa-clipboard-list"></i>
+								</div>
+								<h4 class="document-title">{ phrases["regulations"]["annual_plan_title"] }</h4>
+								<p class="document-description">{ phrases["regulations"]["annual_plan_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 10.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.8MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="godishen-plan.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="godishen-plan.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 3 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-2">
+								<div class="document-icon">
+									<i class="fas fa-user-shield"></i>
+								</div>
+								<h4 class="document-title">{ phrases["regulations"]["data_protection_title"] }</h4>
+								<p class="document-description">{ phrases["regulations"]["data_protection_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 05.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.5MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="zashtita-danni.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="zashtita-danni.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 4 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-3">
+								<div class="document-icon">
+									<i class="fas fa-chalkboard-teacher"></i>
+								</div>
+								<h4 class="document-title">{ phrases["regulations"]["development_plan_title"] }</h4>
+								<p class="document-description">{ phrases["regulations"]["development_plan_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 01.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.1MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="plan-razvitie.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="plan-razvitie.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 5 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll">
+								<div class="document-icon">
+									<i class="fas fa-balance-scale"></i>
+								</div>
+								<h4 class="document-title">{ phrases["regulations"]["discipline_rules_title"] }</h4>
+								<p class="document-description">{ phrases["regulations"]["discipline_rules_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 28.08.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.9MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="disciplina.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="disciplina.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Archive Section -->
+					<div class="archive-section">
+						<h4 class="archive-title">
+							<i class="fas fa-archive me-2"></i>{ phrases["common"]["archive_title"] }
+						</h4>
+						<div class="row">
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["regulations"]["internal_rules_title"] } 2024-2025</a>
+										<div class="text-muted small">15.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["regulations"]["annual_plan_title"] } 2024-2025</a>
+										<div class="text-muted small">10.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["regulations"]["development_plan_title"] } 2024-2025</a>
+										<div class="text-muted small">01.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["regulations"]["discipline_rules_title"] } 2024</a>
+										<div class="text-muted small">28.08.2024</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-end">
+							<a href="#" class="btn btn-sm btn-outline-danger">{ phrases["common"]["view_all_archive"] }</a>
+						</div>
+					</div>
+				</div>
+				<!-- REGULATIONS SECTION END -->
+				<!-- CURRICULUM SECTION START -->
+				<div id="curriculum" class="document-category animate-on-scroll">
+					<h3 class="category-title">
+						<i class="fas fa-graduation-cap me-2"></i>{ phrases["curriculum"]["title"] }
+					</h3>
+					<span class="category-badge">{ phrases["curriculum"]["count"] }</span>
+					<div class="row">
+						<!-- Document 1 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll">
+								<div class="document-icon">
+									<i class="fas fa-book-open"></i>
+								</div>
+								<h4 class="document-title">{ phrases["curriculum"]["grade9_title"] }</h4>
+								<p class="document-description">{ phrases["curriculum"]["grade9_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 12.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.1MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="plan-ix.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="plan-ix.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 2 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-1">
+								<div class="document-icon">
+									<i class="fas fa-book-reader"></i>
+								</div>
+								<h4 class="document-title">{ phrases["curriculum"]["grade10_title"] }</h4>
+								<p class="document-description">{ phrases["curriculum"]["grade10_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 10.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.3MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="plan-x.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="plan-x.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 3 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-2">
+								<div class="document-icon">
+									<i class="fas fa-book"></i>
+								</div>
+								<h4 class="document-title">{ phrases["curriculum"]["grade11_title"] }</h4>
+								<p class="document-description">{ phrases["curriculum"]["grade11_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 08.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.0MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="plan-xi.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="plan-xi.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 4 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-3">
+								<div class="document-icon">
+									<i class="fas fa-book-medical"></i>
+								</div>
+								<h4 class="document-title">{ phrases["curriculum"]["grade12_title"] }</h4>
+								<p class="document-description">{ phrases["curriculum"]["grade12_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 05.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.2MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="plan-xii.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="plan-xii.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Archive Section -->
+					<div class="archive-section">
+						<h4 class="archive-title">
+							<i class="fas fa-archive me-2"></i>{ phrases["common"]["archive_title"] }
+						</h4>
+						<div class="row">
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["curriculum"]["grade9_title"] } 2024-2025</a>
+										<div class="text-muted small">12.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["curriculum"]["grade10_title"] } 2024-2025</a>
+										<div class="text-muted small">10.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["curriculum"]["grade11_title"] } 2024-2025</a>
+										<div class="text-muted small">08.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["curriculum"]["grade12_title"] } 2024-2025</a>
+										<div class="text-muted small">05.09.2024</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-end">
+							<a href="#" class="btn btn-sm btn-outline-danger">{ phrases["common"]["view_all_archive"] }</a>
+						</div>
+					</div>
+				</div>
+				<!-- CURRICULUM SECTION END -->
+				<!-- EDUCATION TYPES SECTION START -->
+				<div id="education-type" class="document-category animate-on-scroll">
+					<h3 class="category-title">
+						<i class="fas fa-chalkboard-teacher me-2"></i>{ phrases["education_types"]["title"] }
+					</h3>
+					<span class="category-badge">{ phrases["education_types"]["count"] }</span>
+					<div class="row">
+						<!-- Document 1 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll">
+								<div class="document-icon">
+									<i class="fas fa-laptop"></i>
+								</div>
+								<h4 class="document-title">{ phrases["education_types"]["distance_title"] }</h4>
+								<p class="document-description">{ phrases["education_types"]["distance_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 20.08.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.7MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="distancionno.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="distancionno.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 2 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-1">
+								<div class="document-icon">
+									<i class="fas fa-users"></i>
+								</div>
+								<h4 class="document-title">{ phrases["education_types"]["group_title"] }</h4>
+								<p class="document-description">{ phrases["education_types"]["group_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 18.08.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.6MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="grupovo.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="grupovo.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 3 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-2">
+								<div class="document-icon">
+									<i class="fas fa-user-graduate"></i>
+								</div>
+								<h4 class="document-title">{ phrases["education_types"]["individual_title"] }</h4>
+								<p class="document-description">{ phrases["education_types"]["individual_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 15.08.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.5MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="individualno.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="individualno.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Archive Section -->
+					<div class="archive-section">
+						<h4 class="archive-title">
+							<i class="fas fa-archive me-2"></i>{ phrases["common"]["archive_title"] }
+						</h4>
+						<div class="row">
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["education_types"]["distance_title"] } 2024-2025</a>
+										<div class="text-muted small">20.08.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["education_types"]["group_title"] } 2024-2025</a>
+										<div class="text-muted small">18.08.2024</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-end">
+							<a href="#" class="btn btn-sm btn-outline-danger">{ phrases["common"]["view_all_archive"] }</a>
+						</div>
+					</div>
+				</div>
+				<!-- EDUCATION TYPES SECTION END -->
+				<!-- BUDGET SECTION START -->
+				<div id="budget" class="document-category animate-on-scroll">
+					<h3 class="category-title">
+						<i class="fas fa-coins me-2"></i>{ phrases["budget"]["title"] }
+					</h3>
+					<span class="category-badge">{ phrases["budget"]["count"] }</span>
+					<div class="row">
+						<!-- Document 1 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll">
+								<div class="document-icon">
+									<i class="fas fa-file-invoice-dollar"></i>
+								</div>
+								<h4 class="document-title">{ phrases["budget"]["budget_2025_title"] }</h4>
+								<p class="document-description">{ phrases["budget"]["budget_2025_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 01.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.5MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="byudjet-2025.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="byudjet-2025.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 2 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-1">
+								<div class="document-icon">
+									<i class="fas fa-chart-pie"></i>
+								</div>
+								<h4 class="document-title">{ phrases["budget"]["financial_report_title"] }</h4>
+								<p class="document-description">{ phrases["budget"]["financial_report_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 30.06.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 1.8MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="otchet-2024.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="otchet-2024.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 3 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-2">
+								<div class="document-icon">
+									<i class="fas fa-hand-holding-usd"></i>
+								</div>
+								<h4 class="document-title">{ phrases["budget"]["sponsorship_title"] }</h4>
+								<p class="document-description">{ phrases["budget"]["sponsorship_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 25.06.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.9MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="sponsori.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="sponsori.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Archive Section -->
+					<div class="archive-section">
+						<h4 class="archive-title">
+							<i class="fas fa-archive me-2"></i>{ phrases["common"]["archive_title"] }
+						</h4>
+						<div class="row">
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["budget"]["budget_2025_title"] } 2024-2025</a>
+										<div class="text-muted small">01.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["budget"]["financial_report_title"] } 2023-2024</a>
+										<div class="text-muted small">30.06.2024</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-end">
+							<a href="#" class="btn btn-sm btn-outline-danger">{ phrases["common"]["view_all_archive"] }</a>
+						</div>
+					</div>
+				</div>
+				<!-- BUDGET SECTION END -->
+				<!-- SCHEDULES SECTION START -->
+				<div id="schedules" class="document-category animate-on-scroll">
+					<h3 class="category-title">
+						<i class="fas fa-calendar-alt me-2"></i>{ phrases["schedules"]["title"] }
+					</h3>
+					<span class="category-badge">{ phrases["schedules"]["count"] }</span>
+					<div class="row">
+						<!-- Document 1 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll">
+								<div class="document-icon">
+									<i class="fas fa-clock"></i>
+								</div>
+								<h4 class="document-title">{ phrases["schedules"]["bell_schedule_title"] }</h4>
+								<p class="document-description">{ phrases["schedules"]["bell_schedule_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 02.09.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.3MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="grafik-zvanci.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="grafik-zvanci.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Document 2 -->
+						<div class="col-md-6 col-lg-4">
+							<div class="document-card animate-on-scroll delay-1">
+								<div class="document-icon">
+									<i class="fas fa-calendar-week"></i>
+								</div>
+								<h4 class="document-title">{ phrases["schedules"]["academic_calendar_title"] }</h4>
+								<p class="document-description">{ phrases["schedules"]["academic_calendar_desc"] }</p>
+								<div class="document-meta">
+									<span><i class="fas fa-calendar me-1"></i> 30.08.2025</span>
+									<span><i class="fas fa-file-pdf me-1"></i> { phrases["common"]["pdf_format"] }, 0.6MB</span>
+								</div>
+								<div class="document-actions">
+									<button class="btn btn-preview btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="ucheben-kalendar.pdf">
+										<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+									</button>
+									<a href="ucheben-kalendar.pdf" download class="btn btn-download btn-sm">
+										<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Archive Section -->
+					<div class="archive-section">
+						<h4 class="archive-title">
+							<i class="fas fa-archive me-2"></i>{ phrases["common"]["archive_title"] }
+						</h4>
+						<div class="row">
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["schedules"]["bell_schedule_title"] } 2024-2025</a>
+										<div class="text-muted small">02.09.2024</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-3">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-file-pdf text-danger me-2"></i>
+									<div>
+										<a href="#" class="text-decoration-none text-dark">{ phrases["schedules"]["academic_calendar_title"] } 2024-2025</a>
+										<div class="text-muted small">30.08.2024</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-end">
+							<a href="#" class="btn btn-sm btn-outline-danger">{ phrases["common"]["view_all_archive"] }</a>
+						</div>
+					</div>
+				</div>
+				<!-- SCHEDULES SECTION END -->
+			</div>
+		</div>
+	</section>
+	<!-- DOCUMENTS CONTENT END -->
+	<!-- PDF PREVIEW MODAL START -->
+	<div class="modal fade" id="pdfModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header bg-danger text-white">
+					<h5 class="modal-title">{ phrases["common"]["modal_title"] }</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label={ phrases["common"]["modal_close"] }></button>
+				</div>
+				<div class="modal-body p-0">
+					<iframe id="pdfFrame" src="" width="100%" height="600px" frameborder="0"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{ phrases["common"]["modal_close"] }</button>
+					<a href="#" id="downloadLink" class="btn btn-danger">{ phrases["common"]["modal_download"] }</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- PDF PREVIEW MODAL END -->
+	<script src="/static/js/documents.js"></script>
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}
