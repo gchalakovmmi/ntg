@@ -1,0 +1,20 @@
+package documents
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/documents.css"/>
+	@hero(phrases)
+	@filter(phrases)
+	@regulations(phrases)
+	@curriculum(phrases)
+	@educationTypes(phrases)
+	@budget(phrases)
+	@schedules(phrases)
+	@pdfModal(phrases)
+	<script src="/static/js/documents.js"></script>
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}

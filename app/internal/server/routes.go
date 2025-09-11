@@ -28,7 +28,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "regulations_plans",
-			Handler: handlers.TempPage(),
+			Handler: handlers.Documents(),
 		},
 		{
 			Path:    "curriculum",
