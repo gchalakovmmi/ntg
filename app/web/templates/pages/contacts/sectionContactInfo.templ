@@ -1,0 +1,59 @@
+package contacts
+
+templ contactInfo(phrases map[string]map[string]string) {
+	<!-- Contact Information Section -->
+	<section class="contact-info-section">
+		<div class="container py-5">
+			<div class="row mb-4">
+				<div class="col-12">
+					<h2 class="section-title text-center mb-5">Информация за контакт</h2>
+				</div>
+			</div>
+			<!-- Main Contact Information -->
+			<div class="row g-4 justify-content-center mb-5">
+				<!-- Address Card -->
+				<div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp">
+					<div class="contact-card h-100 d-flex flex-column align-items-center">
+						<div class="contact-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<h3 class="contact-title">Адрес</h3>
+						<p class="contact-text text-center">
+							ул. „Никола Мушанов" 147
+							<br/>
+							София 1330
+						</p>
+					</div>
+				</div>
+				<!-- Office Card -->
+				<div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+					<div class="contact-card h-100 d-flex flex-column align-items-center">
+						<div class="contact-icon">
+							<i class="fas fa-briefcase"></i>
+						</div>
+						<h3 class="contact-title">Канцелария</h3>
+						<p class="contact-text text-center">
+							<a href="mailto:office@pitagor-school.eu" class="contact-link">office@pitagor-school.eu</a>
+							<br/>
+							<a href="tel:024232327" class="contact-link">02/ 423 23 27</a>
+						</p>
+					</div>
+				</div>
+				<!-- Working Hours Card -->
+				<div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+					<div class="contact-card h-100 d-flex flex-column align-items-center">
+						<div class="contact-icon">
+							<i class="fas fa-clock"></i>
+						</div>
+						<h3 class="contact-title">Работно време</h3>
+						<p class="contact-text text-center">
+							От Понеделник до Петък
+							<br/>
+							09:00 – 18:00
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

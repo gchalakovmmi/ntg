@@ -1,0 +1,336 @@
+/* Contact Page Styles */
+
+/* Hero Section */
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.contact-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease;
+}
+
+.contact-hero p {
+    font-size: 1.3rem;
+    animation: fadeInUp 1s ease;
+}
+
+/* Contact Information Section */
+.contact-info-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.section-title {
+    color: var(--primary-red);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary-gold);
+}
+
+.department-title {
+    color: var(--dark-red);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.department-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--primary-gold);
+}
+
+/* Main contact cards */
+.contact-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(178, 34, 34, 0.05);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-red);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 25px rgba(178, 34, 34, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+    transform: rotateY(180deg) scale(1.1);
+}
+
+.contact-title {
+    color: var(--dark-red);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-text {
+    color: var(--secondary-color);
+    line-height: 1.7;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.contact-link {
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    color: var(--dark-red);
+    text-decoration: underline;
+}
+
+/* Department cards */
+.department-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+    border-left: 4px solid transparent;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.department-card:hover {
+    border-left: 4px solid var(--primary-gold);
+    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.department-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.2);
+}
+
+.department-card:hover .department-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.department-card h4 {
+    color: var(--dark-red);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.department-link {
+    color: var(--primary-red);
+    text-decoration: none;
+    font-size: 0.9rem;
+    word-break: break-word;
+    transition: color 0.3s ease;
+    display: block;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.department-link:hover {
+    color: var(--dark-red);
+    text-decoration: underline;
+}
+
+/* Map Section */
+.map-section {
+    background-color: var(--light-bg);
+    padding: 60px 0;
+}
+
+.map-container {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Map overlay with school info */
+.map-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    z-index: 10;
+}
+
+.map-overlay h5 {
+    color: var(--dark-red);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.map-overlay p {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Contact form section (if needed in future) */
+.contact-form-section {
+    background: var(--light-bg);
+    padding: 80px 0;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .contact-hero {
+        height: 250px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-info-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        height: 200px;
+    }
+
+    .contact-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-hero p {
+        font-size: 1.1rem;
+    }
+
+    .contact-card {
+        margin-bottom: 30px;
+        padding: 30px 15px;
+    }
+
+    .contact-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+
+    .department-card {
+        margin-bottom: 25px;
+        padding: 20px 10px;
+    }
+
+    .department-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .map-overlay {
+        position: static;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-hero {
+        height: 180px;
+        padding: 0 15px;
+    }
+
+    .contact-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .department-title {
+        font-size: 1.4rem;
+    }
+}

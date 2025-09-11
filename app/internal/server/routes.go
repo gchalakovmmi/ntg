@@ -116,7 +116,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "contacts",
-			Handler: handlers.TempPage(),
+			Handler: handlers.Contacts(),
 		},
 	}
 }
