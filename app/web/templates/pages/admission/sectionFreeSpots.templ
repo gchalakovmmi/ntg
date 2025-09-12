@@ -1,0 +1,84 @@
+package admission
+
+templ freeSpots(phrases map[string]map[string]string) {
+	<section class="section admission-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["free_spots"]["title"] }</h2>
+				<p>{ phrases["free_spots"]["subtitle"] }</p>
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<div class="table-container animate-on-scroll">
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover custom-table">
+								<thead>
+									<tr>
+										<th>{ phrases["free_spots"]["published_by"] }</th>
+										<th>
+											<a href="#" class="text-white">
+												{ phrases["free_spots"]["class"] }
+												<em class="fa fa-sort"></em>
+											</a>
+										</th>
+										<th>{ phrases["free_spots"]["parallel"] }</th>
+										<th>{ phrases["free_spots"]["description"] }</th>
+										<th>{ phrases["free_spots"]["spots_count"] }</th>
+										<th>
+											<a href="#" class="text-white">
+												{ phrases["free_spots"]["publish_date"] }
+												<em class="fa fa-caret-down"></em>
+											</a>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td width="25%" valign="top" style="text-align: right;">
+											{ phrases["table"]["school_info"] }
+										</td>
+										<td width="10%">{ phrases["table"]["row1_class"] }</td>
+										<td width="10%" valign="top">{ phrases["table"]["row1_parallel"] }</td>
+										<td width="30%" valign="top">{ phrases["table"]["row1_description"] }</td>
+										<td width="5%" valign="top" style="text-align: right;">{ phrases["table"]["row1_spots"] }</td>
+										<td width="20%" valign="top" style="text-align: right;">{ phrases["table"]["row1_date"] }</td>
+									</tr>
+									<tr>
+										<td width="25%" valign="top" style="text-align: right;">
+											{ phrases["table"]["school_info"] }
+										</td>
+										<td width="10%">{ phrases["table"]["row2_class"] }</td>
+										<td width="10%" valign="top">{ phrases["table"]["row2_parallel"] }</td>
+										<td width="30%" valign="top">{ phrases["table"]["row2_description"] }</td>
+										<td width="5%" valign="top" style="text-align: right;">{ phrases["table"]["row2_spots"] }</td>
+										<td width="20%" valign="top" style="text-align: right;">{ phrases["table"]["row2_date"] }</td>
+									</tr>
+									<tr>
+										<td width="25%" valign="top" style="text-align: right;">
+											{ phrases["table"]["school_info"] }
+										</td>
+										<td width="10%">{ phrases["table"]["row3_class"] }</td>
+										<td width="10%" valign="top">{ phrases["table"]["row3_parallel"] }</td>
+										<td width="30%" valign="top">{ phrases["table"]["row3_description"] }</td>
+										<td width="5%" valign="top" style="text-align: right;">{ phrases["table"]["row3_spots"] }</td>
+										<td width="20%" valign="top" style="text-align: right;">{ phrases["table"]["row3_date"] }</td>
+									</tr>
+									<tr>
+										<td width="25%" valign="top" style="text-align: right;">
+											{ phrases["table"]["school_info"] }
+										</td>
+										<td width="10%">{ phrases["table"]["row4_class"] }</td>
+										<td width="10%" valign="top">{ phrases["table"]["row4_parallel"] }</td>
+										<td width="30%" valign="top">{ phrases["table"]["row4_description"] }</td>
+										<td width="5%" valign="top" style="text-align: right;">{ phrases["table"]["row4_spots"] }</td>
+										<td width="20%" valign="top" style="text-align: right;">{ phrases["table"]["row4_date"] }</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

@@ -1,0 +1,40 @@
+package admission
+
+templ admissionPlan(phrases map[string]map[string]string) {
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="admission-plan animate-on-scroll">
+						<h3 class="mb-4 text-center">{ phrases["plan"]["title"] }</h3>
+						
+						<div class="plan-item">
+							<div class="plan-activity">{ phrases["plan"]["document_submission"] }</div>
+							<div class="plan-date">{ phrases["plan"]["date1"] }</div>
+						</div>
+						
+						<div class="plan-item">
+							<div class="plan-activity">{ phrases["plan"]["exam_period"] }</div>
+							<div class="plan-date">{ phrases["plan"]["date2"] }</div>
+						</div>
+						
+						<div class="plan-item">
+							<div class="plan-activity">{ phrases["plan"]["results_announcement"] }</div>
+							<div class="plan-date">{ phrases["plan"]["date3"] }</div>
+						</div>
+						
+						<div class="plan-item">
+							<div class="plan-activity">{ phrases["plan"]["complaint_submission"] }</div>
+							<div class="plan-date">{ phrases["plan"]["date4"] }</div>
+						</div>
+						
+						<div class="plan-item">
+							<div class="plan-activity">{ phrases["plan"]["final_results"] }</div>
+							<div class="plan-date">{ phrases["plan"]["date5"] }</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

@@ -1,0 +1,108 @@
+/* Admission Page Specific Styles */
+
+/* Hero Section */
+.page-hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0 60px;
+	color: white;
+	text-align: center;
+}
+
+.hero-title {
+	font-size: 2.8rem;
+	font-weight: 800;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+	font-size: 1.3rem;
+	margin-bottom: 30px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Table Styles */
+.table-container {
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	background: white;
+}
+
+.custom-table {
+	margin-bottom: 0;
+}
+
+.custom-table thead th {
+	background: var(--dark-red);
+	color: white;
+	font-weight: 600;
+	padding: 15px;
+	vertical-align: middle;
+	border: none;
+}
+
+.custom-table tbody td {
+	padding: 15px;
+	vertical-align: top;
+	border-color: #f0f0f0;
+}
+
+.custom-table tbody tr:hover {
+	background-color: rgba(212, 175, 55, 0.1);
+}
+
+/* Admission Plan */
+.admission-plan {
+	background: white;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	padding: 30px;
+}
+
+.plan-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.plan-item:last-child {
+	border-bottom: none;
+}
+
+.plan-activity {
+	font-weight: 500;
+}
+
+.plan-date {
+	font-weight: 600;
+	color: var(--primary-red);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+	.hero-title {
+		font-size: 2rem;
+	}
+	
+	.hero-subtitle {
+		font-size: 1.1rem;
+	}
+	
+	.table-responsive {
+		font-size: 0.85rem;
+	}
+	
+	.plan-item {
+		flex-direction: column;
+	}
+	
+	.plan-date {
+		margin-top: 5px;
+	}
+}

@@ -52,7 +52,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "admission",
-			Handler: handlers.TempPage(),
+			Handler: handlers.Admission(),
 		},
 		{
 			Path:    "programs",
