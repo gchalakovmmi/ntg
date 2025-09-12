@@ -6,13 +6,6 @@ templ filter(phrases map[string]map[string]string) {
 			<div class="document-filter animate-on-scroll">
 				<h4 class="filter-title"><i class="fas fa-filter me-2"></i>{ phrases["filter"]["title"] }</h4>
 				<div class="row">
-					<div class="col-md-6 mb-3">
-						<label class="form-label">{ phrases["filter"]["search_button"] }</label>
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder={ phrases["filter"]["search_placeholder"] }/>
-							<button class="btn btn-outline-danger" type="button"><i class="fas fa-search"></i></button>
-						</div>
-					</div>
 					<div class="col-md-3 mb-3">
 						<label class="form-label">{ phrases["filter"]["category_label"] }</label>
 						<select class="form-select">
