@@ -1,0 +1,14 @@
+package news
+
+templ hero(phrases map[string]map[string]string) {
+	<section class="news-hero">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-lg-8">
+					<h1 class="animate-on-scroll">{ phrases["news"]["title"] }</h1>
+					<p class="animate-on-scroll delay-1">{ phrases["news"]["subtitle"] }</p>
+				</div>
+			</div>
+		</div>
+	</section>
+}

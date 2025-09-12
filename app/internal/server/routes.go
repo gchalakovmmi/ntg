@@ -56,7 +56,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "programs",
-			Handler: handlers.TempPage(),
+			Handler: handlers.ProgramsAndProjects(),
 		},
 		{
 			Path:    "school_life",
@@ -112,7 +112,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "news",
-			Handler: handlers.TempPage(),
+			Handler: handlers.News(),
 		},
 		{
 			Path:    "contacts",

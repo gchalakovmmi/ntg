@@ -1,0 +1,148 @@
+/* News Page Styles */
+.news-hero {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3') center/cover;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.news-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.news-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.news-hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.news-card {
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.news-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.badge-school-life {
+    background: var(--primary-gold);
+    color: var(--dark-red);
+}
+
+.badge-educational {
+    background: #17a2b8;
+    color: white;
+}
+
+.filter-section {
+    background: var(--light-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.filter-header {
+    background: var(--primary-red);
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.quick-links-card {
+    background: var(--light-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.quick-links-header {
+    background: var(--primary-gold);
+    color: var(--dark-red);
+    padding: 15px;
+    font-weight: 600;
+}
+
+.page-link {
+    color: var(--primary-red);
+}
+
+.page-link:hover {
+    color: var(--dark-red);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+@media (max-width: 992px) {
+    .mobile-order-1 {
+        order: 1;
+    }
+
+    .mobile-order-2 {
+        order: 2;
+    }
+
+    .news-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .news-hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-hero {
+        padding: 100px 0 60px;
+    }
+
+    .news-hero h1 {
+        font-size: 2rem;
+    }
+}

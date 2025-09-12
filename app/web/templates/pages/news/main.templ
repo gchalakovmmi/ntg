@@ -1,0 +1,14 @@
+package news
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/news.css"/>
+	@hero(phrases)
+	@content(phrases)
+	<script src="/static/js/news.js"></script>
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}
