@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Hide empty categories
-        const categories = document.querySelectorAll('.document-category');
+        const categories = document.querySelectorAll('.documents-container');
         categories.forEach(category => {
             const visibleCards = category.querySelectorAll('.document-card[style*="display: block"], .document-card:not([style*="display: none"])');
             if (visibleCards.length === 0) {
