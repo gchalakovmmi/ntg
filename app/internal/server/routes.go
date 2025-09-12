@@ -71,6 +71,10 @@ func GetRoutes() []Route {
 			Handler: handlers.TempPage(),
 		},
 		{
+			Path:    "scholarship",
+			Handler: handlers.Scholarships(),
+		},
+		{
 			Path:    "general_education",
 			Handler: handlers.GeneralEducation(),
 		},
@@ -88,7 +92,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "document_templates",
-			Handler: handlers.TempPage(),
+			Handler: handlers.DocumentTemplates(),
 		},
 		{
 			Path:    "nvo",

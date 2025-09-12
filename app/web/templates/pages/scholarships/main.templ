@@ -1,13 +1,13 @@
-package document_templates
+package scholarships
 
 import "NTG/web/templates/base"
 
 templ components(phrases map[string]map[string]string) {
-	<link rel="stylesheet" href="/static/css/document_templates.css"/>
+	<link rel="stylesheet" href="/static/css/scholarships.css"/>
 	@hero(phrases)
 	@infoSection(phrases)
 	@documentsSection(phrases)
-	<script src="/static/js/document_templates.js"></script>
+	<script src="/static/js/scholarships.js"></script>
 }
 
 templ Handler(page, language string, phrases map[string]map[string]string) {
