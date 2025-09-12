@@ -1,59 +1,61 @@
 package news
 
-templ content(phrases map[string]map[string]string) {
-	<section class="container my-5">
+templ newsContent(phrases map[string]map[string]string) {
+	<main class="container my-5">
 		<div class="row">
 			<!-- Filters Sidebar - First on Mobile -->
 			<div class="col-lg-4 mobile-order-1 mb-4">
 				<div class="sticky-top" style="top: 90px;">
-					<div class="filter-section">
-						<div class="filter-header">
+					<div class="card shadow-sm mb-4">
+						<div class="card-header bg-danger text-white">
 							<h5 class="mb-0"><i class="fas fa-filter me-2"></i>{ phrases["filters"]["title"] }</h5>
 						</div>
-						<!-- Date Filter -->
-						<div class="mb-4 p-3 bg-light rounded">
-							<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
-							<div class="mb-3">
-								<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
-								<input type="date" class="form-control" id="dateFrom"/>
+						<div class="card-body">
+							<!-- Date Filter -->
+							<div class="mb-4 p-3 bg-light rounded">
+								<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
+								<div class="mb-3">
+									<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
+									<input type="date" class="form-control" id="dateFrom"/>
+								</div>
+								<div class="mb-3">
+									<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
+									<input type="date" class="form-control" id="dateTo"/>
+								</div>
 							</div>
-							<div class="mb-3">
-								<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
-								<input type="date" class="form-control" id="dateTo"/>
+							<!-- Search Filter -->
+							<div class="mb-4">
+								<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput"/>
+									<button class="btn btn-outline-danger" type="button" id="searchButton">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
 							</div>
+							<!-- Category Filter -->
+							<div class="mb-4">
+								<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="school-life" id="schoolLife" checked/>
+									<label class="form-check-label" for="schoolLife">
+										{ phrases["categories"]["school_life"] }
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="educational-process" id="educationalProcess" checked/>
+									<label class="form-check-label" for="educationalProcess">
+										{ phrases["categories"]["educational_process"] }
+									</label>
+								</div>
+							</div>
+							<button class="btn btn-danger w-100" id="applyFilters">{ phrases["filters"]["apply_button"] }</button>
+							<button class="btn btn-outline-secondary w-100 mt-2" id="resetFilters">{ phrases["filters"]["reset_button"] }</button>
 						</div>
-						<!-- Search Filter -->
-						<div class="mb-4">
-							<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput"/>
-								<button class="btn btn-outline-danger" type="button" id="searchButton">
-									<i class="fas fa-search"></i>
-								</button>
-							</div>
-						</div>
-						<!-- Category Filter -->
-						<div class="mb-4">
-							<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="school-life" id="schoolLife" checked/>
-								<label class="form-check-label" for="schoolLife">
-									{ phrases["categories"]["school_life"] }
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="educational-process" id="educationalProcess" checked/>
-								<label class="form-check-label" for="educationalProcess">
-									{ phrases["categories"]["educational_process"] }
-								</label>
-							</div>
-						</div>
-						<button class="btn btn-danger w-100" id="applyFilters">{ phrases["filters"]["apply_button"] }</button>
-						<button class="btn btn-outline-secondary w-100 mt-2" id="resetFilters">{ phrases["filters"]["reset_button"] }</button>
 					</div>
 					<!-- Quick Links -->
-					<div class="quick-links-card mt-4">
-						<div class="quick-links-header">
+					<div class="card shadow-sm">
+						<div class="card-header bg-warning text-dark">
 							<h5 class="mb-0"><i class="fas fa-link me-2"></i>{ phrases["quick_links"]["title"] }</h5>
 						</div>
 						<div class="list-group list-group-flush">
@@ -67,40 +69,9 @@ templ content(phrases map[string]map[string]string) {
 			</div>
 			<!-- News Content - Second on Mobile -->
 			<div class="col-lg-8 mobile-order-2">
-				<!-- News Cards -->
-				<div class="row row-cols-1 row-cols-md-2 g-4" id="news-container">
-					<!-- News Items -->
-					<div class="col news-item">
-						<div class="card h-100 news-card animate-on-scroll">
-							<span class="news-badge badge-school-life">{ phrases["categories"]["school_life"] }</span>
-							<img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="card-img-top news-img" alt="News image"/>
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center mb-2">
-									<small class="text-muted news-date"><i class="far fa-calendar me-1"></i> 15 Септември 2023</small>
-								</div>
-								<h5 class="card-title news-title text-danger">{ phrases["news"]["school_year_title"] }</h5>
-								<p class="card-text news-description">{ phrases["news"]["school_year_desc"] }</p>
-								<a href="#" class="btn btn-outline-danger btn-sm">{ phrases["news"]["read_more"] }</a>
-							</div>
-						</div>
-					</div>
-					<!-- Additional news items would follow the same pattern -->
-				</div>
-				<!-- Pagination -->
-				<nav aria-label="Page navigation" class="mt-5">
-					<ul class="pagination justify-content-center">
-						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1">{ phrases["pagination"]["previous"] }</a>
-						</li>
-						<li class="page-item active"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item">
-							<a class="page-link" href="#">{ phrases["pagination"]["next"] }</a>
-						</li>
-					</ul>
-				</nav>
+				@newsGrid(phrases)
+				@pagination(phrases)
 			</div>
 		</div>
-	</section>
+	</main>
 }
