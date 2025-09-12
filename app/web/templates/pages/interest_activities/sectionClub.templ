@@ -1,0 +1,154 @@
+package interest_activities
+
+templ programmingClub(phrases map[string]map[string]string) {
+	<div class="club-section animate-on-scroll">
+		<div class="club-header">
+			<img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt={ phrases["clubs"]["programming_title"] } class="club-img">
+			<div class="club-overlay">
+				<h3 class="club-title">{ phrases["clubs"]["programming_title"] }</h3>
+				<p>{ phrases["clubs"]["programming_subtitle"] }</p>
+			</div>
+		</div>
+		<div class="club-content">
+			<div class="club-info">
+				<div class="club-info-item">
+					<i class="fas fa-user"></i>
+					<span>{ phrases["clubs"]["programming_leader"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-clock"></i>
+					<span>{ phrases["clubs"]["programming_schedule"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>{ phrases["clubs"]["programming_location"] }</span>
+				</div>
+			</div>
+			<p>{ phrases["clubs"]["programming_description"] }</p>
+			<p>{ phrases["common"]["topics_title"] }:</p>
+			<ul>
+				<li>{ phrases["clubs"]["programming_topic1"] }</li>
+				<li>{ phrases["clubs"]["programming_topic2"] }</li>
+				<li>{ phrases["clubs"]["programming_topic3"] }</li>
+				<li>{ phrases["clubs"]["programming_topic4"] }</li>
+				<li>{ phrases["clubs"]["programming_topic5"] }</li>
+			</ul>
+			<a href="#" class="btn btn-join">{ phrases["common"]["join_button"] }</a>
+		</div>
+	</div>
+}
+
+templ designClub(phrases map[string]map[string]string) {
+	<div class="club-section animate-on-scroll delay-1">
+		<div class="club-header">
+			<img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt={ phrases["clubs"]["design_title"] } class="club-img">
+			<div class="club-overlay">
+				<h3 class="club-title">{ phrases["clubs"]["design_title"] }</h3>
+				<p>{ phrases["clubs"]["design_subtitle"] }</p>
+			</div>
+		</div>
+		<div class="club-content">
+			<div class="club-info">
+				<div class="club-info-item">
+					<i class="fas fa-user"></i>
+					<span>{ phrases["clubs"]["design_leader"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-clock"></i>
+					<span>{ phrases["clubs"]["design_schedule"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>{ phrases["clubs"]["design_location"] }</span>
+				</div>
+			</div>
+			<p>{ phrases["clubs"]["design_description"] }</p>
+			<p>{ phrases["common"]["topics_title"] }:</p>
+			<ul>
+				<li>{ phrases["clubs"]["design_topic1"] }</li>
+				<li>{ phrases["clubs"]["design_topic2"] }</li>
+				<li>{ phrases["clubs"]["design_topic3"] }</li>
+				<li>{ phrases["clubs"]["design_topic4"] }</li>
+				<li>{ phrases["clubs"]["design_topic5"] }</li>
+			</ul>
+			<a href="#" class="btn btn-join">{ phrases["common"]["join_button"] }</a>
+		</div>
+	</div>
+}
+
+templ sportsClub(phrases map[string]map[string]string) {
+	<div class="club-section animate-on-scroll delay-2">
+		<div class="club-header">
+			<img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&id=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt={ phrases["clubs"]["sports_title"] } class="club-img">
+			<div class="club-overlay">
+				<h3 class="club-title">{ phrases["clubs"]["sports_title"] }</h3>
+				<p>{ phrases["clubs"]["sports_subtitle"] }</p>
+			</div>
+		</div>
+		<div class="club-content">
+			<div class="club-info">
+				<div class="club-info-item">
+					<i class="fas fa-user"></i>
+					<span>{ phrases["clubs"]["sports_leader"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-clock"></i>
+					<span>{ phrases["clubs"]["sports_schedule"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>{ phrases["clubs"]["sports_location"] }</span>
+				</div>
+			</div>
+			<p>{ phrases["clubs"]["sports_description"] }</p>
+			<p>{ phrases["common"]["sports_topics_title"] }:</p>
+			<ul>
+				<li>{ phrases["clubs"]["sports_topic1"] }</li>
+				<li>{ phrases["clubs"]["sports_topic2"] }</li>
+				<li>{ phrases["clubs"]["sports_topic3"] }</li>
+				<li>{ phrases["clubs"]["sports_topic4"] }</li>
+				<li>{ phrases["clubs"]["sports_topic5"] }</li>
+				<li>{ phrases["clubs"]["sports_topic6"] }</li>
+			</ul>
+			<a href="#" class="btn btn-join">{ phrases["common"]["join_button"] }</a>
+		</div>
+	</div>
+}
+
+templ scienceClub(phrases map[string]map[string]string) {
+	<div class="club-section animate-on-scroll delay-3">
+		<div class="club-header">
+			<img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt={ phrases["clubs"]["science_title"] } class="club-img">
+			<div class="club-overlay">
+				<h3 class="club-title">{ phrases["clubs"]["science_title"] }</h3>
+				<p>{ phrases["clubs"]["science_subtitle"] }</p>
+			</div>
+		</div>
+		<div class="club-content">
+			<div class="club-info">
+				<div class="club-info-item">
+					<i class="fas fa-user"></i>
+					<span>{ phrases["clubs"]["science_leader"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-clock"></i>
+					<span>{ phrases["clubs"]["science_schedule"] }</span>
+				</div>
+				<div class="club-info-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>{ phrases["clubs"]["science_location"] }</span>
+				</div>
+			</div>
+			<p>{ phrases["clubs"]["science_description"] }</p>
+			<p>{ phrases["common"]["topics_title"] }:</p>
+			<ul>
+				<li>{ phrases["clubs"]["science_topic1"] }</li>
+				<li>{ phrases["clubs"]["science_topic2"] }</li>
+				<li>{ phrases["clubs"]["science_topic3"] }</li>
+				<li>{ phrases["clubs"]["science_topic4"] }</li>
+				<li>{ phrases["clubs"]["science_topic5"] }</li>
+			</ul>
+			<a href="#" class="btn btn-join">{ phrases["common"]["join_button"] }</a>
+		</div>
+	</div>
+}

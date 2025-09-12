@@ -1,0 +1,19 @@
+package interest_activities
+
+import (
+	"NTG/web/templates/base"
+)
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/interest_activities.css">
+	@mainSection(phrases)
+	@introSection(phrases)
+	@programmingClub(phrases)
+	@designClub(phrases)
+	@sportsClub(phrases)
+	@scienceClub(phrases)
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}

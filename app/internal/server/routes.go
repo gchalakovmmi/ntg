@@ -76,7 +76,7 @@ func GetRoutes() []Route {
 		},
 		{
 			Path:    "interest_activities",
-			Handler: handlers.TempPage(),
+			Handler: handlers.InterestActivities(),
 		},
 		{
 			Path:    "e_diary",
