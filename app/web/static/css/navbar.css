@@ -55,7 +55,8 @@
 	background: rgba(0, 0, 0, 0.15);
 }
 
-.nav-link:after {
+/* Yellow underline only for non-dropdown links */
+.nav-item:not(.dropdown) .nav-link:after {
 	content: '';
 	position: absolute;
 	bottom: 15px;
@@ -66,15 +67,16 @@
 	transition: width 0.3s ease;
 }
 
-.nav-link:hover:after,
-.nav-link.active:after {
+.nav-item:not(.dropdown) .nav-link:hover:after,
+.nav-item:not(.dropdown) .nav-link.active:after {
 	width: calc(100% - 30px);
 }
 
+/* Make main dropdowns rounded to match sub dropdowns */
 .dropdown-menu {
 	background: rgba(255, 255, 255, 0.95);
 	border: none;
-	border-radius: 10px;
+	border-radius: 15px; /* Changed from 10px to 15px to match sub dropdowns */
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 	margin-top: 0;
 	padding: 10px 0;
@@ -92,6 +94,56 @@
 	color: var(--dark-red);
 }
 
+/* Ensure nested dropdowns have the same border radius */
+.dropdown-menu .dropdown-menu {
+	border-radius: 15px;
+}
+
+/* Standard Bootstrap dropdown arrow styling with WHITE color for top-level dropdowns */
+.nav-link.dropdown-toggle::after {
+	display: inline-block;
+	margin-left: 0.255em;
+	vertical-align: middle;
+	content: "";
+	border-top: 0.3em solid #fff;
+	border-right: 0.3em solid transparent;
+	border-bottom: 0;
+	border-left: 0.3em solid transparent;
+	transition: transform 0.15s ease;
+}
+
+/* Remove the yellow underline from dropdown toggles */
+.nav-link.dropdown-toggle::after {
+	background: none !important;
+}
+
+/* Standard hover animation for dropdown arrow */
+.nav-link.dropdown-toggle:hover::after,
+.nav-link.dropdown-toggle.show::after {
+	transform: rotate(180deg);
+}
+
+/* For nested dropdowns in the menu - keep BLACK color */
+.dropdown-item.dropdown-toggle::after {
+	display: inline-block;
+	margin-left: 0.255em;
+	vertical-align: middle;
+	content: "";
+	border-top: 0.3em solid #000;
+	border-right: 0.3em solid transparent;
+	border-bottom: 0;
+	border-left: 0.3em solid transparent;
+	float: right;
+	margin-top: 0.5em;
+	transition: transform 0.15s ease;
+}
+
+/* Hover effect for nested dropdown arrows */
+.dropdown-item.dropdown-toggle:hover::after,
+.dropdown-item.dropdown-toggle.show::after {
+	transform: rotate(180deg);
+}
+
 /* Nested dropdown menu styles for desktop */
 @media (min-width: 992px) {
 	.dropdown-submenu {
@@ -103,7 +155,7 @@
 		left: 100%;
 		margin-top: -6px;
 		margin-left: -1px;
-		border-radius: 0 6px 6px 6px;
+		border-radius: 15px;
 		display: none;
 	}
 
@@ -111,29 +163,11 @@
 		display: block;
 	}
 
-	.dropdown-submenu > a:after {
-		display: block;
-		content: " ";
-		float: right;
-		width: 0;
-		height: 0;
-		border-color: transparent;
-		border-style: solid;
-		border-width: 5px 0 5px 5px;
-		border-left-color: #ccc;
-		margin-top: 5px;
-		margin-right: -10px;
-	}
-
-	.dropdown-submenu:hover > a:after {
-		border-left-color: #fff;
-	}
-
 	/* Ensure parent dropdown stays open when hovering over submenu */
 	.nav-item.dropdown:hover > .dropdown-menu {
 		display: block;
 	}
-	
+
 	/* Fix for nested dropdown positioning */
 	.dropdown-menu .dropdown-menu {
 		position: absolute;
@@ -141,7 +175,7 @@
 		left: 100%;
 		margin-top: -6px;
 		margin-left: -1px;
-		border-radius: 0 6px 6px 6px;
+		border-radius: 15px;
 	}
 }
 
@@ -157,7 +191,7 @@
 		border-radius: 0 0 10px 10px;
 		z-index: 1000;
 	}
-	
+
 	.dropdown-submenu > .dropdown-menu {
 		position: static;
 		margin-top: 0;
@@ -166,34 +200,34 @@
 		box-shadow: none;
 		display: block;
 	}
-	
+
 	.dropdown-submenu > a:after {
 		display: none;
 	}
-	
+
 	/* Show dropdown on click for mobile */
 	.navbar-nav .dropdown-menu {
 		position: static;
 		float: none;
 	}
-	
+
 	/* Center mobile menu links */
 	#navbarNav {
 		text-align: center;
 	}
-	
+
 	.navbar-nav {
 		align-items: center;
 	}
-	
+
 	.dropdown-menu {
 		text-align: center;
 	}
-	
+
 	.dropdown-item {
 		text-align: center;
 	}
-	
+
 	.nav-link.dropdown-toggle {
 		justify-content: center;
 	}

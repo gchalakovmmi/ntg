@@ -110,21 +110,21 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 						}
 						<ul class="dropdown-menu">
 							<li class="dropdown-submenu">
-								<a class="dropdown-item dropdown-toggle" href={ templ.URL("/" + language + "/education") }>Обучение</a>
+								<a class="dropdown-item dropdown-toggle" href={ templ.URL("/" + language + "/education") }>{ phrases["navbar"]["education"] }</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/professional_education") }>Професионална подготовка</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/general_education") }>Общообразователна подготовка</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/interest_activities") }>Занимания по интереси</a></li>
-									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/e_diary") }>Електронен дневник</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/professional_education") }>{ phrases["navbar"]["professional_education"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/general_education") }>{ phrases["navbar"]["general_education"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/interest_activities") }>{ phrases["navbar"]["interest_activities"] }</a></li>
+									<li><a class="dropdown-item" href={ templ.URL("/" + language + "/e_diary") }>{ phrases["navbar"]["e_diary"] }</a></li>
 								</ul>
 							</li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/uniforms") }>Униформи</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/document_templates") }>Образци на документи</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/document_templates#scholarships") }>Ученически стипендии</a></li>
-							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/nvo") }>НВО</a></li>
-							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/dzi") }>ДЗИ</a></li>
-							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/zdippk") }>ЗДИППК</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/academic_schedule") }>График на учебното време</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/uniforms") }>{ phrases["navbar"]["uniforms"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/document_templates") }>{ phrases["navbar"]["document_templates"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/document_templates#scholarships") }>{ phrases["navbar"]["scholarships"] }</a></li>
+							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/nvo") }>{ phrases["navbar"]["nvo"] }</a></li>
+							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/dzi") }>{ phrases["navbar"]["dzi"] }</a></li>
+							<li><a class="dropdown-item uppercase" href={ templ.URL("/" + language + "/zdippk") }>{ phrases["navbar"]["zdippk"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/academic_schedule") }>{ phrases["navbar"]["academic_schedule"] }</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -162,13 +162,13 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
-							{ phrases["navbar"]["language"] }
+							{ phrases["navbar"]["language"] } 🌐
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href={ templ.URL("/bg/" + page) }>Български</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/en/" + page) }>English</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/de/" + page) }>Deutsch</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/fr/" + page) }>Français</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/bg/" + page) }>🇧🇬 Български</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/en/" + page) }>🇬🇧 English</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/de/" + page) }>🇩🇪 Deutsch</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/fr/" + page) }>🇫🇷 Français</a></li>
 						</ul>
 					</li>
 				</ul>
