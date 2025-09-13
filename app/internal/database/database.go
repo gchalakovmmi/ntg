@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"log/slog"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 func GetSupportedLanguages(db *sql.DB) ([]string, error) {

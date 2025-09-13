@@ -9,7 +9,7 @@ import (
 	"NTG/internal/config"
 	"NTG/internal/server"
 	"database/sql"
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	slog.SetDefault(logger)
 
 	// Initialize database connection
-	db, err := sql.Open("sqlite3", "data/app.db")
+	db, err := sql.Open("sqlite", "data/app.db")
 	if err != nil {
 		slog.Error("Failed to open database", "error", err)
 		os.Exit(1)

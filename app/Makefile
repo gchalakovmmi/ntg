@@ -6,11 +6,11 @@ generate:
 	@echo "Generating Templ files..."
 	templ generate
 
-build: generate
+build: clean generate database
 	@echo "Building binary..."
-	CGO_ENABLED=1 go build -o cmd/app/app cmd/app/main.go
+	CGO_ENABLED=0 go build -o cmd/app/app cmd/app/main.go
 
-run: generate
+run:
 	@echo "Running Application..."
 	env $$(grep -v '^#' env.vars | xargs) go run cmd/app/main.go
 
