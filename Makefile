@@ -9,7 +9,7 @@ app:
 	@echo "Compiling source code..."
 	@cd app && make clean database build
 	@echo "Building image..."
-	@docker compose up -d
+	@docker compose up -d --build
 
 app-logs:
 	@docker logs --follow $(NAME)-app-1
