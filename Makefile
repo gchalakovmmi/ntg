@@ -7,7 +7,7 @@ clear:
 app:
 	@echo "=== App ==="
 	@echo "Compiling source code..."
-	@cd app && make build
+	@cd app && make clean database build
 	@echo "Building image..."
 	@docker compose up -d
 
