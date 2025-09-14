@@ -6,7 +6,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'navbar', 'about', 'За нас'),
 ('bg', 'base', 'navbar', 'documents', 'Документи'),
 ('bg', 'base', 'navbar', 'admission', 'Прием'),
-('bg', 'base', 'navbar', 'programs', 'Програми'),
+('bg', 'base', 'navbar', 'programs', 'Програми и проекти'),
 ('bg', 'base', 'navbar', 'school_life', 'Училищен живот'),
 ('bg', 'base', 'navbar', 'partners', 'Партньори'),
 ('bg', 'base', 'navbar', 'news', 'Новини'),
