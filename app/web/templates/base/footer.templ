@@ -1,74 +1,74 @@
 package base
 
 templ footer(phrases map[string]map[string]string) {
-<footer class="footer">
-	<div class="container">
-		<div class="row g-5">
-			<div class="col-lg-4">
-				<h4 class="footer-title">{ phrases["footer"]["school_name"] }</h4>
-				<p>{ phrases["footer"]["school_description"] }</p>
-				<div class="social-links mt-4">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-youtube"></i></a>
+	<footer class="footer">
+		<div class="container">
+			<div class="row g-5">
+				<div class="col-lg-4">
+					<h4 class="footer-title">{ phrases["footer"]["school_name"] }</h4>
+					<p>{ phrases["footer"]["school_description"] }</p>
+					<div class="social-links mt-4">
+						<a href="https://www.facebook.com/ntgpresent"><i class="fab fa-facebook-f"></i></a>
+						// <a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/ntg.plovdiv/"><i class="fab fa-instagram"></i></a>
+						// <a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.youtube.com/@plovdiv4000s"><i class="fab fa-youtube"></i></a>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-4">
-				<h4 class="footer-title">{ phrases["footer"]["quick_links"] }</h4>
-				<div class="row">
-					<div class="col-6">
-						<div class="footer-links">
-							<a href="#">{ phrases["footer"]["home"] }</a>
-							<a href="#">{ phrases["footer"]["about"] }</a>
-							<a href="#">{ phrases["footer"]["documents"] }</a>
-							<a href="#">{ phrases["footer"]["admission"] }</a>
-							<a href="#">{ phrases["footer"]["programs"] }</a>
+				<div class="col-lg-4">
+					<h4 class="footer-title">{ phrases["footer"]["quick_links"] }</h4>
+					<div class="row">
+						<div class="col-6">
+							<div class="footer-links">
+								<a href="#">{ phrases["footer"]["home"] }</a>
+								<a href="#">{ phrases["footer"]["about"] }</a>
+								<a href="#">{ phrases["footer"]["documents"] }</a>
+								<a href="#">{ phrases["footer"]["admission"] }</a>
+								<a href="#">{ phrases["footer"]["programs"] }</a>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="footer-links">
+								<a href="#">{ phrases["footer"]["school_life"] }</a>
+								<a href="#">{ phrases["footer"]["partners"] }</a>
+								<a href="#">{ phrases["footer"]["news"] }</a>
+								<a href="#">{ phrases["footer"]["contacts"] }</a>
+								<a href="#">{ phrases["footer"]["sitemap"] }</a>
+							</div>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="footer-links">
-							<a href="#">{ phrases["footer"]["school_life"] }</a>
-							<a href="#">{ phrases["footer"]["partners"] }</a>
-							<a href="#">{ phrases["footer"]["news"] }</a>
-							<a href="#">{ phrases["footer"]["contacts"] }</a>
-							<a href="#">{ phrases["footer"]["sitemap"] }</a>
+				</div>
+				<div class="col-lg-4">
+					<h4 class="footer-title">{ phrases["footer"]["contacts"] }</h4>
+					<div class="contact-info">
+						<i class="fas fa-map-marker-alt"></i>
+						<div>
+							<p>{ phrases["footer"]["address"] }</p>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="fas fa-phone-alt"></i>
+						<div>
+							<p>{ phrases["footer"]["phone"] }</p>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="fas fa-envelope"></i>
+						<div>
+							<p>{ phrases["footer"]["email"] }</p>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="fas fa-clock"></i>
+						<div>
+							<p>{ phrases["footer"]["hours"] }</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4">
-				<h4 class="footer-title">{ phrases["footer"]["contacts"] }</h4>
-				<div class="contact-info">
-					<i class="fas fa-map-marker-alt"></i>
-					<div>
-						<p>{ phrases["footer"]["address"] }</p>
-					</div>
-				</div>
-				<div class="contact-info">
-					<i class="fas fa-phone-alt"></i>
-					<div>
-						<p>{ phrases["footer"]["phone"] }</p>
-					</div>
-				</div>
-				<div class="contact-info">
-					<i class="fas fa-envelope"></i>
-					<div>
-						<p>{ phrases["footer"]["email"] }</p>
-					</div>
-				</div>
-				<div class="contact-info">
-					<i class="fas fa-clock"></i>
-					<div>
-						<p>{ phrases["footer"]["hours"] }</p>
-					</div>
-				</div>
+			<div class="copyright">
+				<p>{ phrases["footer"]["copyright"] }</p>
 			</div>
 		</div>
-		<div class="copyright">
-			<p>{ phrases["footer"]["copyright"] }</p>
-		</div>
-	</div>
-</footer>
+	</footer>
 }

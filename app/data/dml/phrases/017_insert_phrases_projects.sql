@@ -39,8 +39,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Specific Projects
 ('bg', 'programs_and_projects', 'projects', 'future_school_title', 'Училището на бъдещето'),
 ('bg', 'programs_and_projects', 'projects', 'future_school_desc', 'Иновативен проект за дигитализация на образованието с модерни технологии и интерактивни методи на обучение.'),
-('bg', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Джуниър Ачийвмънт България'),
-('bg', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Програма за развитие на предприемачески умения и бизнес знания сред учениците.'),
+('bg', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Националната програма „Осигуряване на съвременна, сигурна и достъпна образователна среда“ 2025 г'),
+('bg', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Модул 3 „Създаване на достъпна архитектурна среда“,  Дейност II: Адаптиране и изграждане на санитарни възли и  Дейност V: Доставка на устройство за изкачване на стълби за инвалидни колички (стълбищен робот).'),
 ('bg', 'programs_and_projects', 'projects', 'erasmus_title', 'Еразъм+ Мобилности'),
 ('bg', 'programs_and_projects', 'projects', 'erasmus_desc', 'Международни обмени и стажове в партньорски училища в Европа за разширяване на образователния опит.'),
 ('bg', 'programs_and_projects', 'projects', 'green_school_title', 'Зелено училище'),

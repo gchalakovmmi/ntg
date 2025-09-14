@@ -73,7 +73,7 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:    "scholarship",
+			Path:    "scholarships",
 			Handler: handlers.Scholarships(),
 		},
 		{
