@@ -1,5 +1,5 @@
 -- Documents page phrases - Bulgarian and English
-INSERT INTO phrases (language, page, section, key, phrase) VALUES
+INSERT OR REPLACE INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
 ('bg', 'documents', 'header', 'title', 'Документи - НТГ'),
 ('en', 'documents', 'header', 'title', 'Documents - NTS'),
@@ -16,119 +16,29 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'documents', 'filter', 'search_button', 'Търсене'),
 ('bg', 'documents', 'filter', 'category_label', 'Категория'),
 ('bg', 'documents', 'filter', 'category_all', 'Всички категории'),
-('bg', 'documents', 'filter', 'year_label', 'Година'),
-('bg', 'documents', 'filter', 'year_current', '2025-2026'),
-('bg', 'documents', 'filter', 'year_2024', '2024-2025'),
-('bg', 'documents', 'filter', 'year_2023', '2023-2024'),
-('bg', 'documents', 'filter', 'year_2022', '2022-2023'),
 ('en', 'documents', 'filter', 'title', 'Filter Documents'),
 ('en', 'documents', 'filter', 'search_placeholder', 'Search by name or description...'),
 ('en', 'documents', 'filter', 'search_button', 'Search'),
 ('en', 'documents', 'filter', 'category_label', 'Category'),
 ('en', 'documents', 'filter', 'category_all', 'All Categories'),
-('en', 'documents', 'filter', 'year_label', 'Year'),
-('en', 'documents', 'filter', 'year_current', '2025-2026'),
-('en', 'documents', 'filter', 'year_2024', '2024-2025'),
-('en', 'documents', 'filter', 'year_2023', '2023-2024'),
-('en', 'documents', 'filter', 'year_2022', '2022-2023'),
 
--- Regulations and Plans
+-- Document Sections
 ('bg', 'documents', 'regulations', 'title', 'Правилници и планове'),
-('bg', 'documents', 'regulations', 'count', '6 документа'),
-('bg', 'documents', 'regulations', 'internal_rules_title', 'Вътрешен правилник'),
-('bg', 'documents', 'regulations', 'internal_rules_desc', 'Правила и норми за поведение на учениците и учителите в НТГ'),
-('bg', 'documents', 'regulations', 'annual_plan_title', 'Годишен план'),
-('bg', 'documents', 'regulations', 'annual_plan_desc', 'Годишен план на дейностите и събитията в училището'),
-('bg', 'documents', 'regulations', 'data_protection_title', 'Правилник за защита на личните данни'),
-('bg', 'documents', 'regulations', 'data_protection_desc', 'Политика за защита на личните данни на ученици и персонал'),
-('bg', 'documents', 'regulations', 'development_plan_title', 'План за развитие'),
-('bg', 'documents', 'regulations', 'development_plan_desc', 'Стратегически план за развитие на училището'),
-('bg', 'documents', 'regulations', 'discipline_rules_title', 'Правилник за дисциплина'),
-('bg', 'documents', 'regulations', 'discipline_rules_desc', 'Правила и процедури за поддържане на дисциплина'),
 ('en', 'documents', 'regulations', 'title', 'Regulations and Plans'),
-('en', 'documents', 'regulations', 'count', '6 documents'),
-('en', 'documents', 'regulations', 'internal_rules_title', 'Internal Regulations'),
-('en', 'documents', 'regulations', 'internal_rules_desc', 'Rules and norms for behavior of students and teachers at NTS'),
-('en', 'documents', 'regulations', 'annual_plan_title', 'Annual Plan'),
-('en', 'documents', 'regulations', 'annual_plan_desc', 'Annual plan of activities and events at the school'),
-('en', 'documents', 'regulations', 'data_protection_title', 'Data Protection Policy'),
-('en', 'documents', 'regulations', 'data_protection_desc', 'Policy for protection of personal data of students and staff'),
-('en', 'documents', 'regulations', 'development_plan_title', 'Development Plan'),
-('en', 'documents', 'regulations', 'development_plan_desc', 'Strategic plan for school development'),
-('en', 'documents', 'regulations', 'discipline_rules_title', 'Discipline Regulations'),
-('en', 'documents', 'regulations', 'discipline_rules_desc', 'Rules and procedures for maintaining discipline'),
-
--- Curriculum
 ('bg', 'documents', 'curriculum', 'title', 'Учебни планове'),
-('bg', 'documents', 'curriculum', 'count', '4 документа'),
-('bg', 'documents', 'curriculum', 'grade9_title', 'Учебен план за IX клас'),
-('bg', 'documents', 'curriculum', 'grade9_desc', 'Учебен план и програма за ученици от IX клас'),
-('bg', 'documents', 'curriculum', 'grade10_title', 'Учебен план за X клас'),
-('bg', 'documents', 'curriculum', 'grade10_desc', 'Учебен план и програма за ученици от X клас'),
-('bg', 'documents', 'curriculum', 'grade11_title', 'Учебен план за XI клас'),
-('bg', 'documents', 'curriculum', 'grade11_desc', 'Учебен план и програма за ученици от XI клас'),
-('bg', 'documents', 'curriculum', 'grade12_title', 'Учебен план за XII клас'),
-('bg', 'documents', 'curriculum', 'grade12_desc', 'Учебен план и програма за ученици от XII клас'),
 ('en', 'documents', 'curriculum', 'title', 'Curriculum'),
-('en', 'documents', 'curriculum', 'count', '4 documents'),
-('en', 'documents', 'curriculum', 'grade9_title', 'Curriculum for 9th Grade'),
-('en', 'documents', 'curriculum', 'grade9_desc', 'Curriculum and program for 9th grade students'),
-('en', 'documents', 'curriculum', 'grade10_title', 'Curriculum for 10th Grade'),
-('en', 'documents', 'curriculum', 'grade10_desc', 'Curriculum and program for 10th grade students'),
-('en', 'documents', 'curriculum', 'grade11_title', 'Curriculum for 11th Grade'),
-('en', 'documents', 'curriculum', 'grade11_desc', 'Curriculum and program for 11th grade students'),
-('en', 'documents', 'curriculum', 'grade12_title', 'Curriculum for 12th Grade'),
-('en', 'documents', 'curriculum', 'grade12_desc', 'Curriculum and program for 12th grade students'),
-
--- Education Types
 ('bg', 'documents', 'education_types', 'title', 'Форми на обучение'),
-('bg', 'documents', 'education_types', 'count', '3 документа'),
-('bg', 'documents', 'education_types', 'distance_title', 'Дистанционно обучение'),
-('bg', 'documents', 'education_types', 'distance_desc', 'Правила и процедури за дистанционно обучение'),
-('bg', 'documents', 'education_types', 'group_title', 'Групово обучение'),
-('bg', 'documents', 'education_types', 'group_desc', 'Методи и форми на групова работа в клас'),
-('bg', 'documents', 'education_types', 'individual_title', 'Индивидуално обучение'),
-('bg', 'documents', 'education_types', 'individual_desc', 'Правила за индивидуални форми на обучение'),
 ('en', 'documents', 'education_types', 'title', 'Forms of Education'),
-('en', 'documents', 'education_types', 'count', '3 documents'),
-('en', 'documents', 'education_types', 'distance_title', 'Distance Learning'),
-('en', 'documents', 'education_types', 'distance_desc', 'Rules and procedures for distance learning'),
-('en', 'documents', 'education_types', 'group_title', 'Group Learning'),
-('en', 'documents', 'education_types', 'group_desc', 'Methods and forms of group work in class'),
-('en', 'documents', 'education_types', 'individual_title', 'Individual Learning'),
-('en', 'documents', 'education_types', 'individual_desc', 'Rules for individual forms of education'),
-
--- Budget
 ('bg', 'documents', 'budget', 'title', 'Бюджет'),
-('bg', 'documents', 'budget', 'count', '3 документа'),
-('bg', 'documents', 'budget', 'budget_2025_title', 'Бюджет 2025-2026'),
-('bg', 'documents', 'budget', 'budget_2025_desc', 'Годишен бюджет на НТГ за учебната 2025-2026 година'),
-('bg', 'documents', 'budget', 'financial_report_title', 'Финансов отчет 2024-2025'),
-('bg', 'documents', 'budget', 'financial_report_desc', 'Финансов отчет за изминалата учебна година'),
-('bg', 'documents', 'budget', 'sponsorship_title', 'Спонсорски средства'),
-('bg', 'documents', 'budget', 'sponsorship_desc', 'Отчет за използване на спонсорски средства'),
 ('en', 'documents', 'budget', 'title', 'Budget'),
-('en', 'documents', 'budget', 'count', '3 documents'),
-('en', 'documents', 'budget', 'budget_2025_title', 'Budget 2025-2026'),
-('en', 'documents', 'budget', 'budget_2025_desc', 'Annual budget of NTS for the 2025-2026 academic year'),
-('en', 'documents', 'budget', 'financial_report_title', 'Financial Report 2024-2025'),
-('en', 'documents', 'budget', 'financial_report_desc', 'Financial report for the past academic year'),
-('en', 'documents', 'budget', 'sponsorship_title', 'Sponsorship Funds'),
-('en', 'documents', 'budget', 'sponsorship_desc', 'Report on the use of sponsorship funds'),
-
--- Schedules
 ('bg', 'documents', 'schedules', 'title', 'Графици'),
-('bg', 'documents', 'schedules', 'count', '2 документа'),
-('bg', 'documents', 'schedules', 'bell_schedule_title', 'График на звънците'),
-('bg', 'documents', 'schedules', 'bell_schedule_desc', 'Учебно време и график на звънците за всички класове'),
-('bg', 'documents', 'schedules', 'academic_calendar_title', 'Учебен календар'),
-('bg', 'documents', 'schedules', 'academic_calendar_desc', 'Календар на учебната година с важни дати и ваканции'),
 ('en', 'documents', 'schedules', 'title', 'Schedules'),
-('en', 'documents', 'schedules', 'count', '2 documents'),
-('en', 'documents', 'schedules', 'bell_schedule_title', 'Bell Schedule'),
-('en', 'documents', 'schedules', 'bell_schedule_desc', 'School hours and bell schedule for all classes'),
-('en', 'documents', 'schedules', 'academic_calendar_title', 'Academic Calendar'),
-('en', 'documents', 'schedules', 'academic_calendar_desc', 'Academic year calendar with important dates and holidays'),
+('bg', 'documents', 'scholarships', 'title', 'Стипендии'),
+('en', 'documents', 'scholarships', 'title', 'Scholarships'),
+('bg', 'documents', 'buyer_profile', 'title', 'Профил на купувача'),
+('en', 'documents', 'buyer_profile', 'title', 'Buyer Profile'),
+('bg', 'documents', 'rules', 'title', 'Правила'),
+('en', 'documents', 'rules', 'title', 'Rules'),
 
 -- Common Document Elements
 ('bg', 'documents', 'common', 'preview_button', 'Преглед'),
@@ -139,6 +49,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'documents', 'common', 'modal_title', 'Преглед на документ'),
 ('bg', 'documents', 'common', 'modal_close', 'Затвори'),
 ('bg', 'documents', 'common', 'modal_download', 'Изтегли'),
+('bg', 'documents', 'common', 'documents_count', 'документа'),
+('bg', 'documents', 'common', 'no_documents_current_year', 'Все още няма качени документи за текущата учебна година.'),
 ('en', 'documents', 'common', 'preview_button', 'Preview'),
 ('en', 'documents', 'common', 'download_button', 'Download'),
 ('en', 'documents', 'common', 'pdf_format', 'PDF'),
@@ -146,61 +58,39 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'documents', 'common', 'view_all_archive', 'View all archive documents'),
 ('en', 'documents', 'common', 'modal_title', 'Document Preview'),
 ('en', 'documents', 'common', 'modal_close', 'Close'),
-('en', 'documents', 'common', 'modal_download', 'Download');
+('en', 'documents', 'common', 'modal_download', 'Download'),
+('en', 'documents', 'common', 'documents_count', 'documents'),
+('en', 'documents', 'common', 'no_documents_current_year', 'No documents have been uploaded for the current academic year yet.'),
 
--- -- Migration: app/data/dml/009_fix_documents_routes.sql
--- -- Fix documents page routes by duplicating phrases for all route variants
+-- Missing Navbar Phrases
+('bg', 'base', 'navbar', 'buyer_profile', 'Профил на купувача'),
+('bg', 'base', 'navbar', 'rules', 'Правила'),
+('en', 'base', 'navbar', 'buyer_profile', 'Buyer Profile'),
+('en', 'base', 'navbar', 'rules', 'Rules'),
 
--- -- Copy all existing 'documents' phrases to 'documents'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'documents', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
+-- Document Display Names for Regulations
+('bg', 'documents', 'regulations', 'godishen_plan', 'Годишен план на училището'),
+('bg', 'documents', 'regulations', 'etichen_kodeks', 'Етичен кодекс'),
+('bg', 'documents', 'regulations', 'pravilnik_deinost', 'Правилник за дейността на НТГ'),
+('bg', 'documents', 'regulations', 'vp_kontrol_pipft', 'Вътрешни правила за контрол и ПИПФТ'),
+('bg', 'documents', 'regulations', 'pojarna_sigurnost', 'Досие пожарна безопасност'),
+('bg', 'documents', 'regulations', 'mechanizum_narkotici', 'Механизъм за наркотични вещества'),
+('bg', 'documents', 'regulations', 'organizacia_ucheben_den', 'Организация на учебния ден'),
+('bg', 'documents', 'regulations', 'plan_terorizum', 'План за противодействие на тероризма'),
+('bg', 'documents', 'regulations', 'plan_tormoz_nasilie', 'План за противодействие на тормоза и насилието'),
+('bg', 'documents', 'regulations', 'plan_obuchenie_pipft', 'План за обучение за МКПИПФТ'),
+('bg', 'documents', 'regulations', 'plan_zashita_bedstvia', 'План за защита при бедствия'),
+('bg', 'documents', 'regulations', 'plan_programa_bdp', 'План и програма на училищна комисия по БДП'),
+('bg', 'documents', 'regulations', 'pravilnik_propuskatelen_rejim', 'Правилник за пропускателен режим'),
+('bg', 'documents', 'regulations', 'pravilnik_zbut', 'Правилник ЗБУТ'),
+('bg', 'documents', 'regulations', 'strategia_razvitie', 'Стратегия за развитие на НТГ'),
+('bg', 'documents', 'regulations', 'uup_ntg', 'Училищни учебни планове'),
+('bg', 'documents', 'regulations', 'formi_obuchenie', 'Форми на обучение в НТГ'),
 
--- -- Copy all existing 'documents' phrases to 'curriculum' 
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'curriculum', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
+-- Rules documents
+('bg', 'documents', 'rules', 'mrejova_sigurnost', 'Вътрешни правила за мрежова сигурност'),
+('bg', 'documents', 'rules', 'internet_dazd', 'Правила за безопасен интернет-ДАЗД'),
 
--- -- Copy all existing 'documents' phrases to 'education_type'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'education_type', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
-
--- -- Copy all existing 'documents' phrases to 'budget'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'budget', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
-
--- -- Copy all existing 'documents' phrases to 'parent_consultation'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'parent_consultation', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
-
--- -- Copy all existing 'documents' phrases to 'student_consultation'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'student_consultation', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
-
--- -- Copy all existing 'documents' phrases to 'class_tests'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'class_tests', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
-
--- -- Copy all existing 'documents' phrases to 'olympiads'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'olympiads', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
-
--- -- Copy all existing 'documents' phrases to 'exams'
--- INSERT INTO phrases (language, page, section, key, phrase)
--- SELECT language, 'exams', section, key, phrase 
--- FROM phrases 
--- WHERE page = 'documents';
+-- Buyer profile documents
+('bg', 'documents', 'buyer_profile', 'pravila', 'Вътрешни правила'),
+('bg', 'documents', 'buyer_profile', 'zovp', 'Заповед - отмяна на вътрешни правила');

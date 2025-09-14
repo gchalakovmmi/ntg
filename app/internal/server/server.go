@@ -22,6 +22,7 @@ func (srv *Server) CreateHandlers() http.Handler {
 
 	// Serve static files
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./web/static/"))))
+	mux.Handle("/docs/", http.StripPrefix("/docs/", http.FileServer(http.Dir("./web/static/docs/"))))
 
 	// Health check endpoint
 	mux.Handle("/health", handlers.Health())
@@ -118,6 +119,6 @@ func New(cfg *config.Config, db *sql.DB) *Server {
 	return &Server{
 		config: cfg,
 		db:	 db,
-		routes: GetRoutes(),
+		routes: GetRoutes(cfg, db),
 	}
 }

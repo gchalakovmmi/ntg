@@ -1,20 +1,16 @@
 package documents
 
 import "NTG/web/templates/base"
+import "NTG/internal/database"
 
-templ components(phrases map[string]map[string]string) {
+templ components(phrases map[string]map[string]string, documents map[string]database.SectionData, currentYear string) {
 	<link rel="stylesheet" href="/static/css/documents.css"/>
 	@hero(phrases)
 	@filter(phrases)
-	@regulations(phrases)
-	@curriculum(phrases)
-	@educationTypes(phrases)
-	@budgetSection(phrases)
-	@schedulesSection(phrases)
-	@pdfModal(phrases)
+	@sectionDocuments(phrases, documents, currentYear)
 	<script src="/static/js/documents.js"></script>
 }
 
-templ Handler(page, language string, phrases map[string]map[string]string) {
-	@base.Base(page, language, phrases, components(phrases))
+templ Handler(page, language string, phrases map[string]map[string]string, documents map[string]database.SectionData, currentYear string) {
+	@base.Base(page, language, phrases, components(phrases, documents, currentYear))
 }

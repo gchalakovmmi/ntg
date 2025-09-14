@@ -1,14 +1,17 @@
 package config
 
 import (
+	"fmt"
 	"os"
 	"log/slog"
+	"time"
 )
 
 type Config struct {
-	Port				string
-	InstanceName	string
-	LogLevel		slog.Level
+	Port					string
+	InstanceName		string
+	LogLevel				slog.Level
+	CurrentSchoolYear string
 }
 
 func getLogLevel(level string) slog.Level {
@@ -38,10 +41,23 @@ func Load() *Config {
 	}
 
 	logLevel := getLogLevel(os.Getenv("LOG_LEVEL"))
+	
+	// Get current school year from environment or calculate it
+	currentSchoolYear := os.Getenv("CURRENT_SCHOOL_YEAR")
+	if currentSchoolYear == "" {
+		// Default to current year if not set
+		now := time.Now()
+		if now.Month() >= 9 { // School year starts in September
+			currentSchoolYear = fmt.Sprintf("%d-%d", now.Year(), now.Year()+1)
+		} else {
+			currentSchoolYear = fmt.Sprintf("%d-%d", now.Year()-1, now.Year())
+		}
+	}
 
 	return &Config{
-		Port:				port,
-		InstanceName:	instanceName,
-		LogLevel:		logLevel,
+		Port:						port,
+		InstanceName:			instanceName,
+		LogLevel:				logLevel,
+		CurrentSchoolYear:	currentSchoolYear,
 	}
 }

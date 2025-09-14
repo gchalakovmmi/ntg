@@ -6,24 +6,18 @@ templ filter(phrases map[string]map[string]string) {
 			<div class="document-filter animate-on-scroll">
 				<h4 class="filter-title"><i class="fas fa-filter me-2"></i>{ phrases["filter"]["title"] }</h4>
 				<div class="row">
-					<div class="col-md-3 mb-3">
+					<div class="col-md-6 mb-3">
 						<label class="form-label">{ phrases["filter"]["category_label"] }</label>
-						<select class="form-select">
-							<option selected>{ phrases["filter"]["category_all"] }</option>
-							<option>{ phrases["regulations"]["title"] }</option>
-							<option>{ phrases["curriculum"]["title"] }</option>
-							<option>{ phrases["education_types"]["title"] }</option>
-							<option>{ phrases["budget"]["title"] }</option>
-							<option>{ phrases["schedules"]["title"] }</option>
-						</select>
-					</div>
-					<div class="col-md-3 mb-3">
-						<label class="form-label">{ phrases["filter"]["year_label"] }</label>
-						<select class="form-select">
-							<option selected>{ phrases["filter"]["year_current"] }</option>
-							<option>{ phrases["filter"]["year_2024"] }</option>
-							<option>{ phrases["filter"]["year_2023"] }</option>
-							<option>{ phrases["filter"]["year_2022"] }</option>
+						<select class="form-select" id="categoryFilter">
+							<option value="all" selected>{ phrases["filter"]["category_all"] }</option>
+							<option value="regulations">{ phrases["regulations"]["title"] }</option>
+							<option value="curriculum">{ phrases["curriculum"]["title"] }</option>
+							<option value="education_types">{ phrases["education_types"]["title"] }</option>
+							<option value="budget">{ phrases["budget"]["title"] }</option>
+							<option value="schedules">{ phrases["schedules"]["title"] }</option>
+							<option value="scholarships">{ phrases["scholarships"]["title"] }</option>
+							<option value="buyer_profile">{ phrases["buyer_profile"]["title"] }</option>
+							<option value="rules">{ phrases["rules"]["title"] }</option>
 						</select>
 					</div>
 				</div>

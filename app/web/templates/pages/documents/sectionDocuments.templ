@@ -1,0 +1,87 @@
+package documents
+
+import "NTG/internal/database"
+
+templ sectionDocuments(phrases map[string]map[string]string, documents map[string]database.SectionData, currentYear string) {
+	<section class="document-section">
+		<div class="container">
+			<div class="documents-container">
+				for section, sectionData := range documents {
+					<div id={ section } class="document-category animate-on-scroll" data-section={ section }>
+						<h3 class="category-title" data-category={ phrases[section]["title"] }>
+							<i class="fas fa-book me-2"></i>{ phrases[section]["title"] }
+						</h3>
+						
+						<!-- Current Year Documents -->
+						<div class="current-year-documents">
+							if len(sectionData.CurrentYear) > 0 {
+								<span class="category-badge">{ len(sectionData.CurrentYear) } { phrases["common"]["documents_count"] }</span>
+								<div class="row">
+									for _, doc := range sectionData.CurrentYear {
+										<div class="col-md-6 col-lg-4">
+											<div class="document-card animate-on-scroll">
+												<div class="document-icon">
+													<i class="fas fa-file-alt"></i>
+												</div>
+												<h4 class="document-title">{ doc.Name }</h4>
+												<div class="document-meta">
+													<span><i class="fas fa-calendar me-1"></i> Актуални</span>
+													<span><i class="fas fa-file me-1"></i> { doc.Size }</span>
+												</div>
+												<div class="document-actions">
+													<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } target="_blank" class="btn btn-preview btn-sm">
+														<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
+													</a>
+												</div>
+											</div>
+										</div>
+									}
+								</div>
+							} else {
+								<div class="alert alert-info">
+									<i class="fas fa-info-circle me-2"></i>
+									{ phrases["common"]["no_documents_current_year"] }
+								</div>
+							}
+						</div>
+						
+						<!-- Archive Section -->
+						if len(sectionData.Archive) > 0 {
+							<div class="archive-section mt-5">
+								<div class="accordion" id={ section + "ArchiveAccordion" }>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id={ section + "ArchiveHeading" }>
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={ "#" + section + "ArchiveCollapse" } aria-expanded="false" aria-controls={ section + "ArchiveCollapse" }>
+												<i class="fas fa-archive me-2"></i>{ phrases["common"]["archive_title"] }
+											</button>
+										</h2>
+										<div id={ section + "ArchiveCollapse" } class="accordion-collapse collapse" aria-labelledby={ section + "ArchiveHeading" } data-bs-parent={ "#" + section + "ArchiveAccordion" }>
+											<div class="accordion-body">
+												for _, year := range sectionData.ArchiveYears {
+													<h5 class="mt-3"><i class="fas fa-calendar me-1"></i> { year }</h5>
+													<div class="row">
+														for _, doc := range sectionData.Archive[year] {
+															<div class="col-md-6 col-lg-4 mb-3">
+																<div class="d-flex align-items-center">
+																	<i class="fas fa-file-pdf text-danger me-2"></i>
+																	<div>
+																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } class="text-decoration-none text-dark" target="_blank">{ doc.Name }</a>
+																		<div class="text-muted small">{ doc.Size }</div>
+																	</div>
+																</div>
+															</div>
+														}
+													</div>
+												}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						}
+					</div>
+				}
+			</div>
+		</div>
+	</section>
+}
