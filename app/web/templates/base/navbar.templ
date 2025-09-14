@@ -159,10 +159,26 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							{ phrases["navbar"]["language"] } 🌐
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href={ templ.URL("/bg/" + page) }>🇧🇬 Български</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/en/" + page) }>🇬🇧 English</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/de/" + page) }>🇩🇪 Deutsch</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/fr/" + page) }>🇫🇷 Français</a></li>
+							<li>
+								<a class="dropdown-item" href={ templ.URL("/bg/" + page) }>
+									<img src="/static/images/navbar/bg.svg" alt="Bulgarian Flag" class="flag-icon"/> Български
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href={ templ.URL("/en/" + page) }>
+									<img src="/static/images/navbar/uk.svg" alt="British Flag" class="flag-icon"/> English
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href={ templ.URL("/de/" + page) }>
+									<img src="/static/images/navbar/de.svg" alt="German Flag" class="flag-icon"/> Deutsch
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href={ templ.URL("/fr/" + page) }>
+									<img src="/static/images/navbar/fr.svg" alt="French Flag" class="flag-icon"/> Français
+								</a>
+							</li>
 						</ul>
 					</li>
 				</ul>

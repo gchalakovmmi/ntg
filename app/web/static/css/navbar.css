@@ -257,6 +257,16 @@
 	text-transform: uppercase;
 }
 
+/*Css style for svg flags in navigation*/
+.dropdown-item img.flag-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+}
+/*End of css style for svg flags in navigation*/
+
+/* Prevent horizontal scroll */
  body,
  html {
  	overflow-x: hidden;
