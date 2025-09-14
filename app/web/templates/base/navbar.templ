@@ -2,7 +2,7 @@ package base
 
 templ navbar(page, language string, phrases map[string]map[string]string) {
 	<nav class="navbar navbar-expand-lg navbar-dark">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="logo-container">
 				<a href={ templ.URL("/" + language + "/home") }>
 					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D190156909575511&f=1&nofb=1&ipt=8524fdb165fa6c3fdb4eecce9260c97df05faa4ef2e682c65f05621cdb3b8e7d" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo"/>
