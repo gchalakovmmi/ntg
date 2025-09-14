@@ -156,7 +156,15 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
-							{ phrases["navbar"]["language"] } 🌐
+							if language == "bg" {
+								<img src="/static/images/navbar/bg.svg" alt="Bulgarian Flag" class="flag-icon"/> Български
+							} else if language == "en" {
+								<img src="/static/images/navbar/uk.svg" alt="British Flag" class="flag-icon"/> English
+							} else if language == "de" {
+								<img src="/static/images/navbar/de.svg" alt="German Flag" class="flag-icon"/> Deutsch
+							} else if language == "fr" {
+								<img src="/static/images/navbar/fr.svg" alt="French Flag" class="flag-icon"/> Français
+							}
 						</a>
 						<ul class="dropdown-menu">
 							<li>

@@ -264,6 +264,47 @@
 	width: 20px;
 	height: 20px;
 }
+
+/* Flag icons styling - ensure consistent size everywhere */
+.flag-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 20px !important;
+	height: 20px !important;
+	object-fit: contain;
+	max-width: 20px;
+	max-height: 20px;
+}
+
+#langDropdown {
+	display: flex;
+	align-items: center;
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* More restrictive flag icon rules specifically for language dropdown */
+#langDropdown .flag-icon,
+.dropdown-menu .flag-icon {
+	width: 20px !important;
+	height: 15px !important;
+	min-width: 20px !important;
+	max-width: 20px !important;
+	max-height: 15px !important;
+	object-fit: cover;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 2px;
+	margin-right: 6px;
+	display: inline-block;
+	flex-shrink: 0;
+}
+
+/* Ensure the language dropdown has correct positioning */
+.nav-item.dropdown:last-child {
+	position: relative;
+	max-width: 150px;
+}
 /*End of css style for svg flags in navigation*/
 
 /* Prevent horizontal scroll */
