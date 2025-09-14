@@ -82,13 +82,13 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 						}
 					</li>
 					<li class="nav-item">
-						if page == "programs" {
-							<a class="nav-link active" href={ templ.URL("/" + language + "/programs") }>
-								{ phrases["navbar"]["programs"] }
+						if page == "programs_and_projects" {
+							<a class="nav-link active" href={ templ.URL("/" + language + "/programs_and_projects") }>
+								{ phrases["navbar"]["programs_and_projects"] }
 							</a>
 						} else {
-							<a class="nav-link" href={ templ.URL("/" + language + "/programs") }>
-								{ phrases["navbar"]["programs"] }
+							<a class="nav-link" href={ templ.URL("/" + language + "/programs_and_projects") }>
+								{ phrases["navbar"]["programs_and_projects"] }
 							</a>
 						}
 					</li>
