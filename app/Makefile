@@ -23,4 +23,5 @@ database:
 	rm -f data/app.db
 	@echo "Creating and populating database..."
 	for file in $$(find data/ddl -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
-	for file in $$(find data/dml -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
+	for file in $$(find data/dml/phrases -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
+	for file in $$(find data/dml/news -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
