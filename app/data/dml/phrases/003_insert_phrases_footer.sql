@@ -1,6 +1,6 @@
 -- Footer phrases
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
-('bg', 'base', 'footer', 'school_name', 'НТГ - Национална Търговска Гимназия'),
+('bg', 'base', 'footer', 'school_name', 'Национална Търговска Гимназия'),
 ('bg', 'base', 'footer', 'school_description', 'Създаваме бъдещите лидери в икономиката и бизнеса чрез иновативно образование и практическа подготовка.'),
 ('bg', 'base', 'footer', 'quick_links', 'Бързи връзки'),
 ('bg', 'base', 'footer', 'contacts', 'Контакти'),

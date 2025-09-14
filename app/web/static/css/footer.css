@@ -11,6 +11,8 @@
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 10px;
+    display: inline-block;
+    /* Makes the element only as wide as its content */
 }
 
 .footer-title:after {
@@ -18,7 +20,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 50px;
+    width: 100%;
+    /* Changed from 50px to 100% to span full width */
     height: 3px;
     background: var(--primary-red);
 }
