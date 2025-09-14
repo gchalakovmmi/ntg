@@ -265,6 +265,7 @@
 	height: 20px;
 }
 
+/* =============================================================== */
 /* Flag icons styling - ensure consistent size everywhere */
 .flag-icon {
 	vertical-align: middle;
@@ -306,6 +307,7 @@
 	max-width: 150px;
 }
 /*End of css style for svg flags in navigation*/
+/* =============================================================== */
 
 /* Prevent horizontal scroll */
  body,
@@ -314,3 +316,75 @@
  	width: 100%;
  	max-width: 100%;
  }
+
+
+/* =============================================================== */
+ /* BUG FIX  Programs and Projects on one line needs refactoring Responsive font sizing for navigation */
+ .nav-link {
+ 	color: rgba(255, 255, 255, 0.85) !important;
+ 	font-weight: 500;
+ 	padding: 0 12px !important;
+ 	height: 70px;
+ 	display: flex;
+ 	align-items: center;
+ 	position: relative;
+ 	transition: var(--transition);
+ 	white-space: nowrap;
+ 	font-size: 15px;
+ 	/* Slightly smaller font */
+ }
+
+ /* Even smaller font for screens where space is tight */
+ @media (max-width: 1400px) {
+ 	.nav-link {
+ 		font-size: 14px;
+ 		padding: 0 10px !important;
+ 	}
+ }
+
+ @media (max-width: 1200px) {
+ 	.nav-link {
+ 		font-size: 13px;
+ 		padding: 0 8px !important;
+ 	}
+ }
+
+ /* Adjust underline positioning */
+ .nav-item:not(.dropdown) .nav-link:after {
+ 	content: '';
+ 	position: absolute;
+ 	bottom: 15px;
+ 	left: 12px;
+ 	width: 0;
+ 	height: 2px;
+ 	background: var(--primary-gold);
+ 	transition: width 0.3s ease;
+ }
+
+ .nav-item:not(.dropdown) .nav-link:hover:after,
+ .nav-item:not(.dropdown) .nav-link.active:after {
+ 	width: calc(100% - 24px);
+ }
+
+ @media (max-width: 1400px) {
+ 	.nav-item:not(.dropdown) .nav-link:after {
+ 		left: 10px;
+ 	}
+
+ 	.nav-item:not(.dropdown) .nav-link:hover:after,
+ 	.nav-item:not(.dropdown) .nav-link.active:after {
+ 		width: calc(100% - 20px);
+ 	}
+ }
+
+ @media (max-width: 1200px) {
+ 	.nav-item:not(.dropdown) .nav-link:after {
+ 		left: 8px;
+ 	}
+
+ 	.nav-item:not(.dropdown) .nav-link:hover:after,
+ 	.nav-item:not(.dropdown) .nav-link.active:after {
+ 		width: calc(100% - 16px);
+ 	}
+ }
+ /* =============================================================== */
