@@ -18,7 +18,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 Очакваме Ви с нетърпение за едно вдъхновяващо начало на новата учебна година!
 Ръководството на гимназията.',
 	'otkrivane-na-novata-uchebna-godina',
-	'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+	'/static/images/gallery/15-sep.jpg'
 ),
 (
 	'en', 
@@ -39,5 +39,5 @@ at 19:00.
 We look forward to seeing you for an inspiring start to the new school year!
 The management of the high school.',
 	'opening-of-the-new-school-year',
-	'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+	'/static/images/gallery/15-sep.jpg'
 );
