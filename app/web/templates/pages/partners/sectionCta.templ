@@ -4,12 +4,12 @@ templ cta(phrases map[string]map[string]string) {
 	<section class="cta-section py-5 text-center">
 		<div class="container">
 			<div class="cta-content">
-				<h2 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Станете наш партньор</h2>
+				<h2 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">{ phrases["partners"]["cta_title"] }</h2>
 				<p class="lead mb-5 animate__animated animate__fadeIn animate__delay-1s">
-					Присъединете се към нашата мисия за качествено образование и инвестирайте в бъдещето на младите хора
+					{ phrases["partners"]["cta_subtitle"] }
 				</p>
 				<a href="/contacts" class="btn btn-cta btn-lg px-5 py-3 animate__animated animate__fadeInUp animate__delay-2s">
-					Свържете се с нас <span class="ms-2">→</span>
+					{ phrases["partners"]["cta_button_text"] } <span class="ms-2">→</span>
 				</a>
 			</div>
 		</div>
