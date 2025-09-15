@@ -5,8 +5,8 @@ templ benefits(phrases map[string]map[string]string) {
 	<section class="benefits-section py-5" style="background-color: #fffaf0;">
 		<div class="container">
 			<div class="text-center mb-5 animate-scroll">
-				<h2 class="display-5 fw-bold mb-3" style="color: var(--dark-red);">Ползи от партньорството</h2>
-				<p class="lead text-muted">Как нашите партньори допринасят за качественото образование</p>
+				<h2 class="display-5 fw-bold mb-3" style="color: var(--dark-red);">{ phrases["benefits"]["title"] }</h2>
+				<p class="lead text-muted">{ phrases["benefits"]["subtitle"] }</p>
 			</div>
 			<div class="row g-4">
 				<div class="col-lg-3 col-md-6">
@@ -14,9 +14,9 @@ templ benefits(phrases map[string]map[string]string) {
 						<div class="benefit-icon mb-4">
 							<i class="fas fa-laptop-code"></i>
 						</div>
-						<h4 class="benefit-title h5 mb-3">Модерни технологии</h4>
+						<h4 class="benefit-title h5 mb-3">{ phrases["benefits"]["technology_title"] }</h4>
 						<p class="text-muted mb-0">
-							Достъп до най-новите технологии и софтуерни решения за интерактивно обучение.
+							{ phrases["benefits"]["technology_desc"] }
 						</p>
 					</div>
 				</div>
@@ -25,9 +25,9 @@ templ benefits(phrases map[string]map[string]string) {
 						<div class="benefit-icon mb-4">
 							<i class="fas fa-graduation-cap"></i>
 						</div>
-						<h4 class="benefit-title h5 mb-3">Стипендии и награди</h4>
+						<h4 class="benefit-title h5 mb-3">{ phrases["benefits"]["scholarships_title"] }</h4>
 						<p class="text-muted mb-0">
-							Финансова подкрепа за талантливи ученици чрез стипендии и образователни награди.
+							{ phrases["benefits"]["scholarships_desc"] }
 						</p>
 					</div>
 				</div>
@@ -36,9 +36,9 @@ templ benefits(phrases map[string]map[string]string) {
 						<div class="benefit-icon mb-4">
 							<i class="fas fa-briefcase"></i>
 						</div>
-						<h4 class="benefit-title h5 mb-3">Стажове и практики</h4>
+						<h4 class="benefit-title h5 mb-3">{ phrases["benefits"]["internships_title"] }</h4>
 						<p class="text-muted mb-0">
-							Реални възможности за професионален опит в водещи компании.
+							{ phrases["benefits"]["internships_desc"] }
 						</p>
 					</div>
 				</div>
@@ -47,9 +47,9 @@ templ benefits(phrases map[string]map[string]string) {
 						<div class="benefit-icon mb-4">
 							<i class="fas fa-users"></i>
 						</div>
-						<h4 class="benefit-title h5 mb-3">Експертни лектори</h4>
+						<h4 class="benefit-title h5 mb-3">{ phrases["benefits"]["experts_title"] }</h4>
 						<p class="text-muted mb-0">
-							Семинари и лекции от водещи специалисти в различни области.
+							{ phrases["benefits"]["experts_desc"] }
 						</p>
 					</div>
 				</div>

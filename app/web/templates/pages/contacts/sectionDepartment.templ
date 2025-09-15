@@ -6,7 +6,7 @@ templ departments(phrases map[string]map[string]string) {
 			<!-- Department Contacts -->
 			<div class="row mb-4">
 				<div class="col-12">
-					<h3 class="department-title text-center mb-4">Отдели и услуги</h3>
+					<h3 class="department-title text-center mb-4">{ phrases["departments"]["title"] }</h3>
 				</div>
 			</div>
 			<div class="row g-4">
@@ -14,59 +14,54 @@ templ departments(phrases map[string]map[string]string) {
 				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp">
 					<div class="department-card h-100">
 						<div class="department-icon"><i class="fas fa-comments"></i></div>
-						<h4>Връзки с обществеността</h4>
-						<a href="mailto:communications@pitagor-school.eu" class="department-link">communications@pitagor-school.eu</a>
+						<h4>{ phrases["departments"]["secretary_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["secretary_email"]) } class="department-link">{ phrases["departments"]["secretary_phone"] }</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
 					<div class="department-card h-100">
 						<div class="department-icon"><i class="fas fa-calculator"></i></div>
-						<h4>Счетоводство и ТРЗ</h4>
-						<a href="mailto:accounting@pitagor-school.eu" class="department-link">accounting@pitagor-school.eu</a>
+						<h4>{ phrases["departments"]["co_director_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["co_director_email"]) } class="department-link">{ phrases["departments"]["co_director_phone"] }</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
 					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-comment-medical"></i></div>
-						<h4>Логопед</h4>
-						<a href="mailto:logoped@pitagor-school.eu" class="department-link">logoped@pitagor-school.eu</a>
+						<div class="department-icon"><i class="fas fa-first-aid"></i></div>
+						<h4>{ phrases["departments"]["accounting_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["accounting_phone"]) } class="department-link">{ phrases["departments"]["accounting_phone"] }</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
 					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-wrench"></i></div>
-						<h4>Поддръжка</h4>
-						<a href="mailto:maintenance@pitagor-school.eu" class="department-link">maintenance@pitagor-school.eu</a>
+						<div class="department-icon"><i class="fas fa-brain"></i></div>
+						<h4>{ phrases["departments"]["director_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["direc tor_phone"]) } class="department-link">{ phrases["departments"]["director_phone"] }</a>
 					</div>
 				</div>
+				// <div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+				// 	<div class="department-card h-100">
+				// 		<div class="department-icon"><i class="fas fa-wrench"></i></div>
+				// 		<h4>{ phrases["departments"]["maintenance_title"] }</h4>
+				// 		<a href={ templ.SafeURL("mailto:" + phrases["departments"]["maintenance_email"]) } class="department-link">{ phrases["departments"]["maintenance_email"] }</a>
+				// 	</div>
+				// </div>
+				// <div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+				// 	<div class="department-card h-100">
+				// 		<div class="department-icon"><i class="fas fa-shield-alt"></i></div>
+				// 		<h4>{ phrases["departments"]["security_title"] }</h4>
+				// 		<a href={ templ.SafeURL("tel:" + phrases["departments"]["security_phone"]) } class="department-link">{ phrases["departments"]["security_phone"] }</a>
+				// 		<br/>
+				// 		<a href={ templ.SafeURL("mailto:" + phrases["departments"]["security_email"]) } class="department-link">{ phrases["departments"]["security_email"] }</a>
+				// 	</div>
+				// </div>
 				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
 					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-first-aid"></i></div>
-						<h4>Медицинска сестра</h4>
-						<a href="mailto:medical@pitagor-school.eu" class="department-link">medical@pitagor-school.eu</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
-					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-brain"></i></div>
-						<h4>Психолог (ПУК-4)</h4>
-						<a href="mailto:psychology.puk-4@pitagor-school.eu" class="department-link">psychology.puk-4@pitagor-school.eu</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
-					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-brain"></i></div>
-						<h4>Психолог (5-8)</h4>
-						<a href="mailto:psychology.5-8@pitagor-school.eu" class="department-link">psychology.5-8@pitagor-school.eu</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
-					<div class="department-card h-100">
 						<div class="department-icon"><i class="fas fa-shield-alt"></i></div>
-						<h4>Охрана</h4>
-						<a href="tel:0882260989" class="department-link">088 226 0989</a>
+						<h4>{ phrases["departments"]["lawyer_title"] }</h4>
+						<a href={ templ.SafeURL("tel:" + phrases["departments"]["lawyer_phone"]) } class="department-link">{ phrases["departments"]["lawyer_phone"] }</a>
 						<br/>
-						<a href="mailto:security@pitagor-school.eu" class="department-link">security@pitagor-school.eu</a>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["lawyer_email"]) } class="department-link">{ phrases["departments"]["lawyer_email"] }</a>
 					</div>
 				</div>
 			</div>

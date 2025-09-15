@@ -1,7 +1,7 @@
 package about_us
 
 templ schoolBoard(phrases map[string]map[string]string) {
-	<section id="school-board" class="section school-board-section">
+	<section id="school_board" class="section school-board-section">
 		<div class="container">
 			<div class="section-title animate-on-scroll">
 				<h2>{ phrases["school_board"]["title"] }</h2>
@@ -13,7 +13,7 @@ templ schoolBoard(phrases map[string]map[string]string) {
 						<div class="board-icon">
 							<i class="fas fa-university"></i>
 						</div>
-						<h3>Участие в управлението</h3>
+						<h3>{ phrases["school_board"]["h3title"] }</h3>
 						<p>{ phrases["school_board"]["description"] }</p>
 						<div class="board-features">
 							<div class="row g-3">

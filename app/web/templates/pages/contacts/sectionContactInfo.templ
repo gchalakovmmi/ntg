@@ -1,3 +1,4 @@
+// sectionContactInfo.templ
 package contacts
 
 templ contactInfo(phrases map[string]map[string]string) {
@@ -6,7 +7,7 @@ templ contactInfo(phrases map[string]map[string]string) {
 		<div class="container py-5">
 			<div class="row mb-4">
 				<div class="col-12">
-					<h2 class="section-title text-center mb-5">Информация за контакт</h2>
+					<h2 class="section-title text-center mb-5">{ phrases["main"]["section_title"] }</h2>
 				</div>
 			</div>
 			<!-- Main Contact Information -->
@@ -17,11 +18,9 @@ templ contactInfo(phrases map[string]map[string]string) {
 						<div class="contact-icon">
 							<i class="fas fa-map-marker-alt"></i>
 						</div>
-						<h3 class="contact-title">Адрес</h3>
+						<h3 class="contact-title">{ phrases["main"]["address_title"] }</h3>
 						<p class="contact-text text-center">
-							ул. „Никола Мушанов" 147
-							<br/>
-							София 1330
+							{ phrases["main"]["address_text"] }
 						</p>
 					</div>
 				</div>
@@ -31,11 +30,11 @@ templ contactInfo(phrases map[string]map[string]string) {
 						<div class="contact-icon">
 							<i class="fas fa-briefcase"></i>
 						</div>
-						<h3 class="contact-title">Канцелария</h3>
+						<h3 class="contact-title">{ phrases["main"]["office_title"] }</h3>
 						<p class="contact-text text-center">
-							<a href="mailto:office@pitagor-school.eu" class="contact-link">office@pitagor-school.eu</a>
+							<a href={ templ.SafeURL("mailto:" + phrases["main"]["office_email"]) } class="contact-link">{ phrases["main"]["office_email"] }</a>
 							<br/>
-							<a href="tel:024232327" class="contact-link">02/ 423 23 27</a>
+							<a href={ templ.SafeURL("tel:" + phrases["main"]["office_phone"]) } class="contact-link">{ phrases["main"]["office_phone"] }</a>
 						</p>
 					</div>
 				</div>
@@ -45,11 +44,9 @@ templ contactInfo(phrases map[string]map[string]string) {
 						<div class="contact-icon">
 							<i class="fas fa-clock"></i>
 						</div>
-						<h3 class="contact-title">Работно време</h3>
+						<h3 class="contact-title">{ phrases["main"]["hours_title"] }</h3>
 						<p class="contact-text text-center">
-							От Понеделник до Петък
-							<br/>
-							09:00 – 18:00
+							{ phrases["main"]["hours_text"] }
 						</p>
 					</div>
 				</div>
