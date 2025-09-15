@@ -1,14 +1,21 @@
 package news
 
-import "NTG/web/templates/base"
+import (
+	"NTG/web/templates/base"
+	"NTG/internal/database"
+)
 
-templ components(phrases map[string]map[string]string) {
+templ components(phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
 	<link rel="stylesheet" href="/static/css/news.css"/>
 	@hero(phrases)
-	@newsContent(phrases)
+	@newsContent(phrases, articles, categories, currentPage, totalPages, currentCategory, search, startDateStr, endDateStr, pageURLs)
 	<script src="/static/js/news.js"></script>
 }
 
-templ Handler(page, language string, phrases map[string]map[string]string) {
-	@base.Base(page, language, phrases, components(phrases))
+templ Handler(page, language string, phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
+	@base.Base(page, language, phrases, components(phrases, articles, categories, currentPage, totalPages, currentCategory, search, startDateStr, endDateStr, pageURLs))
+}
+
+templ ArticleHandler(page, language string, phrases map[string]map[string]string, article *database.NewsArticle) {
+	@base.Base(page, language, phrases, articleContent(phrases, article))
 }

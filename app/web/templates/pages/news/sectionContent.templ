@@ -1,6 +1,10 @@
 package news
 
-templ newsContent(phrases map[string]map[string]string) {
+import (
+	"NTG/internal/database"
+)
+
+templ newsContent(phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
 	<main class="container my-5">
 		<div class="row">
 			<!-- Filters Sidebar - First on Mobile -->
@@ -11,67 +15,60 @@ templ newsContent(phrases map[string]map[string]string) {
 							<h5 class="mb-0"><i class="fas fa-filter me-2"></i>{ phrases["filters"]["title"] }</h5>
 						</div>
 						<div class="card-body">
-							<!-- Date Filter -->
-							<div class="mb-4 p-3 bg-light rounded">
-								<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
-								<div class="mb-3">
-									<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
-									<input type="date" class="form-control" id="dateFrom"/>
+							<form method="GET" action="" id="newsFilterForm">
+								<!-- Date Filter -->
+								<div class="mb-4 p-3 bg-light rounded">
+									<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
+									<div class="mb-3">
+										<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
+										<input type="date" class="form-control" id="dateFrom" name="start_date" value=""/>
+									</div>
+									<div class="mb-3">
+										<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
+										<input type="date" class="form-control" id="dateTo" name="end_date" value=""/>
+									</div>
 								</div>
-								<div class="mb-3">
-									<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
-									<input type="date" class="form-control" id="dateTo"/>
+								<!-- Search Filter -->
+								<div class="mb-4">
+									<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
+									<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput" name="search" value={ search }/>
 								</div>
-							</div>
-							<!-- Search Filter -->
-							<div class="mb-4">
-								<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput"/>
-									<button class="btn btn-outline-danger" type="button" id="searchButton">
-										<i class="fas fa-search"></i>
-									</button>
+								<!-- Category Filter -->
+								<div class="mb-4">
+									<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
+									<select class="form-select" name="category">
+										<option value="">{ phrases["filters"]["category_all"] }</option>
+										for _, category := range categories {
+											if category == currentCategory {
+												<option value={ category } selected>{ phrases["categories"]["categories_" + category] }</option>
+											} else {
+												<option value={ category }>{ phrases["categories"]["categories_" + category] }</option>
+											}
+										}
+									</select>
 								</div>
-							</div>
-							<!-- Category Filter -->
-							<div class="mb-4">
-								<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="school-life" id="schoolLife" checked/>
-									<label class="form-check-label" for="schoolLife">
-										{ phrases["categories"]["school_life"] }
-									</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="educational-process" id="educationalProcess" checked/>
-									<label class="form-check-label" for="educationalProcess">
-										{ phrases["categories"]["educational_process"] }
-									</label>
-								</div>
-							</div>
-							<button class="btn btn-danger w-100" id="applyFilters">{ phrases["filters"]["apply_button"] }</button>
-							<button class="btn btn-outline-secondary w-100 mt-2" id="resetFilters">{ phrases["filters"]["reset_button"] }</button>
-						</div>
-					</div>
-					<!-- Quick Links -->
-					<div class="card shadow-sm">
-						<div class="card-header bg-warning text-dark">
-							<h5 class="mb-0"><i class="fas fa-link me-2"></i>{ phrases["quick_links"]["title"] }</h5>
-						</div>
-						<div class="list-group list-group-flush">
-							<a href="#" class="list-group-item list-group-item-action">{ phrases["quick_links"]["archive"] }</a>
-							<a href="#" class="list-group-item list-group-item-action">{ phrases["quick_links"]["calendar"] }</a>
-							<a href="#" class="list-group-item list-group-item-action">{ phrases["quick_links"]["gallery"] }</a>
-							<a href="#" class="list-group-item list-group-item-action">{ phrases["quick_links"]["newsletter"] }</a>
+								<button type="submit" class="btn btn-danger w-100">{ phrases["filters"]["apply_button"] }</button>
+								<button type="button" class="btn btn-outline-secondary w-100 mt-2" onclick="resetFilters()">{ phrases["filters"]["reset_button"] }</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- News Content - Second on Mobile -->
 			<div class="col-lg-8 mobile-order-2">
-				@newsGrid(phrases)
-				@pagination(phrases)
+				@newsGrid(phrases, articles)
+				@pagination(phrases, currentPage, totalPages, pageURLs)
 			</div>
 		</div>
 	</main>
+	
+	<script>
+		function resetFilters() {
+			document.getElementById('dateFrom').value = '';
+			document.getElementById('dateTo').value = '';
+			document.getElementById('searchInput').value = '';
+			document.querySelector('select[name="category"]').value = '';
+			document.getElementById('newsFilterForm').submit();
+		}
+	</script>
 }

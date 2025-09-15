@@ -1,18 +1,41 @@
 package news
 
-templ pagination(phrases map[string]map[string]string) {
-	<!-- Pagination -->
-	<nav aria-label="Page navigation" class="mt-5">
-		<ul class="pagination justify-content-center">
-			<li class="page-item disabled">
-				<a class="page-link" href="#" tabindex="-1">{ phrases["pagination"]["previous"] }</a>
-			</li>
-			<li class="page-item active"><a class="page-link" href="#">1</a></li>
-			<li class="page-item"><a class="page-link" href="#">2</a></li>
-			<li class="page-item"><a class="page-link" href="#">3</a></li>
-			<li class="page-item">
-				<a class="page-link" href="#">{ phrases["pagination"]["next"] }</a>
-			</li>
-		</ul>
-	</nav>
+templ pagination(phrases map[string]map[string]string, currentPage, totalPages int, pageURLs map[int]string) {
+	if totalPages > 1 {
+		<!-- Pagination -->
+		<nav aria-label="Page navigation" class="mt-5">
+			<ul class="pagination justify-content-center">
+				<!-- Previous button -->
+				if currentPage > 1 {
+					<li class="page-item">
+						<a class="page-link" href={ templ.URL(pageURLs[currentPage-1]) }>{ phrases["pagination"]["previous"] }</a>
+					</li>
+				} else {
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">{ phrases["pagination"]["previous"] }</a>
+					</li>
+				}
+				
+				<!-- Page numbers -->
+				for i := 1; i <= totalPages; i++ {
+					if i == currentPage {
+						<li class="page-item active"><a class="page-link" href="#">{ i }</a></li>
+					} else {
+						<li class="page-item"><a class="page-link" href={ templ.URL(pageURLs[i]) }>{ i }</a></li>
+					}
+				}
+				
+				<!-- Next button -->
+				if currentPage < totalPages {
+					<li class="page-item">
+						<a class="page-link" href={ templ.URL(pageURLs[currentPage+1]) }>{ phrases["pagination"]["next"] }</a>
+					</li>
+				} else {
+					<li class="page-item disabled">
+						<a class="page-link" href="#">{ phrases["pagination"]["next"] }</a>
+					</li>
+				}
+			</ul>
+		</nav>
+	}
 }

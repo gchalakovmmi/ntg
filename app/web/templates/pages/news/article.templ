@@ -1,0 +1,65 @@
+package news
+
+import "NTG/internal/database"
+
+templ articleContent(phrases map[string]map[string]string, article *database.NewsArticle) {
+	<main class="container my-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<article class="news-article">
+					<header class="article-header mb-4">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/news">{ phrases["navbar"]["news"] }</a></li>
+								<li class="breadcrumb-item active" aria-current="page">{ article.Title }</li>
+							</ol>
+						</nav>
+						
+						<!-- News category badge -->
+						<span class="badge bg-warning text-dark mb-2">
+							{ article.Category }
+						</span>
+						<small class="text-muted d-block mb-3">
+							<i class="far fa-calendar me-1"></i> { article.UploadDate.Format("02 January 2006") }
+						</small>
+						
+						<h1 class="article-title">{ article.Title }</h1>
+						<p class="lead">{ article.ShortDescription }</p>
+					</header>
+					
+					<div class="article-image mb-4">
+						<img src={ article.ImageURL } class="img-fluid rounded" alt={ article.Title }/>
+					</div>
+					
+					<div class="article-content">
+						{ article.LongDescription }
+					</div>
+					
+					<footer class="article-footer mt-5 pt-4 border-top">
+						<a href="/news" class="btn btn-outline-danger">
+							<i class="fas fa-arrow-left me-2"></i> Back to News
+						</a>
+					</footer>
+				</article>
+			</div>
+		</div>
+	</main>
+	
+	<style>
+		.article-content {
+			font-size: 1.1rem;
+			line-height: 1.8;
+		}
+		
+		.article-content p {
+			margin-bottom: 1.5rem;
+		}
+		
+		.article-title {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: var(--dark-red);
+			margin-bottom: 1rem;
+		}
+	</style>
+}
