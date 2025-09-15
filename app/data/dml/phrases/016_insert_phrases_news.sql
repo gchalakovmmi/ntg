@@ -28,10 +28,10 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'news', 'filters', 'apply_button', 'Apply Filters'),
 ('en', 'news', 'filters', 'reset_button', 'Reset Filters'),
 -- Categories
-('bg', 'news', 'categories', 'school_life', 'Училищен живот'),
-('bg', 'news', 'categories', 'educational_process', 'Учебен процес'),
-('en', 'news', 'categories', 'school_life', 'School Life'),
-('en', 'news', 'categories', 'educational_process', 'Educational Process'),
+('bg', 'news', 'categories', 'categories_SL', 'Училищен живот'),
+('bg', 'news', 'categories', 'categories_EP', 'Учебен процес'),
+('en', 'news', 'categories', 'categories_SL', 'School Life'),
+('en', 'news', 'categories', 'categories_EP', 'Educational Process'),
 -- Quick Links
 ('bg', 'news', 'quick_links', 'title', 'Бързи връзки'),
 ('bg', 'news', 'quick_links', 'archive', 'Архив на новини'),
@@ -46,7 +46,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- News Items
 ('bg', 'news', 'news', 'read_more', 'Прочети още'),
 ('bg', 'news', 'news', 'school_year_title', 'Старт на новата учебна година'),
-('bg', 'news', 'news', 'school_year_desc', 'Учениците от НТГ посрещнаха новата учебна година с тържествена церемония и много ентусиазъм.'),
+('bg', 'news', 'news', 'school_year_desc', 'Учениците от НТГ посрещнаха новата учебна година с тържествена церемония.'),
 ('bg', 'news', 'news', 'it_programs_title', 'Нови учебни програми по ИТ'),
 ('bg', 'news', 'news', 'it_programs_desc', 'Запознайте се с новите учебни програми по информационни технологии, които ще се предлагат през този учебен година.'),
 ('bg', 'news', 'news', 'sports_success_title', 'Спортни успехи на учениците'),
