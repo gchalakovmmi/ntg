@@ -54,7 +54,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'contacts', 'departments', 'accounting_title', 'Accounting and HR'),
 ('en', 'contacts', 'departments', 'accounting_phone', '032 64 37 97'),
 ('en', 'contacts', 'departments', 'director_title', 'Director'),
-('en', 'contacts', 'departments', 'director_email', '032 64 23 63'),
+('en', 'contacts', 'departments', 'director_phone', '032 64 23 63'),
 ('en', 'contacts', 'departments', 'maintenance_title', 'Maintenance'),
 ('en', 'contacts', 'departments', 'maintenance_email', 'maintenance@nts-school.bg'),
 ('en', 'contacts', 'departments', 'security_title', 'Security'),
