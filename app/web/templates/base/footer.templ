@@ -8,11 +8,23 @@ templ footer(phrases map[string]map[string]string) {
 					<h4 class="footer-title">{ phrases["footer"]["school_name"] }</h4>
 					<p>{ phrases["footer"]["school_description"] }</p>
 					<div class="social-links mt-4">
-						<a href="https://www.facebook.com/ntgpresent"><i class="fab fa-facebook-f"></i></a>
+						<a
+							href="https://www.facebook.com/ntgpresent"
+							target="_blank"
+							rel="noopener noreferrer"
+						><i class="fab fa-facebook-f"></i></a>
 						// <a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="https://www.instagram.com/ntg.plovdiv/"><i class="fab fa-instagram"></i></a>
+						<a
+							href="https://www.instagram.com/ntg.plovdiv/"
+							target="_blank"
+							rel="noopener noreferrer"
+						><i class="fab fa-instagram"></i></a>
 						// <a href="#"><i class="fab fa-linkedin-in"></i></a>
-						<a href="https://www.youtube.com/@plovdiv4000s"><i class="fab fa-youtube"></i></a>
+						<a
+							href="https://www.youtube.com/@plovdiv4000s"
+							target="_blank"
+							rel="noopener noreferrer"
+						><i class="fab fa-youtube"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -20,20 +32,20 @@ templ footer(phrases map[string]map[string]string) {
 					<div class="row">
 						<div class="col-6">
 							<div class="footer-links">
-								<a href="#">{ phrases["footer"]["home"] }</a>
-								<a href="#">{ phrases["footer"]["about"] }</a>
-								<a href="#">{ phrases["footer"]["documents"] }</a>
-								<a href="#">{ phrases["footer"]["admission"] }</a>
-								<a href="#">{ phrases["footer"]["programs"] }</a>
+								<a href="/home">{ phrases["footer"]["home"] }</a>
+								<a href="/about_us">{ phrases["footer"]["about"] }</a>
+								<a href="/documents">{ phrases["footer"]["documents"] }</a>
+								<a href="/admission">{ phrases["footer"]["admission"] }</a>
+								<a href="/programs_and_projects">{ phrases["footer"]["programs"] }</a>
 							</div>
 						</div>
 						<div class="col-6">
 							<div class="footer-links">
-								<a href="#">{ phrases["footer"]["school_life"] }</a>
-								<a href="#">{ phrases["footer"]["partners"] }</a>
-								<a href="#">{ phrases["footer"]["news"] }</a>
-								<a href="#">{ phrases["footer"]["contacts"] }</a>
-								<a href="#">{ phrases["footer"]["sitemap"] }</a>
+								<a href="/general_education">{ phrases["footer"]["school_life"] }</a>
+								<a href="/partners">{ phrases["footer"]["partners"] }</a>
+								<a href="/news">{ phrases["footer"]["news"] }</a>
+								<a href="/contacts">{ phrases["footer"]["contacts"] }</a>
+								// <a href="#">{ phrases["footer"]["sitemap"] }</a>
 							</div>
 						</div>
 					</div>

@@ -21,7 +21,7 @@
 	height: 70px;
 }
 
-.logo {
+/* .logo {
 	height: 50px;
 	margin-right: 15px;
 	border-radius: 8px;
@@ -32,7 +32,7 @@
 	margin-left: 15px;
 	transition: transform 0.3s ease;
 	border-radius: 8px;
-}
+} */
 
 .innovative-logo:hover {
 	transform: scale(1.05);
@@ -388,3 +388,111 @@
  	}
  }
  /* =============================================================== */
+
+ /* In your navbar.css file */
+
+ /* Logo container */
+ .logo-container {
+ 	display: flex;
+ 	align-items: center;
+ 	gap: 15px;
+	height: 70px;
+ }
+
+ /* Main logo - responsive sizing */
+ .logo {
+ 	height: 60px;
+ 	/* Desktop size */
+ 	width: auto;
+ 	object-fit: contain;
+ 	transition: height 0.3s ease;
+	margin-right: 0;
+		/* Remove the margin since we're using gap */
+		border-radius: 8px;
+ }
+
+ /* Innovative logo */
+ .innovative-logo {
+ 	height: 60px;
+ 	/* Slightly smaller than main logo */
+ 	width: auto;
+ 	object-fit: contain;
+ 	transition: height 0.3s ease;
+	margin-left: 0;
+		/* Remove margin since we're using gap */
+		border-radius: 8px;
+ }
+
+ /* Tablet responsiveness */
+ @media (max-width: 992px) {
+ 	.logo {
+ 		height: 55px;
+ 	}
+
+ 	.innovative-logo {
+ 		height: 35px;
+ 	}
+
+ 	.logo-container {
+ 		gap: 10px;
+ 	}
+ }
+
+ /* Mobile responsiveness */
+ @media (max-width: 768px) {
+ 	.logo {
+ 		height: 35px;
+ 		/* Smaller on mobile */
+ 	}
+
+ 	.innovative-logo {
+ 		height: 28px;
+ 	}
+
+ 	.logo-container {
+ 		gap: 8px;
+ 	}
+
+ 	/* Adjust navbar padding on mobile */
+ 	.navbar {
+ 		padding: 0.5rem 1rem;
+ 	}
+ }
+
+ /* Small mobile devices */
+ @media (max-width: 576px) {
+ 	.logo {
+ 		height: 30px;
+ 	}
+
+ 	.innovative-logo {
+ 		height: 24px;
+ 	}
+
+ 	.logo-container {
+ 		gap: 5px;
+ 	}
+ }
+
+ /* Extra small devices - hide second logo if needed */
+ @media (max-width: 480px) {
+ 	.innovative-logo {
+ 		display: none;
+ 		/* Hide second logo on very small screens */
+ 	}
+
+ 	.logo {
+ 		height: 32px;
+ 	}
+ }
+
+ /* Ensure navbar maintains proper height */
+ .navbar {
+ 	min-height: 60px;
+ }
+
+ @media (max-width: 768px) {
+ 	.navbar {
+ 		min-height: 50px;
+ 	}
+ }
