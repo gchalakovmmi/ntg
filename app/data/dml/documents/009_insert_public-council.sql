@@ -1,0 +1,43 @@
+-- Public Council section phrases
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
+('bg', 'documents', 'public_council', 'title', 'Обществен съвет'),
+('en', 'documents', 'public_council', 'title', 'Public Council');
+
+-- Public Council documents display names
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
+('bg', 'documents', 'public_council', 'protocol_zasedanie_18.01.2023', 'Протокол от заседание проведено на 18.01.2023 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_18.01.2023', 'Meeting Minutes from January 18, 2023'),
+('bg', 'documents', 'public_council', 'otchet', 'Годишен отчет за дейността'),
+('en', 'documents', 'public_council', 'otchet', 'Annual Activity Report'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_11.03.2020', 'Протокол от заседание проведено на 11.03.2020 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_11.03.2020', 'Meeting Minutes from March 11, 2020'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_16.01.2020', 'Протокол от заседание проведено на 16.01.2020 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_16.01.2020', 'Meeting Minutes from January 16, 2020'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_11.03.2021', 'Протокол от заседание проведено на 11.03.2021 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_11.03.2021', 'Meeting Minutes from March 11, 2021'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_15.07.2020', 'Протокол от заседание проведено на 15.07.2020 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_15.07.2020', 'Meeting Minutes from July 15, 2020'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_19.10.2020', 'Протокол от заседание проведено на 19.10.2020 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_19.10.2020', 'Meeting Minutes from October 19, 2020'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_28.01.2021', 'Протокол от заседание проведено на 28.01.2021 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_28.01.2021', 'Meeting Minutes from January 28, 2021'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_06.07.2021', 'Протокол от заседание проведено на 06.07.2021 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_06.07.2021', 'Meeting Minutes from July 6, 2021'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_11.04.2022', 'Протокол от заседание проведено на 11.04.2022 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_11.04.2022', 'Meeting Minutes from April 11, 2022'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_13.11_2021', 'Протокол от заседание проведено на 13.11.2021 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_13.11_2021', 'Meeting Minutes from November 13, 2021'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_18.01.2022', 'Протокол от заседание проведено на 18.01.2022 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_18.01.2022', 'Meeting Minutes from January 18, 2022'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_26.04.2022', 'Протокол от заседание проведено на 26.04.2022 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_26.04.2022', 'Meeting Minutes from April 26, 2022'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_07.07.2022', 'Протокол от заседание проведено на 07.07.2022 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_07.07.2022', 'Meeting Minutes from July 7, 2022'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_13.10.2022', 'Протокол от заседание проведено на 13.10.2022 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_13.10.2022', 'Meeting Minutes from October 13, 2022'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_18.04.2023', 'Протокол от заседание проведено на 18.04.2023 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_18.04.2023', 'Meeting Minutes from April 18, 2023'),
+('bg', 'documents', 'public_council', 'protocol_zasedanie_05.07.2023', 'Протокол от заседание проведено на 05.07.2023 г.'),
+('en', 'documents', 'public_council', 'protocol_zasedanie_05.07.2023', 'Meeting Minutes from July 5, 2023'),
+('bg', 'documents', 'public_council', 'pravomoshtiq', 'Правомощия на членовете на Обществения съвет'),
+('en', 'documents', 'public_council', 'pravomoshtiq', 'Powers of Public Council Members');
