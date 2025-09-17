@@ -61,4 +61,12 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'projects', 'it_academy_title', 'IT Academy'),
 ('en', 'programs_and_projects', 'projects', 'it_academy_desc', 'Specialized program for training in programming, cybersecurity and modern information technologies.'),
 ('en', 'programs_and_projects', 'projects', 'student_company_title', 'Student Company'),
-('en', 'programs_and_projects', 'projects', 'student_company_desc', 'Practical project for creating and managing a real student company with actual products and services.');
+('en', 'programs_and_projects', 'projects', 'student_company_desc', 'Practical project for creating and managing a real student company with actual products and services.'),
+
+-- CTA Section
+('bg', 'programs_and_projects', 'cta', 'title', 'Станете наш партньор'),
+('bg', 'programs_and_projects', 'cta', 'subtitle', 'Присъединете се към нашата мисия за качествено образование и инвестирайте в бъдещето на младите хора'),
+('bg', 'programs_and_projects', 'cta', 'button_text', 'Свържете се с нас'),
+('en', 'programs_and_projects', 'cta', 'title', 'Become Our Partner'),
+('en', 'programs_and_projects', 'cta', 'subtitle', 'Join our mission for quality education and invest in the future of young people'),
+('en', 'programs_and_projects', 'cta', 'button_text', 'Contact Us');

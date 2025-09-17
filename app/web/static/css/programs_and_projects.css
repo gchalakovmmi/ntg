@@ -338,6 +338,66 @@
     pointer-events: auto;
 }
 
+/* ===== CTA SECTION ===== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(212,175,55,0.1)" points="0,0 1000,0 800,1000 0,1000"/></svg>') center/cover;
+    animation: float 6s ease-in-out infinite;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-cta {
+    background: var(--primary-gold);
+    color: var(--dark-red);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.btn-cta:hover {
+    background: var(--light-gold);
+    color: var(--dark-red);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+}
+
+.btn-cta:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-cta i {
+    transition: transform 0.3s ease;
+}
+
+.btn-cta:hover i {
+    transform: translateX(5px);
+}
+
 @media (max-width: 992px) {
     .programs-hero h1 {
         font-size: 2.5rem;
