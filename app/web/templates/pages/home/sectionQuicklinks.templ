@@ -1,40 +1,46 @@
 package home
 
 templ quicklinks(phrases map[string]map[string]string) {
-<div class="quick-links">
-	<div class="container h-100">
-		<div class="row h-100 g-0">
-			<div class="col-md-3 h-100">
-				<div class="quick-link h-100 animate-on-scroll">
-					<i class="fas fa-project-diagram"></i>
-					<h4>{ phrases["quicklinks"]["projects"] }</h4>
-					<p>{ phrases["quicklinks"]["projects_description"] }</p>
+	<div class="quick-links">
+		<div class="container h-100">
+			<div class="row h-100 g-0">
+				<div class="col-md-3 h-100">
+					<a href="/programs_and_projects" class="text-decoration-none h-100">
+						<div class="quick-link h-100 animate-on-scroll">
+							<i class="fas fa-project-diagram"></i>
+							<h4>{ phrases["quicklinks"]["projects"] }</h4>
+							<p>{ phrases["quicklinks"]["projects_description"] }</p>
+						</div>
+					</a>
 				</div>
-			</div>
-			<div class="col-md-3 h-100">
-				<div class="quick-link h-100 animate-on-scroll delay-1">
-					<i class="fas fa-school"></i>
-					<h4>{ phrases["quicklinks"]["school_life"] }</h4>
-					<p>{ phrases["quicklinks"]["school_life_description"] }</p>
+				<div class="col-md-3 h-100">
+					<a href="/document_templates" class="text-decoration-none h-100">
+						<div class="quick-link h-100 animate-on-scroll delay-1">
+							<i class="fas fa-school"></i>
+							<h4>{ phrases["quicklinks"]["school_life"] }</h4>
+							<p>{ phrases["quicklinks"]["school_life_description"] }</p>
+						</div>
+					</a>
 				</div>
-			</div>
-			<div class="col-md-3 h-100">
-				<div class="quick-link h-100 animate-on-scroll delay-2">
-					<i class="fas fa-newspaper"></i>
-					<h4>{ phrases["quicklinks"]["news"] }</h4>
-					<p>{ phrases["quicklinks"]["news_description"] }</p>
+				<div class="col-md-3 h-100">
+					<a href="/news" class="text-decoration-none h-100">
+						<div class="quick-link h-100 animate-on-scroll delay-2">
+							<i class="fas fa-newspaper"></i>
+							<h4>{ phrases["quicklinks"]["news"] }</h4>
+							<p>{ phrases["quicklinks"]["news_description"] }</p>
+						</div>
+					</a>
 				</div>
-			</div>
-			<div class="col-md-3 h-100">
-				<a href="#" class="text-decoration-none h-100">
-					<div class="quick-link h-100 animate-on-scroll delay-3">
-						<i class="fas fa-images"></i>
-						<h4>{ phrases["quicklinks"]["gallery"] }</h4>
-						<p>{ phrases["quicklinks"]["gallery_description"] }</p>
-					</div>
-				</a>
+				<div class="col-md-3 h-100">
+					<a href="/gallery" class="text-decoration-none h-100">
+						<div class="quick-link h-100 animate-on-scroll delay-3">
+							<i class="fas fa-images"></i>
+							<h4>{ phrases["quicklinks"]["gallery"] }</h4>
+							<p>{ phrases["quicklinks"]["gallery_description"] }</p>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 }
