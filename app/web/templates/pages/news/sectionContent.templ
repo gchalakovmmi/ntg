@@ -5,61 +5,63 @@ import (
 )
 
 templ newsContent(phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
-	<main class="container my-5">
-		<div class="row">
-			<!-- Filters Sidebar - First on Mobile -->
-			<div class="col-lg-4 mobile-order-1 mb-4">
-				<div class="sticky-top" style="top: 90px;">
-					<div class="card shadow-sm mb-4">
-						<div class="card-header bg-danger text-white">
-							<h5 class="mb-0"><i class="fas fa-filter me-2"></i>{ phrases["filters"]["title"] }</h5>
-						</div>
-						<div class="card-body">
-							<form method="GET" action="" id="newsFilterForm">
-								<!-- Date Filter -->
-								<div class="mb-4 p-3 bg-light rounded">
-									<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
-									<div class="mb-3">
-										<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
-										<input type="date" class="form-control" id="dateFrom" name="start_date" value=""/>
-									</div>
-									<div class="mb-3">
-										<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
-										<input type="date" class="form-control" id="dateTo" name="end_date" value=""/>
-									</div>
+	<main class="container-fluid my-5">
+		<div class="row g-4" style="height: calc(100vh - 200px);">
+			<!-- Filters Sidebar - Fixed width, no scrolling -->
+			<div class="col-lg-3 mobile-order-1">
+				<div class="card shadow-sm h-100">
+					<div class="card-header bg-danger text-white">
+						<h5 class="mb-0"><i class="fas fa-filter me-2"></i>{ phrases["filters"]["title"] }</h5>
+					</div>
+					<div class="card-body">
+						<form method="GET" action="" id="newsFilterForm">
+							<!-- Date Filter -->
+							<div class="mb-4 p-3 bg-light rounded">
+								<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
+								<div class="mb-3">
+									<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
+									<input type="date" class="form-control" id="dateFrom" name="start_date" value=""/>
 								</div>
-								<!-- Search Filter -->
-								<div class="mb-4">
-									<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
-									<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput" name="search" value={ search }/>
+								<div class="mb-3">
+									<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
+									<input type="date" class="form-control" id="dateTo" name="end_date" value=""/>
 								</div>
-								<!-- Category Filter -->
-								<div class="mb-4">
-									<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
-									<select class="form-select" name="category">
-										<option value="">{ phrases["filters"]["category_all"] }</option>
-										for _, category := range categories {
-											if category == currentCategory {
-												<option value={ category } selected>{ phrases["categories"]["categories_" + category] }</option>
-											} else {
-												<option value={ category }>{ phrases["categories"]["categories_" + category] }</option>
-											}
+							</div>
+							<!-- Search Filter -->
+							<div class="mb-4">
+								<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
+								<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput" name="search" value={ search }/>
+							</div>
+							<!-- Category Filter -->
+							<div class="mb-4">
+								<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
+								<select class="form-select" name="category">
+									<option value="">{ phrases["filters"]["category_all"] }</option>
+									for _, category := range categories {
+										if category == currentCategory {
+											<option value={ category } selected>{ phrases["categories"]["categories_" + category] }</option>
+										} else {
+											<option value={ category }>{ phrases["categories"]["categories_" + category] }</option>
 										}
-									</select>
-								</div>
-								<button type="submit" class="btn btn-danger w-100">{ phrases["filters"]["apply_button"] }</button>
-								<button type="button" class="btn btn-outline-secondary w-100 mt-2" onclick="resetFilters()">{ phrases["filters"]["reset_button"] }</button>
-							</form>
-						</div>
+									}
+								</select>
+							</div>
+							<button type="submit" class="btn btn-danger w-100">{ phrases["filters"]["apply_button"] }</button>
+							<button type="button" class="btn btn-outline-secondary w-100 mt-2" onclick="resetFilters()">{ phrases["filters"]["reset_button"] }</button>
+						</form>
 					</div>
 				</div>
 			</div>
-			<!-- News Content - Second on Mobile -->
-			<div class="col-lg-8 mobile-order-2">
-				@newsGrid(phrases, articles)
-				@pagination(phrases, currentPage, totalPages, pageURLs)
+			
+			<!-- News Content - Scrollable -->
+			<div class="col-lg-9 mobile-order-2 d-flex flex-column" style="height: 100%;">
+				<!-- Scrollable news container with visible scrollbar -->
+				<div class="news-scroll-container border rounded p-3 mb-3" style="overflow-y: auto; flex: 1;">
+					@newsGrid(phrases, articles)
+				</div>
 			</div>
 		</div>
+				@pagination(phrases, currentPage, totalPages, pageURLs)
 	</main>
 	
 	<script>

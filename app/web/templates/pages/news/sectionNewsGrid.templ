@@ -3,8 +3,8 @@ package news
 import "NTG/internal/database"
 
 templ newsGrid(phrases map[string]map[string]string, articles []database.NewsArticle) {
-	<!-- News Cards -->
-	<div class="row row-cols-1 row-cols-md-2 g-4" id="news-container">
+	<!-- News Cards - 3 per row -->
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="news-container">
 		if len(articles) == 0 {
 			<div class="col-12">
 				<div class="alert alert-info text-center">
@@ -25,7 +25,7 @@ templ newsGrid(phrases map[string]map[string]string, articles []database.NewsArt
 							<div class="d-flex justify-content-between align-items-center mb-2">
 								<small class="text-muted news-date"><i class="far fa-calendar me-1"></i> { article.UploadDate.Format("02 January 2006") }</small>
 							</div>
-							<h5 class="card-title news-title text-danger">{ article.Title }</h5>
+							<h5 class="card-title news-title">{ article.Title }</h5>
 							<p class="card-text news-description">{ article.ShortDescription }</p>
 							<a href={ templ.URL("/news/" + article.Slug) } class="btn btn-outline-danger btn-sm">{ phrases["news"]["read_more"] }</a>
 						</div>
