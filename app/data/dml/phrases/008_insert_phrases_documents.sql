@@ -22,24 +22,6 @@ INSERT OR REPLACE INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'documents', 'filter', 'category_label', 'Category'),
 ('en', 'documents', 'filter', 'category_all', 'All Categories'),
 
--- Document Sections
-('bg', 'documents', 'regulations', 'title', 'Правилници и планове'),
-('en', 'documents', 'regulations', 'title', 'Regulations and Plans'),
-('bg', 'documents', 'curriculum', 'title', 'Учебни планове'),
-('en', 'documents', 'curriculum', 'title', 'Curriculum'),
-('bg', 'documents', 'education_types', 'title', 'Форми на обучение'),
-('en', 'documents', 'education_types', 'title', 'Forms of Education'),
-('bg', 'documents', 'budget', 'title', 'Бюджет'),
-('en', 'documents', 'budget', 'title', 'Budget'),
-('bg', 'documents', 'schedules', 'title', 'Графици'),
-('en', 'documents', 'schedules', 'title', 'Schedules'),
-('bg', 'documents', 'scholarships', 'title', 'Стипендии'),
-('en', 'documents', 'scholarships', 'title', 'Scholarships'),
-('bg', 'documents', 'buyer_profile', 'title', 'Профил на купувача'),
-('en', 'documents', 'buyer_profile', 'title', 'Buyer Profile'),
-('bg', 'documents', 'rules', 'title', 'Правила'),
-('en', 'documents', 'rules', 'title', 'Rules'),
-
 -- Common Document Elements
 ('bg', 'documents', 'common', 'preview_button', 'Преглед'),
 ('bg', 'documents', 'common', 'download_button', 'Изтегли'),
@@ -66,31 +48,4 @@ INSERT OR REPLACE INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'navbar', 'buyer_profile', 'Профил на купувача'),
 ('bg', 'base', 'navbar', 'rules', 'Правила'),
 ('en', 'base', 'navbar', 'buyer_profile', 'Buyer Profile'),
-('en', 'base', 'navbar', 'rules', 'Rules'),
-
--- Document Display Names for Regulations
-('bg', 'documents', 'regulations', 'godishen_plan', 'Годишен план на училището'),
-('bg', 'documents', 'regulations', 'etichen_kodeks', 'Етичен кодекс'),
-('bg', 'documents', 'regulations', 'pravilnik_deinost', 'Правилник за дейността на НТГ'),
-('bg', 'documents', 'regulations', 'vp_kontrol_pipft', 'Вътрешни правила за контрол и ПИПФТ'),
-('bg', 'documents', 'regulations', 'pojarna_sigurnost', 'Досие пожарна безопасност'),
-('bg', 'documents', 'regulations', 'mechanizum_narkotici', 'Механизъм за наркотични вещества'),
-('bg', 'documents', 'regulations', 'organizacia_ucheben_den', 'Организация на учебния ден'),
-('bg', 'documents', 'regulations', 'plan_terorizum', 'План за противодействие на тероризма'),
-('bg', 'documents', 'regulations', 'plan_tormoz_nasilie', 'План за противодействие на тормоза и насилието'),
-('bg', 'documents', 'regulations', 'plan_obuchenie_pipft', 'План за обучение за МКПИПФТ'),
-('bg', 'documents', 'regulations', 'plan_zashita_bedstvia', 'План за защита при бедствия'),
-('bg', 'documents', 'regulations', 'plan_programa_bdp', 'План и програма на училищна комисия по БДП'),
-('bg', 'documents', 'regulations', 'pravilnik_propuskatelen_rejim', 'Правилник за пропускателен режим'),
-('bg', 'documents', 'regulations', 'pravilnik_zbut', 'Правилник ЗБУТ'),
-('bg', 'documents', 'regulations', 'strategia_razvitie', 'Стратегия за развитие на НТГ'),
-('bg', 'documents', 'regulations', 'uup_ntg', 'Училищни учебни планове'),
-('bg', 'documents', 'regulations', 'formi_obuchenie', 'Форми на обучение в НТГ'),
-
--- Rules documents
-('bg', 'documents', 'rules', 'mrejova_sigurnost', 'Вътрешни правила за мрежова сигурност'),
-('bg', 'documents', 'rules', 'internet_dazd', 'Правила за безопасен интернет-ДАЗД'),
-
--- Buyer profile documents
-('bg', 'documents', 'buyer_profile', 'pravila', 'Вътрешни правила'),
-('bg', 'documents', 'buyer_profile', 'zovp', 'Заповед - отмяна на вътрешни правила');
+('en', 'base', 'navbar', 'rules', 'Rules');

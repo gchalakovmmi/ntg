@@ -23,7 +23,7 @@ templ sectionDocuments(phrases map[string]map[string]string, documents map[strin
 												<div class="document-icon">
 													<i class="fas fa-file-alt"></i>
 												</div>
-												<h4 class="document-title">{ doc.Name }</h4>
+												<h4 class="document-title">{ phrases[doc.Section][doc.Key] }</h4>
 												<div class="document-meta">
 													<span><i class="fas fa-calendar me-1"></i> Актуални</span>
 													<span><i class="fas fa-file me-1"></i> { doc.Size }</span>
@@ -65,7 +65,7 @@ templ sectionDocuments(phrases map[string]map[string]string, documents map[strin
 																<div class="d-flex align-items-center">
 																	<i class="fas fa-file-pdf text-danger me-2"></i>
 																	<div>
-																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } class="text-decoration-none text-dark" target="_blank">{ doc.Name }</a>
+																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } class="text-decoration-none text-dark" target="_blank">{ phrases[doc.Section][doc.Key] }</a>
 																		<div class="text-muted small">{ doc.Size }</div>
 																	</div>
 																</div>

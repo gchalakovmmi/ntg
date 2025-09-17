@@ -25,3 +25,4 @@ database:
 	for file in $$(find data/ddl -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
 	for file in $$(find data/dml/phrases -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
 	for file in $$(find data/dml/news -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done
+	for file in $$(find data/dml/documents -name "*.sql" | sort -V); do echo "Executing $$file"; sqlite3 data/app.db < "$$file"; done

@@ -31,7 +31,8 @@ func Documents(cfg *config.Config, db *sql.DB) http.Handler {
 		basePath := filepath.Join(cwd, "web", "static", "docs", "documents")
 		slog.Info("Loading documents from", "path", basePath)
 		
-		documentsData, err := database.GetDocuments(db, basePath, cfg.CurrentSchoolYear, language)
+		// Updated function call with new signature
+		documentsData, err := database.GetDocuments(basePath, cfg.CurrentSchoolYear)
 		if err != nil {
 			// Log error but continue - we'll show empty sections
 			slog.Error("Error loading documents", "error", err)
