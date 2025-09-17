@@ -13,6 +13,10 @@
     display: block;
 }
 
+.carousel-item:nth-child(3) .hero-image {
+    object-position: center 100%;
+}
+
 .carousel-inner,
 .carousel-item {
     height: 100%;
