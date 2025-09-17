@@ -2,7 +2,7 @@ package base
 
 templ navbar(page, language string, phrases map[string]map[string]string) {
 	<nav class="navbar navbar-expand-lg navbar-dark">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="logo-container">
 				<a href={ templ.URL("/" + language + "/home") }>
 					<img src="/static/images/navbar/logo.png" alt={ phrases["navbar"]["ntg_logo_alt"] } class="logo"/>
@@ -16,8 +16,8 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
+			<div class="collapse navbar-collapse ms-2" id="navbarNav">
+				<ul class="navbar-nav mx-auto">
 					<li class="nav-item">
 						if page == "home" {
 							<a class="nav-link active" href={ templ.URL("/" + language + "/home") }>
