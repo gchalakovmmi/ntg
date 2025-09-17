@@ -1,6 +1,8 @@
 package documents
 
-templ filter(phrases map[string]map[string]string) {
+import "NTG/internal/database"
+
+templ filter(phrases map[string]map[string]string, documents map[string]database.SectionData) {
 	<section class="document-section">
 		<div class="container">
 			<div class="document-filter animate-on-scroll">
@@ -10,14 +12,9 @@ templ filter(phrases map[string]map[string]string) {
 						<label class="form-label">{ phrases["filter"]["category_label"] }</label>
 						<select class="form-select" id="categoryFilter">
 							<option value="all" selected>{ phrases["filter"]["category_all"] }</option>
-							<option value="regulations">{ phrases["regulations"]["title"] }</option>
-							<option value="curriculum">{ phrases["curriculum"]["title"] }</option>
-							<option value="education_types">{ phrases["education_types"]["title"] }</option>
-							<option value="budget">{ phrases["budget"]["title"] }</option>
-							<option value="schedules">{ phrases["schedules"]["title"] }</option>
-							<option value="scholarships">{ phrases["scholarships"]["title"] }</option>
-							<option value="buyer_profile">{ phrases["buyer_profile"]["title"] }</option>
-							<option value="rules">{ phrases["rules"]["title"] }</option>
+							for section := range documents {
+								<option value={ section }>{ phrases[section]["title"] }</option>
+							}
 						</select>
 					</div>
 				</div>

@@ -6,7 +6,7 @@ import "NTG/internal/database"
 templ components(phrases map[string]map[string]string, documents map[string]database.SectionData, currentYear string) {
 	<link rel="stylesheet" href="/static/css/documents.css"/>
 	@hero(phrases)
-	@filter(phrases)
+	@filter(phrases, documents)
 	@sectionDocuments(phrases, documents, currentYear)
 	<script src="/static/js/documents.js"></script>
 }
