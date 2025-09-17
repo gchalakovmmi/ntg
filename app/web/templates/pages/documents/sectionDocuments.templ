@@ -32,7 +32,7 @@ templ sectionDocuments(phrases map[string]map[string]string, documents map[strin
 													<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } target="_blank" class="btn btn-preview btn-sm">
 														<i class="fas fa-eye me-1"></i> { phrases["common"]["preview_button"] }
 													</a>
-													<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } download class="btn btn-primary btn-sm">
+													<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } download class="btn btn-primary btn-sm download-btn">
 														<i class="fas fa-download me-1"></i> { phrases["common"]["download_button"] }
 													</a>
 												</div>
@@ -74,10 +74,10 @@ templ sectionDocuments(phrases map[string]map[string]string, documents map[strin
 																		</div>
 																	</div>
 																	<div class="btn-group">
-																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } target="_blank" class="btn btn-sm btn-outline-secondary">
+																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } target="_blank" class="btn btn-sm btn-outline-secondary btn-preview">
 																			<i class="fas fa-eye"></i>
 																		</a>
-																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } download class="btn btn-sm btn-outline-primary">
+																		<a href={ templ.URL("/docs/documents/" + doc.Section + "/" + doc.Filename) } download class="btn btn-sm btn-outline-primary download-btn">
 																			<i class="fas fa-download"></i>
 																		</a>
 																	</div>

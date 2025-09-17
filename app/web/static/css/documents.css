@@ -279,3 +279,14 @@ html {
 		font-size: 1.1rem;
 	}
 }
+
+.download-btn {
+	background-color: #b22222;
+	color: white;
+	border-color: #b22222;
+}
+
+.download-btn:hover {
+	background-color: #8b0000;
+	border-color: #8b0000;
+}
