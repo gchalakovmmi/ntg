@@ -1,4 +1,3 @@
-/* Hero Carousel */
 .hero-carousel {
     height: 80vh;
     overflow: hidden;
@@ -13,6 +12,21 @@
 .carousel-item {
     background-size: cover;
     background-position: center;
+}
+
+/* Add this for desktop */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+    /* Changed from 'center' to show more of the building */
+    display: block;
+}
+
+/* Specific positioning for third image (home3.jpg) */
+.carousel-item:nth-child(3) .hero-image {
+    object-position: center 100%;
 }
 
 .carousel-caption {
@@ -258,80 +272,62 @@
     .hero-carousel {
         height: 80vh;
     }
-    
+
+    .carousel-item {
+        height: 80vh;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 10%;
+        /* Changed from 'center top' to match desktop */
+    }
+
+    /* Maintain specific positioning for third image on mobile */
+    .carousel-item:nth-child(3) .hero-image {
+        object-position: center 100%;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
-    }
-    
-    .quick-links {
-        height: 20vh;
-        padding: 0;
-    }
-    
-    .quick-link p {
-        display: none;
-    }
-    
-    .quick-link i {
-        margin-bottom: 0;
-        font-size: 1.5rem;
-    }
-    
-    .quick-link h4 {
-        font-size: 0.8rem;
-        white-space: normal;
-        overflow: visible;
-        text-overflow: clip;
-        height: auto;
-        line-height: 1.2;
-        padding: 0 5px;
     }
 }
 
 @media (max-width: 768px) {
     .hero-carousel {
-        height: 80vh;
+        height: 60vh;
     }
-    
+
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 10%;
+        /* Changed from 'center top' to match desktop */
+    }
+
+    /* Maintain specific positioning for third image on mobile */
+    .carousel-item:nth-child(3) .hero-image {
+        object-position: center 100%;
+    }
+
     .hero-title {
         font-size: 1.8rem;
     }
-    
+
     .carousel-caption {
         padding: 15px;
         bottom: 20%;
         max-width: 90%;
-    }
-    
-    .tour-container {
-        height: 300px;
-    }
-    
-    .quick-links {
-        height: 20vh;
-    }
-    
-    /* Quick links layout for mobile */
-    .quick-links .row {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin: 0 -5px;
-    }
-    
-    .quick-links .col-md-3 {
-        flex: 0 0 auto;
-        width: 25%;
-        max-width: 25%;
-        padding: 0 5px;
-    }
-    
-    .quick-link {
-        min-width: 90px;
     }
 }

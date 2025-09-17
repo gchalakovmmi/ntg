@@ -1,9 +1,9 @@
 package home
 
 templ carousel(phrases map[string]map[string]string) {
-	<div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+	<div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label={ phrases["carousel"]["slide_indicator"] + " 1" }></button>
+			<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label={ phrases["carousel"]["slide_indicator"] + " 1" }></button>
 			<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label={ phrases["carousel"]["slide_indicator"] + " 2" }></button>
 			<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label={ phrases["carousel"]["slide_indicator"] + " 3" }></button>
 		</div>
@@ -13,13 +13,13 @@ templ carousel(phrases map[string]map[string]string) {
 					src="/static/images/home/carousel/home.jpg"
 					class="hero-image"
 					alt={ phrases["carousel"]["slide1_title"] }
-					loading="lazy"
+					loading="eager"
 					decoding="async"
 				/>
 				<div class="carousel-caption">
 					<h1 class="hero-title animate__animated animate__fadeInDown">{ phrases["carousel"]["slide1_title"] }</h1>
-					<p class="hero-subtitle animate__animated animate__fadeIn">{ phrases["carousel"]["slide1_subtitle"] }</p>
-					<a href="#virtual-tour" class="btn btn-outline-custom animate__animated animate__fadeInUp">{ phrases["carousel"]["slide1_button"] }</a>
+					<p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">{ phrases["carousel"]["slide1_subtitle"] }</p>
+					<a href="#virtual-tour" class="btn btn-outline-custom animate__animated animate__fadeInUp animate__delay-2s">{ phrases["carousel"]["slide1_button"] }</a>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -38,7 +38,7 @@ templ carousel(phrases map[string]map[string]string) {
 			</div>
 			<div class="carousel-item">
 				<img
-					src="/static/images/home/carousel/home.jpg"
+					src="/static/images/home/carousel/home3.jpg"
 					class="hero-image"
 					alt={ phrases["carousel"]["slide3_title"] }
 					loading="lazy"
@@ -53,9 +53,11 @@ templ carousel(phrases map[string]map[string]string) {
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label={ phrases["carousel"]["prev_slide"] }>
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">{ phrases["carousel"]["prev_slide"] }</span>
 		</button>
 		<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label={ phrases["carousel"]["next_slide"] }>
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">{ phrases["carousel"]["next_slide"] }</span>
 		</button>
 	</div>
 }
