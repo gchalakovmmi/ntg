@@ -5,6 +5,18 @@
     position: relative;
 }
 
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-position: center 10%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-item:nth-child(3) .hero-image {
+    object-position: center 100%;
+}
+
 .carousel-inner,
 .carousel-item {
     height: 100%;
@@ -258,29 +270,29 @@
     .hero-carousel {
         height: 80vh;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .quick-links {
         height: 20vh;
         padding: 0;
     }
-    
+
     .quick-link p {
         display: none;
     }
-    
+
     .quick-link i {
         margin-bottom: 0;
         font-size: 1.5rem;
     }
-    
+
     .quick-link h4 {
         font-size: 0.8rem;
         white-space: normal;
@@ -296,25 +308,25 @@
     .hero-carousel {
         height: 80vh;
     }
-    
+
     .hero-title {
         font-size: 1.8rem;
     }
-    
+
     .carousel-caption {
         padding: 15px;
         bottom: 20%;
         max-width: 90%;
     }
-    
+
     .tour-container {
         height: 300px;
     }
-    
+
     .quick-links {
         height: 20vh;
     }
-    
+
     /* Quick links layout for mobile */
     .quick-links .row {
         display: flex;
@@ -323,14 +335,14 @@
         -webkit-overflow-scrolling: touch;
         margin: 0 -5px;
     }
-    
+
     .quick-links .col-md-3 {
         flex: 0 0 auto;
         width: 25%;
         max-width: 25%;
         padding: 0 5px;
     }
-    
+
     .quick-link {
         min-width: 90px;
     }
