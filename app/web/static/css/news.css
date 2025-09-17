@@ -14,9 +14,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3') center/cover;
-    opacity: 0.15;
+    background: url('/static/images/home/carousel/home4.jpg') center/cover;
+    opacity: 0.75;
     z-index: 1;
+    background-position: center 75%;
 }
 
 .news-hero .container {
