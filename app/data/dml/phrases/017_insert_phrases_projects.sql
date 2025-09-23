@@ -63,6 +63,13 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'projects', 'student_company_title', 'Student Company'),
 ('en', 'programs_and_projects', 'projects', 'student_company_desc', 'Practical project for creating and managing a real student company with actual products and services.'),
 
+-- Project 3
+('bg', 'programs_and_projects', 'projects', 'project3_title', 'Национална  програма България – образователни маршрути'),
+('bg', 'programs_and_projects', 'projects', 'project3_desc', '<p>Проведе организирано пътуване по НП „България – образователни маршрути", Модул 1 „Образователни маршрути за училищата в страната", в което се включиха 78 ученици и 8 ръководители.</p><p>Участниците в програмата посетиха:</p><ul><li>Музей на родопския карст – гр. Чепеларе</li><li>Смолянска крепост „Калето" – гр. Смолян</li><li>Връх Снежанка – к.к Пампорово</li><li>Астрономическа обсерватория и Планетариум – Рожен</li><li>Регионален исторически музей – гр. Смолян</li><li>Бачковски манастир – с. Бачково</li></ul><p>Учениците затвърдиха и надградиха знания и умения, които са придобили в училище чрез наблюдения, проучване и преживяване в реална среда. В програмата се включиха ученици от различни класове и през прекараното време заедно успяха чрез ефективна комуникация да се опознаят, да работят в екип и развиха интегрирано знание за България.</p>'),
+
+('en', 'programs_and_projects', 'projects', 'project3_title', 'National Program "Bulgaria - Educational Routes"'),
+('en', 'programs_and_projects', 'projects', 'project3_desc', '<p>Organized travel along the NP "Bulgaria - Educational Routes", Module 1 "Educational routes for schools in the country", which included 78 students and 8 leaders.</p><p>The participants in the program visited:</p><ul><li>Museum of Rhodope Karst - Chepelare</li><li>Smolyan Fortress "Kaleto" - Smolyan</li><li>Snezhanka Peak - Pamporovo</li><li>Astronomical Observatory and Planetarium - Rozhen</li><li>Regional Historical Museum - Smolyan</li><li>Bachkovo Monastery - Bachkovo village</li></ul><p>Students reinforced and upgraded knowledge and skills acquired at school through observation, research and experience in a real environment. The program included students from different grades who, through effective communication, got to know each other, worked in teams and developed integrated knowledge about Bulgaria.</p>'),
+
 -- CTA Section
 ('bg', 'programs_and_projects', 'cta', 'title', 'Станете наш партньор'),
 ('bg', 'programs_and_projects', 'cta', 'subtitle', 'Присъединете се към нашата мисия за качествено образование и инвестирайте в бъдещето на младите хора'),
