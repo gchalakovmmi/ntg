@@ -38,7 +38,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'general_education', 'subjects', 'it_technologies_desc', 'Развиване на умения за работа с компютри и нови технологии.'),
 ('bg', 'general_education', 'subjects', 'philosophy_title', 'Философия'),
 ('bg', 'general_education', 'subjects', 'philosophy_desc', 'Развиване на критично мислене и разбиране на основните философски концепции.'),
-('bg', 'general_education', 'subjects', 'citizenship_education_title', 'Гражданско образование;'),
+('bg', 'general_education', 'subjects', 'citizenship_education_title', 'Гражданско образование'),
 ('bg', 'general_education', 'subjects', 'citizenship_education_desc', 'Развиване на активна гражданска позиция и участие в обществения живот.'),
 ('bg', 'general_education', 'subjects', 'entrepreneurship_title', 'Предприемачество'),
 ('bg', 'general_education', 'subjects', 'entrepreneurship_desc', 'Развиване на предприемачески умения и иновационно мислене.'),
