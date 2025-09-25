@@ -22,7 +22,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'general_education', 'subjects', 'chemistry_desc', 'Практическо изучаване на веществата и техните взаимодействия в модерни лаборатории.'),
 ('bg', 'general_education', 'subjects', 'physics_title', 'Физика и астрономия'),
 ('bg', 'general_education', 'subjects', 'physics_desc', 'Експериментално изучаване на природните закони и техните приложения в технологиите.'),
-('bg', 'general_education', 'subjects', 'biology_title', 'Биология и здравно образование;'),
+('bg', 'general_education', 'subjects', 'biology_title', 'Биология и здравно образование'),
 ('bg', 'general_education', 'subjects', 'biology_desc', 'Изследване на живите организми и техните взаимодействия с околната среда.'),
 ('bg', 'general_education', 'subjects', 'geography_title', 'География и икономика'),
 ('bg', 'general_education', 'subjects', 'geography_desc', 'Проучване на физическите и културни характеристики на Земята и нейните региони.'),
