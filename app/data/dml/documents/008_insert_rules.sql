@@ -1,7 +1,7 @@
 -- Rules section phrases
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
-('bg', 'documents', 'rules', 'title', 'Правила'),
-('en', 'documents', 'rules', 'title', 'Rules');
+('bg', 'documents', 'rules', 'title', 'Правилници и планове'),
+('en', 'documents', 'rules', 'title', 'Regulations and Plans');
 
 -- Rules documents display names
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
@@ -26,7 +26,16 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'documents', 'rules', 'Пропусквателен_режим', 'Пропусквателен режим'),
 ('en', 'documents', 'rules', 'Пропусквателен_режим', 'Access Control Rules'),
 ('bg', 'documents', 'rules', 'Стратегия_за_развитие_на_НТГ_Пловдив_2023_2028', 'Стратегия за развитие на НТГ Пловдив 2023-2028'),
-('en', 'documents', 'rules', 'Стратегия_за_развитие_на_НТГ_Пловдив_2023_2028', 'Strategy for Development of NTG Plovdiv 2023-2028');
+('en', 'documents', 'rules', 'Стратегия_за_развитие_на_НТГ_Пловдив_2023_2028', 'Strategy for Development of NTG Plovdiv 2023-2028'),
+('bg', 'documents', 'rules', 'Вътрешни_правила_за_мрежова_и_информационна_сигурност', 'Вътрешни правила за мрежова и информационна сигурност'),
+('en', 'documents', 'rules', 'Вътрешни_правила_за_мрежова_и_информационна_сигурност', 'Internal Rules for Network and Information Security'),
+('bg', 'documents', 'rules', 'Защита_от_бедствия', 'Вътрешни правила за защита от бедствия'),
+('en', 'documents', 'rules', 'Защита_от_бедствия', 'Internal Rules for Disaster Protection'),
+('bg', 'documents', 'rules', 'План_за_противодействие_на_тероризма', 'Вътрешни правила за противодействие на тероризма'),
+('en', 'documents', 'rules', 'План_за_противодействие_на_тероризма', 'Internal Rules for Countering Terrorism'),
+('bg', 'documents', 'rules', 'Правилник_ЗБУТ', 'Вътрешни правила за безопасност и здраве при работа'),
+('en', 'documents', 'rules', 'Правилник_ЗБУТ', 'Internal Rules for Occupational Safety and Health');
+
 
 
 
