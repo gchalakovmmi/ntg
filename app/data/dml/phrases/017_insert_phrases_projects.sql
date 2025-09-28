@@ -5,12 +5,12 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'header', 'title', 'Programs and Projects - NTS - National Trade School'),
 
 -- Projects Section
-('bg', 'programs_and_projects', 'projects', 'title', 'Училищни проекти'),
+('bg', 'programs_and_projects', 'projects', 'title', 'Проекти и програми реализиращи се в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle', 'Открийте иновативните проекти и програми в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'details', 'Подробности'),
 ('bg', 'programs_and_projects', 'projects', 'students', 'ученици'),
 ('bg', 'programs_and_projects', 'projects', 'load_more', 'Зареди още'),
-('en', 'programs_and_projects', 'projects', 'title', 'School Projects'),
+('en', 'programs_and_projects', 'projects', 'title', 'Projects and Programs at NTS'),
 ('en', 'programs_and_projects', 'projects', 'subtitle', 'Discover innovative projects and programs at NTS'),
 ('en', 'programs_and_projects', 'projects', 'details', 'Details'),
 ('en', 'programs_and_projects', 'projects', 'students', 'students'),

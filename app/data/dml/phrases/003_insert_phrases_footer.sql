@@ -14,7 +14,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'footer', 'news', 'Новини'),
 ('bg', 'base', 'footer', 'sitemap', 'Карта на сайта'),
 ('bg', 'base', 'footer', 'address', 'бул. Руски №50, Пловдив 4000'),
-('bg', 'base', 'footer', 'phone', '+359 2 987 6543'),
+('bg', 'base', 'footer', 'phone', '+359 64 34 65'),
 ('bg', 'base', 'footer', 'email', 'info@ntg-school.bg'),
 ('bg', 'base', 'footer', 'hours', 'Понеделник-Петък: 8:00 - 17:00'),
 ('bg', 'base', 'footer', 'copyright', '© 2025 НАЦИОНАЛНА ТЪРГОВСКА ГИМНАЗИЯ. Всички права запазени.'),
@@ -32,7 +32,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'base', 'footer', 'news', 'News'),
 ('en', 'base', 'footer', 'sitemap', 'Sitemap'),
 ('en', 'base', 'footer', 'address', '50 Ruski Blvd, Plovdiv 4000'),
-('en', 'base', 'footer', 'phone', '+359 2 987 6543'),
+('en', 'base', 'footer', 'phone', '+359 64 34 65'),
 ('en', 'base', 'footer', 'email', 'info@nts-school.bg'),
 ('en', 'base', 'footer', 'hours', 'Monday-Friday: 8:00 AM - 5:00 PM'),
 ('en', 'base', 'footer', 'copyright', '© 2025 NATIONAL TRADE SCHOOL. All rights reserved.');
