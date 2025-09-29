@@ -105,3 +105,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'admission', 'plan', 'date3', 'June 5, 2025'),
 ('en', 'admission', 'plan', 'date4', 'June 6 - 7, 2025'),
 ('en', 'admission', 'plan', 'date5', 'June 10, 2025');
+
+-- No Free Spots Section
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
+('bg', 'admission', 'table', 'no_free_spots', 'At the moment there are no announced free spots'),
+('en', 'admission', 'table', 'no_free_spots', 'At the moment there are no announced free spots');
+

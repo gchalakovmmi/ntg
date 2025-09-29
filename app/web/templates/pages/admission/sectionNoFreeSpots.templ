@@ -1,0 +1,50 @@
+package admission
+
+templ noFreeSpots(phrases map[string]map[string]string) {
+	<section class="section admission-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["free_spots"]["title"] }</h2>
+				<p>{ phrases["free_spots"]["subtitle"] }</p>
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<div class="table-container animate-on-scroll">
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover custom-table">
+								<thead>
+									<tr>
+										<th>{ phrases["free_spots"]["published_by"] }</th>
+										<th>
+											<a href="#" class="text-white">
+												{ phrases["free_spots"]["class"] }
+												<em class="fa fa-sort"></em>
+											</a>
+										</th>
+										<th>{ phrases["free_spots"]["parallel"] }</th>
+										<th>{ phrases["free_spots"]["description"] }</th>
+										<th>{ phrases["free_spots"]["spots_count"] }</th>
+										<th>
+											<a href="#" class="text-white">
+												{ phrases["free_spots"]["publish_date"] }
+												<em class="fa fa-caret-down"></em>
+											</a>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="6" class="text-center py-4 fw-bold">
+											// Към момента няма обявени свободни места
+											{ phrases["table"]["no_free_spots"] }
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

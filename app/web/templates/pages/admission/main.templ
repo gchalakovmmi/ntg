@@ -1,14 +1,13 @@
 package admission
 
-import (
-	"NTG/web/templates/base"
-)
+import "NTG/web/templates/base"
 
 templ components(phrases map[string]map[string]string) {
-	<link rel="stylesheet" href="/static/css/admission.css">
+	<link rel="stylesheet" href="/static/css/admission.css"/>
 	@hero(phrases)
-	@freeSpots(phrases)
-	@admissionPlan(phrases)
+	// @freeSpots(phrases)
+	@noFreeSpots(phrases)
+	// @admissionPlan(phrases)
 }
 
 templ Handler(page, language string, phrases map[string]map[string]string) {
