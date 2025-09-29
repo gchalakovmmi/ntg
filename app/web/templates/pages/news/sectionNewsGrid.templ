@@ -27,7 +27,7 @@ templ newsGrid(phrases map[string]map[string]string, articles []database.NewsArt
 							</div>
 							<h5 class="card-title news-title">{ article.Title }</h5>
 							<p class="card-text news-description">{ article.ShortDescription }</p>
-							<a href={ templ.URL("/news/" + article.Slug) } class="btn btn-outline-danger btn-sm">{ phrases["news"]["read_more"] }</a>
+							// <a href={ templ.URL("/news/" + article.Slug) } class="btn btn-outline-danger btn-sm">{ phrases["news"]["read_more"] }</a>
 						</div>
 					</div>
 				</div>

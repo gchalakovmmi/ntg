@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"NTG/internal/middleware"
-	"NTG/web/templates/pages/hbo"
+	"NTG/web/templates/pages/zdippk"
 	"net/http"
 
 	"github.com/a-h/templ"
@@ -14,6 +14,6 @@ func Zdippk() http.Handler {
 		language := r.Context().Value(middleware.LanguageKey).(string)
 		phrases := r.Context().Value(middleware.PhrasesKey).(map[string]map[string]string)
 
-		templ.Handler(hbo.Handler(page, language, phrases)).ServeHTTP(w, r)
+		templ.Handler(zdippk.Handler(page, language, phrases)).ServeHTTP(w, r)
 	})
 }

@@ -43,7 +43,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'contacts', 'departments', 'security_title', 'Охрана'),
 ('bg', 'contacts', 'departments', 'security_phone', '+359 888 123 456'),
 ('bg', 'contacts', 'departments', 'security_email', 'security@ntg-school.bg'),
-('bg', 'contacts', 'departments', 'lawyer_title', 'Юрист'),
+('bg', 'contacts', 'departments', 'lawyer_title', 'Длъжностно лице по защита на личните данни'),
 ('bg', 'contacts', 'departments', 'lawyer_phone', '+359 898 943669'),
 ('bg', 'contacts', 'departments', 'lawyer_email', 'dpo.anastasov@gmail.com'),
 ('en', 'contacts', 'departments', 'title', 'Departments and Services'),
@@ -60,6 +60,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'contacts', 'departments', 'security_title', 'Security'),
 ('en', 'contacts', 'departments', 'security_phone', '+359 888 123 456'),
 ('en', 'contacts', 'departments', 'security_email', 'security@nts-school.bg'),
-('en', 'contacts', 'departments', 'lawyer_title', 'Lawyer'),
+('en', 'contacts', 'departments', 'lawyer_title', 'Data Protection Officer'),
 ('en', 'contacts', 'departments', 'lawyer_phone', '+359 898 943669'),
 ('en', 'contacts', 'departments', 'lawyer_email', 'dpo.anastasov@gmail.com');

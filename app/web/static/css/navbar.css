@@ -407,8 +407,12 @@
  	object-fit: contain;
  	transition: height 0.3s ease;
 	margin-right: 0;
+	box-shadow: 0 0 10px rgba(31, 30, 30, 0.5), 0 0 15px rgba(0, 0, 0, 0.4);
+		/* Changed to white border which will be more visible */
 		/* Remove the margin since we're using gap */
-		border-radius: 8px;
+	border-radius: 8px; 
+	
+
  }
 
  /* Innovative logo */
