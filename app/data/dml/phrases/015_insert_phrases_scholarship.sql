@@ -1,19 +1,19 @@
 -- HBO page phrases - Bulgarian and English
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
-('bg', 'scholarships', 'header', 'title', 'Основни документи за учебната 2024/2025 - НТГ'),
-('en', 'scholarships', 'header', 'title', 'Basic Documents for Academic Year 2024/2025 - NTS'),
+('bg', 'scholarships', 'header', 'title', 'Документи за стипендии през учебната 2025/2026 - НТГ'),
+('en', 'scholarships', 'header', 'title', 'Documents about scholarships for Academic Year 2025/2026 - NTS'),
 
 -- Hero Section
-('bg', 'scholarships', 'hero', 'title', 'Основни документи за учебната 2024/2025'),
-('bg', 'scholarships', 'hero', 'subtitle', 'Всички необходими документи, планове и графици за текущата учебна година'),
-('bg', 'scholarships', 'hero', 'documents_count', '15+'),
+('bg', 'scholarships', 'hero', 'title', 'Документи за стипендии през учебната 2025/2026 - НТГ'),
+('bg', 'scholarships', 'hero', 'subtitle', 'Всички необходими документи за кандидастване за стипендии'),
+('bg', 'scholarships', 'hero', 'documents_count', '4+'),
 ('bg', 'scholarships', 'hero', 'documents_label', 'Документа'),
 ('bg', 'scholarships', 'hero', 'academic_year', '2024/25'),
 ('bg', 'scholarships', 'hero', 'academic_year_label', 'Учебна година'),
-('en', 'scholarships', 'hero', 'title', 'Basic Documents for Academic Year 2024/2025'),
-('en', 'scholarships', 'hero', 'subtitle', 'All necessary documents, plans and schedules for the current academic year'),
-('en', 'scholarships', 'hero', 'documents_count', '15+'),
+('en', 'scholarships', 'hero', 'title', 'Documents about scholarships for Academic Year 2024/2025 - NTS'),
+('en', 'scholarships', 'hero', 'subtitle', 'All necessary documents for applying for scholarships'),
+('en', 'scholarships', 'hero', 'documents_count', '4+'),
 ('en', 'scholarships', 'hero', 'documents_label', 'Documents'),
 ('en', 'scholarships', 'hero', 'academic_year', '2024/25'),
 ('en', 'scholarships', 'hero', 'academic_year_label', 'Academic Year'),
