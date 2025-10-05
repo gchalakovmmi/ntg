@@ -98,7 +98,7 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 		},
 		{
 			Path:    "nvo",
-			Handler: handlers.Hbo(),
+			Handler: handlers.Nvo(),
 		},
 		{
 			Path:    "dzi",
