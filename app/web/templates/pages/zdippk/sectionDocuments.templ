@@ -9,7 +9,7 @@ templ documentsSection(phrases map[string]map[string]string) {
 			</div>
 			<div class="documents-container">
 				<!-- Document Row 1 -->
-				<div class="document-row animate-on-scroll" onclick="window.open('/static/docs/zdippk/График_за_август_2025_ЗДИППК.pdf', '_blank')">
+				<div class="document-row animate-on-scroll">
 					<div class="document-info">
 						<div class="document-icon">
 							<i class="fas fa-file-pdf text-danger"></i>
@@ -20,14 +20,14 @@ templ documentsSection(phrases map[string]map[string]string) {
 						</div>
 					</div>
 					<div class="document-action">
-						<button class="btn btn-success btn-sm">
+						<a href="/docs/documents/zdippk/График_за_август_2025_ЗДИППК.pdf" class="btn btn-success btn-sm">
 							<i class="fas fa-download me-1"></i>
 							{ phrases["documents"]["view_download"] }
-						</button>
+						</a>
 					</div>
 				</div>
 				<!-- Document Row 2 -->
-				<div class="document-row animate-on-scroll" onclick="window.open('/static/docs/zdippk/Заповед_МОН_за_ЗДИППК.pdf', '_blank')">
+				<div class="document-row animate-on-scroll">
 					<div class="document-info">
 						<div class="document-icon">
 							<i class="fas fa-file-pdf text-danger"></i>
@@ -38,14 +38,14 @@ templ documentsSection(phrases map[string]map[string]string) {
 						</div>
 					</div>
 					<div class="document-action">
-						<button class="btn btn-success btn-sm">
+						<a href="/docs/documents/zdippk/Заповед_МОН_за_ЗДИППК.pdf" class="btn btn-success btn-sm">
 							<i class="fas fa-download me-1"></i>
 							{ phrases["documents"]["view_download"] }
-						</button>
+						</a>
 					</div>
 				</div>
 				<!-- Document Row 3 -->
-				<div class="document-row animate-on-scroll delay-2" onclick="openDocument('/static/docs/zdippk/ЗДИППК-2025.pdf')">
+				<div class="document-row animate-on-scroll delay-2">
 					<div class="document-info">
 						<div class="document-icon">
 							<i class="fas fa-file-pdf text-danger"></i>
@@ -56,10 +56,10 @@ templ documentsSection(phrases map[string]map[string]string) {
 						</div>
 					</div>
 					<div class="document-action">
-						<button class="btn btn-success btn-sm">
+						<a href="/docs/documents/zdippk/ЗДИППК-2025.pdf" class="btn btn-success btn-sm">
 							<i class="fas fa-download me-1"></i>
 							{ phrases["documents"]["view_download"] }
-						</button>
+						</a>
 					</div>
 				</div>
 				// <!-- Document Row 4 -->
