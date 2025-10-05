@@ -83,6 +83,18 @@ func (srv *Server) languageAwareHandler() http.Handler {
 			page = "home"
 		}
 
+		// Special handling for news article routes
+		if page == "news" && len(pathSegments) > 2 {
+			// This is a news article route like /{lang}/news/{slug}
+			// Use the news article handler
+			for _, route := range srv.routes {
+				if route.Path == "news/{slug}" {
+					route.Handler.ServeHTTP(w, r)
+					return
+				}
+			}
+		}
+
 		// Find the handler for this page
 		var handler http.Handler
 		found := false

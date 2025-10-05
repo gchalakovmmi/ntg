@@ -4,7 +4,7 @@ import (
 	"NTG/internal/database"
 )
 
-templ newsContent(phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
+templ newsContent(language string, phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
 	<main class="container-fluid my-5">
 		<div class="row g-4" style="height: calc(100vh - 200px);">
 			<!-- Filters Sidebar - Fixed width, no scrolling -->
@@ -57,7 +57,7 @@ templ newsContent(phrases map[string]map[string]string, articles []database.News
 			<div class="col-lg-9 mobile-order-2 d-flex flex-column" style="height: 100%;">
 				<!-- Scrollable news container with visible scrollbar -->
 				<div class="news-scroll-container border rounded p-3 mb-3" style="overflow-y: auto; flex: 1;">
-					@newsGrid(phrases, articles)
+					@newsGrid(language, phrases, articles)
 				</div>
 			</div>
 		</div>

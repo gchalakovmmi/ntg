@@ -65,10 +65,17 @@ func WithLanguage(db *sql.DB, next http.Handler) http.Handler {
 			SameSite: http.SameSiteLaxMode,
 		})
 
-		// Get page name from URL path
+		// Get page name from URL path - handle dynamic routes like news/{slug}
 		page := "home" // Default page
 		if len(pathSegments) > 1 {
 			page = pathSegments[1]
+			
+			// Handle news article routes
+			if page == "news" && len(pathSegments) > 2 {
+				// For news articles, we still want to load phrases for the "news" page
+				// but we'll handle the actual article in the route handler
+				page = "news"
+			}
 		}
 		slog.Debug("Detected page", "page", page)
 

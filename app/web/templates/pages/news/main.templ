@@ -5,15 +5,15 @@ import (
 	"NTG/internal/database"
 )
 
-templ components(phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
+templ components(language string, phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
 	<link rel="stylesheet" href="/static/css/news.css"/>
 	//@hero(phrases)
-	@newsContent(phrases, articles, categories, currentPage, totalPages, currentCategory, search, startDateStr, endDateStr, pageURLs)
+	@newsContent(language, phrases, articles, categories, currentPage, totalPages, currentCategory, search, startDateStr, endDateStr, pageURLs)
 	<script src="/static/js/news.js"></script>
 }
 
 templ Handler(page, language string, phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
-	@base.Base(page, language, phrases, components(phrases, articles, categories, currentPage, totalPages, currentCategory, search, startDateStr, endDateStr, pageURLs))
+	@base.Base(page, language, phrases, components(language, phrases, articles, categories, currentPage, totalPages, currentCategory, search, startDateStr, endDateStr, pageURLs))
 }
 
 templ ArticleHandler(page, language string, phrases map[string]map[string]string, article *database.NewsArticle) {
