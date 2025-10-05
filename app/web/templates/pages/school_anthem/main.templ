@@ -1,0 +1,14 @@
+package school_anthem
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/school_anthem.css"/>
+	@anthem(phrases)
+	@anthem_text(phrases)
+	<script src="/static/js/school_anthem.js"></script>
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}
