@@ -108,6 +108,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- No Free Spots Section
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
-('bg', 'admission', 'table', 'no_free_spots', 'At the moment there are no announced free spots'),
+('bg', 'admission', 'table', 'no_free_spots', 'В момента няма обявени свободни места'),
 ('en', 'admission', 'table', 'no_free_spots', 'At the moment there are no announced free spots');
 

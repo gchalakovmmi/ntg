@@ -1,0 +1,58 @@
+package school_anthem
+
+templ anthem_text(phrases map[string]map[string]string) {
+	<section class="section song-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["song"]["title"] }</h2>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="song-content animate-on-scroll">
+						<div class="song-header">
+							<h3 class="song-title">{ phrases["song"]["song_title"] }</h3>
+							<p class="song-meta">{ phrases["song"]["composer"] } { phrases["song"]["year"] }</p>
+						</div>
+						<div class="song-lyrics">
+							<div class="verse">
+								<p>{ phrases["song"]["verse1_line1"] }</p>
+								<p>{ phrases["song"]["verse1_line2"] }</p>
+								<p>{ phrases["song"]["verse1_line3"] }</p>
+								<p>{ phrases["song"]["verse1_line4"] }</p>
+								<p>{ phrases["song"]["verse1_line5"] }</p>
+								<p>{ phrases["song"]["verse1_line6"] }</p>
+								<p>{ phrases["song"]["verse1_line7"] }</p>
+								<p>{ phrases["song"]["verse1_line8"] }</p>
+							</div>
+							<div class="chorus">
+								<h4>{ phrases["song"]["verse2_title"] }</h4>
+								<p>{ phrases["song"]["verse2_line1"] }</p>
+								<p>{ phrases["song"]["verse2_line2"] }</p>
+								<p>{ phrases["song"]["verse2_line3"] }</p>
+								<p>{ phrases["song"]["verse2_line4"] }</p>
+								<p>{ phrases["song"]["verse2_line5"] }</p>
+								<p>{ phrases["song"]["verse2_line6"] }</p>
+								<p>{ phrases["song"]["verse2_line7"] }</p>
+								<p>{ phrases["song"]["verse2_line8"] }</p>
+							</div>
+							<div class="verse">
+								<p>{ phrases["song"]["verse3_line1"] }</p>
+								<p>{ phrases["song"]["verse3_line2"] }</p>
+								<p>{ phrases["song"]["verse3_line3"] }</p>
+								<p>{ phrases["song"]["verse3_line4"] }</p>
+								<p>{ phrases["song"]["verse3_line5"] }</p>
+								<p>{ phrases["song"]["verse3_line6"] }</p>
+								<p>{ phrases["song"]["verse3_line7"] }</p>
+								<p>{ phrases["song"]["verse3_line8"] }</p>
+							</div>
+						</div>
+						<div class="song-footer">
+							<h3 class="song-meta">{ phrases["song"]["after_song_text"] }</h3>
+							<h4 class="song-meta">{ phrases["song"]["song_rights"] }</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

@@ -3,8 +3,8 @@ package server
 import (
 	"NTG/internal/config"
 	"NTG/internal/handlers"
-	"net/http"
 	"database/sql"
+	"net/http"
 )
 
 // Route defines a single route with its handler
@@ -117,16 +117,20 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Handler: handlers.Partners(),
 		},
 		{
-			 Path:	"news",
-			 Handler: handlers.News(db),
+			Path:    "news",
+			Handler: handlers.News(db),
 		},
 		{
-			 Path:	"news/{slug}",
-			 Handler: handlers.NewsArticle(db),
+			Path:    "news/{slug}",
+			Handler: handlers.NewsArticle(db),
 		},
 		{
 			Path:    "contacts",
 			Handler: handlers.Contacts(),
+		},
+		{
+			Path:    "school_anthem",
+			Handler: handlers.School_anthem(),
 		},
 	}
 }

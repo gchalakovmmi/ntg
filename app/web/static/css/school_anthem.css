@@ -1,0 +1,173 @@
+/* Virtual Tour */
+.tour-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s ease;
+    height: 500px;
+    background: #000;
+}
+
+.tour-container:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Song Section */
+.song-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 0;
+}
+
+.song-content {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.song-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--primary-gold, #d4af37);
+}
+
+.song-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-red, #8b0000);
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+.song-meta {
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.song-lyrics {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #333;
+}
+
+.verse {
+    margin-bottom: 35px;
+    padding: 25px;
+    background: linear-gradient(to right, rgba(212, 175, 55, 0.05), transparent);
+    border-left: 4px solid var(--primary-gold, #d4af37);
+    border-radius: 5px;
+}
+
+.verse p {
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+.chorus {
+    margin-bottom: 35px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
+    border-left: 4px solid var(--primary-red, #b91c1c);
+    border-radius: 5px;
+    position: relative;
+}
+
+.chorus h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-red, #b91c1c);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.chorus p {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.song-footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid var(--primary-gold, #d4af37);
+    text-align: center;
+}
+
+.song-footer h3 {
+    font-size: 1.2rem;
+    color: var(--dark-red, #8b0000);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.song-footer h4 {
+    font-size: 0.95rem;
+    color: #6c757d;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .tour-container {
+        height: 300px;
+    }
+
+    .song-content {
+        padding: 30px 20px;
+    }
+
+    .song-title {
+        font-size: 1.8rem;
+    }
+
+    .song-lyrics {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .verse,
+    .chorus {
+        padding: 20px 15px;
+    }
+
+    .chorus h4 {
+        font-size: 1.1rem;
+    }
+
+    .song-footer h3 {
+        font-size: 1rem;
+    }
+
+    .song-footer h4 {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .song-content {
+        padding: 25px 15px;
+    }
+
+    .song-title {
+        font-size: 1.5rem;
+    }
+
+    .verse,
+    .chorus {
+        padding: 15px 10px;
+        margin-bottom: 25px;
+    }
+}

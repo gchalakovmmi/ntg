@@ -16,7 +16,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'carousel', 'slide_indicator', 'Слайд'),
 ('bg', 'home', 'carousel', 'prev_slide', 'Предишен слайд'),
 ('bg', 'home', 'carousel', 'next_slide', 'Следващ слайд'),
-('en', 'home', 'carousel', 'slide1_title', 'NTS - National Trade School'),
+('en', 'home', 'carousel', 'slide1_title', 'NTG - National Trade School'),
 ('en', 'home', 'carousel', 'slide1_subtitle', 'Creating future leaders in economics and business'),
 ('en', 'home', 'carousel', 'slide1_button', 'Virtual Tour'),
 ('en', 'home', 'carousel', 'slide2_title', '115 Years of Educational Tradition'),
@@ -38,6 +38,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'quicklinks', 'news_description', 'Актуална информация и събития'),
 ('bg', 'home', 'quicklinks', 'gallery', 'Галерия'),
 ('bg', 'home', 'quicklinks', 'gallery_description', 'Снимки от живота в училището'),
+('bg', 'home', 'quicklinks', 'school_anthem', 'Химн на НТГ'),
+('bg', 'home', 'quicklinks', 'school_anthem_description', 'Слушайте нашия училищен химн'),
 ('en', 'home', 'quicklinks', 'projects', 'Projects'),
 ('en', 'home', 'quicklinks', 'projects_description', 'Our innovative educational projects'),
 ('en', 'home', 'quicklinks', 'school_life', 'School Life'),
@@ -46,6 +48,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'home', 'quicklinks', 'news_description', 'Current information and events'),
 ('en', 'home', 'quicklinks', 'gallery', 'Gallery'),
 ('en', 'home', 'quicklinks', 'gallery_description', 'Photos from school life'),
+('en', 'home', 'quicklinks', 'school_anthem', 'NTG Anthem'),
+('en', 'home', 'quicklinks', 'school_anthem_description', 'Listen to our school anthem'),
 
 -- News
 ('bg', 'home', 'news', 'title', 'Последни Новини'),

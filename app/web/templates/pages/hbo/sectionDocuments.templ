@@ -9,7 +9,11 @@ templ documentsSection(phrases map[string]map[string]string) {
 			</div>
 			<div class="documents-container">
 				<!-- Document Row 1 -->
+<<<<<<< HEAD
 				<div class="document-row animate-on-scroll" onclick="window.open('/static/docs/hbo/zap2471_nvo_30082024.pdf', '_blank')">
+=======
+				<div class="document-row animate-on-scroll">
+>>>>>>> 5fc7e01ff4c354011a5ac433a54c3818a35db6e5
 					<div class="document-info">
 						<div class="document-icon">
 							<i class="fas fa-file-pdf text-danger"></i>
@@ -20,10 +24,10 @@ templ documentsSection(phrases map[string]map[string]string) {
 						</div>
 					</div>
 					<div class="document-action">
-						<button class="btn btn-success btn-sm">
+						<a href="/docs/documents/nvo/zap2471_nvo_30082024.pdf" class="btn btn-success btn-sm">
 							<i class="fas fa-download me-1"></i>
 							{ phrases["documents"]["view_download"] }
-						</button>
+						</a>
 					</div>
 				</div>
 				// <!-- Document Row 2 -->
