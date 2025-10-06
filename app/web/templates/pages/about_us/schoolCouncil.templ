@@ -1,0 +1,55 @@
+package about_us
+
+templ schoolCouncil(phrases map[string]map[string]string) {
+	<section id="public_council" class="section public-council-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["school_council"]["title"] }</h2>
+				<p>{ phrases["school_council"]["subtitle"] }</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="council-info-card animate-on-scroll">
+						<div class="council-icon">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3>{ phrases["school_council"]["h3title"] }</h3>
+						<p>{ phrases["school_council"]["description"] }</p>
+						<div class="council-features">
+							<div class="row g-3">
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_council"]["planning"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_council"]["budget"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_council"]["quality"] }</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="feature-item">
+										<i class="fas fa-check-circle text-danger me-2"></i>
+										<span>{ phrases["school_council"]["partnerships"] }</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="https://www.instagram.com/ntg.plovdiv/" class="btn btn-danger btn-lg mt-4">
+							<i class="fas fa-users me-2"></i>
+							{ phrases["school_council"]["button_text"] }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

@@ -154,6 +154,26 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'about_us', 'school_board', 'quality', 'Education Quality'),
 ('en', 'about_us', 'school_board', 'button_text', 'More information in our documents'),
 
+-- School Council Section
+('bg', 'about_us', 'school_council', 'title', 'Ученически съвет'),
+('bg', 'about_us', 'school_council', 'subtitle', 'Стратегическо управление и развитие'),
+('bg', 'about_us', 'school_council', 'h3title', 'Участие в управлението'),
+('bg', 'about_us', 'school_council', 'description', 'Ученическият съвет на НТГ активно участва в ученическия живот в гимназията.'),
+('bg', 'about_us', 'school_council', 'planning', 'Организиране на събития'),
+('bg', 'about_us', 'school_council', 'budget', 'Отразяване на училищният живот'),
+('bg', 'about_us', 'school_council', 'partnerships', 'Партньорство с учителите'),
+('bg', 'about_us', 'school_council', 'quality', 'Качество на училищния живот'),
+('bg', 'about_us', 'school_council', 'button_text', 'Открийте повече за нас на нашата инстаграм страница!'),
+('en', 'about_us', 'school_council', 'title', 'School Council'),
+('en', 'about_us', 'school_council', 'subtitle', 'Strategic management and development'),
+('en', 'about_us', 'school_council', 'h3title', 'Participation in Management'),
+('en', 'about_us', 'school_council', 'description', 'The NTS School Council plays a key role in strategic planning and school development. It includes representatives from business, academia, parents and community members.'),
+('en', 'about_us', 'school_council', 'planning', 'Strategic Planning'),
+('en', 'about_us', 'school_council', 'budget', 'Budget Management'),
+('en', 'about_us', 'school_council', 'partnerships', 'Business Partnerships'),
+('en', 'about_us', 'school_council', 'quality', 'Education Quality'),
+('en', 'about_us', 'school_council', 'button_text', 'More information in our documents'),
+
 -- Cooperation Section
 ('bg', 'about_us', 'cooperation', 'title', 'УК "Съгласие 2004"'),
 ('bg', 'about_us', 'cooperation', 'subtitle', 'Кооперация за професионално обучение и курсове'),
