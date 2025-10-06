@@ -1,5 +1,5 @@
 -- Documents page phrases - Bulgarian and English
-INSERT OR REPLACE INTO phrases (language, page, section, key, phrase) VALUES
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
 ('bg', 'documents', 'header', 'title', 'Документи - НТГ'),
 ('en', 'documents', 'header', 'title', 'Documents - NTS'),

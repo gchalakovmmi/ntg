@@ -45,6 +45,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'news', 'quick_links', 'newsletter', 'Subscribe to Newsletter'),
 -- News Items
 ('bg', 'news', 'news', 'read_more', 'Прочети още'),
+('bg', 'news', 'news', 'back_button', 'Назад към новините'),
 ('bg', 'news', 'news', 'school_year_title', 'Старт на новата учебна година'),
 ('bg', 'news', 'news', 'school_year_desc', 'Учениците от НТГ посрещнаха новата учебна година с тържествена церемония.'),
 ('bg', 'news', 'news', 'it_programs_title', 'Нови учебни програми по ИТ'),
@@ -58,6 +59,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'news', 'news', 'new_labs_title', 'Нови лаборатории за научни изследвания'),
 ('bg', 'news', 'news', 'new_labs_desc', 'Открихме нови модерни лаборатории, оборудвани с най-новата техника за научни изследвания.'),
 ('en', 'news', 'news', 'read_more', 'Read More'),
+('en', 'news', 'news', 'back_button', 'Back to News'),
 ('en', 'news', 'news', 'school_year_title', 'Start of the New School Year'),
 ('en', 'news', 'news', 'school_year_desc', 'NTS students welcomed the new school year with a ceremonial event and great enthusiasm.'),
 ('en', 'news', 'news', 'it_programs_title', 'New IT Curriculum Programs'),
