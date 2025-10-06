@@ -1,36 +1,36 @@
 -- HBO page phrases - Bulgarian and English
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
-('bg', 'document_templates', 'header', 'title', 'Основни документи за учебната 2024/2025 - НТГ'),
-('en', 'document_templates', 'header', 'title', 'Basic Documents for Academic Year 2024/2025 - NTS'),
+('bg', 'document_templates', 'header', 'title', 'Основни документи за учебната 2025/2026 - НТГ'),
+('en', 'document_templates', 'header', 'title', 'Basic Documents for Academic Year 2025/2026 - NTS'),
 
 -- Hero Section
-('bg', 'document_templates', 'hero', 'title', 'Основни документи за учебната 2024/2025'),
+('bg', 'document_templates', 'hero', 'title', 'Основни документи за учебната 2025/2026'),
 ('bg', 'document_templates', 'hero', 'subtitle', 'Всички необходими образци на документи за текущата учебна година'),
 ('bg', 'document_templates', 'hero', 'documents_count', '1+'),
 ('bg', 'document_templates', 'hero', 'documents_label', 'Документа'),
-('bg', 'document_templates', 'hero', 'academic_year', '2024/25'),
+('bg', 'document_templates', 'hero', 'academic_year', '2025/26'),
 ('bg', 'document_templates', 'hero', 'academic_year_label', 'Учебна година'),
-('en', 'document_templates', 'hero', 'title', 'Basic Documents for Academic Year 2024/2025'),
+('en', 'document_templates', 'hero', 'title', 'Basic Documents for Academic Year 2025/2026'),
 ('en', 'document_templates', 'hero', 'subtitle', 'All necessary document templates for the current academic year'),
 ('en', 'document_templates', 'hero', 'documents_count', '1+'),
 ('en', 'document_templates', 'hero', 'documents_label', 'Documents'),
-('en', 'document_templates', 'hero', 'academic_year', '2024/25'),
+('en', 'document_templates', 'hero', 'academic_year', '2025/26'),
 ('en', 'document_templates', 'hero', 'academic_year_label', 'Academic Year'),
 
 -- Info Section
-('bg', 'document_templates', 'info', 'title', 'Официални образци на документи за учебната 2024/2025 година'),
+('bg', 'document_templates', 'info', 'title', 'Официални образци на документи за учебната 2025/2026 година'),
 ('bg', 'document_templates', 'info', 'description', 'Всички документи в тази секция са актуални и одобрени от Министерството на образованието и науката. Те включват учебни планове, правилници, графици и други нормативни актове, които регламентират образователната дейност в нашето училище.'),
-('en', 'document_templates', 'info', 'title', 'Official document templates for the 2024/2025 academic year'),
+('en', 'document_templates', 'info', 'title', 'Official document templates for the 2025/2026 academic year'),
 ('en', 'document_templates', 'info', 'description', 'All documents in this section are current and approved by the Ministry of Education and Science. They include curricula, regulations, schedules and other normative acts that regulate the educational activity in our school.'),
 
 -- Documents Section
 ('bg', 'document_templates', 'documents', 'title', 'Документи'),
 ('bg', 'document_templates', 'documents', 'subtitle', 'Кликнете върху документа за преглед'),
 ('bg', 'document_templates', 'documents', 'view_download', 'Преглед и изтегляне'),
-('bg', 'document_templates', 'documents', 'timetable_title', 'Бланка за отсъствия за учебната 2024/2025 година'),
+('bg', 'document_templates', 'documents', 'timetable_title', 'Бланка за отсъствия за учебната 2025/2026 година'),
 ('bg', 'document_templates', 'documents', 'timetable_desc', 'Образец на бланка за заявяване на отсъствия'),
-('bg', 'document_templates', 'documents', 'scholarships_title', 'Бланка за стипендии за учебната 2024/2025 година'),
+('bg', 'document_templates', 'documents', 'scholarships_title', 'Бланка за стипендии за учебната 2025/2026 година'),
 ('bg', 'document_templates', 'documents', 'scholarships_desc', 'Образец на заявление за стипендия'),
 ('bg', 'document_templates', 'documents', 'daily_schedule_title', 'Дневен режим'),
 ('bg', 'document_templates', 'documents', 'daily_schedule_desc', 'Ежедневно разписание на училищните дейности'),
@@ -49,7 +49,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'document_templates', 'documents', 'view_download', 'View and Download'),
 ('en', 'document_templates', 'documents', 'timetable_title', 'Academic Timetable'),
 ('en', 'document_templates', 'documents', 'timetable_desc', 'Distribution of academic hours for all specialties'),
-('en', 'document_templates', 'documents', 'scholarships_title', 'Scholarship Application Form for the 2024/2025 Academic Year'),
+('en', 'document_templates', 'documents', 'scholarships_title', 'Scholarship Application Form for the 2025/2026 Academic Year'),
 ('en', 'document_templates', 'documents', 'scholarships_desc', 'Sample scholarship application form'),
 ('en', 'document_templates', 'documents', 'daily_schedule_title', 'Daily Schedule'),
 ('en', 'document_templates', 'documents', 'daily_schedule_desc', 'Daily schedule of school activities'),
