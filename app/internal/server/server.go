@@ -12,30 +12,24 @@ import (
 // Holds server specific configs
 type Server struct {
 	config		*config.Config
-	db				*sql.DB
+	db			*sql.DB
 	routes		[]Route
 }
 
 // A method of the Server struct creating all http handlers
 func (srv *Server) CreateHandlers() http.Handler {
 	mux := http.NewServeMux()
-
 	// Serve static files
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./web/static/"))))
 	mux.Handle("/docs/", http.StripPrefix("/docs/", http.FileServer(http.Dir("./web/static/docs/"))))
-
 	// Health check endpoint
 	mux.Handle("/health", handlers.Health())
-
 	// Root redirect to preferred language
 	mux.Handle("/", srv.rootRedirectHandler())
-
 	// Handle requests with language prefix
 	mux.Handle("/{lang}/", middleware.WithLanguage(srv.db, srv.languageAwareHandler()))
-
 	// Handle requests without language prefix (redirect to preferred language)
 	mux.Handle("/{page}", srv.pageRedirectHandler())
-
 	return mux
 }
 
@@ -44,7 +38,6 @@ func (srv *Server) rootRedirectHandler() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// Get preferred language from cookie or use default
 		lang := srv.getPreferredLanguage(r)
-		
 		// Redirect to language-specific home page
 		http.Redirect(w, r, "/"+lang+"/home", http.StatusSeeOther)
 	})
@@ -58,10 +51,8 @@ func (srv *Server) pageRedirectHandler() http.Handler {
 		if page == "" {
 			page = "home"
 		}
-		
 		// Get preferred language from cookie or use default
 		lang := srv.getPreferredLanguage(r)
-		
 		// Redirect to language-specific page
 		http.Redirect(w, r, "/"+lang+"/"+page, http.StatusSeeOther)
 	})
@@ -77,8 +68,10 @@ func (srv *Server) languageAwareHandler() http.Handler {
 			http.Redirect(w, r, "/"+pathSegments[0]+"/home", http.StatusSeeOther)
 			return
 		}
-
+		
+		lang := pathSegments[0]
 		page := pathSegments[1]
+		
 		if page == "" {
 			page = "home"
 		}
@@ -98,7 +91,6 @@ func (srv *Server) languageAwareHandler() http.Handler {
 		// Find the handler for this page
 		var handler http.Handler
 		found := false
-		
 		for _, route := range srv.routes {
 			if route.Path == page {
 				handler = route.Handler
@@ -106,13 +98,11 @@ func (srv *Server) languageAwareHandler() http.Handler {
 				break
 			}
 		}
-
 		if !found {
 			// Redirect to home for unknown pages
-			http.Redirect(w, r, "/"+pathSegments[0]+"/home", http.StatusSeeOther)
+			http.Redirect(w, r, "/"+lang+"/home", http.StatusSeeOther)
 			return
 		}
-
 		handler.ServeHTTP(w, r)
 	})
 }

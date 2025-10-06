@@ -14,15 +14,13 @@ templ articleContent(phrases map[string]map[string]string, article *database.New
 								<li class="breadcrumb-item active" aria-current="page">{ article.Title }</li>
 							</ol>
 						</nav>
-						
 						<!-- News category badge -->
 						<span class="badge bg-warning text-dark mb-2">
-							{ article.Category }
+							{ phrases["categories"]["categories_" + article.Category] }
 						</span>
 						<small class="text-muted d-block mb-3">
 							<i class="far fa-calendar me-1"></i> { article.UploadDate.Format("02 January 2006") }
 						</small>
-						
 						<h1 class="article-title">{ article.Title }</h1>
 						<p class="lead">{ article.ShortDescription }</p>
 					</header>
@@ -36,7 +34,7 @@ templ articleContent(phrases map[string]map[string]string, article *database.New
 					</div>
 					
 					<footer class="article-footer mt-5 pt-4 border-top">
-						<a href="/news" class="btn btn-outline-danger">
+						<a href={ templ.URL("/news") } class="btn btn-outline-danger">
 							<i class="fas fa-arrow-left me-2"></i> Back to News
 						</a>
 					</footer>
@@ -44,22 +42,33 @@ templ articleContent(phrases map[string]map[string]string, article *database.New
 			</div>
 		</div>
 	</main>
-	
 	<style>
 		.article-content {
 			font-size: 1.1rem;
 			line-height: 1.8;
+			white-space: pre-wrap;
 		}
-		
 		.article-content p {
 			margin-bottom: 1.5rem;
 		}
-		
+		.article-content ul, .article-content ol {
+			margin-bottom: 1.5rem;
+			padding-left: 2rem;
+		}
+		.article-content li {
+			margin-bottom: 0.5rem;
+		}
 		.article-title {
 			font-size: 2.5rem;
 			font-weight: 700;
 			color: var(--dark-red);
 			margin-bottom: 1rem;
+		}
+		.article-image img {
+			width: 100%;
+			height: auto;
+			max-height: 500px;
+			object-fit: cover;
 		}
 	</style>
 }
