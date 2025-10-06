@@ -167,12 +167,12 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'about_us', 'school_council', 'title', 'School Council'),
 ('en', 'about_us', 'school_council', 'subtitle', 'Strategic management and development'),
 ('en', 'about_us', 'school_council', 'h3title', 'Participation in Management'),
-('en', 'about_us', 'school_council', 'description', 'The NTS School Council plays a key role in strategic planning and school development. It includes representatives from business, academia, parents and community members.'),
-('en', 'about_us', 'school_council', 'planning', 'Strategic Planning'),
-('en', 'about_us', 'school_council', 'budget', 'Budget Management'),
-('en', 'about_us', 'school_council', 'partnerships', 'Business Partnerships'),
-('en', 'about_us', 'school_council', 'quality', 'Education Quality'),
-('en', 'about_us', 'school_council', 'button_text', 'More information in our documents'),
+('en', 'about_us', 'school_council', 'description', 'The NTS School Council actively participates in student life at the school.'),
+('en', 'about_us', 'school_council', 'planning', 'Organizing Events'),
+('en', 'about_us', 'school_council', 'budget', 'Capturing School Life'),
+('en', 'about_us', 'school_council', 'partnerships', 'Partnership with Teachers'),
+('en', 'about_us', 'school_council', 'quality', 'Quality of School Life'),
+('en', 'about_us', 'school_council', 'button_text', 'Find out more about us on our Instagram page!'),
 
 -- Cooperation Section
 ('bg', 'about_us', 'cooperation', 'title', 'УК "Съгласие 2004"'),
