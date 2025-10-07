@@ -78,6 +78,33 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'professional_education', 'rpp', 'doc1', 'Списък на учебните предмети, които ще се изучават под формата на разширена професионална подготовка'),
 ('bg', 'professional_education', 'rpp', 'doc1_subtitle', 'Списък на учебните предмети, които ще се изучават под формата на разширена професионална подготовка (РПП) през учебната 2025/2026 година'),
 
+-- УЧЕБНИ ПЛАНОВЕ
+('bg', 'professional_education', 'schoolplans', 'doc1', 'Електронна търговия 2024/2025'),
+('bg', 'professional_education', 'schoolplans', 'doc1_subtitle', 'Учебен план по предмет Електронна Търговия'),
+('bg', 'professional_education', 'schoolplans', 'doc2', 'Банково дело'),
+('bg', 'professional_education', 'schoolplans', 'doc2_subtitle', 'Учебен план по предмет Банково дело'),
+('bg', 'professional_education', 'schoolplans', 'doc3', 'Застрахователно и осигурително дело'),
+('bg', 'professional_education', 'schoolplans', 'doc3_subtitle', 'Учебен план по предмет Застрахователно и осигурително дело'),
+('bg', 'professional_education', 'schoolplans', 'doc4', 'Митническа и данъчна администрация'),
+('bg', 'professional_education', 'schoolplans', 'doc4_subtitle', 'Учебен план по предмет Митническа и данъчна администрация'),
+('bg', 'professional_education', 'schoolplans', 'doc5', 'Оперативно счетоводство'),
+('bg', 'professional_education', 'schoolplans', 'doc5_subtitle', 'Учебен план по предмет Оперативно счетоводство'),
+('bg', 'professional_education', 'schoolplans', 'doc6', 'Икономическа информатика'),
+('bg', 'professional_education', 'schoolplans', 'doc6_subtitle', 'Учебен план по предмет Икономическа информатика'),
+('bg', 'professional_education', 'schoolplans', 'doc7', 'Търговия'),
+('bg', 'professional_education', 'schoolplans', 'doc7_subtitle', 'Учебен план по предмет Търговия'),
+('bg', 'professional_education', 'schoolplans', 'doc8', 'Икономика и мениджмънт'),
+('bg', 'professional_education', 'schoolplans', 'doc8_subtitle', 'Учебен план по предмет Икономика и мениджмънт'),
+('bg', 'professional_education', 'schoolplans', 'doc9', 'Бизнес администрация'),
+('bg', 'professional_education', 'schoolplans', 'doc9_subtitle', 'Учебен план по предмет Бизнес администрация'),
+('bg', 'professional_education', 'schoolplans', 'doc10', 'Съдебна администрация'),
+('bg', 'professional_education', 'schoolplans', 'doc10_subtitle', 'Учебен план по предмет Съдебна администрация'),
+('bg', 'professional_education', 'schoolplans', 'doc11', 'Бизнес администрация до 2022-23'),
+('bg', 'professional_education', 'schoolplans', 'doc11_subtitle', 'Учебен план по предмет Бизнес администрация до 2022-23'),
+('bg', 'professional_education', 'schoolplans', 'doc12', 'Съдебна администрация до 2021-22'),
+('bg', 'professional_education', 'schoolplans', 'doc12_subtitle', 'Учебен план по предмет Съдебна администрация до 2021-22'),
+
+
 
 -- Типове учебни планове Section
 ('bg', 'professional_education', 'curricula', 'title', 'Типове учебни планове'),
