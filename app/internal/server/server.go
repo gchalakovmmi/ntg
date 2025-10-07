@@ -11,25 +11,34 @@ import (
 
 // Holds server specific configs
 type Server struct {
-	config		*config.Config
-	db			*sql.DB
-	routes		[]Route
+	config	  *config.Config
+	db		  *sql.DB
+	routes	  []Route
 }
 
 // A method of the Server struct creating all http handlers
 func (srv *Server) CreateHandlers() http.Handler {
 	mux := http.NewServeMux()
+	
 	// Serve static files
 	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./web/static/"))))
 	mux.Handle("/docs/", http.StripPrefix("/docs/", http.FileServer(http.Dir("./web/static/docs/"))))
+	
 	// Health check endpoint
 	mux.Handle("/health", handlers.Health())
+	
+	// Handle legacy v3 routes FIRST - before language routing
+	mux.Handle("/v3/", handlers.LegacyRedirectHandler())
+	
 	// Root redirect to preferred language
 	mux.Handle("/", srv.rootRedirectHandler())
+	
 	// Handle requests with language prefix
 	mux.Handle("/{lang}/", middleware.WithLanguage(srv.db, srv.languageAwareHandler()))
+	
 	// Handle requests without language prefix (redirect to preferred language)
 	mux.Handle("/{page}", srv.pageRedirectHandler())
+	
 	return mux
 }
 
@@ -68,14 +77,11 @@ func (srv *Server) languageAwareHandler() http.Handler {
 			http.Redirect(w, r, "/"+pathSegments[0]+"/home", http.StatusSeeOther)
 			return
 		}
-		
 		lang := pathSegments[0]
 		page := pathSegments[1]
-		
 		if page == "" {
 			page = "home"
 		}
-
 		// Special handling for news article routes
 		if page == "news" && len(pathSegments) > 2 {
 			// This is a news article route like /{lang}/news/{slug}
@@ -87,7 +93,6 @@ func (srv *Server) languageAwareHandler() http.Handler {
 				}
 			}
 		}
-
 		// Find the handler for this page
 		var handler http.Handler
 		found := false
@@ -120,7 +125,7 @@ func (srv *Server) getPreferredLanguage(r *http.Request) string {
 func New(cfg *config.Config, db *sql.DB) *Server {
 	return &Server{
 		config: cfg,
-		db:	 db,
+		db:  db,
 		routes: GetRoutes(cfg, db),
 	}
 }
