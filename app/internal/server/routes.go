@@ -136,5 +136,9 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Path:    "school_anthem",
 			Handler: handlers.School_anthem(),
 		},
+		{
+			Path:    "specs",
+			Handler: handlers.Specs(),
+		},
 	}
 }
