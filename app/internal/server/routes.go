@@ -69,8 +69,8 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"professional_education",
-			Handler: handlers.TempPage(),
+			Path:    "professional_education",
+			Handler: handlers.ProfessionalEducation(),
 		},
 		{
 			Path:	"scholarships",
@@ -97,7 +97,11 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Handler: handlers.DocumentTemplates(),
 		},
 		{
-			Path:	"nvo",
+			Path:    "sfo",
+			Handler: handlers.Sfo(),
+		},
+		{
+			Path:    "nvo",
 			Handler: handlers.Nvo(),
 		},
 		{
@@ -127,6 +131,10 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 		{
 			Path:	"school_anthem",
 			Handler: handlers.School_anthem(),
+		},
+		{
+			Path:    "specs",
+			Handler: handlers.Specs(),
 		},
 	}
 }

@@ -1,0 +1,104 @@
+package sfo
+
+templ documentsSection(phrases map[string]map[string]string) {
+	<section class="section">
+		<div class="container">
+			<div class="section-title text-center mb-5 animate-on-scroll">
+				<h2>{ phrases["documents"]["title"] }</h2>
+				<p class="text-muted">{ phrases["documents"]["subtitle"] }</p>
+			</div>
+			<div class="documents-container">
+				<!-- Document Row 1 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["title1"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["title1_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/sfo/График_СФО_24-25.pdf" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+				<!-- Document Row 2 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["title2"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["title2_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/sfo/Заявления_СФО_24-25.pdf" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+				<!-- Document Row 3 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["title3"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["title3_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/sfo/Правила_СФО_24-25.pdf" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+				<!-- Document Row 4 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["title4"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["title4_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/sfo/Нанси_1-ВА_сесия_за_11_кл._без квестор.doc" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+				<!-- Document Row 5 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["title5"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["title5_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/sfo/ГРАФИК_НАНСИ.docx" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

@@ -1,0 +1,10 @@
+package specs
+
+templ banner(phrases map[string]map[string]string) {
+	<div class="page-banner">
+		<div class="banner-content">
+			<h1 class="banner-title animate__animated animate__fadeInDown">{ phrases["banner"]["title"] }</h1>
+			<p class="lead mt-3">{ phrases["banner"]["subtitle"] }</p>
+		</div>
+	</div>
+}
