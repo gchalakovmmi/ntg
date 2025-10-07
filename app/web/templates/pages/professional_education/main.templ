@@ -1,0 +1,19 @@
+package professional_education
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/professional_education.css"/>
+	@banner(phrases)
+	@intro(phrases)
+	@documentsDOS(phrases)
+	@documentsNIP(phrases)
+	@documentsSchoolPlans(phrases)
+	@documentsDiMonZdippk(phrases)
+	@sectionFinalYear(phrases)
+	@documentsSchoolSubjectsRPP(phrases)
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}

@@ -1,0 +1,32 @@
+package professional_education
+
+templ documentsDiMonZdippk(phrases map[string]map[string]string) {
+	<section class="section">
+		<div class="container">
+			<div class="section-title text-center mb-5 animate-on-scroll">
+				<h2>{ phrases["dizdippk"]["title"] }</h2>
+				<p class="text-muted">{ phrases["dizdippk"]["subtitle"] }</p>
+			</div>
+			<div class="documents-container">
+				<!-- Document Row 1 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["dimonzdippk"]["doc1"] }</h5>
+							<p class="document-description text-muted">{ phrases["dimonzdippk"]["doc1_subtitle"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/professional_education/zap2470_dzi_30082024.pdf" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["dimonzdippk"]["view_download"] }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
