@@ -72,7 +72,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</a>
 						}
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#regulations") }>{ phrases["navbar"]["regulations_plans"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#regulations_plans") }>{ phrases["navbar"]["regulations_plans"] }</a></li>
 							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#curriculum") }>{ phrases["navbar"]["curriculum"] }</a></li>
 							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#education_types") }>{ phrases["navbar"]["education_type"] }</a></li>
 							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#budget") }>{ phrases["navbar"]["budget"] }</a></li>
@@ -168,6 +168,8 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 								<img src="/static/images/navbar/de.svg" alt="German Flag" class="flag-icon"/> Deutsch
 							} else if language == "fr" {
 								<img src="/static/images/navbar/fr.svg" alt="French Flag" class="flag-icon"/> Français
+							} else if language == "es" {
+								<img src="/static/images/navbar/es.svg" alt="French Flag" class="flag-icon"/> Español
 							}
 						</a>
 						<ul class="dropdown-menu">
@@ -178,7 +180,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</li>
 							<li>
 								<a class="dropdown-item" href={ templ.URL("/en/" + page) }>
-									<img src="/static/images/navbar/uk.svg" alt="British Flag" class="flag-icon"/> English
+									<img src="/static/images/navbar/en.svg" alt="British Flag" class="flag-icon"/> English
 								</a>
 							</li>
 							<li>
@@ -193,7 +195,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</li>
 							<li>
 								<a class="dropdown-item" href={ templ.URL("/es/" + page) }>
-									<img src="/static/images/navbar/sp.svg" alt="Spanish Flag" class="flag-icon"/> Español
+									<img src="/static/images/navbar/es.svg" alt="Spanish Flag" class="flag-icon"/> Español
 								</a>
 							</li>
 						</ul>
