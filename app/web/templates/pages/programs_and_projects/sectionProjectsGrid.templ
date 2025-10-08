@@ -22,7 +22,7 @@ templ projectsGrid(phrases map[string]map[string]string) {
 								<span><i class="fas fa-users"></i> 450 { phrases["projects"]["students"] }</span>
 							</div>
 							<div class="project-labels">
-								<div class="project-category">{ phrases["categories"]["educational"] }</div>
+								<div class="project-category-bottom">{ phrases["categories"]["educational"] }</div>
 								<div class="project-status status-active">{ phrases["status"]["active"] }</div>
 							</div>
 						</div>
@@ -42,7 +42,7 @@ templ projectsGrid(phrases map[string]map[string]string) {
 								<span><i class="fas fa-users"></i> { phrases["projects"]["students"] }</span>
 							</div>
 							<div class="project-labels">
-								<div class="project-category">{ phrases["categories"]["educational"] }</div>
+								<div class="project-category-bottom">{ phrases["categories"]["educational"] }</div>
 								<div class="project-status status-active">{ phrases["status"]["active"] }</div>
 							</div>
 						</div>
@@ -62,7 +62,7 @@ templ projectsGrid(phrases map[string]map[string]string) {
 								<span><i class="fas fa-users"></i> 78 { phrases["projects"]["students"] }</span>
 							</div>
 							<div class="project-labels">
-								<div class="project-category">{ phrases["categories"]["educational"] }</div>
+								<div class="project-category-bottom">{ phrases["categories"]["educational"] }</div>
 								<div class="project-status status-completed">{ phrases["status"]["completed"] }</div>
 							</div>
 						</div>
@@ -71,9 +71,7 @@ templ projectsGrid(phrases map[string]map[string]string) {
 				<!-- Project 4 with formatted description -->
 				<div class="col-lg-4 col-md-4 col-sm-12 project-item show" data-category="educational">
 					<div class="project-card animate-on-scroll delay-1">
-						<div class="project-image" style="background-image: url('/static/images/programs_and_projects/erazum_2021_2027.png');">
-							<div class="project-status status-completed">{ phrases["status"]["completed"] }</div>
-						</div>
+						<div class="project-image" style="background-image: url('/static/images/programs_and_projects/erazum_2021_2027.png');"></div>
 						<div class="project-content">
 							<h3 class="project-title">{ phrases["projects"]["project4_title"] }</h3>
 							<div class="project-description formatted-description">
@@ -83,7 +81,10 @@ templ projectsGrid(phrases map[string]map[string]string) {
 								<span><i class="fas fa-calendar"></i> 15.07.2025 - 19.07.2025</span>
 								<span><i class="fas fa-users"></i> 78 { phrases["projects"]["students"] }</span>
 							</div>
-							<div class="project-category-bottom">{ phrases["categories"]["educational"] }</div>
+							<div class="project-labels">
+								<div class="project-category-bottom">{ phrases["categories"]["educational"] }</div>
+								<div class="project-category-bottom status-completed">{ phrases["status"]["completed"] }</div>
+							</div>
 						</div>
 					</div>
 				</div>

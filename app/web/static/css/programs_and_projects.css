@@ -170,14 +170,7 @@
     z-index: 2;
 }
 
-.project-status {
-    position: relative;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    z-index: 2;
-}
+
 
 .status-active {
     background: #28a745;
@@ -477,9 +470,9 @@
 
 /* Update project status to only appear in top-right of image */
 .project-status {
-    position: absolute;
+    display: inline-block;
     top: 15px;
-    right: 15px;
+    right: 5px;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
