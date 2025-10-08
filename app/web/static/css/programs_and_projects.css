@@ -121,6 +121,9 @@
 }
 
 .project-card {
+    display: flex;
+        flex-direction: column; 
+        min-height: 450px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -142,6 +145,7 @@
     background-position: center;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .project-image::before {
@@ -161,9 +165,6 @@
 }
 
 .project-category {
-    position: absolute;
-    top: 15px;
-    left: 15px;
     background: var(--primary-red);
     color: white;
     padding: 5px 15px;
@@ -173,16 +174,7 @@
     z-index: 2;
 }
 
-.project-status {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    z-index: 2;
-}
+
 
 .status-active {
     background: #28a745;
@@ -190,7 +182,7 @@
 }
 
 .status-completed {
-    background: var(--primary-gold);
+    background: var(--primary-gold)!important;
     color: white;
 }
 
@@ -200,16 +192,20 @@
 }
 
 .project-content {
-    padding: 25px;
-    position: relative;
+    display: flex;
+        flex-direction: column;
+        flex: 1;
+        /* Takes up remaining space */
+        padding: 25px;
+        position: relative;
 }
 
 .project-title {
     font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--dark-red);
-    margin-bottom: 15px;
-    line-height: 1.3;
+        font-weight: 700;
+        color: var(--dark-red);
+        margin-bottom: 15px;
+        line-height: 1.3;
 }
 
 .project-description {
@@ -217,12 +213,14 @@
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 0.95rem;
+    flex: 1;
 }
 
 .project-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
     margin-bottom: 20px;
     font-size: 0.9rem;
     color: #888;
@@ -460,4 +458,138 @@
     .stats-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* New styling for category below the date */
+.project-category-bottom {
+    display: inline-block;
+    background: var(--primary-red);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Remove the old absolute positioned category (optional - keep for backward compatibility) */
+.project-category {
+    display: none;
+}
+
+/* Update project status to only appear in top-right of image */
+.project-status {
+    display: inline-block;
+    top: 15px;
+    right: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* Ensure project-image is positioned relative for absolute children */
+.project-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Add some hover effect for the category badge */
+.project-card:hover .project-category-bottom {
+    background: var(--dark-red);
+    transform: translateX(5px);
+    transition: var(--transition);
+}
+
+.project-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+/* Category styling - left side */
+.project-category-bottom {
+    display: inline-block;
+    background: var(--primary-red);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Status styling - right side */
+.project-status-bottom {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Status color variations */
+.project-status-bottom.status-active {
+    background: #28a745;
+    color: white;
+}
+
+.project-status-bottom.status-completed {
+    background: var(--primary-gold)!important;
+    color: white;
+}
+
+.project-status-bottom.status-upcoming {
+    background: #17a2b8;
+    color: white;
+}
+
+/* Remove or hide old status positioning */
+.project-status {
+    display: none;
+}
+
+/* Optional: Add hover effects */
+.project-card:hover .project-category-bottom {
+    background: var(--dark-red);
+    transition: var(--transition);
+}
+
+.project-card:hover .project-status-bottom {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row>[class*='col-'] {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .project-labels {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .project-category-bottom,
+    .project-status-bottom {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+
+    .project-card {
+             min-height: 380px;
+     }
 }
