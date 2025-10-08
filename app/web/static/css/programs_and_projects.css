@@ -161,9 +161,6 @@
 }
 
 .project-category {
-    position: absolute;
-    top: 15px;
-    left: 15px;
     background: var(--primary-red);
     color: white;
     padding: 5px 15px;
@@ -174,9 +171,7 @@
 }
 
 .project-status {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    position: relative;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
