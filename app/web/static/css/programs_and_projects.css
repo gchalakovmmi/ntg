@@ -215,9 +215,10 @@
 }
 
 .project-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
     margin-bottom: 20px;
     font-size: 0.9rem;
     color: #888;
@@ -455,4 +456,49 @@
     .stats-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* New styling for category below the date */
+.project-category-bottom {
+    display: inline-block;
+    background: var(--primary-red);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Remove the old absolute positioned category (optional - keep for backward compatibility) */
+.project-category {
+    display: none;
+}
+
+/* Update project status to only appear in top-right of image */
+.project-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* Ensure project-image is positioned relative for absolute children */
+.project-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Add some hover effect for the category badge */
+.project-card:hover .project-category-bottom {
+    background: var(--dark-red);
+    transform: translateX(5px);
+    transition: var(--transition);
 }
