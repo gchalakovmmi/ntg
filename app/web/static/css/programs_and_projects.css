@@ -121,6 +121,9 @@
 }
 
 .project-card {
+    display: flex;
+        flex-direction: column; 
+        min-height: 450px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -142,6 +145,7 @@
     background-position: center;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .project-image::before {
@@ -188,16 +192,20 @@
 }
 
 .project-content {
-    padding: 25px;
-    position: relative;
+    display: flex;
+        flex-direction: column;
+        flex: 1;
+        /* Takes up remaining space */
+        padding: 25px;
+        position: relative;
 }
 
 .project-title {
     font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--dark-red);
-    margin-bottom: 15px;
-    line-height: 1.3;
+        font-weight: 700;
+        color: var(--dark-red);
+        margin-bottom: 15px;
+        line-height: 1.3;
 }
 
 .project-description {
@@ -205,6 +213,7 @@
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 0.95rem;
+    flex: 1;
 }
 
 .project-meta {
@@ -500,7 +509,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: auto;
+    padding-top: 15px;
     gap: 10px;
 }
 
@@ -556,6 +566,16 @@
     transition: var(--transition);
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row>[class*='col-'] {
+    display: flex;
+    margin-bottom: 30px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 576px) {
     .project-labels {
@@ -568,4 +588,8 @@
         font-size: 0.75rem;
         padding: 4px 12px;
     }
+
+    .project-card {
+             min-height: 380px;
+     }
 }
