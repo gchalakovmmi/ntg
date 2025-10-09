@@ -7,26 +7,25 @@ import (
 )
 
 type NewsArticle struct {
-	ID			  int
-	Language		string
-	Category		string
-	UploadDate	  time.Time
-	Title		   string
+	Language         string
+	Category         string
+	UploadDate       time.Time
+	Title            string
 	ShortDescription string
 	LongDescription  string
-	Slug			string
-	ImageURL		string
+	Slug             string
+	ImageURL         string
 }
 
 // GetNewsArticles fetches news articles with optional filtering
 func GetNewsArticles(db *sql.DB, language, category, search string, startDate, endDate *time.Time, limit, offset int) ([]NewsArticle, error) {
 	query := `
-		SELECT id, language, category, upload_date, title, short_description, long_description, slug, image_url
+		SELECT language, category, upload_date, title, short_description, long_description, slug, image_url
 		FROM news
 		WHERE language = ?
 	`
 	args := []interface{}{language}
-	
+
 	// Add filters
 	if category != "" {
 		query += " AND category = ?"
@@ -45,22 +44,21 @@ func GetNewsArticles(db *sql.DB, language, category, search string, startDate, e
 		query += " AND upload_date <= ?"
 		args = append(args, endDate.Format("2006-01-02"))
 	}
-	
+
 	query += " ORDER BY upload_date DESC LIMIT ? OFFSET ?"
 	args = append(args, limit, offset)
-	
+
 	rows, err := db.Query(query, args...)
 	if err != nil {
 		slog.Error("Failed to fetch news articles", "error", err)
 		return nil, err
 	}
 	defer rows.Close()
-	
+
 	var articles []NewsArticle
 	for rows.Next() {
 		var article NewsArticle
 		err := rows.Scan(
-			&article.ID,
 			&article.Language,
 			&article.Category,
 			&article.UploadDate,
@@ -76,20 +74,19 @@ func GetNewsArticles(db *sql.DB, language, category, search string, startDate, e
 		}
 		articles = append(articles, article)
 	}
-	
+
 	return articles, nil
 }
 
 // GetNewsArticleBySlug fetches a single news article by its slug and language
 func GetNewsArticleBySlug(db *sql.DB, slug, language string) (*NewsArticle, error) {
 	query := `
-		SELECT id, language, category, upload_date, title, short_description, long_description, slug, image_url
+		SELECT language, category, upload_date, title, short_description, long_description, slug, image_url
 		FROM news
 		WHERE slug = ? AND language = ?
 	`
 	var article NewsArticle
 	err := db.QueryRow(query, slug, language).Scan(
-		&article.ID,
 		&article.Language,
 		&article.Category,
 		&article.UploadDate,
@@ -123,7 +120,7 @@ func GetNewsCategories(db *sql.DB, language string) ([]string, error) {
 		return nil, err
 	}
 	defer rows.Close()
-	
+
 	var categories []string
 	for rows.Next() {
 		var category string
@@ -145,7 +142,7 @@ func CountNewsArticles(db *sql.DB, language, category, search string, startDate,
 		WHERE language = ?
 	`
 	args := []interface{}{language}
-	
+
 	// Add filters
 	if category != "" {
 		query += " AND category = ?"
@@ -164,7 +161,7 @@ func CountNewsArticles(db *sql.DB, language, category, search string, startDate,
 		query += " AND upload_date <= ?"
 		args = append(args, endDate.Format("2006-01-02"))
 	}
-	
+
 	var count int
 	err := db.QueryRow(query, args...).Scan(&count)
 	if err != nil {
