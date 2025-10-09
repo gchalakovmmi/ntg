@@ -40,4 +40,71 @@ We look forward to seeing you for an inspiring start to the new school year!
 The management of the high school.',
 	'opening-of-the-new-school-year',
 	'/static/images/gallery/15-sep.jpg'
+),
+
+-- German translations
+(
+    'de', 
+    'SL', 
+    '2025-09-15', 
+    'Eröffnung des neuen Schuljahres!', 
+    'Die feierliche Eröffnung des neuen Schuljahres 2025/2026 findet am 15. September 2025 (Montag) um 09:00 Uhr im Schulhof statt.', 
+    'Sehr geehrte Eltern und Schüler,
+Die feierliche Eröffnung des neuen Schuljahres 2025/2026 findet am 15. September 2025 (Montag) um 09:00 Uhr im Schulhof statt. Wir bitten alle Schüler, spätestens um 08:45 Uhr zu erscheinen.
+Wichtig für Achtklässler:
+Am selben Tag - 15.09.2025, erhalten die neu aufgenommenen Schüler der 8. Klasse:
+- einen Satz Lehrbücher,
+- offizielle Notizen für Sozialleistungen und Nutzung des öffentlichen Nahverkehrs,
+- die Abzeichen des Gymnasiums - Anstecker, Krawatte und T-Shirt (kostenlos zur Verfügung gestellt).
+Die Materialien werden von den Klassenlehrern nach Abschluss der Zeremonie verteilt.
+Ein Elternabend für Schüler der 8. Klasse findet am 16. September 2025 (Dienstag)
+um 19:00 Uhr statt.
+Wir freuen uns auf Sie für einen inspirierenden Start ins neue Schuljahr!
+Die Schulleitung des Gymnasiums.',
+    'eroffnung-des-neuen-schuljahres',
+    '/static/images/gallery/15-sep.jpg'
+),
+-- French translations
+(
+    'fr', 
+    'SL', 
+    '2025-09-15', 
+    'Ouverture de la nouvelle année scolaire!', 
+    'L''ouverture solennelle de la nouvelle année scolaire 2025/2026 aura lieu le 15 septembre 2025 (lundi) à 09h00 dans la cour de l''école.', 
+    'Chers parents et élèves,
+L''ouverture solennelle de la nouvelle année scolaire 2025/2026 aura lieu le 15 septembre 2025 (lundi) à 09h00 dans la cour de l''école. Nous demandons à tous les élèves d''arriver au plus tard à 08h45.
+Important pour les élèves de 8e année:
+Le même jour - 15.09.2025, les nouveaux élèves admis en 8e année recevront:
+- un ensemble de manuels scolaires,
+- des notes officielles pour les aides sociales et l''utilisation des transports en commun,
+- les signes distinctifs du lycée - badge, cravate et T-shirt (fournis gratuitement).
+Les documents seront distribués par les professeurs principaux après la fin de la cérémonie.
+Une réunion parentale pour les élèves de 8e année aura lieu le 16 septembre 2025 (mardi)
+à 19h00.
+Nous nous réjouissons de vous voir pour un début d''année scolaire inspirant!
+La direction du lycée.',
+    'ouverture-de-la-nouvelle-annee-scolaire',
+    '/static/images/gallery/15-sep.jpg'
+),
+-- Spanish translations
+(
+    'es', 
+    'SL', 
+    '2025-09-15', 
+    '¡Apertura del nuevo año escolar!', 
+    'La apertura ceremonial del nuevo año escolar 2025/2026 tendrá lugar el 15 de septiembre de 2025 (lunes) a las 09:00 en el patio de la escuela.', 
+    'Estimados padres y estudiantes,
+La apertura ceremonial del nuevo año escolar 2025/2026 tendrá lugar el 15 de septiembre de 2025 (lunes) a las 09:00 en el patio de la escuela. Solicitamos a todos los estudiantes que lleguen a más tardar a las 08:45.
+Importante para estudiantes de 8º grado:
+El mismo día - 15.09.2025, los estudiantes recién admitidos en 8º grado recibirán:
+- un conjunto de libros de texto,
+- notas oficiales para beneficios sociales y uso de transporte público,
+- los distintivos de la escuela secundaria - insignia, corbata y camiseta (proporcionados gratuitamente).
+Los materiales serán distribuidos por los tutores de clase después de finalizar la ceremonia.
+Una reunión de padres para estudiantes de 8º grado se llevará a cabo el 16 de septiembre de 2025 (martes)
+a las 19:00.
+¡Esperamos verlos para un comienzo inspirador del nuevo año escolar!
+La dirección de la escuela secundaria.',
+    'apertura-del-nuevo-ano-escolar',
+    '/static/images/gallery/15-sep.jpg'
 );

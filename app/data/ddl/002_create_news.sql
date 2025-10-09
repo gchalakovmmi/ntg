@@ -2,7 +2,7 @@
 -- This table stores news articles with metadata and content in multiple languages
 CREATE TABLE news (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	language TEXT NOT NULL CHECK(language IN ('bg', 'en', 'de', 'fr', 'ru')),
+	language TEXT NOT NULL CHECK(language IN ('bg', 'en', 'de', 'fr', 'es')),
 	category TEXT NOT NULL  CHECK(category IN ('SL', 'EP')),
 	upload_date DATE NOT NULL,
 	title TEXT NOT NULL,

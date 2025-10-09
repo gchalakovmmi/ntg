@@ -60,4 +60,89 @@ for their dedication and professionalism in preparing the teams.</p>
 <p>Congratulations on the excellent achievements and good luck in the upcoming competitions!</p>',
 	'sports-achievements-march2025',
 	'/static/images/gallery/sport-victory-2025.jpg'
+),
+
+-- German translations
+(
+    'de', 
+    'SL', 
+    '2025-03-15', 
+    'Ausgezeichnete sportliche Leistungen des NTG Plovdiv bei den Schülerspielen', 
+    'Die Mannschaften des NTG Plovdiv erzielten beeindruckende Ergebnisse bei den Schülerspielen 2024/2025, wobei mehrere Mannschaften den ersten Platz auf regionaler und städtischer Ebene belegten.', 
+    'Am 15. und 16. März 2025 demonstrierten die Mannschaften des Nationalen Handelsgymnasiums - Plovdiv ausgezeichnete sportliche Leistungen im Rahmen der Schülerspiele 2024/2025 und bereiteten der gesamten Schule erneut Grund zum Stolz.
+
+Unsere Mannschaften erzielten folgende Ergebnisse:
+- Basketball (Mädchen, 11.-12. Klasse) - Erster Platz in der Region Plovdiv
+- Basketball (Jungen, 8.-10. Klasse) - Erster Platz in der Region Plovdiv
+- Badminton (Jungen, 11.-12. Klasse) - Erster Platz in der Region Plovdiv
+- Tischtennis (Mädchen, 11.-12. Klasse) - Erster Platz in der Region Plovdiv
+- Leichtathletik (Mädchen, 11.-12. Klasse) - Erster Platz in der Stadt Plovdiv
+
+Alle Mannschaften, die in der regionalen Phase den ersten Platz belegten, setzen ihre Teilnahme in der Zonalphase der Schülerspiele fort. Die Leichtathletikmannschaft setzt in der Regionalphase fort.
+
+Die Schulleitung spricht besonderen Dank an die Trainer aus:
+- Frau Silvia Anadolieva
+- Frau Bilyana Tyutyukova
+- Herr Radoslav Boychev
+für ihren Einsatz und Professionalismus bei der Vorbereitung der Mannschaften.
+
+Glückwünsche zu den ausgezeichneten Leistungen und viel Erfolg bei den bevorstehenden Wettkämpfen!',
+    'sportliche-leistungen-maerz2025',
+    '/static/images/gallery/sport-victory-2025.jpg'
+),
+-- French translations
+(
+    'fr', 
+    'SL', 
+    '2025-03-15', 
+    'Excellentes performances sportives du NTG Plovdiv aux Jeux des Élèves', 
+    'Les équipes du NTG Plovdiv ont obtenu des résultats impressionnants aux Jeux des Élèves 2024/2025, plusieurs équipes se classant premières aux étapes régionales et municipales.', 
+    'Les 15 et 16 mars 2025, les équipes du Lycée National de Commerce - Plovdiv ont démontré d''excellentes performances sportives dans le cadre des Jeux des Élèves 2024/2025, donnant une fois de plus à toute l''école des raisons d''être fière.
+
+Nos équipes ont obtenu les résultats suivants:
+- Basketball (filles, 11e-12e année) - Première place dans la région de Plovdiv
+- Basketball (garçons, 8e-10e année) - Première place dans la région de Plovdiv
+- Badminton (garçons, 11e-12e année) - Première place dans la région de Plovdiv
+- Tennis de table (filles, 11e-12e année) - Première place dans la région de Plovdiv
+- Athlétisme (filles, 11e-12e année) - Première place dans la ville de Plovdiv
+
+Toutes les équipes classées premières au niveau régional poursuivent leur participation à l''étape Zonale des Jeux des Élèves. L''équipe d''athlétisme poursuit à l''étape Régionale.
+
+La direction de l''école exprime ses remerciements particuliers aux entraîneurs:
+- Mme Silvia Anadolieva
+- Mme Bilyana Tyutyukova
+- M. Radoslav Boychev
+pour leur dévouement et professionnalisme dans la préparation des équipes.
+
+Félicitations pour les excellentes performances et bonne chance dans les compétitions à venir!',
+    'performances-sportives-mars2025',
+    '/static/images/gallery/sport-victory-2025.jpg'
+),
+-- Spanish translations
+(
+    'es', 
+    'SL', 
+    '2025-03-15', 
+    'Excelentes logros deportivos de NTG Plovdiv en los Juegos Estudiantiles', 
+    'Los equipos de NTG Plovdiv lograron resultados impresionantes en los Juegos Estudiantiles 2024/2025, con varios equipos ocupando el primer lugar en etapas regionales y municipales.', 
+    'Los días 15 y 16 de marzo de 2025, los equipos de la Escuela Nacional de Comercio - Plovdiv demostraron excelentes logros deportivos en el marco de los Juegos Estudiantiles 2024/2025, dando una vez más a toda la escuela motivo de orgullo.
+
+Nuestros equipos lograron los siguientes resultados:
+- Baloncesto (niñas, 11º-12º grado) - Primer lugar en la región de Plovdiv
+- Baloncesto (niños, 8º-10º grado) - Primer lugar en la región de Plovdiv
+- Bádminton (niños, 11º-12º grado) - Primer lugar en la región de Plovdiv
+- Tenis de mesa (niñas, 11º-12º grado) - Primer lugar en la región de Plovdiv
+- Atletismo (niñas, 11º-12º grado) - Primer lugar en la ciudad de Plovdiv
+
+Todos los equipos que ocuparon el primer lugar en la etapa regional continúan su participación en la Etapa Zonal de los Juegos Estudiantiles. El equipo de atletismo continúa en la Etapa Regional.
+
+La dirección de la escuela expresa agradecimiento especial a los entrenadores:
+- Sra. Silvia Anadolieva
+- Sra. Bilyana Tyutyukova
+- Sr. Radoslav Boychev
+por su dedicación y profesionalismo en la preparación de los equipos.
+
+¡Felicitaciones por los excelentes logros y buena suerte en las próximas competencias!',
+    'logros-deportivos-marzo2025',
+    '/static/images/gallery/sport-victory-2025.jpg'
 );

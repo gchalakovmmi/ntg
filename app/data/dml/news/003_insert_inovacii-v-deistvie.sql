@@ -68,4 +68,101 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p>The program will continue in the coming years with prospects for expanding cooperation and developing new initiatives.</p>',
 	'innovations-in-action-2025',
 	'/static/images/gallery/receiving-gift-inovacii.jpg'
+),
+
+-- German translations
+(
+    'de', 
+    'SL', 
+    '2025-04-09', 
+    'Nationales Handelsgymnasium Gastgeber einer Veranstaltung für Bildungsinnovationen', 
+    'NTG Plovdiv veranstaltete eine dreitägige Veranstaltung zum Austausch bewährter Verfahren im Rahmen des Nationalen Programms "Innovationen in Aktion" mit Teilnahme von Partnerschulen aus dem ganzen Land.', 
+    'Vom 9. bis 11. April 2025 war das Nationale Handelsgymnasium in Plovdiv Gastgeber einer Veranstaltung zur Förderung und zum Austausch bewährter Verfahren im Rahmen des Nationalen Programms "Innovationen in Aktion".
+
+Teilnehmende Partnerschulen aus dem ganzen Land:
+- Staatliche Berufsoberschule für Handel "Dimitar Hadzhivasilev", Swischtow
+- Grundschule "Hl. Hl. Kyrill und Method", Dorf Dragoevo, Region Schumen
+- Vereinte Schule "Brüder Miladinovi", Dorf Konarsko, Region Blagoewgrad
+
+Die Veranstaltung begann am 9. April mit einem feierlichen Empfang der Gäste durch die Hauptlehrerin Frau Nedka Milenova und die Direktorin Dr. Petya Gerasimova, die Geschenke von den Partnerschulen erhielten. Es folgte eine Präsentation der Geschichte und Traditionen des 115-jährigen Gymnasiums.
+
+Am 10. April umfasste das Programm:
+- Präsentation des innovativen Fachs "Cybersicherheit" durch die Hauptlehrerin Maria Grozeva
+- Diskussion zum Thema "Herausforderungen in innovativen Schulen" mit Teilnahme von Dilyana Nikolova und einem Vertreter von Skill Catalyst
+- Anwesenheit von Experten des Regionalen Bildungsamtes Plovdiv
+- Kulturprogramm mit Besuchen des Römischen Stadions, des Antiken Theaters und der Altstadt von Plovdiv
+
+Am 11. April führte Frau Delyana Nikola einen Workshop "Biometrische Daten" mit Teilnahme von Schülern aller Schulen durch.
+
+Die Veranstaltung erreichte erfolgreich ihre Ziele des Austauschs bewährter Verfahren und der Stärkung der Partnerschaftsbeziehungen zwischen den Schulen. Die Bedeutung von Innovationen in der Bildung, insbesondere im Bereich der Cybersicherheit, wurde hervorgehoben.
+
+Das Nationale Handelsgymnasium ist offiziell als innovative Schule durch Beschluss Nr. 507 des Ministerrates vom 18. Juli 2024 anerkannt. Die Innovation "Für eine sichere und geschützte digitale Umgebung durch Cybersicherheitsausbildung" umfasst die Einführung eines neuen Fachs "Cybersicherheit" für Schüler der Klassen 9 und 10 in den Fachrichtungen "Wirtschaftsinformatik" und "E-Commerce".
+
+Das Programm wird in den kommenden Jahren mit Aussichten auf Erweiterung der Zusammenarbeit und Entwicklung neuer Initiativen fortgesetzt.',
+    'innovationen-in-aktion-2025',
+    '/static/images/gallery/receiving-gift-inovacii.jpg'
+),
+-- French translations
+(
+    'fr', 
+    'SL', 
+    '2025-04-09', 
+    'Le Lycée National de Commerce accueille un événement sur l''innovation éducative', 
+    'NTG Plovdiv a organisé un événement de trois jours pour l''échange de bonnes pratiques dans le cadre du Programme National "Innovations en Action" avec la participation d''écoles partenaires de tout le pays.', 
+    'Du 9 au 11 avril 2025, le Lycée National de Commerce de Plovdiv a accueilli un événement pour promouvoir et échanger les bonnes pratiques dans le cadre du Programme National "Innovations en Action".
+
+Écoles partenaires participantes:
+- Lycée Professionnel d''État de Commerce "Dimitar Hadzhivasilev", Svishtov
+- École Primaire "St. St. Cyrille et Méthode", village de Dragoevo, région de Shumen
+- École Unie "Frères Miladinovi", village de Konarsko, région de Blagoevgrad
+
+L''événement a commencé le 9 avril par un accueil solennel des invités par la professeure principale Mme Nedka Milenova et la directrice Dr. Petya Gerasimova, qui ont reçu des cadeaux des écoles partenaires. Une présentation de l''histoire et des traditions du lycée de 115 ans a suivi.
+
+Le 10 avril, le programme comprenait:
+- Présentation de la matière innovante "Cybersécurité" par la professeure principale Maria Grozeva
+- Discussion sur le thème "Défis dans les écoles innovantes" avec la participation de Dilyana Nikolova et un représentant de Skill Catalyst
+- Présence d''experts de la Direction Régionale de l''Éducation - Plovdiv
+- Programme culturel avec visites du Stade Romain, du Théâtre Antique et de la Vieille Ville de Plovdiv
+
+Le 11 avril, Mme Delyana Nikola a animé un atelier "Données biométriques" avec la participation d''élèves de toutes les écoles.
+
+L''événement a atteint avec succès ses objectifs d''échange de bonnes pratiques et de renforcement des relations de partenariat entre les écoles. L''importance des innovations dans l''éducation, en particulier dans le domaine de la cybersécurité, a été soulignée.
+
+Le Lycée National de Commerce est officiellement reconnu comme école innovante par la Décision n° 507 du Conseil des Ministres du 18 juillet 2024. L''innovation "Pour un environnement numérique sûr et sécurisé grâce à l''éducation à la cybersécurité" comprend l''introduction d''une nouvelle matière "Cybersécurité" pour les élèves de 9e et 10e années dans les spécialités "Informatique Économique" et "Commerce Électronique".
+
+Le programme se poursuivra dans les années à venir avec des perspectives d''élargissement de la coopération et de développement de nouvelles initiatives.',
+    'innovations-en-action-2025',
+    '/static/images/gallery/receiving-gift-inovacii.jpg'
+),
+-- Spanish translations
+(
+    'es', 
+    'SL', 
+    '2025-04-09', 
+    'Escuela Nacional de Comercio anfitriona de evento sobre innovación educativa', 
+    'NTG Plovdiv organizó un evento de tres días para el intercambio de mejores prácticas dentro del Programa Nacional "Innovaciones en Acción" con la participación de escuelas asociadas de todo el país.', 
+    'Del 9 al 11 de abril de 2025, la Escuela Nacional de Comercio en Plovdiv fue anfitriona de un evento para promover e intercambiar mejores prácticas dentro del Programa Nacional "Innovaciones en Acción".
+
+Escuelas asociadas participantes:
+- Escuela Secundaria Profesional Estatal de Comercio "Dimitar Hadzhivasilev", Svishtov
+- Escuela Primaria "St. St. Cirilo y Metodio", pueblo de Dragoevo, región de Shumen
+- Escuela Unida "Hermanos Miladinovi", pueblo de Konarsko, región de Blagoevgrad
+
+El evento comenzó el 9 de abril con una recepción ceremonial de los invitados por la Profesora Principal Sra. Nedka Milenova y la Directora Dra. Petya Gerasimova, quienes recibieron regalos de las escuelas asociadas. Siguió una presentación de la historia y tradiciones de la escuela secundaria de 115 años.
+
+El 10 de abril, el programa incluyó:
+- Presentación de la materia innovadora "Ciberseguridad" por la Profesora Principal Maria Grozeva
+- Discusión sobre "Desafíos en Escuelas Innovadoras" con la participación de Dilyana Nikolova y un representante de Skill Catalyst
+- Presencia de expertos de la Oficina Regional de Educación - Plovdiv
+- Programa cultural con visitas al Estadio Romano, Teatro Antiguo y Ciudad Vieja de Plovdiv
+
+El 11 de abril, la Sra. Delyana Nikola realizó un taller "Datos Biométricos" con la participación de estudiantes de todas las escuelas.
+
+El evento logró exitosamente sus objetivos de intercambio de mejores prácticas y fortalecimiento de relaciones de asociación entre escuelas. Se enfatizó la importancia de las innovaciones en educación, particularmente en el campo de la ciberseguridad.
+
+La Escuela Nacional de Comercio está oficialmente reconocida como escuela innovadora por la Decisión No. 507 del Consejo de Ministros del 18 de julio de 2024. La innovación "Por un entorno digital seguro y protegido a través de la educación en ciberseguridad" incluye la introducción de una nueva materia "Ciberseguridad" para estudiantes de 9º y 10º grado en las especialidades "Informática Económica" y "Comercio Electrónico".
+
+El programa continuará en los próximos años con perspectivas de expandir la cooperación y desarrollar nuevas iniciativas.',
+    'innovaciones-en-accion-2025',
+    '/static/images/gallery/receiving-gift-inovacii.jpg'
 );

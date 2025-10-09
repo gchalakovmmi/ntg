@@ -64,4 +64,92 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p>The school management congratulates all participants and their supervisors for the achievements and expresses confidence in future accomplishments.</p>',
 	'tf-fest-2025-achievements',
 	'/static/images/gallery/tf-fest.jpg'
+),
+
+-- German translations
+(
+    'de', 
+    'SL', 
+    '2025-04-23', 
+    'Beeindruckende Erfolge des NTG Plovdiv beim TF Fest 2025 "Junger Unternehmer"', 
+    'Schülerfirmen des NTG Plovdiv erzielten bedeutende Erfolge bei der XXVIII. Ausgabe der Messe der Übungsfirmen "Junger Unternehmer" und gewannen Auszeichnungen in verschiedenen Kategorien.', 
+    'Das Nationale Handelsgymnasium - Plovdiv erzielte beeindruckende Erfolge bei der XXVIII. Ausgabe der Messe der Übungsfirmen "Junger Unternehmer", die vom 23. bis 25. April 2025 in Plovdiv stattfand.
+
+Die Veranstaltung, organisiert vom Bildungsinstitut des Bildungsministeriums, der Internationalen Messe Plovdiv und dem Bulgarischen Trainingszentrum-Verband, versammelte 116 Übungsfirmen von 38 Schulen und zwei Universitäten aus Bulgarien, Serbien und Montenegro.
+
+Traditionell betreuten Schüler der 11D-Klasse des NTG den Informationsstand unter der Leitung von Frau Nedka Milenova und Frau Silvia Stoyanova.
+
+Dreizehn Übungsfirmen des NTG nahmen an der Messe teil, wobei vier von ihnen Auszeichnungen erhielten:
+
+- UP "Kasabra NTG" GmbH (11G-Klasse) - bietet Reitunterricht und Reitausbildung mit dem Motto "Für Pferde mit Liebe"
+- "Golden Hills Bank" AG (11A-Klasse) - gewann den zweiten Platz für die beste Instagram-Seite. Das Unternehmen präsentierte eine spezielle Münze, die dem 115. Jubiläum des NTG gewidmet ist
+- "Adrenaliner 24" GmbH (11G-Klasse) - gewann den dritten Platz in der Kategorie "Beste Website" mit einem Konzept für ungewöhnliche Hotels und Restaurants
+- "Status - Kъna & Tatus" GmbH - erhielt Auszeichnungen in drei Kategorien:
+    Zweiter Platz im Wettbewerb für Corporate Social Responsibility
+    Auszeichnung für soziale Innovation vom Ministerium für Arbeit und Sozialpolitik
+    Auszeichnung für hohe Professionalität von der Internationalen Messe Plovdiv
+
+Die Veranstaltung wurde in elektronischen Medien behandelt, darunter podtepeto.com, fair.bg und u4avplovdiv.com.
+
+Die Schulleitung gratuliert allen Teilnehmern und ihren Betreuern zu den erzielten Erfolgen und drückt Vertrauen in zukünftige Leistungen aus.',
+    'tf-fest-2025-erfolge',
+    '/static/images/gallery/tf-fest.jpg'
+),
+-- French translations
+(
+    'fr', 
+    'SL', 
+    '2025-04-23', 
+    'Succès impressionnants du NTG Plovdiv au TF Fest 2025 "Jeune Entrepreneur"', 
+    'Les entreprises étudiantes du NTG Plovdiv ont obtenu un succès significatif à la XXVIIIe édition de la Foire des Entreprises d''Entraînement "Jeune Entrepreneur", remportant des prix dans diverses catégories.', 
+    'Le Lycée National de Commerce - Plovdiv a obtenu un succès impressionnant à la XXVIIIe édition de la Foire des Entreprises d''Entraînement "Jeune Entrepreneur", qui s''est tenue à Plovdiv du 23 au 25 avril 2025.
+
+L''événement, organisé par l''Institut d''Éducation du Ministère de l''Éducation, la Foire Internationale de Plovdiv et l''Association du Centre de Formation Bulgare, a rassemblé 116 entreprises d''entraînement de 38 écoles et deux universités de Bulgarie, Serbie et Monténégro.
+
+Traditionnellement, les élèves de la classe 11D du NTG ont géré le Stand d''Information sous la direction de Mme Nedka Milenova et Mme Silvia Stoyanova.
+
+Treize entreprises d''entraînement du NTG ont participé à la foire, dont quatre ont reçu des prix:
+
+- UP "Kasabra NTG" SARL (classe 11G) - propose de l''équitation et de la formation équestre avec la devise "Pour les chevaux avec amour"
+- "Golden Hills Bank" SA (classe 11A) - a remporté la deuxième place pour la meilleure page Instagram. L''entreprise a présenté une pièce spéciale dédiée au 115e anniversaire du NTG
+- "Adrenaliner 24" SARL (classe 11G) - a remporté la troisième place dans la catégorie "Meilleur Site Web" avec un concept d''hôtels et restaurants insolites
+- "Status - Kъna & Tatus" SARL - a reçu des prix dans trois catégories:
+    Deuxième place au concours de responsabilité sociale des entreprises
+    Prix de l''innovation sociale du Ministère du Travail et de la Politique Sociale
+    Prix du haut professionnalisme de la Foire Internationale de Plovdiv
+
+L''événement a été couvert dans les médias électroniques, notamment podtepeto.com, fair.bg et u4avplovdiv.com.
+
+La direction de l''école félicite tous les participants et leurs superviseurs pour les réalisations et exprime sa confiance dans les accomplissements futurs.',
+    'tf-fest-2025-succes',
+    '/static/images/gallery/tf-fest.jpg'
+),
+-- Spanish translations
+(
+    'es', 
+    'SL', 
+    '2025-04-23', 
+    'Impresionantes logros de NTG Plovdiv en TF Fest 2025 "Joven Emprendedor"', 
+    'Empresas estudiantiles de NTG Plovdiv lograron un éxito significativo en la XXVIII edición de la Feria de Empresas de Práctica "Joven Emprendedor", ganando premios en varias categorías.', 
+    'La Escuela Nacional de Comercio - Plovdiv logró un éxito impresionante en la XXVIII edición de la Feria de Empresas de Práctica "Joven Emprendedor", celebrada en Plovdiv del 23 al 25 de abril de 2025.
+
+El evento, organizado por el Instituto de Educación del Ministerio de Educación, Feria Internacional de Plovdiv y la Asociación del Centro de Formación Búlgaro, reunió a 116 empresas de práctica de 38 escuelas y dos universidades de Bulgaria, Serbia y Montenegro.
+
+Tradicionalmente, estudiantes de la clase 11D de NTG gestionaron el Stand de Información bajo la guía de la Sra. Nedka Milenova y la Sra. Silvia Stoyanova.
+
+Trece empresas de práctica de NTG participaron en la feria, y cuatro de ellas recibieron premios:
+
+- UP "Kasabra NTG" Ltda. (clase 11G) - ofrece equitación y entrenamiento de equitación con el lema "Por caballos con amor"
+- "Golden Hills Bank" S.A. (clase 11A) - ganó el segundo lugar por la mejor página de Instagram. La empresa presentó una moneda especial dedicada al 115 aniversario de NTG
+- "Adrenaliner 24" Ltda. (clase 11G) - ganó el tercer lugar en la categoría "Mejor Sitio Web" con un concepto de hoteles y restaurantes inusuales
+- "Status - Kъna & Tatus" Ltda. - recibió premios en tres categorías:
+    Segundo lugar en el concurso de responsabilidad social corporativa
+    Premio a la innovación social del Ministerio de Trabajo y Política Social
+    Premio al alto profesionalismo de la Feria Internacional de Plovdiv
+
+El evento fue cubierto en medios electrónicos, incluyendo podtepeto.com, fair.bg y u4avplovdiv.com.
+
+La dirección de la escuela felicita a todos los participantes y sus supervisores por los logros y expresa confianza en futuros logros.',
+    'tf-fest-2025-logros',
+    '/static/images/gallery/tf-fest.jpg'
 );
