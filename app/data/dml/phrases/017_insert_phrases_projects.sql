@@ -4,6 +4,20 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'programs_and_projects', 'header', 'title', 'Програми и проекти - НТГ - Национална Търговска Гимназия'),
 ('en', 'programs_and_projects', 'header', 'title', 'Programs and Projects - NTS - National Trade School'),
 
+-- Hero Section
+('bg', 'programs_and_projects', 'hero', 'title', 'Иновативни програми и проекти в НТГ'),
+('bg', 'programs_and_projects', 'hero', 'subtitle', 'Открийте нашите водещи програми и проекти, които оформят бъдещето на образованието и развитието на уменията.'),
+('en', 'programs_and_projects', 'hero', 'title', 'Innovative Programs and Projects at NTS'),
+('en', 'programs_and_projects', 'hero', 'subtitle', 'Discover our leading programs and projects that shape the future of education and skills development.'),
+
+-- CTA Section
+('bg', 'programs_and_projects', 'cta', 'title', 'Станете наш партньор'),
+('bg', 'programs_and_projects', 'cta', 'subtitle', 'Присъединете се към нашата мисия за качествено образование и инвестирайте в бъдещето на младите хора'),
+('bg', 'programs_and_projects', 'cta', 'button_text', 'Свържете се с нас'),
+('en', 'programs_and_projects', 'cta', 'title', 'Become Our Partner'),
+('en', 'programs_and_projects', 'cta', 'subtitle', 'Join our mission for quality education and invest in the future of young people'),
+('en', 'programs_and_projects', 'cta', 'button_text', 'Contact Us'),
+
 -- Projects Section
 ('bg', 'programs_and_projects', 'projects', 'title', 'Проекти и програми реализиращи се в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle', 'Открийте иновативните проекти и програми в НТГ'),
@@ -36,51 +50,124 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'status', 'completed', 'Completed'),
 ('en', 'programs_and_projects', 'status', 'planned', 'Planned'),
 
--- Specific Projects
 
+-- Specific Projects
 
 -- Project 1 - Erazumus+ Mobilities
 ('bg', 'programs_and_projects', 'projects', 'project1_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Училищно образование 2021-2027 година'),
 ('bg', 'programs_and_projects', 'projects', 'project1_desc', '<p>Национална търговска гимназия изгражда своята образователна стратегия, отчитайки основните приоритети, цели, стандарти и стратегии, които са заложени в ЗПУО, в национална стратегия за учене през целия живот и в стратегията за европейска интернационализация на НТГ.</p><p>Целите на тази акретитация са:</p><ol><li>Прилагане на съдържателно-езиково интегрирано обучение (CLIL/ИУПЧЕ) и развитие на езиковите компетентности на учителите.</li><li>Устойчиво развитие на околната среда и изграждане на устойчив начин на живот. Екологичен и здравословен живот.</li><li>Изкуственият интелект в образованието – приятел и помощник. Киберсигурност и дигитална грамотност.</li></ol>'),
 ('en', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus Accreditation in the field of School Education 2021-2027'),
-('en', 'programs_and_projects', 'projects', 'project1_desc', 'National Trade School is building its educational strategy, taking into account the main priorities, goals, standards and strategies set out in the Pre-school and School Education Act, in the national lifelong learning strategy and in the NTS European internationalization strategy.'),
+('en', 'programs_and_projects', 'projects', 'project1_desc', '<p>National Trade School develops its educational strategy taking into account the main priorities, goals, standards and strategies set out in the Preschool and School Education Act, in the national lifelong learning strategy and in the European internationalization strategy of NTS.</p><p>The objectives of this accreditation are:</p><ol><li>Implementation of Content and Language Integrated Learning (CLIL) and development of teachers'' language competences.</li><li>Sustainable development of the environment and building a sustainable way of life. Ecological and healthy living.</li><li>Artificial Intelligence in education - friend and helper. Cybersecurity and digital literacy.</li></ol>'),
 
 -- Project 2 - National Program "Bulgaria - Educational Routes"
-('bg', 'programs_and_projects', 'projects', 'project2_title', 'Национална  програма България – образователни маршрути'),
-('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>Проведе организирано пътуване по НП „България – образователни маршрути", Модул 1 „Образователни маршрути за училищата в страната", в което се включиха 78 ученици и 8 ръководители.</p><p>Участниците в програмата посетиха:</p><ul><li>Музей на родопския карст – гр. Чепеларе</li><li>Смолянска крепост „Калето" – гр. Смолян</li><li>Връх Снежанка – к.к Пампорово</li><li>Астрономическа обсерватория и Планетариум – Рожен</li><li>Регионален исторически музей – гр. Смолян</li><li>Бачковски манастир – с. Бачково</li></ul><p>Учениците затвърдиха и надградиха знания и умения, които са придобили в училище чрез наблюдения, проучване и преживяване в реална среда. В програмата се включиха ученици от различни класове и през прекараното време заедно успяха чрез ефективна комуникация да се опознаят, да работят в екип и развиха интегрирано знание за България.</p>'),
-('en', 'programs_and_projects', 'projects', 'project2_title', 'National Program "Bulgaria - Educational Routes"'),
-('en', 'programs_and_projects', 'projects', 'project2_desc', '<p>Organized travel along the NP "Bulgaria - Educational Routes", Module 1 "Educational routes for schools in the country", which included 78 students and 8 leaders.</p><p>The participants in the program visited:</p><ul><li>Museum of Rhodope Karst - Chepelare</li><li>Smolyan Fortress "Kaleto" - Smolyan</li><li>Snezhanka Peak - Pamporovo</li><li>Astronomical Observatory and Planetarium - Rozhen</li><li>Regional Historical Museum - Smolyan</li><li>Bachkovo Monastery - Bachkovo village</li></ul><p>Students reinforced and upgraded knowledge and skills acquired at school through observation, research and experience in a real environment. The program included students from different grades who, through effective communication, got to know each other, worked in teams and developed integrated knowledge about Bulgaria.</p>'),
+
+('bg', 'programs_and_projects', 'projects', 'project2_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Професионалното образование и обучение за периода 2021-2027 година'),
+('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>С доказан опит в изпълнението и отчитането на проекти по национални и международни програми, Национална търговска гимназия успешно осигури и изпълни 14 проекта по програмата „Еразъм+" от първото кандидатстване през 2014 г.:</p>
+<ul>
+<li>7 проекта в сектор „Професионално образование и обучение"</li>
+<li>6 проекта в сектор „Училищно образование"</li>
+<li>Едно участие в консорциум</li>
+</ul>
+<p>Този опит не само обогати нашите образователни предложения, но също така засили нашите възможности за международно сътрудничество и управление на проекти.</p>
+<p>ЦЕЛИ на акредитацията:</p>
+<ul>
+<li>Професионално развитие на учителите</li>
+<li>Повишаване качеството на придобитото образование и професионална квалификация</li>
+<li>Цифрова трансформация на предлаганото образование и обучение</li>
+<li>Укрепване на трансверсалните когнитивни умения и междукултурни компетентности</li>
+<li>Личностно развитие на обучаемите</li>
+</ul>'),
+('en', 'programs_and_projects', 'projects', 'project2_title', 'Erasmus Accreditation in the field of Vocational Education and Training for the period 2021-2027'),
+('en', 'programs_and_projects', 'projects', 'project2_desc', '<p>With proven experience in implementing and reporting projects under national and international programs, National Trade School has successfully secured and implemented 14 projects under the "Erasmus+" program since its first application in 2014:</p> 
+<ul>
+<li>7 projects in the field of "Vocational Education and Training"</li>
+<li>6 projects in the field of "School Education"</li>
+<li>One participation in a consortium</li>
+</ul>
+<p>This experience has not only enriched our educational offerings but has also strengthened our capacity for international cooperation and project management.</p>
+<p>GOALS of the accreditation:</p>
+<ul>
+<li>Professional development of teachers</li>
+<li>Improving the quality of acquired education and professional qualifications</li>
+<li>Digital transformation of the offered education and training</li>
+<li>Strengthening transversal cognitive skills and intercultural competencies</li>
+<li>Personal development of learners</li>
+</ul>'),
 
 -- Project 3 - Business Project
 ('bg', 'programs_and_projects', 'projects', 'project3_title', 'Националната програма „Осигуряване на съвременна, сигурна и достъпна образователна среда“ 2025 г'),
-('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>Националната търговска гимназия участва по НП „Осигуряване на съвременна, сигурна и достъпна образователна среда" 2025 г., Модул 3 „Създаване на достъпна архитектурна среда".</p><p>Дейност II: Адаптиране и изграждане на санитарни възли чрез ремонт, разширяване и оборудване на помещения, съобразени със стандартите за достъпност за хора с увреждания.</p><p>Дейност V: Доставка на устройство за изкачване на стълби за инвалидни колички (стълбищен робот), осигуряващо безопасно придвижване на ученици и посетители с двигателни затруднения.</p><p>Проектът подобрява физическата достъпност в училището, утвърждавайки НТГ като модерен образователен център.</p>')('en', 'programs_and_projects', 'projects', 'project3_title', 'Junior Achievement Bulgaria'),
-('en', 'programs_and_projects', 'projects', 'project3_desc', 'Program for developing entrepreneurial skills and business knowledge among students.'),
+('bg', 'programs_and_projects', 'projects', 'project3_desc', 
+'<p>Модул 3 „Създаване на достъпна архитектурна среда“</p>
+<pМодул 3 включва:</p>
+<ul>
+<li>Дейност II:</li>
+<li>Адаптиране и изграждане на санитарни възли</li>
+<li>Дейност V:</li>
+<li>Доставка на устройство за изкачване на стълби за инвалидни колички (стълбищен робот).</li>
+</ul>
+<p>За преодоляване на вертикалните препятствия в сградата и улесняване на достъпа до учебните кабинети на горните етажи се предвижда доставка и въвеждане в експлоатация на стълбищен робот.</p>'),
+('en', 'programs_and_projects', 'projects', 'project3_title', 'Junior Achievement Bulgaria'),
+('en', 'programs_and_projects', 'projects', 'project3_desc', 
+'<p>Module 3 "Creating an accessible architectural environment"</p>
+<p>Module 3 includes:</p>
+<ul>
+<li>Activity II:</li>
+<li>Adaptation and construction of sanitary facilities</li>
+<li>Activity V:</li>
+<li>Delivery of a stair climbing device for wheelchairs (stair robot).</li>
+</ul>
+<p>To overcome vertical obstacles in the building and facilitate access to the classrooms on the upper floors, the delivery and commissioning of a stair robot is envisaged.</p>'),
 
--- Project 4 - Green School
-('bg', 'programs_and_projects', 'projects', 'green_school_title', 'Зелено училище'),
-('bg', 'programs_and_projects', 'projects', 'green_school_desc', 'Екологична инициатива за устойчиво развитие и опазване на околната среда в училищната общност.'),
-('en', 'programs_and_projects', 'projects', 'green_school_title', 'Green School'),
-('en', 'programs_and_projects', 'projects', 'green_school_desc', 'Environmental initiative for sustainable development and environmental protection in the school community.'),
+-- Project 4 - Erazumus+ Mobilities
 
--- Project 5 - IT Academy & Student Company
-('bg', 'programs_and_projects', 'projects', 'it_academy_title', 'ИТ Академия'),
-('bg', 'programs_and_projects', 'projects', 'it_academy_desc', 'Специализирана програма за обучение по програмиране, кибер сигурност и съвременни информационни технологии.'),
-('en', 'programs_and_projects', 'projects', 'it_academy_title', 'IT Academy'),
-('en', 'programs_and_projects', 'projects', 'it_academy_desc', 'Specialized program for training in programming, cybersecurity and modern information technologies.'),
+('bg', 'programs_and_projects', 'projects', 'project4_title', 'Национална  програма България – образователни маршрути'),
+('bg', 'programs_and_projects', 'projects', 'project4_desc', '<p>Проведе организирано пътуване по НП „България – образователни маршрути", Модул 1 „Образователни маршрути за училищата в страната", в което се включиха 78 ученици и 8 ръководители.</p><p>Участниците в програмата посетиха:</p><ul><li>Музей на родопския карст – гр. Чепеларе</li><li>Смолянска крепост „Калето" – гр. Смолян</li><li>Връх Снежанка – к.к Пампорово</li><li>Астрономическа обсерватория и Планетариум – Рожен</li><li>Регионален исторически музей – гр. Смолян</li><li>Бачковски манастир – с. Бачково</li></ul><p>Учениците затвърдиха и надградиха знания и умения, които са придобили в училище чрез наблюдения, проучване и преживяване в реална среда. В програмата се включиха ученици от различни класове и през прекараното време заедно успяха чрез ефективна комуникация да се опознаят, да работят в екип и развиха интегрирано знание за България.</p>'),
+('en', 'programs_and_projects', 'projects', 'project4_title', 'National Program "Bulgaria - Educational Routes"'),
+('en', 'programs_and_projects', 'projects', 'project4_desc', '<p>Organized travel along the NP "Bulgaria - Educational Routes", Module 1 "Educational routes for schools in the country", which included 78 students and 8 leaders.</p><p>The participants in the program visited:</p><ul><li>Museum of Rhodope Karst - Chepelare</li><li>Smolyan Fortress "Kaleto" - Smolyan</li><li>Snezhanka Peak - Pamporovo</li><li>Astronomical Observatory and Planetarium - Rozhen</li><li>Regional Historical Museum - Smolyan</li><li>Bachkovo Monastery - Bachkovo village</li></ul><p>Students reinforced and upgraded knowledge and skills acquired at school through observation, research and experience in a real environment. The program included students from different grades who, through effective communication, got to know each other, worked in teams and developed integrated knowledge about Bulgaria.</p>'),
+
+-- Project 5 - "Together in Arts and Sports"
+('bg', 'programs_and_projects', 'projects', 'project5_title', '„Заедно в изкуствата и в спорта“ за учебната 2024/2025 година'),
+('bg', 'programs_and_projects', 'projects', 'project5_desc', '<p>Национална търговска гимназия ще участва в НП „Заедно в изкуствата и спорта" за учебната 2024/2025 година за сформиране на следните групи и отбори:</p>
+<p>Модул 1. Изкуства</p>
+<ul>
+<li>Български народни танци, за начинаещи и напреднали, VIII-XII клас с ръководител – специалист по български народни танци</li>
+</ul>
+<p>Модул 2. Спорт</p>
+<ul>
+<li>Баскетбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Баскетбол"</li>
+<li>Волейбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Волейбол"</li>
+<li>Футбол, юноши, VIII-X клас, с ръководител – учител по физическо възпитание и спорт или треньор по „Футбол"</li>
+</ul>'),
+('en', 'programs_and_projects', 'projects', 'project5_title', '"Together in Arts and Sports" for the 2024/2025 school year'),
+('en', 'programs_and_projects', 'projects', 'project5_desc', '<p>The National Trade High School will participate in the NP "Together in Arts and Sports" for the 2024/2025 school year to form the following groups and teams:</p>
+<p>Module 1. Arts</p>
+<ul>
+<li>Bulgarian folk dances, for beginners and advanced, grades VIII-XII with a leader - a specialist in Bulgarian folk dances</li>
+</ul>
+<p>Module 2. Sports</p>
+<ul>
+<li>Basketball, boys, grades XI-XII with a leader - a physical education and sports teacher or a "Basketball" coach</li>
+<li>Volleyball, boys, grades XI-XII with a leader - a physical education and sports teacher or a "Volleyball" coach</li>
+<li>Football, boys, grades VIII-X with a leader - a physical education and sports teacher or a "Football" coach</li>
+</ul>'),
 
 -- Project 6 - Student Company
 ('bg', 'programs_and_projects', 'projects', 'student_company_title', 'Ученическа компания'),
-('bg', 'programs_and_projects', 'projects', 'student_company_desc', 'Практически проект за създаване и управление на реална ученическа компания с истински продукти и услуги.'),
+('bg', 'programs_and_projects', 'projects', 'student_company_desc', '<p>Национална търговска гимназия ще участва в НП „Заедно в изкуствата и спорта" за учебната 2024/2025 година за сформиране на следните групи и отбори:</p>
+<p>Модул 1. Изкуства</p>
+<ul>
+<li>Български народни танци, за начинаещи и напреднали, VIII-XII клас с ръководител – специалист по български народни танци</li>
+</ul>
+<p>Модул 2. Спорт</p>
+<ul>
+<li>Баскетбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Баскетбол"</li>
+<li>Волейбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Волейбол"</li>
+<li>Футбол, юноши, VIII-X клас, с ръководител – учител по физическо възпитание и спорт или треньор по „Футбол"</li>
+</ul>'),
 ('en', 'programs_and_projects', 'projects', 'student_company_title', 'Student Company'),
 ('en', 'programs_and_projects', 'projects', 'student_company_desc', 'Practical project for creating and managing a real student company with actual products and services.'),
 
--- CTA Section
-('bg', 'programs_and_projects', 'cta', 'title', 'Станете наш партньор'),
-('bg', 'programs_and_projects', 'cta', 'subtitle', 'Присъединете се към нашата мисия за качествено образование и инвестирайте в бъдещето на младите хора'),
-('bg', 'programs_and_projects', 'cta', 'button_text', 'Свържете се с нас'),
-('en', 'programs_and_projects', 'cta', 'title', 'Become Our Partner'),
-('en', 'programs_and_projects', 'cta', 'subtitle', 'Join our mission for quality education and invest in the future of young people'),
-('en', 'programs_and_projects', 'cta', 'button_text', 'Contact Us'),
+
 
 -- German translations
 ('de', 'programs_and_projects', 'header', 'title', 'Programme und Projekte - NTS - Nationale Handelsschule'),

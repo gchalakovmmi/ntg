@@ -17,7 +17,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 от 19:00 ч.
 Очакваме Ви с нетърпение за едно вдъхновяващо начало на новата учебна година!
 Ръководството на гимназията.',
-	'otkrivane-na-novata-uchebna-godina',
+	'opening-of-the-new-school-year',
 	'/static/images/gallery/15-sep.jpg'
 ),
 (
@@ -61,7 +61,7 @@ Ein Elternabend für Schüler der 8. Klasse findet am 16. September 2025 (Dienst
 um 19:00 Uhr statt.
 Wir freuen uns auf Sie für einen inspirierenden Start ins neue Schuljahr!
 Die Schulleitung des Gymnasiums.',
-    'eroffnung-des-neuen-schuljahres',
+    'opening-of-the-new-school-year',
     '/static/images/gallery/15-sep.jpg'
 ),
 -- French translations
@@ -83,7 +83,7 @@ Une réunion parentale pour les élèves de 8e année aura lieu le 16 septembre 
 à 19h00.
 Nous nous réjouissons de vous voir pour un début d''année scolaire inspirant!
 La direction du lycée.',
-    'ouverture-de-la-nouvelle-annee-scolaire',
+    'opening-of-the-new-school-year',
     '/static/images/gallery/15-sep.jpg'
 ),
 -- Spanish translations
@@ -105,6 +105,6 @@ Una reunión de padres para estudiantes de 8º grado se llevará a cabo el 16 de
 a las 19:00.
 ¡Esperamos verlos para un comienzo inspirador del nuevo año escolar!
 La dirección de la escuela secundaria.',
-    'apertura-del-nuevo-ano-escolar',
+    'opening-of-the-new-school-year',
     '/static/images/gallery/15-sep.jpg'
 );

@@ -23,7 +23,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <br>BIC: BUINBGSF
 <br>Получател: Фондация Павел Андреев
 <br>Основание: Димитър Милков Миланов</p>',
-    'podari-nadejda-vmesto-cvete',
+    'give-hope-instead-of-flowers',
     '/static/images/gallery/nosht-na-angelite.jpg'
 ),
 (
@@ -79,7 +79,7 @@ IBAN: BG25BUIN95611000739747
 BIC: BUINBGSF
 Empfänger: Pavel Andreev Foundation
 Verwendungszweck: Dimitar Milkov Milanov',
-    'schenke-hoffnung-statt-blumen',
+    'give-hope-instead-of-flowers',
     '/static/images/gallery/nosht-na-angelite.jpg'
 ),
 -- French translations
@@ -107,7 +107,7 @@ IBAN: BG25BUIN95611000739747
 BIC: BUINBGSF
 Bénéficiaire: Fondation Pavel Andreev
 Motif: Dimitar Milkov Milanov',
-    'donne-espoir-au-lieu-de-fleurs',
+    'give-hope-instead-of-flowers',
     '/static/images/gallery/nosht-na-angelite.jpg'
 ),
 -- Spanish translations
@@ -135,6 +135,6 @@ IBAN: BG25BUIN95611000739747
 BIC: BUINBGSF
 Destinatario: Fundación Pavel Andreev
 Concepto: Dimitar Milkov Milanov',
-    'regala-esperanza-en-lugar-de-flores',
+    'give-hope-instead-of-flowers',
     '/static/images/gallery/nosht-na-angelite.jpg'
 );

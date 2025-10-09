@@ -32,7 +32,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p>Присъстващите имаха възможност да се насладят на избрани откъси от наградените произведения. Благовещение, като празник на светлината и надеждата, допълни тържествената атмосфера на събитието.</p>
 
 <p>Националната търговска гимназия изразява признателност към всички участници и организатори на конкурса и очаква с нетърпение следващите издания.</p>',
-	'literature-contest-2025',
+	'literary-contest-2025',
 	'/static/images/gallery/literature-contest-2025.jpg'
 ),
 (
@@ -102,7 +102,7 @@ Die Schulleiterin, Dr. Petya Gerasimova, überreichte die Preise - Literaturbüc
 Die Anwesenden hatten die Möglichkeit, ausgewählte Auszüge aus den preisgekrönten Werken zu genießen. Die Verkündigung des Herrn, als Fest des Lichts und der Hoffnung, ergänzte die feierliche Atmosphäre der Veranstaltung.
 
 Das Nationale Handelsgymnasium dankt allen Teilnehmern und Organisatoren des Wettbewerbs und freut sich auf zukünftige Ausgaben.',
-    'literaturwettbewerb-2025',
+    'literary-contest-2025',
     '/static/images/gallery/literature-contest-2025.jpg'
 ),
 -- French translations
@@ -135,7 +135,7 @@ La directrice de l''école, Dr. Petya Gerasimova, a remis les prix - des livres 
 Les participants ont eu l''occasion de profiter d''extraits sélectionnés des œuvres primées. L''Annonciation, en tant que fête de lumière et d''espoir, a complété l''atmosphère solennelle de l''événement.
 
 Le Lycée National de Commerce exprime sa gratitude à tous les participants et organisateurs du concours et attend avec impatience les éditions futures.',
-    'concours-litteraire-2025',
+    'literary-contest-2025',
     '/static/images/gallery/literature-contest-2025.jpg'
 ),
 -- Spanish translations
@@ -168,6 +168,6 @@ La directora de la escuela, Dra. Petya Gerasimova, presentó los premios - libro
 Los asistentes tuvieron la oportunidad de disfrutar de extractos seleccionados de las obras premiadas. La Anunciación, como fiesta de luz y esperanza, complementó la atmósfera solemne del evento.
 
 La Escuela Nacional de Comercio expresa gratitud a todos los participantes y organizadores del concurso y espera con interés futuras ediciones.',
-    'concurso-literario-2025',
+    'literary-contest-2025',
     '/static/images/gallery/literature-contest-2025.jpg'
 );

@@ -27,7 +27,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 за тяхното усърдие и професионализъм при подготовката на отборите.</p>
 
 <p>Поздравления за отличните постижения и успех в предстоящите състезания!</p>',
-	'sportni-uspehi-mart2025',
+	'sports-achievements-march2025',
 	'/static/images/gallery/sport-victory-2025.jpg'
 ),
 (
@@ -87,7 +87,7 @@ Die Schulleitung spricht besonderen Dank an die Trainer aus:
 für ihren Einsatz und Professionalismus bei der Vorbereitung der Mannschaften.
 
 Glückwünsche zu den ausgezeichneten Leistungen und viel Erfolg bei den bevorstehenden Wettkämpfen!',
-    'sportliche-leistungen-maerz2025',
+    'sports-achievements-march2025',
     '/static/images/gallery/sport-victory-2025.jpg'
 ),
 -- French translations
@@ -115,7 +115,7 @@ La direction de l''école exprime ses remerciements particuliers aux entraîneur
 pour leur dévouement et professionnalisme dans la préparation des équipes.
 
 Félicitations pour les excellentes performances et bonne chance dans les compétitions à venir!',
-    'performances-sportives-mars2025',
+    'sports-achievements-march2025',
     '/static/images/gallery/sport-victory-2025.jpg'
 ),
 -- Spanish translations
@@ -143,6 +143,6 @@ La dirección de la escuela expresa agradecimiento especial a los entrenadores:
 por su dedicación y profesionalismo en la preparación de los equipos.
 
 ¡Felicitaciones por los excelentes logros y buena suerte en las próximas competencias!',
-    'logros-deportivos-marzo2025',
+    'sports-achievements-march2025',
     '/static/images/gallery/sport-victory-2025.jpg'
 );

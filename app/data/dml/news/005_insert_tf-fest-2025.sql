@@ -29,7 +29,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p>Събитието бе отразено в електронните медии, включително podtepeto.com, fair.bg и u4avplovdiv.com.</p>
 
 <p>Ръководството на гимназията поздравява всички участници и техните ръководители за постигнатите успехи и изразява увереност в бъдещи постижения.</p>',
-	'tf-fest-2025-uspehi',
+	'tf-fest-2025-achievements',
 	'/static/images/gallery/tf-fest.jpg'
 ),
 (
@@ -92,7 +92,7 @@ Dreizehn Übungsfirmen des NTG nahmen an der Messe teil, wobei vier von ihnen Au
 Die Veranstaltung wurde in elektronischen Medien behandelt, darunter podtepeto.com, fair.bg und u4avplovdiv.com.
 
 Die Schulleitung gratuliert allen Teilnehmern und ihren Betreuern zu den erzielten Erfolgen und drückt Vertrauen in zukünftige Leistungen aus.',
-    'tf-fest-2025-erfolge',
+    'tf-fest-2025-achievements',
     '/static/images/gallery/tf-fest.jpg'
 ),
 -- French translations
@@ -121,7 +121,7 @@ Treize entreprises d''entraînement du NTG ont participé à la foire, dont quat
 L''événement a été couvert dans les médias électroniques, notamment podtepeto.com, fair.bg et u4avplovdiv.com.
 
 La direction de l''école félicite tous les participants et leurs superviseurs pour les réalisations et exprime sa confiance dans les accomplissements futurs.',
-    'tf-fest-2025-succes',
+    'tf-fest-2025-achievements',
     '/static/images/gallery/tf-fest.jpg'
 ),
 -- Spanish translations
@@ -150,6 +150,6 @@ Trece empresas de práctica de NTG participaron en la feria, y cuatro de ellas r
 El evento fue cubierto en medios electrónicos, incluyendo podtepeto.com, fair.bg y u4avplovdiv.com.
 
 La dirección de la escuela felicita a todos los participantes y sus supervisores por los logros y expresa confianza en futuros logros.',
-    'tf-fest-2025-logros',
+    'tf-fest-2025-achievements',
     '/static/images/gallery/tf-fest.jpg'
 );

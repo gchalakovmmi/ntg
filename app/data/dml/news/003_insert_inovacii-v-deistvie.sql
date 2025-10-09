@@ -31,7 +31,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p>Националната търговска гимназия е официально признато за иновативно училище със СРешение № 507 на Министерския съвет от 18 юли 2024 г. Иновацията "За безопасна и сигурна дигитална среда чрез обучение по киберсигурност" включва въвеждането на нов учебен предмет "Киберсигурност" за ученици от IX и X клас в специалностите "Икономическа информатика" и "Електронна търговия".</p>
 
 <p>Програмата ще продължи в следващите години с перспектива за разширяване на сътрудничеството и разработване на нови инициативи.</p>',
-	'inovacii-v-deistvie-2025',
+	'innovations-in-action-2025',
 	'/static/images/gallery/receiving-gift-inovacii.jpg'
 ),
 (
@@ -99,7 +99,7 @@ Die Veranstaltung erreichte erfolgreich ihre Ziele des Austauschs bewährter Ver
 Das Nationale Handelsgymnasium ist offiziell als innovative Schule durch Beschluss Nr. 507 des Ministerrates vom 18. Juli 2024 anerkannt. Die Innovation "Für eine sichere und geschützte digitale Umgebung durch Cybersicherheitsausbildung" umfasst die Einführung eines neuen Fachs "Cybersicherheit" für Schüler der Klassen 9 und 10 in den Fachrichtungen "Wirtschaftsinformatik" und "E-Commerce".
 
 Das Programm wird in den kommenden Jahren mit Aussichten auf Erweiterung der Zusammenarbeit und Entwicklung neuer Initiativen fortgesetzt.',
-    'innovationen-in-aktion-2025',
+    'innovations-in-action-2025',
     '/static/images/gallery/receiving-gift-inovacii.jpg'
 ),
 -- French translations
@@ -131,7 +131,7 @@ L''événement a atteint avec succès ses objectifs d''échange de bonnes pratiq
 Le Lycée National de Commerce est officiellement reconnu comme école innovante par la Décision n° 507 du Conseil des Ministres du 18 juillet 2024. L''innovation "Pour un environnement numérique sûr et sécurisé grâce à l''éducation à la cybersécurité" comprend l''introduction d''une nouvelle matière "Cybersécurité" pour les élèves de 9e et 10e années dans les spécialités "Informatique Économique" et "Commerce Électronique".
 
 Le programme se poursuivra dans les années à venir avec des perspectives d''élargissement de la coopération et de développement de nouvelles initiatives.',
-    'innovations-en-action-2025',
+    'innovations-in-action-2025',
     '/static/images/gallery/receiving-gift-inovacii.jpg'
 ),
 -- Spanish translations
@@ -163,6 +163,6 @@ El evento logró exitosamente sus objetivos de intercambio de mejores prácticas
 La Escuela Nacional de Comercio está oficialmente reconocida como escuela innovadora por la Decisión No. 507 del Consejo de Ministros del 18 de julio de 2024. La innovación "Por un entorno digital seguro y protegido a través de la educación en ciberseguridad" incluye la introducción de una nueva materia "Ciberseguridad" para estudiantes de 9º y 10º grado en las especialidades "Informática Económica" y "Comercio Electrónico".
 
 El programa continuará en los próximos años con perspectivas de expandir la cooperación y desarrollar nuevas iniciativas.',
-    'innovaciones-en-accion-2025',
+    'innovations-in-action-2025',
     '/static/images/gallery/receiving-gift-inovacii.jpg'
 );

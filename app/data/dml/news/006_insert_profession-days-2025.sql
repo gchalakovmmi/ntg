@@ -12,7 +12,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p>Събитието предостави отлична възможност за директна комуникация между настоящите ученици на гимназията и бъдещите кандидати, което позволи на младите хора да получат първа ръка информация за образователните възможности и професионалните перспективи, които предлага Националната търговска гимназия.</p>
 
 <p>Участието в "Дни на професиите" е част от постоянните усилия на гимназията да поддържа активен диалог с местната общност и да представя своите образователни програми пред широката публика.</p>',
-	'dni-na-profesii-2025',
+	'profession-days-2025',
 	'/static/images/gallery/profession-days.jpg'
 ),
 (
@@ -46,7 +46,7 @@ Die Schüler des Gymnasiums präsentierten zukünftigen Achtklässlern und deren
 Die Veranstaltung bot eine ausgezeichnete Gelegenheit für direkte Kommunikation zwischen aktuellen Schülern des Gymnasiums und zukünftigen Kandidaten, was jungen Menschen ermöglichte, Informationen aus erster Hand über die Bildungsmöglichkeiten und beruflichen Perspektiven zu erhalten, die das Nationale Handelsgymnasium bietet.
 
 Die Teilnahme an den "Tagen der Berufe" ist Teil der kontinuierlichen Bemühungen des Gymnasiums, einen aktiven Dialog mit der lokalen Gemeinschaft zu pflegen und seine Bildungsprogramme der breiten Öffentlichkeit zu präsentieren.',
-    'tage-der-berufe-2025',
+    'profession-days-2025',
     '/static/images/gallery/profession-days.jpg'
 ),
 -- French translations
@@ -63,7 +63,7 @@ Les élèves du lycée ont présenté aux futurs élèves de 8e année et à leu
 L''événement a fourni une excellente opportunité de communication directe entre les élèves actuels du lycée et les futurs candidats, permettant aux jeunes d''obtenir des informations de première main sur les opportunités éducatives et les perspectives professionnelles offertes par le Lycée National de Commerce.
 
 La participation aux "Journées des Métiers" fait partie des efforts continus du lycée pour maintenir un dialogue actif avec la communauté locale et présenter ses programmes éducatifs au grand public.',
-    'journees-des-metiers-2025',
+    'profession-days-2025',
     '/static/images/gallery/profession-days.jpg'
 ),
 -- Spanish translations
@@ -80,6 +80,6 @@ Los estudiantes de la escuela secundaria presentaron a futuros estudiantes de 8�
 El evento proporcionó una excelente oportunidad para la comunicación directa entre los estudiantes actuales de la escuela secundaria y los futuros candidatos, permitiendo a los jóvenes obtener información de primera mano sobre las oportunidades educativas y perspectivas profesionales que ofrece la Escuela Nacional de Comercio.
 
 La participación en "Días de las Profesiones" es parte de los esfuerzos continuos de la escuela secundaria para mantener un diálogo activo con la comunidad local y presentar sus programas educativos al público en general.',
-    'dias-de-las-profesiones-2025',
+    'profession-days-2025',
     '/static/images/gallery/profession-days.jpg'
 );
