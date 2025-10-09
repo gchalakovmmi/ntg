@@ -38,43 +38,37 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- Specific Projects
 
--- Project 1 - Educational Projects
-('bg', 'programs_and_projects', 'projects', 'future_school_title', 'Училището на бъдещето'),
-('bg', 'programs_and_projects', 'projects', 'future_school_desc', 'Иновативен проект за дигитализация на образованието с модерни технологии и интерактивни методи на обучение.'),
-('en', 'programs_and_projects', 'projects', 'future_school_title', 'School of the Future'),
-('en', 'programs_and_projects', 'projects', 'future_school_desc', 'Innovative project for digitalization of education with modern technologies and interactive teaching methods.'),
 
--- Project 2 - Business Projects
-('bg', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Националната програма „Осигуряване на съвременна, сигурна и достъпна образователна среда“ 2025 г'),
-('bg', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Модул 3 „Създаване на достъпна архитектурна среда“,  Дейност II: Адаптиране и изграждане на санитарни възли и  Дейност V: Доставка на устройство за изкачване на стълби за инвалидни колички (стълбищен робот).'),
-('en', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Junior Achievement Bulgaria'),
-('en', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Program for developing entrepreneurial skills and business knowledge among students.'),
+-- Project 1 - Erazumus+ Mobilities
+('bg', 'programs_and_projects', 'projects', 'project1_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Училищно образование 2021-2027 година'),
+('bg', 'programs_and_projects', 'projects', 'project1_desc', '<p>Национална търговска гимназия изгражда своята образователна стратегия, отчитайки основните приоритети, цели, стандарти и стратегии, които са заложени в ЗПУО, в национална стратегия за учене през целия живот и в стратегията за европейска интернационализация на НТГ.</p><p>Целите на тази акретитация са:</p><ol><li>Прилагане на съдържателно-езиково интегрирано обучение (CLIL/ИУПЧЕ) и развитие на езиковите компетентности на учителите.</li><li>Устойчиво развитие на околната среда и изграждане на устойчив начин на живот. Екологичен и здравословен живот.</li><li>Изкуственият интелект в образованието – приятел и помощник. Киберсигурност и дигитална грамотност.</li></ol>'),
+('en', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus Accreditation in the field of School Education 2021-2027'),
+('en', 'programs_and_projects', 'projects', 'project1_desc', 'National Trade School is building its educational strategy, taking into account the main priorities, goals, standards and strategies set out in the Pre-school and School Education Act, in the national lifelong learning strategy and in the NTS European internationalization strategy.'),
 
--- Project 3 - National Program "Bulgaria - Educational Routes"
-('bg', 'programs_and_projects', 'projects', 'project3_title', 'Национална  програма България – образователни маршрути'),
-('bg', 'programs_and_projects', 'projects', 'project3_desc', '<p>Проведе организирано пътуване по НП „България – образователни маршрути", Модул 1 „Образователни маршрути за училищата в страната", в което се включиха 78 ученици и 8 ръководители.</p><p>Участниците в програмата посетиха:</p><ul><li>Музей на родопския карст – гр. Чепеларе</li><li>Смолянска крепост „Калето" – гр. Смолян</li><li>Връх Снежанка – к.к Пампорово</li><li>Астрономическа обсерватория и Планетариум – Рожен</li><li>Регионален исторически музей – гр. Смолян</li><li>Бачковски манастир – с. Бачково</li></ul><p>Учениците затвърдиха и надградиха знания и умения, които са придобили в училище чрез наблюдения, проучване и преживяване в реална среда. В програмата се включиха ученици от различни класове и през прекараното време заедно успяха чрез ефективна комуникация да се опознаят, да работят в екип и развиха интегрирано знание за България.</p>'),
-('en', 'programs_and_projects', 'projects', 'project3_title', 'National Program "Bulgaria - Educational Routes"'),
-('en', 'programs_and_projects', 'projects', 'project3_desc', '<p>Organized travel along the NP "Bulgaria - Educational Routes", Module 1 "Educational routes for schools in the country", which included 78 students and 8 leaders.</p><p>The participants in the program visited:</p><ul><li>Museum of Rhodope Karst - Chepelare</li><li>Smolyan Fortress "Kaleto" - Smolyan</li><li>Snezhanka Peak - Pamporovo</li><li>Astronomical Observatory and Planetarium - Rozhen</li><li>Regional Historical Museum - Smolyan</li><li>Bachkovo Monastery - Bachkovo village</li></ul><p>Students reinforced and upgraded knowledge and skills acquired at school through observation, research and experience in a real environment. The program included students from different grades who, through effective communication, got to know each other, worked in teams and developed integrated knowledge about Bulgaria.</p>'),
+-- Project 2 - National Program "Bulgaria - Educational Routes"
+('bg', 'programs_and_projects', 'projects', 'project2_title', 'Национална  програма България – образователни маршрути'),
+('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>Проведе организирано пътуване по НП „България – образователни маршрути", Модул 1 „Образователни маршрути за училищата в страната", в което се включиха 78 ученици и 8 ръководители.</p><p>Участниците в програмата посетиха:</p><ul><li>Музей на родопския карст – гр. Чепеларе</li><li>Смолянска крепост „Калето" – гр. Смолян</li><li>Връх Снежанка – к.к Пампорово</li><li>Астрономическа обсерватория и Планетариум – Рожен</li><li>Регионален исторически музей – гр. Смолян</li><li>Бачковски манастир – с. Бачково</li></ul><p>Учениците затвърдиха и надградиха знания и умения, които са придобили в училище чрез наблюдения, проучване и преживяване в реална среда. В програмата се включиха ученици от различни класове и през прекараното време заедно успяха чрез ефективна комуникация да се опознаят, да работят в екип и развиха интегрирано знание за България.</p>'),
+('en', 'programs_and_projects', 'projects', 'project2_title', 'National Program "Bulgaria - Educational Routes"'),
+('en', 'programs_and_projects', 'projects', 'project2_desc', '<p>Organized travel along the NP "Bulgaria - Educational Routes", Module 1 "Educational routes for schools in the country", which included 78 students and 8 leaders.</p><p>The participants in the program visited:</p><ul><li>Museum of Rhodope Karst - Chepelare</li><li>Smolyan Fortress "Kaleto" - Smolyan</li><li>Snezhanka Peak - Pamporovo</li><li>Astronomical Observatory and Planetarium - Rozhen</li><li>Regional Historical Museum - Smolyan</li><li>Bachkovo Monastery - Bachkovo village</li></ul><p>Students reinforced and upgraded knowledge and skills acquired at school through observation, research and experience in a real environment. The program included students from different grades who, through effective communication, got to know each other, worked in teams and developed integrated knowledge about Bulgaria.</p>'),
 
--- Project 4 - Erazumus+ Mobilities
-('bg', 'programs_and_projects', 'projects', 'project4_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Училищно образование 2021-2027 година'),
-('bg', 'programs_and_projects', 'projects', 'project4_desc', 'Национална търговска гимназия изгражда своята образователна стратегия, отчитайки основните приоритети, цели, стандарти и стратегии, които са заложени в ЗПУО, в национална стратегия за учене през целия живот и в стратегията за европейска интернационализация на НТГ.'),
-('en', 'programs_and_projects', 'projects', 'project4_title', 'Erasmus Accreditation in the field of School Education 2021-2027'),
-('en', 'programs_and_projects', 'projects', 'project4_desc', 'National Trade School is building its educational strategy, taking into account the main priorities, goals, standards and strategies set out in the Pre-school and School Education Act, in the national lifelong learning strategy and in the NTS European internationalization strategy.'),
+-- Project 3 - Business Project
+('bg', 'programs_and_projects', 'projects', 'project3_title', 'Националната програма „Осигуряване на съвременна, сигурна и достъпна образователна среда“ 2025 г'),
+('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>Националната търговска гимназия участва по НП „Осигуряване на съвременна, сигурна и достъпна образователна среда" 2025 г., Модул 3 „Създаване на достъпна архитектурна среда".</p><p>Дейност II: Адаптиране и изграждане на санитарни възли чрез ремонт, разширяване и оборудване на помещения, съобразени със стандартите за достъпност за хора с увреждания.</p><p>Дейност V: Доставка на устройство за изкачване на стълби за инвалидни колички (стълбищен робот), осигуряващо безопасно придвижване на ученици и посетители с двигателни затруднения.</p><p>Проектът подобрява физическата достъпност в училището, утвърждавайки НТГ като модерен образователен център.</p>')('en', 'programs_and_projects', 'projects', 'project3_title', 'Junior Achievement Bulgaria'),
+('en', 'programs_and_projects', 'projects', 'project3_desc', 'Program for developing entrepreneurial skills and business knowledge among students.'),
 
--- Project 5 - Green School
+-- Project 4 - Green School
 ('bg', 'programs_and_projects', 'projects', 'green_school_title', 'Зелено училище'),
 ('bg', 'programs_and_projects', 'projects', 'green_school_desc', 'Екологична инициатива за устойчиво развитие и опазване на околната среда в училищната общност.'),
 ('en', 'programs_and_projects', 'projects', 'green_school_title', 'Green School'),
 ('en', 'programs_and_projects', 'projects', 'green_school_desc', 'Environmental initiative for sustainable development and environmental protection in the school community.'),
 
--- Project 6 - IT Academy & Student Company
+-- Project 5 - IT Academy & Student Company
 ('bg', 'programs_and_projects', 'projects', 'it_academy_title', 'ИТ Академия'),
 ('bg', 'programs_and_projects', 'projects', 'it_academy_desc', 'Специализирана програма за обучение по програмиране, кибер сигурност и съвременни информационни технологии.'),
 ('en', 'programs_and_projects', 'projects', 'it_academy_title', 'IT Academy'),
 ('en', 'programs_and_projects', 'projects', 'it_academy_desc', 'Specialized program for training in programming, cybersecurity and modern information technologies.'),
 
--- Project 7 - Student Company
+-- Project 6 - Student Company
 ('bg', 'programs_and_projects', 'projects', 'student_company_title', 'Ученическа компания'),
 ('bg', 'programs_and_projects', 'projects', 'student_company_desc', 'Практически проект за създаване и управление на реална ученическа компания с истински продукти и услуги.'),
 ('en', 'programs_and_projects', 'projects', 'student_company_title', 'Student Company'),

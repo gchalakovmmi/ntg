@@ -122,8 +122,8 @@
 
 .project-card {
     display: flex;
-        flex-direction: column; 
-        min-height: 450px;
+    flex-direction: column; 
+    min-height: 450px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -163,18 +163,6 @@
 .project-card:hover .project-image::before {
     opacity: 1;
 }
-
-.project-category {
-    background: var(--primary-red);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    z-index: 2;
-}
-
-
 
 .status-active {
     background: #28a745;
@@ -231,24 +219,6 @@
     margin-right: 5px;
 }
 
-.project-btn {
-    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: var(--transition);
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.project-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(178, 34, 34, 0.3);
-}
 
 .stats-overview {
     background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
@@ -396,6 +366,8 @@
     transform: translateX(5px);
 }
 
+/* === END of CTA Section === */
+
 @media (max-width: 992px) {
     .programs-hero h1 {
         font-size: 2.5rem;
@@ -460,35 +432,7 @@
     }
 }
 
-/* New styling for category below the date */
-.project-category-bottom {
-    display: inline-block;
-    background: var(--primary-red);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-top: 15px;
-}
-
-/* Remove the old absolute positioned category (optional - keep for backward compatibility) */
-.project-category {
-    display: none;
-}
-
-/* Update project status to only appear in top-right of image */
-.project-status {
-    display: inline-block;
-    top: 15px;
-    right: 5px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    z-index: 2;
-}
-
+/* Status and Category Styling */
 /* Ensure project-image is positioned relative for absolute children */
 .project-image {
     height: 220px;
@@ -550,11 +494,6 @@
     color: white;
 }
 
-/* Remove or hide old status positioning */
-.project-status {
-    display: none;
-}
-
 /* Optional: Add hover effects */
 .project-card:hover .project-category-bottom {
     background: var(--dark-red);
@@ -593,3 +532,42 @@
              min-height: 380px;
      }
 }
+
+/* End of Status and Category Styling */
+
+
+/* === Button Styling === */
+
+.project-btn {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: var(--transition);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+        /* Important for <a> tags */
+        text-decoration: none;
+        /* Remove underline */
+        text-align: center;
+        /* Center the text */
+        box-sizing: border-box;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(178, 34, 34, 0.3);
+    color: white;
+}
+.project-btn i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* === END of Button Styling === */
