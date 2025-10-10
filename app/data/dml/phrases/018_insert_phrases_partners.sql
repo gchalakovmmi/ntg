@@ -39,7 +39,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'partners', 'details', 'partners_since', 'Partners since'),
 
 -- Specific Partners
-('bg', 'partners', 'obb', 'name', 'Обединени Български Банк'),
+('bg', 'partners', 'obb', 'name', 'Обединена Българска Банка'),
 ('bg', 'partners', 'obb', 'description', 'Водеща банка в България, която активно подкрепя образованието.'),
 ('bg', 'partners', 'obb', 'contribution', 'Стипендии, модерно оборудване, програми за стажове'),
 ('bg', 'partners', 'obb', 'since', '2019 г.'),
