@@ -196,3 +196,21 @@ func formatFileSize(size int64) string {
 	}
 	return fmt.Sprintf("%.1f %cB", float64(size)/float64(div), "KMGTPE"[exp])
 }
+
+// GetDocumentSections reads all directory names from the documents base path
+func GetDocumentSections(basePath string) ([]string) {
+	var sections []string
+
+	entries, err := os.ReadDir(basePath)
+	if err != nil {
+		return nil
+	}
+
+	for _, entry := range entries {
+		if entry.IsDir() {
+			sections = append(sections, entry.Name())
+		}
+	}
+
+	return sections
+}

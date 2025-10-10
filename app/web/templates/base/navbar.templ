@@ -1,5 +1,9 @@
 package base
 
+import (
+	"NTG/internal/database"
+)
+
 templ navbar(page, language string, phrases map[string]map[string]string) {
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
@@ -72,14 +76,7 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</a>
 						}
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#regulations_plans") }>{ phrases["navbar"]["regulations_plans"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#curriculum") }>{ phrases["navbar"]["curriculum"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#education_types") }>{ phrases["navbar"]["education_type"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#budget") }>{ phrases["navbar"]["budget"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#schedules") }>{ phrases["navbar"]["schedule"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#scholarships") }>{ phrases["navbar"]["scholarships"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#buyer_profile") }>{ phrases["navbar"]["buyer_profile"] }</a></li>
-							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#rules") }>{ phrases["navbar"]["rules"] }</a></li>
+							@documentSectionsDropdown(language, phrases)
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -204,4 +201,11 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 			</div>
 		</div>
 	</nav>
+}
+
+templ documentSectionsDropdown(language string, phrases map[string]map[string]string) {
+	// Get document sections from file system
+	for _, section := range database.GetDocumentSections("web/static/docs/documents") {
+		<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#" + section) }>{ phrases[section]["title"] }</a></li>
+	}
 }
