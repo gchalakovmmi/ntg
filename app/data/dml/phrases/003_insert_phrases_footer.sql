@@ -16,7 +16,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'base', 'footer', 'sitemap', 'Карта на сайта'),
 ('bg', 'base', 'footer', 'address', 'бул. Руски №50, Пловдив 4000'),
 ('bg', 'base', 'footer', 'phone', '+359 64 34 65'),
-('bg', 'base', 'footer', 'email', 'info@ntg-school.bg'),
+('bg', 'base', 'footer', 'email', 'tgschool@ntg-plovdiv.net'),
+('bg', 'base', 'footer', 'email2', 'info-1690175@edu.mon.bg'),
 ('bg', 'base', 'footer', 'hours', 'Понеделник-Петък: 8:00 - 17:00'),
 ('bg', 'base', 'footer', 'copyright', '© 2025 НАЦИОНАЛНА ТЪРГОВСКА ГИМНАЗИЯ. Всички права запазени.'),
 
@@ -38,6 +39,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'base', 'footer', 'address', '50 Ruski Blvd, Plovdiv 4000'),
 ('en', 'base', 'footer', 'phone', '+359 64 34 65'),
 ('en', 'base', 'footer', 'email', 'info@nts-school.bg'),
+('en', 'base', 'footer', 'email2', 'info-1690175@edu.mon.bg'),
 ('en', 'base', 'footer', 'hours', 'Monday-Friday: 8:00 AM - 5:00 PM'),
 ('en', 'base', 'footer', 'copyright', '© 2025 NATIONAL TRADE SCHOOL. All rights reserved.'),
 
@@ -59,6 +61,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'base', 'footer', 'address', 'Ruski Blvd 50, Plovdiv 4000'),
 ('de', 'base', 'footer', 'phone', '+359 64 34 65'),
 ('de', 'base', 'footer', 'email', 'info@ntg-school.bg'),
+('de', 'base', 'footer', 'email2', 'info-1690175@edu.mon.bg'),
 ('de', 'base', 'footer', 'hours', 'Montag-Freitag: 8:00 - 17:00 Uhr'),
 ('de', 'base', 'footer', 'copyright', '© 2025 NATIONALES HANDELSYMNASIUM. Alle Rechte vorbehalten.'),
 
@@ -80,6 +83,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'base', 'footer', 'address', '50 boul. Ruski, Plovdiv 4000'),
 ('fr', 'base', 'footer', 'phone', '+359 64 34 65'),
 ('fr', 'base', 'footer', 'email', 'info@ntg-school.bg'),
+('fr', 'base', 'footer', 'email2', 'info-1690175@edu.mon.bg'),
 ('fr', 'base', 'footer', 'hours', 'Lundi-Vendredi: 8:00 - 17:00'),
 ('fr', 'base', 'footer', 'copyright', '© 2025 LYCÉE NATIONAL DU COMMERCE. Tous droits réservés.'),
 
@@ -101,5 +105,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'base', 'footer', 'address', 'Bulevar Ruski 50, Plovdiv 4000'),
 ('es', 'base', 'footer', 'phone', '+359 64 34 65'),
 ('es', 'base', 'footer', 'email', 'info@ntg-school.bg'),
+('es', 'base', 'footer', 'email2', 'info-1690175@edu.mon.bg'),
 ('es', 'base', 'footer', 'hours', 'Lunes-Viernes: 8:00 - 17:00'),
 ('es', 'base', 'footer', 'copyright', '© 2025 INSTITUTO NACIONAL DE COMERCIO. Todos los derechos reservados.');

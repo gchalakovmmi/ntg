@@ -58,9 +58,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'programs_and_projects', 'projects', 'project1_desc', '<p>Национална търговска гимназия изгражда своята образователна стратегия, отчитайки основните приоритети, цели, стандарти и стратегии, които са заложени в ЗПУО, в национална стратегия за учене през целия живот и в стратегията за европейска интернационализация на НТГ.</p><p>Целите на тази акретитация са:</p><ol><li>Прилагане на съдържателно-езиково интегрирано обучение (CLIL/ИУПЧЕ) и развитие на езиковите компетентности на учителите.</li><li>Устойчиво развитие на околната среда и изграждане на устойчив начин на живот. Екологичен и здравословен живот.</li><li>Изкуственият интелект в образованието – приятел и помощник. Киберсигурност и дигитална грамотност.</li></ol>'),
 ('en', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus Accreditation in the field of School Education 2021-2027'),
 ('en', 'programs_and_projects', 'projects', 'project1_desc', '<p>National Trade School develops its educational strategy taking into account the main priorities, goals, standards and strategies set out in the Preschool and School Education Act, in the national lifelong learning strategy and in the European internationalization strategy of NTS.</p><p>The objectives of this accreditation are:</p><ol><li>Implementation of Content and Language Integrated Learning (CLIL) and development of teachers'' language competences.</li><li>Sustainable development of the environment and building a sustainable way of life. Ecological and healthy living.</li><li>Artificial Intelligence in education - friend and helper. Cybersecurity and digital literacy.</li></ol>'),
+('de', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus-Akkreditierung im Bereich der Schulbildung 2021-2027'),
+('de', 'programs_and_projects', 'projects', 'project1_desc', '<p>Die Nationale Handelsschule entwickelt ihre Bildungsstrategie unter Berücksichtigung der Hauptprioritäten, Ziele, Standards und Strategien, die im Vorschul- und Schulbildungsgesetz, in der nationalen Strategie für lebenslanges Lernen und in der europäischen Internationalisierungsstrategie der NTS festgelegt sind.</p><p>Die Ziele dieser Akkreditierung sind:</p><ol><li>Umsetzung von Content and Language Integrated Learning (CLIL) und Entwicklung der Sprachkompetenzen der Lehrkräfte.</li><li>Nachhaltige Entwicklung der Umwelt und Aufbau einer nachhaltigen Lebensweise. Ökologisches und gesundes Leben.</li><li>Künstliche Intelligenz in der Bildung - Freund und Helfer. Cybersicherheit und digitale Kompetenz.</li></ol>'),
+('fr', 'programs_and_projects', 'projects', 'project1_title', 'Accréditation Erasmus dans le domaine de l''éducation scolaire 2021-2027'),
+('fr', 'programs_and_projects', 'projects', 'project1_desc', '<p>École Nationale de Commerce développe sa stratégie éducative en tenant compte des principales priorités, objectifs, normes et stratégies énoncés dans la loi sur l''éducation préscolaire et scolaire, dans la stratégie nationale d''apprentissage tout au long de la vie et dans la stratégie d''internationalisation européenne de l''ENC.</p><p>Les objectifs de cette accréditation sont :</p><ol><li>Mise en œuvre de l''apprentissage intégré du contenu et des langues (AICL) et développement des compétences linguistiques des enseignants.</li><li>Développement durable de l''environnement et construction d''un mode de vie durable. Vie écologique et saine.</li><li>Intelligence artificielle dans l''éducation - amie et aide. Cybersécurité et littératie numérique.</li></ol>'),
+('es', 'programs_and_projects', 'projects', 'project1_title', 'Acreditación Erasmus en el campo de la educación escolar 2021-2027'),
+('es', 'programs_and_projects', 'projects', 'project1_desc', '<p>La Escuela Nacional de Comercio desarrolla su estrategia educativa teniendo en cuenta las principales prioridades, objetivos, normas y estrategias establecidas en la Ley de Educación Preescolar y Escolar, en la estrategia nacional de aprendizaje a lo largo de la vida y en la estrategia de internacionalización europea de NTS.</p><p>Los objetivos de esta acreditación son:</p><ol><li>Implementación del Aprendizaje Integrado de Contenidos y Lenguas (AICLE) y desarrollo de las competencias lingüísticas de los docentes.</li><li>Desarrollo sostenible del medio ambiente y construcción de un modo de vida sostenible. Vida ecológica y saludable.</li><li>Inteligencia Artificial en la educación: amiga y ayudante. Ciberseguridad y alfabetización digital.</li></ol>'),
 
 -- Project 2 - National Program "Bulgaria - Educational Routes"
-
 ('bg', 'programs_and_projects', 'projects', 'project2_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Професионалното образование и обучение за периода 2021-2027 година'),
 ('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>С доказан опит в изпълнението и отчитането на проекти по национални и международни програми, Национална търговска гимназия успешно осигури и изпълни 14 проекта по програмата „Еразъм+" от първото кандидатстване през 2014 г.:</p>
 <ul>
@@ -93,6 +98,56 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 <li>Strengthening transversal cognitive skills and intercultural competencies</li>
 <li>Personal development of learners</li>
 </ul>'),
+('de', 'programs_and_projects', 'projects', 'project2_title', 'Erasmus-Akkreditierung im Bereich der Berufsbildung für den Zeitraum 2021-2027'),
+('de', 'programs_and_projects', 'projects', 'project2_desc', '<p>Mit nachgewiesener Erfahrung in der Umsetzung und Berichterstattung von Projekten im Rahmen nationaler und internationaler Programme hat die Nationale Handelsschule seit ihrer ersten Bewerbung im Jahr 2014 erfolgreich 14 Projekte im Rahmen des Programms "Erasmus+" gesichert und umgesetzt:</p> 
+<ul>
+<li>7 Projekte im Bereich "Berufsbildung"</li>
+<li>6 Projekte im Bereich "Schulbildung"</li>
+<li>Eine Teilnahme an einem Konsortium</li>
+</ul>
+<p>Diese Erfahrung hat nicht nur unser Bildungsangebot bereichert, sondern auch unsere Kapazitäten für internationale Zusammenarbeit und Projektmanagement gestärkt.</p>
+<p>ZIELE der Akkreditierung:</p>
+<ul>
+<li>Berufliche Entwicklung der Lehrkräfte</li>
+<li>Verbesserung der Qualität der erworbenen Bildung und beruflichen Qualifikationen</li>
+<li>Digitale Transformation der angebotenen Bildung und Ausbildung
+</li>
+<li>Stärkung transversaler kognitiver Fähigkeiten und interkultureller Kompetenzen</li>
+<li>Persönliche Entwicklung der Lernenden</li>
+</ul>'),
+('fr', 'programs_and_projects', 'projects', 'project2_title', 'Accréditation Erasmus dans le domaine de la formation professionnelle pour la période 2021-2027'),
+('fr', 'programs_and_projects', 'projects', 'project2_desc', '<p>Avec une expérience avérée dans la mise en œuvre et le reporting de projets dans le cadre de programmes nationaux et internationaux, l''École Nationale de Commerce a réussi à obtenir et à mettre en œuvre 14 projets dans le cadre du programme "Erasmus+" depuis sa première candidature en 2014 :</p>
+<ul>
+<li>7 projets dans le domaine de la "Formation Professionnelle"</li>
+<li>6 projets dans le domaine de "l''Éducation Scolaire"</li>
+<li>Une participation à un consortium</li>
+</ul>
+<p>Cette expérience a non seulement enrichi nos offres éducatives, mais a également renforcé notre capacité de coopération internationale et de gestion de projets.</p>
+<p>OBJECTIFS de l''accréditation :</p>
+<ul>
+<li>Développement professionnel des enseignants</li>
+<li>Amélioration de la qualité de l''éducation et des qualifications professionnelles acquises</li>
+<li>Transformation numérique de l''éducation et de la formation offertes</li>
+<li>Renforcement des compétences cognitives transversales et des compétences interculturelles</li>
+<li>Développement personnel des apprenants</li>
+</ul>'),
+('es', 'programs_and_projects', 'projects', 'project2_title', 'Acreditación Erasmus en el campo de la Formación Profesional para el período 2021-2027'),
+('es', 'programs_and_projects', 'projects', 'project2_desc', '<p>Con una experiencia probada en la implementación y presentación de informes de proyectos bajo programas nacionales e internacionales, la Escuela Nacional de Comercio ha asegurado e implementado con éxito 14 proyectos bajo el programa "Erasmus+" desde su primera solicitud en 2014:</p>
+<ul>
+<li>7 proyectos en el campo de la "Formación Profesional"</li>
+<li>6 proyectos en el campo de la "Educación Escolar"</li>
+<li>Una participación en un consorcio</li>
+</ul>
+<p>Esta experiencia no solo ha enriquecido nuestras ofertas educativas, sino que también ha fortalecido nuestra capacidad para la cooperación internacional y la gestión de proyectos.</p>
+<p>OBJETIVOS de la acreditación:</p>
+<ul>
+<li>Desarrollo profesional de los docentes</li>
+<li>Mejora de la calidad de la educación y las cualificaciones profesionales adquiridas</li>
+<li>Transformación digital de la educación y la formación ofrecidas</li>
+<li>Fortalecimiento de las habilidades cognitivas transversales y las competencias interculturales</li>
+<li>Desarrollo personal de los aprendices</li>
+</ul>'),
+
 
 -- Project 3 - Business Project
 ('bg', 'programs_and_projects', 'projects', 'project3_title', 'Националната програма „Осигуряване на съвременна, сигурна и достъпна образователна среда“ 2025 г'),
@@ -117,6 +172,40 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 <li>Delivery of a stair climbing device for wheelchairs (stair robot).</li>
 </ul>
 <p>To overcome vertical obstacles in the building and facilitate access to the classrooms on the upper floors, the delivery and commissioning of a stair robot is envisaged.</p>'),
+('de', 'programs_and_projects', 'projects', 'project3_title', 'Junior Achievement Bulgarien'),
+('de', 'programs_and_projects', 'projects', 'project3_desc',
+'<p>Modul 3 "Schaffung einer barrierefreien architektonischen Umgebung"</p>
+<p>Modul 3 umfasst:</p>
+<ul>
+<li>Aktivität II:</li>
+<li>Anpassung und Bau von Sanitäranlagen</li>
+<li>Aktivität V:</li>
+<li>Lieferung eines Treppensteigers für Rollstühle (Treppenroboter).</li>
+</ul>
+<p>Um vertikale Hindernisse im Gebäude zu überwinden und den Zugang zu den Klassenzimmern in den oberen Stockwerken zu erleichtern, ist die Lieferung und Inbetriebnahme eines Treppenroboters vorgesehen.</p>'),
+('fr', 'programs_and_projects', 'projects', 'project3_title', 'Junior Achievement Bulgarie'),
+('fr', 'programs_and_projects', 'projects', 'project3_desc',
+'<p>Module 3 "Création d''un environnement architectural accessible"</p>
+<p>Le module 3 comprend :</p>
+<ul>
+<li>Activité II :</li>
+<li>Adaptation et construction d''installations sanitaires</li>
+<li>Activité V :</li>
+<li>Fourniture d''un dispositif de montée d''escaliers pour fauteuils roulants (robot d''escalier).</li>
+</ul>
+<p>Pour surmonter les obstacles verticaux dans le bâtiment et faciliter l''accès aux salles de classe aux étages supérieurs, la livraison et la mise en service d''un robot d''escalier sont envisagées.</p>'),
+('es', 'programs_and_projects', 'projects', 'project3_title', 'Junior Achievement Bulgaria'),
+('es', 'programs_and_projects', 'projects', 'project3_desc',
+'<p>Módulo 3 "Creación de un entorno arquitectónico accesible"</p>
+<p>El Módulo 3 incluye:</p>
+<ul>
+<li>Actividad II:</li>
+<li>Adaptación y construcción de instalaciones sanitarias</li>
+<li>Actividad V:</li>
+<li>Entrega de un dispositivo para subir escaleras para sillas de ruedas (robot de escaleras).</li>
+</ul>
+<p>Para superar los obstáculos verticales en el edificio y facilitar el acceso a las aulas en los pisos superiores, se prevé la entrega y puesta en servicio de un robot de escaleras.</p>'),
+
 
 -- Project 4 - Erazumus+ Mobilities
 
@@ -124,6 +213,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'programs_and_projects', 'projects', 'project4_desc', '<p>Проведе организирано пътуване по НП „България – образователни маршрути", Модул 1 „Образователни маршрути за училищата в страната", в което се включиха 78 ученици и 8 ръководители.</p><p>Участниците в програмата посетиха:</p><ul><li>Музей на родопския карст – гр. Чепеларе</li><li>Смолянска крепост „Калето" – гр. Смолян</li><li>Връх Снежанка – к.к Пампорово</li><li>Астрономическа обсерватория и Планетариум – Рожен</li><li>Регионален исторически музей – гр. Смолян</li><li>Бачковски манастир – с. Бачково</li></ul><p>Учениците затвърдиха и надградиха знания и умения, които са придобили в училище чрез наблюдения, проучване и преживяване в реална среда. В програмата се включиха ученици от различни класове и през прекараното време заедно успяха чрез ефективна комуникация да се опознаят, да работят в екип и развиха интегрирано знание за България.</p>'),
 ('en', 'programs_and_projects', 'projects', 'project4_title', 'National Program "Bulgaria - Educational Routes"'),
 ('en', 'programs_and_projects', 'projects', 'project4_desc', '<p>Organized travel along the NP "Bulgaria - Educational Routes", Module 1 "Educational routes for schools in the country", which included 78 students and 8 leaders.</p><p>The participants in the program visited:</p><ul><li>Museum of Rhodope Karst - Chepelare</li><li>Smolyan Fortress "Kaleto" - Smolyan</li><li>Snezhanka Peak - Pamporovo</li><li>Astronomical Observatory and Planetarium - Rozhen</li><li>Regional Historical Museum - Smolyan</li><li>Bachkovo Monastery - Bachkovo village</li></ul><p>Students reinforced and upgraded knowledge and skills acquired at school through observation, research and experience in a real environment. The program included students from different grades who, through effective communication, got to know each other, worked in teams and developed integrated knowledge about Bulgaria.</p>'),
+('de', 'programs_and_projects', 'projects', 'project4_title', 'Nationales Programm "Bulgarien - Bildungsrouten"'),
+('de', 'programs_and_projects', 'projects', 'project4_desc', '<p>Organisierte Reise entlang des NP "Bulgarien - Bildungsrouten", Modul 1 "Bildungsrouten für Schulen im Land", an der 78 Schüler und 8 Leiter teilnahmen.</p><p>Die Teilnehmer des Programms besuchten:</p><ul><li>Museum des Rhodopen-Karsts - Chepelare</li><li>Smolyan-Festung "Kaleto" - Smolyan</li><li>Snezhanka-Gipfel - Pamporovo</li><li>Astronomische Sternwarte und Planetarium - Rozhen</li><li>Regionalhistorisches Museum - Smolyan</li><li>Bachkovo-Kloster - Dorf Bachkovo</li></ul><p>Die Schüler festigten und erweiterten ihr in der Schule erworbenes Wissen und ihre Fähigkeiten durch Beobachtung, Forschung und Erfahrung in einer realen Umgebung. Das Programm umfasste Schüler aus verschiedenen Klassen, die sich durch effektive Kommunikation kennenlernten, in Teams arbeiteten und integriertes Wissen über Bulgarien entwickelten.</p>'),
+('fr', 'programs_and_projects', 'projects', 'project4_title', 'Programme national "Bulgarie - Itinéraires éducatifs"'),
+('fr', 'programs_and_projects', 'projects', 'project4_desc', '<p>Voyage organisé dans le cadre du PN "Bulgarie - Itinéraires éducatifs", Module 1 "Itinéraires éducatifs pour les écoles du pays", qui a réuni 78 élèves et 8 encadrants.</p><p>Les participants au programme ont visité :</p><ul><li>Musée du karst des Rhodopes - Chepelare</li><li>Forteresse de Smolyan "Kaleto" - Smolyan</li><li>Pic Snezhanka - Pamporovo</li><li>Observatoire astronomique et planétarium - Rozhen</li><li>Musée historique régional - Smolyan</li><li>Monastère de Bachkovo - village de Bachkovo</li></ul><p>Les élèves ont renforcé et amélioré les connaissances et compétences acquises à l''école par l''observation, la recherche et l''expérience en milieu réel. Le programme a réuni des élèves de différentes classes qui, grâce à une communication efficace, ont appris à se connaître, ont travaillé en équipe et ont développé des connaissances intégrées sur la Bulgarie.</p>'),
+('es', 'programs_and_projects', 'projects', 'project4_title', 'Programa Nacional "Bulgaria - Rutas Educativas"'),
+('es', 'programs_and_projects', 'projects', 'project4_desc', '<p>Viaje organizado a lo largo del PN "Bulgaria - Rutas Educativas", Módulo 1 "Rutas educativas para escuelas del país", que incluyó a 78 estudiantes y 8 líderes.</p><p>Los participantes en el programa visitaron:</p><ul><li>Museo del Karst de los Rodopes - Chepelare</li><li>Fortaleza de Smolyan "Kaleto" - Smolyan</li><li>Pico Snezhanka - Pamporovo</li><li>Observ atorio Astronómico y Planetario - Rozhen</li><li>Museo Histórico Regional - Smolyan</li><li>Monasterio de Bachkovo - pueblo de Bachkovo</li></ul><p>Los estudiantes reforzaron y mejoraron los conocimientos y habilidades adquiridos en la escuela a través de la observación, la investigación y la experiencia en un entorno real. El programa incluyó a estudiantes de diferentes grados que, a través de una comunicación efectiva, se conocieron, trabajaron en equipo y desarrollaron conocimientos integrados sobre Bulgaria.</p>'),
+
+
 
 -- Project 5 - "Together in Arts and Sports"
 ('bg', 'programs_and_projects', 'projects', 'project5_title', '„Заедно в изкуствата и в спорта“ за учебната 2024/2025 година'),
@@ -150,22 +247,88 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 <li>Volleyball, boys, grades XI-XII with a leader - a physical education and sports teacher or a "Volleyball" coach</li>
 <li>Football, boys, grades VIII-X with a leader - a physical education and sports teacher or a "Football" coach</li>
 </ul>'),
-
--- Project 6 - Student Company
-('bg', 'programs_and_projects', 'projects', 'student_company_title', 'Ученическа компания'),
-('bg', 'programs_and_projects', 'projects', 'student_company_desc', '<p>Национална търговска гимназия ще участва в НП „Заедно в изкуствата и спорта" за учебната 2024/2025 година за сформиране на следните групи и отбори:</p>
-<p>Модул 1. Изкуства</p>
+('de', 'programs_and_projects', 'projects', 'project5_title', '"Gemeinsam in Kunst und Sport" für das Schuljahr 2024/2025'),
+('de', 'programs_and_projects', 'projects', 'project5_desc', '<p>Die Nationale Handelsschule wird am NP "Gemeinsam in Kunst und Sport" für das Schuljahr 2024/2025 teilnehmen, um die folgenden Gruppen und Teams zu bilden:</p>
+<p>Modul 1. Kunst</p>
 <ul>
-<li>Български народни танци, за начинаещи и напреднали, VIII-XII клас с ръководител – специалист по български народни танци</li>
+<li>Bulgarische Volkstänze, für Anfänger und Fortgeschrittene, Klassen VIII-XII mit einem Leiter - ein Spezialist für bulgarische Volkstänze</li>
 </ul>
-<p>Модул 2. Спорт</p>
+<p>Modul 2. Sport</p>
 <ul>
-<li>Баскетбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Баскетбол"</li>
-<li>Волейбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Волейбол"</li>
-<li>Футбол, юноши, VIII-X клас, с ръководител – учител по физическо възпитание и спорт или треньор по „Футбол"</li>
+<li>Basketball, Jungen, Klassen XI-XII mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Basketball"-Trainer</li>
+<li>Volleyball, Jungen, Klassen XI-XII mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Volleyball"-Trainer</li>
+<li>Fußball, Jungen, Klassen VIII-X mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Fußball"- Trainer</li>
 </ul>'),
-('en', 'programs_and_projects', 'projects', 'student_company_title', 'Student Company'),
-('en', 'programs_and_projects', 'projects', 'student_company_desc', 'Practical project for creating and managing a real student company with actual products and services.'),
+('fr', 'programs_and_projects', 'projects', 'project5_title', '"Ensemble dans les arts et le sport" pour l''année scolaire 2024/2025'),
+('fr', 'programs_and_projects', 'projects', 'project5_desc', '<p>Le Lycée National de Commerce participera au NP "Ensemble dans les arts et le sport" pour l''année scolaire 2024/2025 afin de former les groupes et équipes suivants :</p>
+<p>Module 1. Arts</p>
+<ul>
+<li>Danses folkloriques bulgares, pour débutants et avancés, classes VIII-XII avec un chef - un spécialiste des danses folkloriques bulgares</li>
+</ul>
+<p>Module 2. Sports</p>
+<ul>
+<li>Basket-ball, garçons, classes XI-XII avec un chef - un professeur d''éducation physique et sportive ou un entraîneur de "Basket-ball"</li>
+<li>Volley-ball, garçons, classes XI-XII avec un chef - un professeur d''éducation physique et sportive ou un entraîneur de "Volley-ball"</li>
+<li>Football, garçons, classes VIII-X avec un chef - un professeur d''éducation physique et sportive ou un entraîneur de "Football"</li>
+</ul>'),
+('es', 'programs_and_projects', 'projects', 'project5_title', '"Juntos en las artes y el deporte" para el año escolar 2024/2025'),
+('es', 'programs_and_projects', 'projects', 'project5_desc', '<p>La Escuela Nacional de Comercio participará en el NP "Juntos en las artes y el deporte" para el año escolar 2024/2025 para formar los siguientes grupos y equipos:</p>
+<p>Módulo 1. Artes</p>
+<ul>
+<li>Danzas folclóricas búlgaras, para principiantes y avanzados, grados VIII-XII con un líder - un especialista en danzas folclóricas búlgaras</li>
+</ul>
+<p>Módulo 2. Deportes</p>
+<ul>
+<li>Baloncesto, niños, grados XI-XII con un líder - un profesor de  educación física y deportes o un entrenador de "Baloncesto"</li>
+<li>Voleibol, niños, grados XI-XII con un líder - un profesor de educación física y deportes o un entrenador de "Voleibol"</li>
+<li>Fútbol, niños, grados VIII-X con un líder - un profesor de educación física y deportes o un entrenador de "Fútbol"</li>
+</ul>'),
+
+-- Project 6 - "Vocational Education and Training"
+('bg', 'programs_and_projects', 'projects', 'project6_title', 'НП "Професионално образование и обучение"'),
+('bg', 'programs_and_projects', 'projects', 'project6_desc', 
+'<p> Модул 1 Модернизиране на материално техническата база</p>
+<p>Модул 1 включва:</p>
+<ul>
+<li>Модул 1 Модернизиране на материално техническата база. 90000.00 лв. финансирани от програмата</li>
+<li>Съфинансирани допълнително 11340.00 от УК "Съгласие-2004"</li>
+</ul>
+<p>Реализиране на ремонт на кабинет по професионална подготовка и закупуване на софтуери подходящи за професионално обучение в НТГ-Пловдив.</p>'),
+('en', 'programs_and_projects', 'projects', 'project6_title', 'NP "Vocational Education and Training"'),
+('en', 'programs_and_projects', 'projects', 'project6_desc', '<p> Module 1 Modernization of material and technical base</p>
+<p>Module 1 includes:</p>
+<ul>
+<li>Module 1 Modernization of material and technical base. 90000.00 BGN financed by the program</li>
+<li>Co-financed additionally 11340.00 by UK "Saglasie-2004"</li>
+</ul>
+<p>Implementation of repair of a professional training cabinet and purchase of software suitable for vocational training at NTS-Plovdiv.</p>'),
+('de', 'programs_and_projects', 'projects', 'project6_title', 'NP "Berufsbildung und -ausbildung"'),
+('de', 'programs_and_projects', 'projects', 'project6_desc', '<p> Modul 1 Modernisierung der materiellen und technischen Basis</p>
+<p>Modul 1 umfasst:</p>
+<ul>
+<li>Modul 1 Modernisierung der materiellen und technischen Basis. 90000,00 BGN finanziert durch das Programm</li>
+<li>Zusätzlich kofinanziert 11340,00 durch UK "Saglasie-2004"</li>
+</ul>   
+<p>Durchführung der Reparatur eines Berufsausbildungskabinetts und Kauf von Software, die für die berufliche Ausbildung an der NTS-Plovdiv geeignet ist.</p>'),
+('fr', 'programs_and_projects', 'projects', 'project6_title', 'NP "Formation professionnelle et apprentissage"'),
+('fr', 'programs_and_projects', 'projects', 'project6_desc', '<p> Module 1 Modernisation de la base matérielle et technique</p>
+<p>Le module 1 comprend :</p>
+<ul>
+<li>Module 1 Modernisation de la base matérielle et technique. 90000,
+00 BGN financés par le programme</li>
+<li>Co-financé en plus 11340,00 par le Royaume-Uni "Saglas
+ie-2004"</li>
+</ul>
+<p>Mise en œuvre de la réparation d''un cabinet de formation professionnelle et achat de logiciels adaptés à la formation professionnelle à l''ENC-Plovdiv.</p>'),
+('es', 'programs_and_projects', 'projects', 'project6_title', 'NP "Educación y Formación Profesional"'),
+('es', 'programs_and_projects', 'projects', 'project6_desc', '<p> Módulo 1 Modernización de la base material y técnica</p>
+<p>El Módulo 1 incluye:</p>
+<ul>
+<li>Módulo 1 Modernización de la base material y técnica. 90000,00 BGN financiados por el programa</li>
+<li>Co-financiado adicionalmente 11340,00 por UK "Saglasie-2004"</li>
+</ul>
+<p>Implementación de la reparación de un gabinete de formación profesional y compra de software adecuado para la formación profesional en NTS-Plovdiv.</p>'),
+
 
 
 
@@ -188,10 +351,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'programs_and_projects', 'projects', 'future_school_desc', 'Innovatives Projekt zur Digitalisierung der Bildung mit modernen Technologien und interaktiven Lehrmethoden.'),
 ('de', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Nationales Programm "Sicherstellung einer modernen, sicheren und zugänglichen Bildungsumgebung" 2025'),
 ('de', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Modul 3 "Schaffung einer zugänglichen architektonischen Umgebung", Aktivität II: Anpassung und Bau von Sanitäranlagen und Aktivität V: Lieferung einer Treppensteigvorrichtung für Rollstühle (Treppenroboter).'),
-('de', 'programs_and_projects', 'projects', 'project3_title', 'Nationales Programm "Bulgarien - Bildungsrouten"'),
-('de', 'programs_and_projects', 'projects', 'project3_desc', '<p>Organisierte Reise im Rahmen des NP "Bulgarien - Bildungsrouten", Modul 1 "Bildungsrouten für Schulen im Land", an der 78 Schüler und 8 Leiter teilnahmen.</p><p>Die Teilnehmer des Programms besuchten:</p><ul><li>Museum des Rhodopen-Karsts - Chepelare</li><li>Smolyan-Festung "Kaleto" - Smolyan</li><li>Snezhanka-Gipfel - Pamporovo</li><li>Astronomisches Observatorium und Planetarium - Rozhen</li><li>Regionales Historisches Museum - Smolyan</li><li>Batschkowo-Kloster - Dorf Batschkowo</li></ul><p>Die Schüler festigten und erweiterten Kenntnisse und Fähigkeiten, die sie in der Schule durch Beobachtung, Forschung und Erfahrung in einer realen Umgebung erworben haben. Das Programm umfasste Schüler verschiedener Klassenstufen, die durch effektive Kommunikation sich kennenlernten, im Team arbeiteten und integriertes Wissen über Bulgarien entwickelten.</p>'),
-('de', 'programs_and_projects', 'projects', 'project4_title', 'ERASMUS-Akkreditierung im Bereich Schulbildung 2021-2027'),
-('de', 'programs_and_projects', 'projects', 'project4_desc', 'Die Nationale Handelsschule entwickelt ihre Bildungsstrategie unter Berücksichtigung der Hauptprioritäten, Ziele, Standards und Strategien, die im Vorschul- und Schulbildungsgesetz, in der nationalen Strategie für lebenslanges Lernen und in der europäischen Internationalisierungsstrategie der NTS festgelegt sind.'),
 ('de', 'programs_and_projects', 'projects', 'green_school_title', 'Grüne Schule'),
 ('de', 'programs_and_projects', 'projects', 'green_school_desc', 'Ökologische Initiative für nachhaltige Entwicklung und Umweltschutz in der Schulgemeinschaft.'),
 ('de', 'programs_and_projects', 'projects', 'it_academy_title', 'IT-Akademie'),
@@ -221,10 +380,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'programs_and_projects', 'projects', 'future_school_desc', 'Projet innovant pour la digitalisation de l''éducation avec des technologies modernes et des méthodes d''enseignement interactives.'),
 ('fr', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Programme national "Assurance d''un environnement éducatif moderne, sûr et accessible" 2025'),
 ('fr', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Module 3 "Création d''un environnement architectural accessible", Activité II: Adaptation et construction de sanitaires et Activité V: Livraison d''un dispositif d''escalier pour fauteuils roulants (robot d''escalier).'),
-('fr', 'programs_and_projects', 'projects', 'project3_title', 'Programme national "Bulgarie - Routes éducatives"'),
-('fr', 'programs_and_projects', 'projects', 'project3_desc', '<p>Voyage organisé dans le cadre du NP "Bulgarie - Routes éducatives", Module 1 "Routes éducatives pour les écoles du pays", auquel ont participé 78 élèves et 8 responsables.</p><p>Les participants au programme ont visité:</p><ul><li>Musée du karst des Rhodopes - Chepelare</li><li>Forteresse de Smolyan "Kaleto" - Smolyan</li><li>Pic Snezhanka - Pamporovo</li><li>Observatoire astronomique et Planétarium - Rozhen</li><li>Musée historique régional - Smolyan</li><li>Monastère de Batchkovo - village Batchkovo</li></ul><p>Les élèves ont consolidé et amélioré les connaissances et compétences acquises à l''école grâce à l''observation, la recherche et l''expérience dans un environnement réel. Le programme a inclus des élèves de différentes classes qui, grâce à une communication efficace, ont appris à se connaître, ont travaillé en équipe et ont développé une connaissance intégrée de la Bulgarie.</p>'),
-('fr', 'programs_and_projects', 'projects', 'project4_title', 'Accréditation ERASMUS dans le domaine de l''éducation scolaire 2021-2027'),
-('fr', 'programs_and_projects', 'projects', 'project4_desc', 'L''École Nationale de Commerce élabore sa stratégie éducative en tenant compte des principales priorités, objectifs, normes et stratégies définis dans la loi sur l''éducation préscolaire et scolaire, dans la stratégie nationale d''apprentissage tout au long de la vie et dans la stratégie d''internationalisation européenne de NTS.'),
 ('fr', 'programs_and_projects', 'projects', 'green_school_title', 'École Verte'),
 ('fr', 'programs_and_projects', 'projects', 'green_school_desc', 'Initiative écologique pour le développement durable et la protection de l''environnement dans la communauté scolaire.'),
 ('fr', 'programs_and_projects', 'projects', 'it_academy_title', 'Académie informatique'),
@@ -254,10 +409,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'programs_and_projects', 'projects', 'future_school_desc', 'Proyecto innovador para la digitalización de la educación con tecnologías modernas y métodos de enseñanza interactivos.'),
 ('es', 'programs_and_projects', 'projects', 'junior_achievement_title', 'Programa nacional "Garantía de un entorno educativo moderno, seguro y accesible" 2025'),
 ('es', 'programs_and_projects', 'projects', 'junior_achievement_desc', 'Módulo 3 "Creación de un entorno arquitectónico accesible", Actividad II: Adaptación y construcción de baños y Actividad V: Entrega de dispositivo de subida de escaleras para sillas de ruedas (robot escalador).'),
-('es', 'programs_and_projects', 'projects', 'project3_title', 'Programa nacional "Bulgaria - Rutas educativas"'),
-('es', 'programs_and_projects', 'projects', 'project3_desc', '<p>Viaje organizado en el marco del NP "Bulgaria - Rutas educativas", Módulo 1 "Rutas educativas para las escuelas del país", en el que participaron 78 estudiantes y 8 líderes.</p><p>Los participantes en el programa visitaron:</p><ul><li>Museo del Karst de Ródope - Chepelare</li><li>Fortaleza de Smolyan "Kaleto" - Smolyan</li><li>Pico Snezhanka - Pamporovo</li><li>Observatorio Astronómico y Planetario - Rozhen</li><li>Museo Histórico Regional - Smolyan</li><li>Monasterio de Bachkovo - pueblo Bachkovo</li></ul><p>Los estudiantes consolidaron y mejoraron conocimientos y habilidades adquiridos en la escuela mediante observación, investigación y experiencia en un entorno real. El programa incluyó estudiantes de diferentes grados que, mediante comunicación efectiva, se conocieron, trabajaron en equipo y desarrollaron conocimiento integrado sobre Bulgaria.</p>'),
-('es', 'programs_and_projects', 'projects', 'project4_title', 'Acreditación ERASMUS en el ámbito de la Educación Escolar 2021-2027'),
-('es', 'programs_and_projects', 'projects', 'project4_desc', 'La Escuela Nacional de Comercio está construyendo su estrategia educativa, teniendo en cuenta las principales prioridades, objetivos, estándares y estrategias establecidas en la Ley de Educación Preescolar y Escolar, en la estrategia nacional de aprendizaje permanente y en la estrategia de internacionalización europea de NTS.'),
 ('es', 'programs_and_projects', 'projects', 'green_school_title', 'Escuela Verde'),
 ('es', 'programs_and_projects', 'projects', 'green_school_desc', 'Iniciativa ecológica para el desarrollo sostenible y la protección del medio ambiente en la comunidad escolar.'),
 ('es', 'programs_and_projects', 'projects', 'it_academy_title', 'Academia de TI'),

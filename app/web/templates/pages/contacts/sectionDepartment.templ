@@ -11,6 +11,20 @@ templ departments(phrases map[string]map[string]string) {
 			</div>
 			<div class="row g-4">
 				<!-- Department Contact Items -->
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-comments"></i></div>
+						<h4>{ phrases["departments"]["director_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["director_email"]) } class="department-link">{ phrases["departments"]["director_phone"] }</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-comments"></i></div>
+						<h4>{ phrases["departments"]["zam_director_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["zam_director_email"]) } class="department-link">{ phrases["departments"]["zam_director_phone"] }</a>
+					</div>
+				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp">
 					<div class="department-card h-100">
 						<div class="department-icon"><i class="fas fa-comments"></i></div>
@@ -18,25 +32,11 @@ templ departments(phrases map[string]map[string]string) {
 						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["secretary_email"]) } class="department-link">{ phrases["departments"]["secretary_phone"] }</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
-					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-calculator"></i></div>
-						<h4>{ phrases["departments"]["co_director_title"] }</h4>
-						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["co_director_email"]) } class="department-link">{ phrases["departments"]["co_director_phone"] }</a>
-					</div>
-				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
 					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-first-aid"></i></div>
+						<div class="department-icon"><i class="fas fa-comments"></i></div>
 						<h4>{ phrases["departments"]["accounting_title"] }</h4>
 						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["accounting_phone"]) } class="department-link">{ phrases["departments"]["accounting_phone"] }</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
-					<div class="department-card h-100">
-						<div class="department-icon"><i class="fas fa-brain"></i></div>
-						<h4>{ phrases["departments"]["director_title"] }</h4>
-						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["direc tor_phone"]) } class="department-link">{ phrases["departments"]["director_phone"] }</a>
 					</div>
 				</div>
 				// <div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
@@ -62,6 +62,13 @@ templ departments(phrases map[string]map[string]string) {
 						<a href={ templ.SafeURL("tel:" + phrases["departments"]["lawyer_phone"]) } class="department-link">{ phrases["departments"]["lawyer_phone"] }</a>
 						<br/>
 						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["lawyer_email"]) } class="department-link">{ phrases["departments"]["lawyer_email"] }</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+					<div class="department-card h-100">
+						<div class="department-icon"><i class="fas fa-comments"></i></div>
+						<h4>{ phrases["departments"]["co_director_title"] }</h4>
+						<a href={ templ.SafeURL("mailto:" + phrases["departments"]["co_director_email"]) } class="department-link">{ phrases["departments"]["co_director_phone"] }</a>
 					</div>
 				</div>
 			</div>

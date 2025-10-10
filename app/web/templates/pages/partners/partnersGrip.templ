@@ -14,20 +14,20 @@ templ partnersGrid(phrases map[string]map[string]string) {
 					<div class="partner-card animate-scroll">
 						<div class="d-flex h-100">
 							<div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
-								<img src="/static/images/home/partners/ubb.png" alt="Lidl Logo" class="partner-logo"/>
+								<img src="/static/images/home/partners/ubb.png" alt="UBB Logo" class="partner-logo"/>
 							</div>
 							<div class="col-7 p-4">
 								<div class="partner-type mb-3">{ phrases["types"]["corporate"] }</div>
-								<h4 class="partner-name mb-3">{ phrases["lidl"]["name"] }</h4>
+								<h4 class="partner-name mb-3">{ phrases["obb"]["name"] }</h4>
 								<p class="text-muted mb-3 small">
-									{ phrases["lidl"]["description"] }
+									{ phrases["obb"]["description"] }
 								</p>
 								<div class="partner-contribution p-3 mb-3">
 									<h6 class="mb-1">{ phrases["details"]["contribution_label"] }</h6>
-									<p class="mb-0">{ phrases["lidl"]["contribution"] }</p>
+									<p class="mb-0">{ phrases["obb"]["contribution"] }</p>
 								</div>
 								<div class="small text-muted">
-									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["lidl"]["since"] }
+									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["obb"]["since"] }
 								</div>
 							</div>
 						</div>
@@ -38,20 +38,20 @@ templ partnersGrid(phrases map[string]map[string]string) {
 					<div class="partner-card animate-scroll delay-1">
 						<div class="d-flex h-100">
 							<div class="partner-logo-container col-5 d-flex align-items-center justify-content-center p-4">
-								<img src="/static/images/home/partners/allianz.png" alt="Samsung Logo" class="partner-logo"/>
+								<img src="/static/images/home/partners/allianz.png" alt="Allianz Logo" class="partner-logo"/>
 							</div>
 							<div class="col-7 p-4">
 								<div class="partner-type mb-3">{ phrases["types"]["technology"] }</div>
-								<h4 class="partner-name mb-3">{ phrases["samsung"]["name"] }</h4>
+								<h4 class="partner-name mb-3">{ phrases["allianz"]["name"] }</h4>
 								<p class="text-muted mb-3 small">
-									{ phrases["samsung"]["description"] }
+									{ phrases["allianz"]["description"] }
 								</p>
 								<div class="partner-contribution p-3 mb-3">
 									<h6 class="mb-1">{ phrases["details"]["contribution_label"] }</h6>
-									<p class="mb-0">{ phrases["samsung"]["contribution"] }</p>
+									<p class="mb-0">{ phrases["allianz"]["contribution"] }</p>
 								</div>
 								<div class="small text-muted">
-									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["samsung"]["since"] }
+									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["allianz"]["since"] }
 								</div>
 							</div>
 						</div>
@@ -62,20 +62,44 @@ templ partnersGrid(phrases map[string]map[string]string) {
 					<div class="partner-card animate-scroll delay-2">
 						<div class="d-flex h-100">
 							<div class="partner-logo-container col-6 d-flex align-items-center justify-content-center">
-								<img src="/static/images/home/partners/dsk.png" alt="Microsoft Logo" class="partner-logo"/>
+								<img src="/static/images/home/partners/dsk.png" alt="DSK Logo" class="partner-logo"/>
 							</div>
 							<div class="col-7 p-4">
 								<div class="partner-type mb-3">{ phrases["types"]["software"] }</div>
-								<h4 class="partner-name mb-3">{ phrases["microsoft"]["name"] }</h4>
+								<h4 class="partner-name mb-3">{ phrases["dsk"]["name"] }</h4>
 								<p class="text-muted mb-3 small">
-									{ phrases["microsoft"]["description"] }
+									{ phrases["dsk"]["description"] }
 								</p>
 								<div class="partner-contribution p-3 mb-3">
 									<h6 class="mb-1">{ phrases["details"]["contribution_label"] }</h6>
-									<p class="mb-0">{ phrases["microsoft"]["contribution"] }</p>
+									<p class="mb-0">{ phrases["dsk"]["contribution"] }</p>
 								</div>
 								<div class="small text-muted">
-									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["microsoft"]["since"] }
+									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["dsk"]["since"] }
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Partner 4 -->
+				<div class="col-lg-4 col-md-6">
+					<div class="partner-card animate-scroll delay-2">
+						<div class="d-flex h-100">
+							<div class="partner-logo-container col-6 d-flex align-items-center justify-content-center">
+								<img src="/static/images/partners/ADS.png" alt="ADS logo" class="partner-logo"/>
+							</div>
+							<div class="col-7 p-4">
+								<div class="partner-type mb-3">{ phrases["types"]["technology"] }</div>
+								<h4 class="partner-name mb-3">{ phrases["ads"]["name"] }</h4>
+								<p class="text-muted mb-3 small">
+									{ phrases["ads"]["description"] }
+								</p>
+								<div class="partner-contribution p-3 mb-3">
+									<h6 class="mb-1">{ phrases["details"]["contribution_label"] }</h6>
+									<p class="mb-0">{ phrases["ads"]["contribution"] }</p>
+								</div>
+								<div class="small text-muted">
+									<i class="fas fa-handshake me-2"></i>{ phrases["details"]["partners_since"] } { phrases["ads"]["since"] }
 								</div>
 							</div>
 						</div>
