@@ -18,7 +18,7 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 	return []Route{
 		{
 			Path:	"home",
-			Handler: handlers.Home(),
+			Handler: handlers.Home(db),
 		},
 		{
 			Path:	"about_us",

@@ -2,19 +2,20 @@ package home
 
 import (
 	"NTG/web/templates/base"
+	"NTG/internal/database"
 )
 
-templ components(phrases map[string]map[string]string) {
+templ components(phrases map[string]map[string]string, articles []database.NewsArticle) {
 	<link rel="stylesheet" href="/static/css/home.css">
 	@carousel(phrases)
 	@quicklinks(phrases)
-	@news(phrases)
+	@news(phrases, articles)
 	@virtualtour(phrases)
 	@stats(phrases)
 	@partners(phrases)
 	<script src="/static/js/home.js"></script>
 }
 
-templ Handler(page, language string, phrases map[string]map[string]string) {
-	@base.Base(page, language, phrases, components(phrases))
+templ Handler(page, language string, phrases map[string]map[string]string, articles []database.NewsArticle) {
+	@base.Base(page, language, phrases, components(phrases, articles))
 }

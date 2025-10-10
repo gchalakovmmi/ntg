@@ -170,3 +170,43 @@ func CountNewsArticles(db *sql.DB, language, category, search string, startDate,
 	}
 	return count, nil
 }
+
+// GetLatestNewsArticles fetches the last N news articles.
+func GetLatestNewsArticles(db *sql.DB, language string, limit int) ([]NewsArticle, error) {
+	query := `
+		SELECT language, category, upload_date, title, short_description, long_description, slug, image_url
+		FROM news
+		WHERE language = ?
+		ORDER BY upload_date DESC
+		LIMIT ?
+	`
+	
+	rows, err := db.Query(query, language, limit)
+	if err != nil {
+		slog.Error("Failed to fetch latest news articles", "error", err)
+		return nil, err
+	}
+	defer rows.Close()
+	
+	var articles []NewsArticle
+	for rows.Next() {
+		var article NewsArticle
+		err := rows.Scan(
+			&article.Language,
+			&article.Category,
+			&article.UploadDate,
+			&article.Title,
+			&article.ShortDescription,
+			&article.LongDescription,
+			&article.Slug,
+			&article.ImageURL,
+		)
+		if err != nil {
+			slog.Error("Failed to scan news article", "error", err)
+			continue
+		}
+		articles = append(articles, article)
+	}
+	
+	return articles, nil
+}

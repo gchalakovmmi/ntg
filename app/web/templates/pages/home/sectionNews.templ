@@ -1,6 +1,8 @@
 package home
 
-templ news(phrases map[string]map[string]string) {
+import "NTG/internal/database"
+
+templ news(phrases map[string]map[string]string, articles []database.NewsArticle) {
 	<section class="section news-section">
 		<div class="container">
 			<div class="section-title animate-on-scroll">
@@ -9,54 +11,29 @@ templ news(phrases map[string]map[string]string) {
 				<a href="/news" class="view-all">{ phrases["news"]["view_all"] } <i class="fas fa-arrow-right"></i></a>
 			</div>
 			<div class="row g-4">
-				<div class="col-lg-3 col-md-6">
-					<div class="news-card animate-on-scroll">
-						<div class="news-img" style="background-image: url(/static/images/gallery/15-sep.jpg);">
-							// <div class="news-date">15 Септември 2025</div>
-						</div>
-						<div class="news-content">
-							<h4 class="news-title">{ phrases["news"]["news1_title"] }</h4>
-							<p>{ phrases["news"]["news1_content"] }</p>
-							<a href="/news" class="btn btn-sm btn-outline-danger">{ phrases["news"]["news1_button"] }</a>
+				if len(articles) == 0 {
+					<div class="col-12">
+						<div class="alert alert-info text-center">
+							<i class="fas fa-info-circle me-2"></i>
+							{ phrases["news"]["no_articles"] }
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="news-card animate-on-scroll">
-						<div class="news-img" style="background-image: url(/static/images/gallery/nosht-na-angelite.jpg);">
-							// <div class="news-date">10 Септември 2023</div>
+				} else {
+					for _, article := range articles {
+						<div class="col-lg-3 col-md-6">
+							<div class="news-card animate-on-scroll">
+								<div class="news-img" style={ "background-image: url(" + article.ImageURL + ");" }>
+									<div class="news-date">{ article.UploadDate.Format("02 January 2006") }</div>
+								</div>
+								<div class="news-content">
+									<h4 class="news-title">{ article.Title }</h4>
+									<p>{ article.ShortDescription }</p>
+									<a href={ templ.URL("/" + article.Language + "/news/" + article.Slug) } class="btn btn-sm btn-outline-danger">{ phrases["news"]["read_more"] }</a>
+								</div>
+							</div>
 						</div>
-						<div class="news-content">
-							<h4 class="news-title">{ phrases["news"]["news2_title"] }</h4>
-							<p>{ phrases["news"]["news2_content"] }</p>
-							<a href="/news" class="btn btn-sm btn-outline-danger">{ phrases["news"]["news2_button"] }</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="news-card animate-on-scroll">
-						<div class="news-img" style="background-image: url(https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);">
-							// <div class="news-date">5 Септември 2023</div>
-						</div>
-						<div class="news-content">
-							<h4 class="news-title">{ phrases["news"]["news3_title"] }</h4>
-							<p>{ phrases["news"]["news3_content"] }</p>
-							<a href="/news" class="btn btn-sm btn-outline-danger">{ phrases["news"]["news3_button"] }</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="news-card animate-on-scroll">
-						<div class="news-img" style="background-image: url(/static/images/gallery/tf-fest.jpg);">
-							// <div class="news-date">1 Септември 2023</div>
-						</div>
-						<div class="news-content">
-							<h4 class="news-title">{ phrases["news"]["news4_title"] }</h4>
-							<p>{ phrases["news"]["news4_content"] }</p>
-							<a href="/news" class="btn btn-sm btn-outline-danger">{ phrases["news"]["news4_button"] }</a>
-						</div>
-					</div>
-				</div>
+					}
+				}
 			</div>
 		</div>
 	</section>
