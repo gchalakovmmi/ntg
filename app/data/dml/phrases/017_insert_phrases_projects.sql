@@ -19,7 +19,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'cta', 'button_text', 'Contact Us'),
 
 -- Projects Section
-('bg', 'programs_and_projects', 'projects', 'title', 'Проекти и програми реализиращи се в НТГ'),
+('bg', 'programs_and_projects', 'projects', 'title', 'Национални програми и проекти реализиращи се в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle', 'Открийте иновативните проекти и програми в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'details', 'Подробности'),
 ('bg', 'programs_and_projects', 'projects', 'students', 'ученици'),
@@ -29,6 +29,34 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'projects', 'details', 'Details'),
 ('en', 'programs_and_projects', 'projects', 'students', 'students'),
 ('en', 'programs_and_projects', 'projects', 'load_more', 'Load More'),
+
+--Project Sections - Erazum
+
+('bg', 'programs_and_projects', 'projects', 'title-erazmus', ' ЕРАЗЪМ+ проекти реализиращи се в НТГ'),
+('bg', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Открийте иновативните проекти и програми в НТГ'),
+('en', 'programs_and_projects', 'projects', 'title-erazmus', 'Erasmus+ Projects at NTS'),
+('en', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Discover innovative Erasmus+ projects at NTS'),
+('de', 'programs_and_projects', 'projects', 'title-erazmus', 'Erasmus+ Projekte an der NTS'),
+('de', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Entdecken Sie innovative Erasmus+ Projekte an der NTS'),
+('fr', 'programs_and_projects', 'projects', 'title-erazmus', 'Projets Erasmus+ à l''ENC'),
+('fr', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Découvrez les projets Erasmus+ innovants à l''ENC'),
+('es', 'programs_and_projects', 'projects', 'title-erazmus', 'Proyectos Erasmus+ en NTS'),
+('es', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Descubra proyectos innovadores de Erasmus+ en NTS'),
+
+--Filter Section
+
+('bg', 'programs_and_projects', 'filter', 'national-programs-and-projects', 'Национални програми и проекти'),
+('bg', 'programs_and_projects', 'filter', 'erazmus', 'Еразъм+'),
+('en', 'programs_and_projects', 'filter', 'national-programs-and-projects', 'National Programs and Projects'),
+('en', 'programs_and_projects', 'filter', 'erazmus', 'Erasmus+'),
+('de', 'programs_and_projects', 'filter', 'national-programs-and-projects', 'Nationale Programme und Projekte'),
+('de', 'programs_and_projects', 'filter', 'erazmus', 'Erasmus+'),
+('fr', 'programs_and_projects', 'filter', 'national-programs-and-projects', 'Programmes et projets nationaux'),
+('fr', 'programs_and_projects', 'filter', 'erazmus', 'Erasmus+'),
+('es', 'programs_and_projects', 'filter', 'national-programs-and-projects', 'Programas y proyectos nacionales'),
+('es', 'programs_and_projects', 'filter', 'erazmus', 'Erasmus+'),
+
+
 
 -- Project Categories
 ('bg', 'programs_and_projects', 'categories', 'educational', 'Образователни'),
