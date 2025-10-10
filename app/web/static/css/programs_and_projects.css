@@ -506,14 +506,32 @@
     transition: var(--transition);
 }
 
-.row {
+.projects-section .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.row>[class*='col-'] {
+.projects-section .row>[class*='col-'] {
     display: flex;
     margin-bottom: 30px;
+}
+
+/* Responsive adjustments - also scope to projects section */
+@media (max-width: 576px) {
+    .project-labels {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .project-category-bottom,
+    .project-status-bottom {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+
+    .project-card {
+        min-height: 380px;
+    }
 }
 
 /* Responsive adjustments */
