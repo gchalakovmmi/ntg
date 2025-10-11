@@ -55,8 +55,12 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'news', 'title', 'Последни Новини'),
 ('bg', 'home', 'news', 'subtitle', 'Бъдете в крак с последните събития в НТГ'),
 ('bg', 'home', 'news', 'view_all', 'Виж всички новини'),
+('en', 'home', 'news', 'title', 'Latest News'),
+('en', 'home', 'news', 'subtitle', 'Stay updated with the latest events at NTS'),
+('en', 'home', 'news', 'view_all', 'View all news'),
+
+-- Read More
 ('bg', 'home', 'news', 'read_more', 'Прочети още'),
-('en', 'home', 'news', 'read_more', 'Read more'),
 
 -- Virtual Tour
 ('bg', 'home', 'virtualtour', 'title', 'Виртуална разходка'),
