@@ -5,7 +5,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'header', 'title', 'Programs and Projects - NTS - National Trade School'),
 
 -- Hero Section
-('bg', 'programs_and_projects', 'hero', 'title', 'Иновативни програми и проекти в НТГ'),
+('bg', 'programs_and_projects', 'hero', 'title', 'Програми и проекти в НТГ'),
 ('bg', 'programs_and_projects', 'hero', 'subtitle', 'Открийте нашите водещи програми и проекти, които оформят бъдещето на образованието и развитието на уменията.'),
 ('en', 'programs_and_projects', 'hero', 'title', 'Innovative Programs and Projects at NTS'),
 ('en', 'programs_and_projects', 'hero', 'subtitle', 'Discover our leading programs and projects that shape the future of education and skills development.'),
@@ -20,7 +20,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- Projects Section
 ('bg', 'programs_and_projects', 'projects', 'title', 'Национални програми и проекти реализиращи се в НТГ'),
-('bg', 'programs_and_projects', 'projects', 'subtitle', 'Открийте иновативните проекти и програми в НТГ'),
+('bg', 'programs_and_projects', 'projects', 'subtitle', 'Открийте европейски проекти и програми в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'details', 'Подробности'),
 ('bg', 'programs_and_projects', 'projects', 'students', 'ученици'),
 ('bg', 'programs_and_projects', 'projects', 'load_more', 'Зареди още'),
@@ -32,7 +32,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 --Project Sections - Erazum
 
-('bg', 'programs_and_projects', 'projects', 'title-erazmus', ' ЕРАЗЪМ+ проекти реализиращи се в НТГ'),
+('bg', 'programs_and_projects', 'projects', 'title-erazmus', 'Европейски програми и проекти реализиращи се в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Открийте иновативните проекти и програми в НТГ'),
 ('en', 'programs_and_projects', 'projects', 'title-erazmus', 'Erasmus+ Projects at NTS'),
 ('en', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Discover innovative Erasmus+ projects at NTS'),
@@ -251,41 +251,44 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 
 -- Project 5 - "Together in Arts and Sports"
-('bg', 'programs_and_projects', 'projects', 'project5_title', '„Заедно в изкуствата и в спорта“ за учебната 2024/2025 година'),
-('bg', 'programs_and_projects', 'projects', 'project5_desc', '<p>Национална търговска гимназия ще участва в НП „Заедно в изкуствата и спорта" за учебната 2024/2025 година за сформиране на следните групи и отбори:</p>
+('bg', 'programs_and_projects', 'projects', 'project5_title', '„Заедно в изкуствата и в спорта“ за учебната 2025/2026 година'),
+('bg', 'programs_and_projects', 'projects', 'project5_desc', '<p>Национална търговска гимназия ще участва в НП „Заедно в изкуствата и спорта" за учебната 2025/2026 година за сформиране на следните групи и отбори:</p>
 <p>Модул 1. Изкуства</p>
 <ul>
 <li>Български народни танци, за начинаещи и напреднали, VIII-XII клас с ръководител – специалист по български народни танци</li>
 </ul>
+<p>Съвременни:</p>
+<ul>
+<li>Танци-мажоретки, VIII-XII клас с ръководител – специалист</li>
+</ul>
 <p>Модул 2. Спорт</p>
 <ul>
-<li>Баскетбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Баскетбол"</li>
-<li>Волейбол, юноши, XI-XII клас с ръководител – учител по физическо възпитание и спорт или треньор по „Волейбол"</li>
-<li>Футбол, юноши, VIII-X клас, с ръководител – учител по физическо възпитание и спорт или треньор по „Футбол"</li>
+<li>Баскетбол, юноши, VIII-XII клас с ръководител – специалист – учител по физическо възпитание и спорт или треньор по „Баскетбол"</li>
+<li>Волейбол, юноши, VIII-XII клас с ръководител – специалист– учител по физическо възпитание и спорт или треньор по „Волейбол"</li>
 </ul>'),
-('en', 'programs_and_projects', 'projects', 'project5_title', '"Together in Arts and Sports" for the 2024/2025 school year'),
-('en', 'programs_and_projects', 'projects', 'project5_desc', '<p>The National Trade High School will participate in the NP "Together in Arts and Sports" for the 2024/2025 school year to form the following groups and teams:</p>
+('en', 'programs_and_projects', 'projects', 'project5_title', '"Together in Arts and Sports" for the 2025/2026 school year'),
+('en', 'programs_and_projects', 'projects', 'project5_desc', '<p>The National Trade High School will participate in the NP "Together in Arts and Sports" for the 2025/2026 school year to form the following groups and teams:</p>
 <p>Module 1. Arts</p>
 <ul>
-<li>Bulgarian folk dances, for beginners and advanced, grades VIII-XII with a leader - a specialist in Bulgarian folk dances</li>
+<li>Cheerleading, grades VIII-XII with a leader - a specialist</li>
 </ul>
 <p>Module 2. Sports</p>
 <ul>
-<li>Basketball, boys, grades XI-XII with a leader - a physical education and sports teacher or a "Basketball" coach</li>
-<li>Volleyball, boys, grades XI-XII with a leader - a physical education and sports teacher or a "Volleyball" coach</li>
+<li>Basketball, boys, grades VIII-XII with a leader - a physical education and sports teacher or a "Basketball" coach</li>
+<li>Volleyball, boys, grades VIII-XII with a leader - a physical education and sports teacher or a "Volleyball" coach</li>
 <li>Football, boys, grades VIII-X with a leader - a physical education and sports teacher or a "Football" coach</li>
 </ul>'),
-('de', 'programs_and_projects', 'projects', 'project5_title', '"Gemeinsam in Kunst und Sport" für das Schuljahr 2024/2025'),
-('de', 'programs_and_projects', 'projects', 'project5_desc', '<p>Die Nationale Handelsschule wird am NP "Gemeinsam in Kunst und Sport" für das Schuljahr 2024/2025 teilnehmen, um die folgenden Gruppen und Teams zu bilden:</p>
+('de', 'programs_and_projects', 'projects', 'project5_title', '"Gemeinsam in Kunst und Sport" für das Schuljahr 2025/2026'),
+('de', 'programs_and_projects', 'projects', 'project5_desc', '<p>Die Nationale Handelsschule wird am NP "Gemeinsam in Kunst und Sport" für das Schuljahr 2025/2026 teilnehmen, um die folgenden Gruppen und Teams zu bilden:</p>
 <p>Modul 1. Kunst</p>
 <ul>
-<li>Bulgarische Volkstänze, für Anfänger und Fortgeschrittene, Klassen VIII-XII mit einem Leiter - ein Spezialist für bulgarische Volkstänze</li>
+<li>Cheerleading, Klassen VIII-XII mit einem Leiter - einem Spezialisten</li
 </ul>
 <p>Modul 2. Sport</p>
 <ul>
-<li>Basketball, Jungen, Klassen XI-XII mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Basketball"-Trainer</li>
-<li>Volleyball, Jungen, Klassen XI-XII mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Volleyball"-Trainer</li>
-<li>Fußball, Jungen, Klassen VIII-X mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Fußball"- Trainer</li>
+<li>Basketball, Jungen, Klassen VIII-XII mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Basketball"-Trainer</li>
+<li>Volleyball, Jungen, Klassen VIII-XII mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Volleyball"-Trainer</li>
+<li>Fußball, Jungen, Klassen VIII-X mit einem Leiter - ein Lehrer für Leibeserziehung und Sport oder ein "Fußball"-Trainer</li>
 </ul>'),
 ('fr', 'programs_and_projects', 'projects', 'project5_title', '"Ensemble dans les arts et le sport" pour l''année scolaire 2024/2025'),
 ('fr', 'programs_and_projects', 'projects', 'project5_desc', '<p>Le Lycée National de Commerce participera au NP "Ensemble dans les arts et le sport" pour l''année scolaire 2024/2025 afin de former les groupes et équipes suivants :</p>

@@ -1,8 +1,6 @@
 package base
 
-import (
-	"NTG/internal/database"
-)
+import "NTG/internal/database"
 
 templ navbar(page, language string, phrases map[string]map[string]string) {
 	<nav class="navbar navbar-expand-lg navbar-dark">
@@ -90,16 +88,20 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</a>
 						}
 					</li>
-					<li class="nav-item">
+					<li class="nav-item dropdown">
 						if page == "programs_and_projects" {
-							<a class="nav-link active" href={ templ.URL("/" + language + "/programs_and_projects") }>
+							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/programs_and_projects") } role="button" data-bs-toggle="dropdown">
 								{ phrases["navbar"]["programs_and_projects"] }
 							</a>
 						} else {
-							<a class="nav-link" href={ templ.URL("/" + language + "/programs_and_projects") }>
+							<a class="nav-link" href={ templ.URL("/" + language + "/programs_and_projects") } role="button" data-bs-toggle="dropdown">
 								{ phrases["navbar"]["programs_and_projects"] }
 							</a>
 						}
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/programs_and_projects#erazmus-projects-section-title") }>{ phrases["navbar"]["erazmus"] }</a></li>
+							<li><a class="dropdown-item" href={ templ.URL("/" + language + "/programs_and_projects#projects-section-title") }>{ phrases["navbar"]["national-programs"] }</a></li>
+						</ul>
 					</li>
 					<li class="nav-item dropdown">
 						if page == "school_life" || page == "education" || page == "professional_education" || page == "general_education" || page == "interest_activities" || page == "e_diary" || page == "uniforms" || page == "document_templates" || page == "scholarships" || page == "nvo" || page == "dzi" || page == "zdippk" || page == "academic_schedule" {
