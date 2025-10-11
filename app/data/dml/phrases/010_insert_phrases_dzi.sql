@@ -44,6 +44,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'dzi', 'documents', 'assessment_regulations_desc', 'Критерии и процедури за оценяване на учениците'),
 ('bg', 'dzi', 'documents', 'qualification_plan_title', 'План за квалификация на учителите'),
 ('bg', 'dzi', 'documents', 'qualification_plan_desc', 'Програма за професионално развитие на педагогическия персонал'),
+('bg', 'dzi', 'documents', 'schedule_title', 'График за провеждане на ДЗИ'),
+('bg', 'dzi', 'documents', 'schedule_desc', 'Дати за провеждане на държавните зрелостни изпити/задължителните държавни изпити за придобиване на професионална квалификация.'),
+
 ('en', 'dzi', 'documents', 'title', 'Documents'),
 ('en', 'dzi', 'documents', 'subtitle', 'Click on a document to view'),
 ('en', 'dzi', 'documents', 'view_download', 'View and Download'),
@@ -63,6 +66,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'dzi', 'documents', 'assessment_regulations_desc', 'Criteria and procedures for student assessment'),
 ('en', 'dzi', 'documents', 'qualification_plan_title', 'Teacher Qualification Plan'),
 ('en', 'dzi', 'documents', 'qualification_plan_desc', 'Professional development program for teaching staff'),
+('en', 'dzi', 'documents', 'schedule_title', 'Schedule for conducting DZI'),
+('en', 'dzi', 'documents', 'schedule_desc', 'Dates for conducting state matriculation exams/compulsory state exams for acquiring professional qualification.'),
 
 -- German translations
 ('de', 'dzi', 'header', 'title', 'Grundlegende Dokumente für DZI für das Schuljahr 2024/2025 - NTS'),
@@ -93,6 +98,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'dzi', 'documents', 'assessment_regulations_desc', 'Kriterien und Verfahren für die Schülerbewertung'),
 ('de', 'dzi', 'documents', 'qualification_plan_title', 'Qualifizierungsplan für Lehrer'),
 ('de', 'dzi', 'documents', 'qualification_plan_desc', 'Programm zur beruflichen Entwicklung des Lehrpersonals'),
+('de', 'dzi', 'documents', 'schedule_title', 'Zeitplan für die Durchführung von DZI'),
+('de', 'dzi', 'documents', 'schedule_desc', 'Termine für die Durchführung der staatlichen Reifeprüfungen/obligatorischen staatlichen Prüfungen zum Erwerb der beruflichen Qualifikation.'),
 
 -- French translations
 ('fr', 'dzi', 'header', 'title', 'Documents de base pour DZI pour l''année scolaire 2024/2025 - NTS'),
@@ -123,6 +130,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'dzi', 'documents', 'assessment_regulations_desc', 'Critères et procédures pour l''évaluation des élèves'),
 ('fr', 'dzi', 'documents', 'qualification_plan_title', 'Plan de qualification des enseignants'),
 ('fr', 'dzi', 'documents', 'qualification_plan_desc', 'Programme de développement professionnel pour le personnel enseignant'),
+('fr', 'dzi', 'documents', 'schedule_title', 'Calendrier pour la réalisation du DZI'),
+('fr', 'dzi', 'documents', 'schedule_desc', 'Dates pour la réalisation des examens de maturité d''État/des examens d''État obligatoires pour l''acquisition d''une qualification professionnelle.'),
 
 -- Spanish translations
 ('es', 'dzi', 'header', 'title', 'Documentos básicos sobre DZI para el año académico 2024/2025 - NTS'),
@@ -152,4 +161,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'dzi', 'documents', 'assessment_regulations_title', 'Reglamento de evaluación'),
 ('es', 'dzi', 'documents', 'assessment_regulations_desc', 'Criterios y procedimientos para la evaluación de estudiantes'),
 ('es', 'dzi', 'documents', 'qualification_plan_title', 'Plan de cualificación de profesores'),
-('es', 'dzi', 'documents', 'qualification_plan_desc', 'Programa de desarrollo profesional para el personal docente');
+('es', 'dzi', 'documents', 'qualification_plan_desc', 'Programa de desarrollo profesional para el personal docente'),
+('es', 'dzi', 'documents', 'schedule_title', 'Calendario para la realización del DZI'),
+('es', 'dzi', 'documents', 'schedule_desc', 'Fechas para la realización de los exámenes de madurez estatales/los exámenes estatales obligatorios para la adquisición de la cualificación profesional.');

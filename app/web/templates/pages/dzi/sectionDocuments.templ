@@ -26,6 +26,24 @@ templ sectionDocument(phrases map[string]map[string]string) {
 						</a>
 					</div>
 				</div>
+				<!-- Document Row X -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["schedule_title"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["schedule_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/documents/dzi/grafik_dzi_2025_2026.docx" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
 				// <!-- Document Row 2 -->
 				// <div class="document-row animate-on-scroll delay-1" onclick="openDocument('/documents/ethics-code-2024.pdf')">
 				// 	<div class="document-info">
