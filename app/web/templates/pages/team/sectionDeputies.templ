@@ -1,7 +1,5 @@
 package team
 
-import "fmt"
-
 templ deputiesSection(phrases map[string]map[string]string) {
 	<section class="section leadership-section" style="background: var(--light-bg);">
 		<div class="container">
@@ -10,21 +8,62 @@ templ deputiesSection(phrases map[string]map[string]string) {
 				<p>{ phrases["deputies"]["subtitle"] }</p>
 			</div>
 			<div class="row g-4">
-				for i := 1; i <= 4; i++ {
-					<div class="col-lg-3 col-md-6">
-						<div
-							class="leader-card team-card-clickable animate-on-scroll"
-							onclick={ templ.ComponentScript{Call: "openTeamModal({name: '" + phrases["deputies"]["deputy"+fmt.Sprint(i)+"_name"] + "', position: '" + phrases["deputies"]["deputy"+fmt.Sprint(i)+"_position"] + "', photo: '/static/images/team/deputy" + fmt.Sprint(i) + ".jpg', education: '" + phrases["deputies"]["deputy"+fmt.Sprint(i)+"_education"] + "', experience: '" + phrases["deputies"]["deputy"+fmt.Sprint(i)+"_experience"] + "'})"} }
-						>
-							<div class="leader-image" style={ "background-image: url('/static/images/team/deputy" + fmt.Sprint(i) + ".jpg');" }></div>
-							<div class="leader-content">
-								<h4>{ phrases["deputies"]["deputy"+fmt.Sprint(i)+"_name"] }</h4>
-								<div class="position">{ phrases["deputies"]["deputy"+fmt.Sprint(i)+"_position"] }</div>
-								<p>{ phrases["deputies"]["deputy"+fmt.Sprint(i)+"_short_bio"] }</p>
-							</div>
+				<!-- Deputy 1 -->
+				<div class="col-lg-3 col-md-6">
+					<div
+						class="leader-card team-card-clickable animate-on-scroll"
+						onclick={ templ.ComponentScript{Call: "openTeamModal({name: '" + phrases["deputies"]["deputy1_name"] + "', position: '" + phrases["deputies"]["deputy1_position"] + "', photo: '/static/images/team/deputy1.jpg', education: '" + phrases["deputies"]["deputy1_education"] + "', experience: '" + phrases["deputies"]["deputy1_experience"] + "'})"} }
+					>
+						<div class="leader-image" style="background-image: url('/static/images/team/Аделина Манева.JPG');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["deputies"]["deputy1_name"] }</h4>
+							<div class="position">{ phrases["deputies"]["deputy1_position"] }</div>
+							<p>{ phrases["deputies"]["deputy1_short_bio"] }</p>
 						</div>
 					</div>
-				}
+				</div>
+				<!-- Deputy 2 -->
+				<div class="col-lg-3 col-md-6">
+					<div
+						class="leader-card team-card-clickable animate-on-scroll"
+						onclick={ templ.ComponentScript{Call: "openTeamModal({name: '" + phrases["deputies"]["deputy2_name"] + "', position: '" + phrases["deputies"]["deputy2_position"] + "', photo: '/static/images/team/deputy2.jpg', education: '" + phrases["deputies"]["deputy2_education"] + "', experience: '" + phrases["deputies"]["deputy2_experience"] + "'})"} }
+					>
+						<div class="leader-image" style="background-image: url('/static/images/team/Аделина Манева.JPG');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["deputies"]["deputy2_name"] }</h4>
+							<div class="position">{ phrases["deputies"]["deputy2_position"] }</div>
+							<p>{ phrases["deputies"]["deputy2_short_bio"] }</p>
+						</div>
+					</div>
+				</div>
+				<!-- Deputy 3 -->
+				<div class="col-lg-3 col-md-6">
+					<div
+						class="leader-card team-card-clickable animate-on-scroll"
+						onclick={ templ.ComponentScript{Call: "openTeamModal({name: '" + phrases["deputies"]["deputy3_name"] + "', position: '" + phrases["deputies"]["deputy3_position"] + "', photo: '/static/images/team/deputy3.jpg', education: '" + phrases["deputies"]["deputy3_education"] + "', experience: '" + phrases["deputies"]["deputy3_experience"] + "'})"} }
+					>
+						<div class="leader-image" style="background-image: url('/static/images/team/Аделина Манева.JPG');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["deputies"]["deputy3_name"] }</h4>
+							<div class="position">{ phrases["deputies"]["deputy3_position"] }</div>
+							<p>{ phrases["deputies"]["deputy3_short_bio"] }</p>
+						</div>
+					</div>
+				</div>
+				<!-- Deputy 4 -->
+				<div class="col-lg-3 col-md-6">
+					<div
+						class="leader-card team-card-clickable animate-on-scroll"
+						onclick={ templ.ComponentScript{Call: "openTeamModal({name: '" + phrases["deputies"]["deputy4_name"] + "', position: '" + phrases["deputies"]["deputy4_position"] + "', photo: '/static/images/team/deputy4.jpg', education: '" + phrases["deputies"]["deputy4_education"] + "', experience: '" + phrases["deputies"]["deputy4_experience"] + "'})"} }
+					>
+						<div class="leader-image" style="background-image: url('/static/images/team/Аделина Манева.JPG');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["deputies"]["deputy4_name"] }</h4>
+							<div class="position">{ phrases["deputies"]["deputy4_position"] }</div>
+							<p>{ phrases["deputies"]["deputy4_short_bio"] }</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

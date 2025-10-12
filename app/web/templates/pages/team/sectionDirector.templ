@@ -9,9 +9,14 @@ templ directorSection(phrases map[string]map[string]string) {
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-4 col-md-6">
-					<h4>{ phrases["director"]["name"] }</h4>
-					<div class="position">{ phrases["director"]["position"] }</div>
-					<p>{ phrases["director"]["short_bio"] }</p>
+					<div class="leader-card animate-on-scroll">
+						<div class="leader-image" style="background-image: url('/static/images/team/Аделина Манева.JPG');"></div>
+						<div class="leader-content">
+							<h4>{ phrases["director"]["name"] }</h4>
+							<div class="position">{ phrases["director"]["position"] }</div>
+							<p>{ phrases["director"]["short_bio"] }</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
