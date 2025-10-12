@@ -9,7 +9,7 @@ import (
 
 // Route defines a single route with its handler
 type Route struct {
-	Path	string
+	Path    string
 	Handler http.Handler
 }
 
@@ -17,55 +17,55 @@ type Route struct {
 func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 	return []Route{
 		{
-			Path:	"home",
+			Path:    "home",
 			Handler: handlers.Home(db),
 		},
 		{
-			Path:	"about_us",
+			Path:    "about_us",
 			Handler: handlers.AboutUs(),
 		},
 		{
-			Path:	"documents",
+			Path:    "documents",
 			Handler: handlers.Documents(cfg, db),
 		},
 		{
-			Path:	"academic_schedule",
+			Path:    "academic_schedule",
 			Handler: handlers.AcademicSchedule(),
 		},
 		{
-			Path:	"parent_consultation",
+			Path:    "parent_consultation",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"student_consultation",
+			Path:    "student_consultation",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"class_tests",
+			Path:    "class_tests",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"olympiads",
+			Path:    "olympiads",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"exams",
+			Path:    "exams",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"admission",
+			Path:    "admission",
 			Handler: handlers.Admission(),
 		},
 		{
-			Path:	"programs_and_projects",
+			Path:    "programs_and_projects",
 			Handler: handlers.ProgramsAndProjects(),
 		},
 		{
-			Path:	"school_life",
+			Path:    "school_life",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"education",
+			Path:    "education",
 			Handler: handlers.TempPage(),
 		},
 		{
@@ -73,27 +73,27 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Handler: handlers.ProfessionalEducation(),
 		},
 		{
-			Path:	"scholarships",
+			Path:    "scholarships",
 			Handler: handlers.Scholarships(),
 		},
 		{
-			Path:	"general_education",
+			Path:    "general_education",
 			Handler: handlers.GeneralEducation(),
 		},
 		{
-			Path:	"interest_activities",
+			Path:    "interest_activities",
 			Handler: handlers.InterestActivities(),
 		},
 		{
-			Path:	"e_diary",
+			Path:    "e_diary",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"uniforms",
+			Path:    "uniforms",
 			Handler: handlers.TempPage(),
 		},
 		{
-			Path:	"document_templates",
+			Path:    "document_templates",
 			Handler: handlers.DocumentTemplates(),
 		},
 		{
@@ -105,36 +105,40 @@ func GetRoutes(cfg *config.Config, db *sql.DB) []Route {
 			Handler: handlers.Nvo(),
 		},
 		{
-			Path:	"dzi",
+			Path:    "dzi",
 			Handler: handlers.Dzi(),
 		},
 		{
-			Path:	"zdippk",
+			Path:    "zdippk",
 			Handler: handlers.Zdippk(),
 		},
 		{
-			Path:	"partners",
+			Path:    "partners",
 			Handler: handlers.Partners(),
 		},
 		{
-			Path:	"news",
+			Path:    "news",
 			Handler: handlers.News(db),
 		},
 		{
-			Path:	"news/{slug}",
+			Path:    "news/{slug}",
 			Handler: handlers.NewsArticle(db),
 		},
 		{
-			Path:	"contacts",
+			Path:    "contacts",
 			Handler: handlers.Contacts(),
 		},
 		{
-			Path:	"school_anthem",
+			Path:    "school_anthem",
 			Handler: handlers.School_anthem(),
 		},
 		{
 			Path:    "specs",
 			Handler: handlers.Specs(),
+		},
+		{
+			Path:    "team",
+			Handler: handlers.Team(),
 		},
 	}
 }

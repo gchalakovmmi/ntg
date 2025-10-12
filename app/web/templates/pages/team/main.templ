@@ -1,0 +1,30 @@
+package team
+
+import "NTG/web/templates/base"
+
+templ components(phrases map[string]map[string]string) {
+	<link rel="stylesheet" href="/static/css/team.css"/>
+	@hero(phrases)
+	@directorSection(phrases)
+	@deputiesSection(phrases)
+	@methodicalAssociations(phrases)
+	<!-- Modal Structure -->
+	<div id="teamMemberModal" class="team-member-modal">
+		<div class="modal-content-team">
+			<button class="modal-close" onclick="closeTeamModal()">&times;</button>
+			<div class="modal-header-team">
+				<img id="modalPhoto" class="modal-photo" src="" alt=""/>
+				<h2 id="modalName"></h2>
+				<p id="modalPosition" style="opacity: 0.9; font-size: 1.1rem;"></p>
+			</div>
+			<div class="modal-body-team">
+				<div id="modalDetails" class="info-grid"></div>
+			</div>
+		</div>
+	</div>
+	<script src="/static/js/team.js"></script>
+}
+
+templ Handler(page, language string, phrases map[string]map[string]string) {
+	@base.Base(page, language, phrases, components(phrases))
+}

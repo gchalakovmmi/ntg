@@ -1,0 +1,62 @@
+package team
+
+import "fmt"
+
+templ methodicalAssociations(phrases map[string]map[string]string) {
+	<section class="section leadership-section">
+		<div class="container">
+			<!-- Humanities Association -->
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["humanities"]["title"] }</h2>
+				<p>{ phrases["humanities"]["subtitle"] }</p>
+			</div>
+			<div class="row g-4 mb-5">
+				for i := 1; i <= 8; i++ {
+					<div class="col-lg-3 col-md-6">
+						<div
+							class="leader-card team-card-clickable animate-on-scroll"
+							data-name={ phrases["humanities"]["teacher"+fmt.Sprint(i)+"_name"] }
+							data-position={ phrases["humanities"]["teacher"+fmt.Sprint(i)+"_position"] }
+							data-photo={ "/static/images/team/humanities" + fmt.Sprint(i) + ".jpg" }
+							data-education={ phrases["humanities"]["teacher"+fmt.Sprint(i)+"_education"] }
+							data-subjects={ phrases["humanities"]["teacher"+fmt.Sprint(i)+"_subjects"] }
+							onclick="openTeamModalFromData(this)"
+						>
+							<div class="leader-image" style={ "background-image: url('/static/images/team/humanities" + fmt.Sprint(i) + ".jpg');" }></div>
+							<div class="leader-content">
+								<h4>{ phrases["humanities"]["teacher"+fmt.Sprint(i)+"_name"] }</h4>
+								<div class="position">{ phrases["humanities"]["teacher"+fmt.Sprint(i)+"_position"] }</div>
+							</div>
+						</div>
+					</div>
+				}
+			</div>
+			<!-- Professional Education Association -->
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["professional"]["title"] }</h2>
+				<p>{ phrases["professional"]["subtitle"] }</p>
+			</div>
+			<div class="row g-4">
+				for i := 1; i <= 12; i++ {
+					<div class="col-lg-3 col-md-6">
+						<div
+							class="leader-card team-card-clickable animate-on-scroll"
+							data-name={ phrases["professional"]["teacher"+fmt.Sprint(i)+"_name"] }
+							data-position={ phrases["professional"]["teacher"+fmt.Sprint(i)+"_position"] }
+							data-photo={ "/static/images/team/professional" + fmt.Sprint(i) + ".jpg" }
+							data-education={ phrases["professional"]["teacher"+fmt.Sprint(i)+"_education"] }
+							data-subjects={ phrases["professional"]["teacher"+fmt.Sprint(i)+"_subjects"] }
+							onclick="openTeamModalFromData(this)"
+						>
+							<div class="leader-image" style={ "background-image: url('/static/images/team/professional" + fmt.Sprint(i) + ".jpg');" }></div>
+							<div class="leader-content">
+								<h4>{ phrases["professional"]["teacher"+fmt.Sprint(i)+"_name"] }</h4>
+								<div class="position">{ phrases["professional"]["teacher"+fmt.Sprint(i)+"_position"] }</div>
+							</div>
+						</div>
+					</div>
+				}
+			</div>
+		</div>
+	</section>
+}

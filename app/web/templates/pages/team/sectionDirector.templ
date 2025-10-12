@@ -1,0 +1,19 @@
+package team
+
+templ directorSection(phrases map[string]map[string]string) {
+	<section class="section leadership-section">
+		<div class="container">
+			<div class="section-title animate-on-scroll">
+				<h2>{ phrases["director"]["title"] }</h2>
+				<p>{ phrases["director"]["subtitle"] }</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6">
+					<h4>{ phrases["director"]["name"] }</h4>
+					<div class="position">{ phrases["director"]["position"] }</div>
+					<p>{ phrases["director"]["short_bio"] }</p>
+				</div>
+			</div>
+		</div>
+	</section>
+}
