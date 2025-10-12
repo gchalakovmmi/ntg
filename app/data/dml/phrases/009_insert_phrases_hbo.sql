@@ -1,27 +1,27 @@
 -- HBO page phrases - Bulgarian and English
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
-('bg', 'nvo', 'header', 'title', 'Основни документи за учебната 2024/2025 - НТГ'),
-('en', 'nvo', 'header', 'title', 'Basic Documents for Academic Year 2024/2025 - NTS'),
+('bg', 'nvo', 'header', 'title', 'Основни документи за учебната 2025/2026 - НТГ'),
+('en', 'nvo', 'header', 'title', 'Basic Documents for Academic Year 2025/2026 - NTS'),
 
 -- Hero Section
-('bg', 'nvo', 'hero', 'title', 'Основни документи за учебната 2024/2025'),
+('bg', 'nvo', 'hero', 'title', 'Основни документи за учебната 2025/2026'),
 ('bg', 'nvo', 'hero', 'subtitle', 'Всички необходими документи, планове и графици за текущата учебна година'),
 ('bg', 'nvo', 'hero', 'documents_count', '1+'),
 ('bg', 'nvo', 'hero', 'documents_label', 'Документа'),
-('bg', 'nvo', 'hero', 'academic_year', '2024/25'),
+('bg', 'nvo', 'hero', 'academic_year', '2025/26'),
 ('bg', 'nvo', 'hero', 'academic_year_label', 'Учебна година'),
-('en', 'nvo', 'hero', 'title', 'Basic Documents for Academic Year 2024/2025'),
+('en', 'nvo', 'hero', 'title', 'Basic Documents for Academic Year 2025/2026'),
 ('en', 'nvo', 'hero', 'subtitle', 'All necessary documents, plans and schedules for the current academic year'),
 ('en', 'nvo', 'hero', 'documents_count', '1+'),
 ('en', 'nvo', 'hero', 'documents_label', 'Documents'),
-('en', 'nvo', 'hero', 'academic_year', '2024/25'),
+('en', 'nvo', 'hero', 'academic_year', '2025/26'),
 ('en', 'nvo', 'hero', 'academic_year_label', 'Academic Year'),
 
 -- Info Section
-('bg', 'nvo', 'info', 'title', 'Официални документи за учебната 2024/2025 година'),
+('bg', 'nvo', 'info', 'title', 'Официални документи за учебната 2025/2026 година'),
 ('bg', 'nvo', 'info', 'description', 'Всички документи в тази секция са актуални и одобрени от Министерството на образованието и науката. Те включват учебни планове, правилници, графици и други нормативни актове, които регламентират образователната дейност в нашето училище.'),
-('en', 'nvo', 'info', 'title', 'Official Documents for Academic Year 2024/2025'),
+('en', 'nvo', 'info', 'title', 'Official Documents for Academic Year 2025/2026'),
 ('en', 'nvo', 'info', 'description', 'All documents in this section are current and approved by the Ministry of Education and Science. They include curricula, regulations, schedules and other normative acts that regulate the educational activity in our school.'),
 
 -- Documents Section
@@ -65,14 +65,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'nvo', 'documents', 'qualification_plan_desc', 'Professional development program for teaching staff'),
 
 -- German Translations
-('de', 'nvo', 'header', 'title', 'Grundlegende Dokumente für das akademische Jahr 2024/2025 - NTS'),
-('de', 'nvo', 'hero', 'title', 'Grundlegende Dokumente für das akademische Jahr 2024/2025'),
+('de', 'nvo', 'header', 'title', 'Grundlegende Dokumente für das akademische Jahr 2025/2026 - NTS'),
+('de', 'nvo', 'hero', 'title', 'Grundlegende Dokumente für das akademische Jahr 2025/2026'),
 ('de', 'nvo', 'hero', 'subtitle', 'Alle notwendigen Dokumente, Pläne und Zeitpläne für das laufende akademische Jahr'),
 ('de', 'nvo', 'hero', 'documents_count', '1+'),
 ('de', 'nvo', 'hero', 'documents_label', 'Dokumente'),
-('de', 'nvo', 'hero', 'academic_year', '2024/25'),
+('de', 'nvo', 'hero', 'academic_year', '2025/26'),
 ('de', 'nvo', 'hero', 'academic_year_label', 'Akademisches Jahr'),
-('de', 'nvo', 'info', 'title', 'Offizielle Dokumente für das akademische Jahr 2024/2025'),
+('de', 'nvo', 'info', 'title', 'Offizielle Dokumente für das akademische Jahr 2025/2026'),
 ('de', 'nvo', 'info', 'description', 'Alle Dokumente in diesem Abschnitt sind aktuell und vom Ministerium für Bildung und Wissenschaft genehmigt. Sie enthalten Lehrpläne, Vorschriften, Zeitpläne und andere normative Akte, die die Bildungstätigkeit in unserer Schule regeln.'),
 ('de', 'nvo', 'documents', 'title', 'Dokumente'),
 ('de', 'nvo', 'documents', 'subtitle', 'Klicken Sie auf ein Dokument, um es anzusehen'),
@@ -95,14 +95,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'nvo', 'documents', 'qualification_plan_desc', 'Programm zur beruflichen Entwicklung des Lehrpersonals'),
 
 -- French Translations
-('fr', 'nvo', 'header', 'title', 'Documents de base pour l''année académique 2024/2025 - NTS'),
-('fr', 'nvo', 'hero', 'title', 'Documents de base pour l''année académique 2024/2025'),
+('fr', 'nvo', 'header', 'title', 'Documents de base pour l''année académique 2025/2026 - NTS'),
+('fr', 'nvo', 'hero', 'title', 'Documents de base pour l''année académique 2025/2026'),
 ('fr', 'nvo', 'hero', 'subtitle', 'Tous les documents, plans et horaires nécessaires pour l''année académique en cours'),
 ('fr', 'nvo', 'hero', 'documents_count', '1+'),
 ('fr', 'nvo', 'hero', 'documents_label', 'Documents'),
-('fr', 'nvo', 'hero', 'academic_year', '2024/25'),
+('fr', 'nvo', 'hero', 'academic_year', '2025/26'),
 ('fr', 'nvo', 'hero', 'academic_year_label', 'Année académique'),
-('fr', 'nvo', 'info', 'title', 'Documents officiels pour l''année académique 2024/2025'),
+('fr', 'nvo', 'info', 'title', 'Documents officiels pour l''année académique 2025/2026'),
 ('fr', 'nvo', 'info', 'description', 'Tous les documents de cette section sont actuels et approuvés par le Ministère de l''Éducation et des Sciences. Ils incluent des programmes d''études, des règlements, des horaires et d''autres actes normatifs qui régissent l''activité éducative dans notre école.'),
 ('fr', 'nvo', 'documents', 'title', 'Documents'),
 ('fr', 'nvo', 'documents', 'subtitle', 'Cliquez sur un document pour le visualiser'),
@@ -125,14 +125,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'nvo', 'documents', 'qualification_plan_desc', 'Programme de développement professionnel du personnel enseignant'),
 
 -- Spanish Translations
-('es', 'nvo', 'header', 'title', 'Documentos básicos para el año académico 2024/2025 - NTS'),
-('es', 'nvo', 'hero', 'title', 'Documentos básicos para el año académico 2024/2025'),
+('es', 'nvo', 'header', 'title', 'Documentos básicos para el año académico 2025/2026 - NTS'),
+('es', 'nvo', 'hero', 'title', 'Documentos básicos para el año académico 2025/2026'),
 ('es', 'nvo', 'hero', 'subtitle', 'Todos los documentos, planes y horarios necesarios para el año académico actual'),
 ('es', 'nvo', 'hero', 'documents_count', '1+'),
 ('es', 'nvo', 'hero', 'documents_label', 'Documentos'),
-('es', 'nvo', 'hero', 'academic_year', '2024/25'),
+('es', 'nvo', 'hero', 'academic_year', '2025/26'),
 ('es', 'nvo', 'hero', 'academic_year_label', 'Año académico'),
-('es', 'nvo', 'info', 'title', 'Documentos oficiales para el año académico 2024/2025'),
+('es', 'nvo', 'info', 'title', 'Documentos oficiales para el año académico 2025/2026'),
 ('es', 'nvo', 'info', 'description', 'Todos los documentos en esta sección son actuales y aprobados por el Ministerio de Educación y Ciencia. Incluyen planes de estudio, reglamentos, horarios y otros actos normativos que regulan la actividad educativa en nuestra escuela.'),
 ('es', 'nvo', 'documents', 'title', 'Documentos'),
 ('es', 'nvo', 'documents', 'subtitle', 'Haga clic en un documento para verlo'),

@@ -156,6 +156,17 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 
 -- DiMonZdippk Documents
+('bg', 'zdippk', 'dimonzdippk', 'title', 'ДИ Заповед от МОН - ЗДИППК'),
+('bg', 'zdippk', 'dimonzdippk', 'subtitle', 'Кликнете върху документ за преглед'),
+('en', 'zdippk', 'dimonzdippk', 'title', 'DiMon Order from MES - ZDIPPK'),
+('en', 'zdippk', 'dimonzdippk', 'subtitle', 'Click on a document to view'),
+('de', 'zdippk', 'dimonzdippk', 'title', 'DiMon-Anordnung des MES - ZDIPPK'),
+('de', 'zdippk', 'dimonzdippk', 'subtitle', 'Klicken Sie auf ein Dokument, um es anzusehen'),
+('fr', 'zdippk', 'dimonzdippk', 'title', 'Ordre DiMon du MES - ZDIPPK'),
+('fr', 'zdippk', 'dimonzdippk', 'subtitle', 'Cliquez sur un document pour le visualiser'),
+('es', 'zdippk', 'dimonzdippk', 'title', 'Orden DiMon del MES - ZDIPPK'),
+('es', 'zdippk', 'dimonzdippk', 'subtitle', 'Haga clic en un documento para verlo'),
+
 ('bg', 'zdippk', 'dimonzdippk', 'doc1', 'Дати за провеждане на държавните зрелостни изпити'),
 ('bg', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Дати за провеждане на държавните зрелостни изпити/задължителните държавни изпити за придобиване на професионална квалификация'),
 ('en', 'zdippk', 'dimonzdippk', 'doc1', 'Dates for conducting state graduation exams'),
@@ -166,6 +177,17 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Dates pour la conduite des examens de fin d''études d''État/examens d''État obligatoires pour l''acquisition de la qualification professionnelle'),
 ('es', 'zdippk', 'dimonzdippk', 'doc1', 'Fechas para la realización de los exámenes estatales de graduación'),
 ('es', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Fechas para la realización de los exámenes estatales de graduación/exámenes estatales obligatorios para adquirir cualificación profesional'),
+-- DiMonZdippk Documents 2
+('bg', 'zdippk', 'dimonzdippk', 'doc2', 'Наредба за държавните зрелостни изпити и задължителните държавни изпити за придобиване на професионална квалификация - Срокове за документи'),
+('bg', 'zdippk', 'dimonzdippk', 'doc2_subtitle', 'Срокове в които трябва да се подадат документите за явяване на държавни зрелостни изпити и задължителни държавни изпити за придобиване на професионална квалификация'),
+('en', 'zdippk', 'dimonzdippk', 'doc2', 'Regulation on State Graduation Exams and Compulsory State Exams for Acquiring Professional Qualification - Document Deadlines'),
+('en', 'zdippk', 'dimonzdippk', 'doc2_subtitle', 'Deadlines for submitting documents to take state graduation exams and compulsory state exams for acquiring professional qualification'),
+('de', 'zdippk', 'dimonzdippk', 'doc2', 'Verordnung über die staatlichen Abschlussprüfungen und die obligatorischen Staatsprüfungen zum Erwerb einer Berufsqualifikation – Einreichungsfristen für Unterlagen'),
+('de', 'zdippk', 'dimonzdippk', 'doc2_subtitle', 'Fristen für die Einreichung der Unterlagen zur Teilnahme an staatlichen Abschlussprüfungen und obligatorischen Staatsprüfungen zum Erwerb einer Berufsqualifikation'),
+('fr', 'zdippk', 'dimonzdippk', 'doc2', 'Règlement relatif aux examens d’État de fin d’études et aux examens d’État obligatoires pour l’acquisition d’une qualification professionnelle – Délais de dépôt des documents'),
+('fr', 'zdippk', 'dimonzdippk', 'doc2_subtitle', 'Délais de dépôt des documents pour se présenter aux examens d’État de fin d’études et aux examens d’État obligatoires en vue de l’acquisition d’une qualification professionnelle'),
+('es', 'zdippk', 'dimonzdippk', 'doc2', 'Reglamento sobre los exámenes estatales de graduación y los exámenes estatales obligatorios para la obtención de una cualificación profesional – Plazos de presentación de documentos'),
+('es', 'zdippk', 'dimonzdippk', 'doc2_subtitle', 'Plazos para la presentación de documentos para presentarse a los exámenes estatales de graduación y a los exámenes estatales obligatorios para la obtención de una cualificación profesional'),
 
 
 -- За вас 12-то класници

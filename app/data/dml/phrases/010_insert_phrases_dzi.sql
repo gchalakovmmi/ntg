@@ -1,27 +1,27 @@
 -- DZI page phrases - Bulgarian and English
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
-('bg', 'dzi', 'header', 'title', 'Основни документи за ДЗИ учебната 2024/2025 - НТГ'),
-('en', 'dzi', 'header', 'title', 'Basic Documents about DZI for Academic Year 2024/2025 - NTS'),
+('bg', 'dzi', 'header', 'title', 'Основни документи за ДЗИ учебната 2025/2026 - НТГ'),
+('en', 'dzi', 'header', 'title', 'Basic Documents about DZI for Academic Year 2025/2026 - NTS'),
 
 -- Hero Section
-('bg', 'dzi', 'hero', 'title', 'Основни документи по ДЗИ за учебната 2024/2025'),
+('bg', 'dzi', 'hero', 'title', 'Основни документи по ДЗИ за учебната 2025/2026'),
 ('bg', 'dzi', 'hero', 'subtitle', 'Всички необходими документи, планове и графици за текущата учебна година'),
 ('bg', 'dzi', 'hero', 'documents_count', '15+'),
 ('bg', 'dzi', 'hero', 'documents_label', 'Документа'),
-('bg', 'dzi', 'hero', 'academic_year', '2024/25'),
+('bg', 'dzi', 'hero', 'academic_year', '2025/26'),
 ('bg', 'dzi', 'hero', 'academic_year_label', 'Учебна година'),
-('en', 'dzi', 'hero', 'title', 'Basic Documents for Academic Year 2024/2025'),
+('en', 'dzi', 'hero', 'title', 'Basic Documents for Academic Year 2025/2026'),
 ('en', 'dzi', 'hero', 'subtitle', 'All necessary documents, plans and schedules for the current academic year'),
 ('en', 'dzi', 'hero', 'documents_count', '15+'),
 ('en', 'dzi', 'hero', 'documents_label', 'Documents'),
-('en', 'dzi', 'hero', 'academic_year', '2024/25'),
+('en', 'dzi', 'hero', 'academic_year', '2025/26'),
 ('en', 'dzi', 'hero', 'academic_year_label', 'Academic Year'),
 
 -- Info Section
-('bg', 'dzi', 'info', 'title', 'Официални документи за учебната 2024/2025 година'),
+('bg', 'dzi', 'info', 'title', 'Официални документи за учебната 2025/2026 година'),
 ('bg', 'dzi', 'info', 'description', 'Всички документи в тази секция са актуални и одобрени от Министерството на образованието и науката. Те включват учебни планове, правилници, графици и други нормативни актове, които регламентират образователната дейност в нашето училище.'),
-('en', 'dzi', 'info', 'title', 'Official Documents for Academic Year 2024/2025'),
+('en', 'dzi', 'info', 'title', 'Official Documents for Academic Year 2025/2026'),
 ('en', 'dzi', 'info', 'description', 'All documents in this section are current and approved by the Ministry of Education and Science. They include curricula, regulations, schedules and other normative acts that regulate the educational activity in our school.'),
 
 -- Documents Section
@@ -70,14 +70,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'dzi', 'documents', 'schedule_desc', 'Dates for conducting state matriculation exams/compulsory state exams for acquiring professional qualification.'),
 
 -- German translations
-('de', 'dzi', 'header', 'title', 'Grundlegende Dokumente für DZI für das Schuljahr 2024/2025 - NTS'),
-('de', 'dzi', 'hero', 'title', 'Grundlegende DZI-Dokumente für das Schuljahr 2024/2025'),
+('de', 'dzi', 'header', 'title', 'Grundlegende Dokumente für DZI für das Schuljahr 2025/2026 - NTS'),
+('de', 'dzi', 'hero', 'title', 'Grundlegende DZI-Dokumente für das Schuljahr 2025/2026'),
 ('de', 'dzi', 'hero', 'subtitle', 'Alle notwendigen Dokumente, Pläne und Zeitpläne für das aktuelle Schuljahr'),
 ('de', 'dzi', 'hero', 'documents_count', '15+'),
 ('de', 'dzi', 'hero', 'documents_label', 'Dokumente'),
-('de', 'dzi', 'hero', 'academic_year', '2024/25'),
+('de', 'dzi', 'hero', 'academic_year', '2025/26'),
 ('de', 'dzi', 'hero', 'academic_year_label', 'Schuljahr'),
-('de', 'dzi', 'info', 'title', 'Offizielle Dokumente für das Schuljahr 2024/2025'),
+('de', 'dzi', 'info', 'title', 'Offizielle Dokumente für das Schuljahr 2025/2026'),
 ('de', 'dzi', 'info', 'description', 'Alle Dokumente in diesem Bereich sind aktuell und vom Ministerium für Bildung und Wissenschaft genehmigt. Sie umfassen Lehrpläne, Vorschriften, Zeitpläne und andere normative Akte, die die Bildungstätigkeit an unserer Schule regeln.'),
 ('de', 'dzi', 'documents', 'title', 'Dokumente'),
 ('de', 'dzi', 'documents', 'subtitle', 'Klicken Sie auf ein Dokument, um es anzusehen'),
@@ -102,14 +102,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'dzi', 'documents', 'schedule_desc', 'Termine für die Durchführung der staatlichen Reifeprüfungen/obligatorischen staatlichen Prüfungen zum Erwerb der beruflichen Qualifikation.'),
 
 -- French translations
-('fr', 'dzi', 'header', 'title', 'Documents de base pour DZI pour l''année scolaire 2024/2025 - NTS'),
-('fr', 'dzi', 'hero', 'title', 'Documents de base DZI pour l''année scolaire 2024/2025'),
+('fr', 'dzi', 'header', 'title', 'Documents de base pour DZI pour l''année scolaire 2025/2026 - NTS'),
+('fr', 'dzi', 'hero', 'title', 'Documents de base DZI pour l''année scolaire 2025/2026'),
 ('fr', 'dzi', 'hero', 'subtitle', 'Tous les documents, plans et horaires nécessaires pour l''année scolaire en cours'),
 ('fr', 'dzi', 'hero', 'documents_count', '15+'),
 ('fr', 'dzi', 'hero', 'documents_label', 'Documents'),
-('fr', 'dzi', 'hero', 'academic_year', '2024/25'),
+('fr', 'dzi', 'hero', 'academic_year', '2025/26'),
 ('fr', 'dzi', 'hero', 'academic_year_label', 'Année scolaire'),
-('fr', 'dzi', 'info', 'title', 'Documents officiels pour l''année scolaire 2024/2025'),
+('fr', 'dzi', 'info', 'title', 'Documents officiels pour l''année scolaire 2025/2026'),
 ('fr', 'dzi', 'info', 'description', 'Tous les documents de cette section sont actuels et approuvés par le ministère de l''Éducation et des Sciences. Ils incluent des programmes d''études, des règlements, des horaires et d''autres actes normatifs qui régissent l''activité éducative dans notre école.'),
 ('fr', 'dzi', 'documents', 'title', 'Documents'),
 ('fr', 'dzi', 'documents', 'subtitle', 'Cliquez sur un document pour le visualiser'),
@@ -134,14 +134,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'dzi', 'documents', 'schedule_desc', 'Dates pour la réalisation des examens de maturité d''État/des examens d''État obligatoires pour l''acquisition d''une qualification professionnelle.'),
 
 -- Spanish translations
-('es', 'dzi', 'header', 'title', 'Documentos básicos sobre DZI para el año académico 2024/2025 - NTS'),
-('es', 'dzi', 'hero', 'title', 'Documentos básicos DZI para el año académico 2024/2025'),
+('es', 'dzi', 'header', 'title', 'Documentos básicos sobre DZI para el año académico 2025/2026 - NTS'),
+('es', 'dzi', 'hero', 'title', 'Documentos básicos DZI para el año académico 2025/2026'),
 ('es', 'dzi', 'hero', 'subtitle', 'Todos los documentos, planes y horarios necesarios para el año académico actual'),
 ('es', 'dzi', 'hero', 'documents_count', '15+'),
 ('es', 'dzi', 'hero', 'documents_label', 'Documentos'),
-('es', 'dzi', 'hero', 'academic_year', '2024/25'),
+('es', 'dzi', 'hero', 'academic_year', '2025/26'),
 ('es', 'dzi', 'hero', 'academic_year_label', 'Año académico'),
-('es', 'dzi', 'info', 'title', 'Documentos oficiales para el año académico 2024/2025'),
+('es', 'dzi', 'info', 'title', 'Documentos oficiales para el año académico 2025/2026'),
 ('es', 'dzi', 'info', 'description', 'Todos los documentos en esta sección son actuales y aprobados por el Ministerio de Educación y Ciencia. Incluyen planes de estudio, reglamentos, horarios y otros actos normativos que regulan la actividad educativa en nuestra escuela.'),
 ('es', 'dzi', 'documents', 'title', 'Documentos'),
 ('es', 'dzi', 'documents', 'subtitle', 'Haga clic en un documento para verlo'),
