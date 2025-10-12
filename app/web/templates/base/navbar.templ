@@ -1,7 +1,5 @@
 package base
 
-import "NTG/internal/database"
-
 templ navbar(page, language string, phrases map[string]map[string]string) {
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
@@ -63,20 +61,32 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 							</a>
 						}
 					</li>
-					<li class="nav-item dropdown">
+					// <li class="nav-item dropdown">
+					// 	if page == "documents" {
+					// 		<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
+					// 			{ phrases["navbar"]["documents"] }
+					// 		</a>
+					// 	} else {
+					// 		<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
+					// 			{ phrases["navbar"]["documents"] }
+					// 		</a>
+					// 	}
+					// <ul class="dropdown-menu">
+					// 	<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents") }></a></li>
+					// @documentSectionsDropdown(language, phrases)
+					// 
+					<li class="nav-item">
 						if page == "documents" {
-							<a class="nav-link dropdown-toggle active" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
+							<a class="nav-link active" href={ templ.URL("/" + language + "/documents") }>
 								{ phrases["navbar"]["documents"] }
 							</a>
 						} else {
-							<a class="nav-link dropdown-toggle" href={ templ.URL("/" + language + "/documents") } id="docsDropdown" role="button" data-bs-toggle="dropdown">
+							<a class="nav-link" href={ templ.URL("/" + language + "/documents") }>
 								{ phrases["navbar"]["documents"] }
 							</a>
 						}
-						<ul class="dropdown-menu">
-							@documentSectionsDropdown(language, phrases)
-						</ul>
 					</li>
+					// </li>
 					<li class="nav-item">
 						if page == "admission" {
 							<a class="nav-link active" href={ templ.URL("/" + language + "/admission") }>
@@ -205,9 +215,9 @@ templ navbar(page, language string, phrases map[string]map[string]string) {
 	</nav>
 }
 
-templ documentSectionsDropdown(language string, phrases map[string]map[string]string) {
-	// Get document sections from file system
-	for _, section := range database.GetDocumentSections("web/static/docs/documents") {
-		<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#" + section) }>{ phrases[section]["title"] }</a></li>
-	}
-}
+// templ documentSectionsDropdown(language string, phrases map[string]map[string]string) {
+// 	// Get document sections from file system
+// 	for _, section := range database.GetDocumentSections("web/static/docs/documents") {
+// 		<li><a class="dropdown-item" href={ templ.URL("/" + language + "/documents#" + section) }>{ phrases[section]["title"] }</a></li>
+// 	}
+// }
