@@ -19,7 +19,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'cta', 'button_text', 'Contact Us'),
 
 -- Projects Section
-('bg', 'programs_and_projects', 'projects', 'title', 'Национални програми и проекти реализиращи се в НТГ'),
+('bg', 'programs_and_projects', 'projects', 'title', 'Национални програми и проекти'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle', 'Открийте европейски проекти и програми в НТГ'),
 ('bg', 'programs_and_projects', 'projects', 'details', 'Подробности'),
 ('bg', 'programs_and_projects', 'projects', 'students', 'ученици'),
@@ -32,7 +32,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 --Project Sections - Erazum
 
-('bg', 'programs_and_projects', 'projects', 'title-erazmus', 'Европейски програми и проекти реализиращи се в НТГ'),
+('bg', 'programs_and_projects', 'projects', 'title-erazmus', 'Европейски програми и проекти'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Открийте иновативните проекти и програми в НТГ'),
 ('en', 'programs_and_projects', 'projects', 'title-erazmus', 'Erasmus+ Projects at NTS'),
 ('en', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Discover innovative Erasmus+ projects at NTS'),

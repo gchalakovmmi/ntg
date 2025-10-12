@@ -1,27 +1,27 @@
 -- HBO page phrases - Bulgarian and English
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
 -- Header
-('bg', 'zdippk', 'header', 'title', 'Основни документи по ЗДИПКК за учебната 2024/2025 - НТГ'),
-('en', 'zdippk', 'header', 'title', 'Basic Documents about ZDIPPK for Academic Year 2024/2025 - NTS'),
+('bg', 'zdippk', 'header', 'title', 'Основни документи по ЗДИПКК за учебната 2025/2026 - НТГ'),
+('en', 'zdippk', 'header', 'title', 'Basic Documents about ZDIPPK for Academic Year 2026/2026 - NTS'),
 
 -- Hero Section
-('bg', 'zdippk', 'hero', 'title', 'Основни документи по ЗДИПКК за учебната 2024/2025'),
+('bg', 'zdippk', 'hero', 'title', 'Основни документи по ЗДИПКК за учебната 2025/2026'),
 ('bg', 'zdippk', 'hero', 'subtitle', 'Всички необходими документи, планове и графици за текущата учебна година'),
-('bg', 'zdippk', 'hero', 'documents_count', '3+'),
+('bg', 'zdippk', 'hero', 'documents_count', '5+'),
 ('bg', 'zdippk', 'hero', 'documents_label', 'Документа'),
-('bg', 'zdippk', 'hero', 'academic_year', '2024/25'),
+('bg', 'zdippk', 'hero', 'academic_year', '2025/26'),
 ('bg', 'zdippk', 'hero', 'academic_year_label', 'Учебна година'),
-('en', 'zdippk', 'hero', 'title', 'Basic Documents for Academic Year 2024/2025'),
+('en', 'zdippk', 'hero', 'title', 'Basic Documents for Academic Year 2025/2026'),
 ('en', 'zdippk', 'hero', 'subtitle', 'All necessary documents, plans and schedules for the current academic year'),
 ('en', 'zdippk', 'hero', 'documents_count', '3+'),
 ('en', 'zdippk', 'hero', 'documents_label', 'Documents'),
-('en', 'zdippk', 'hero', 'academic_year', '2024/25'),
+('en', 'zdippk', 'hero', 'academic_year', '2025/26'),
 ('en', 'zdippk', 'hero', 'academic_year_label', 'Academic Year'),
 
 -- Info Section
-('bg', 'zdippk', 'info', 'title', 'Официални документи за учебната 2024/2025 година'),
+('bg', 'zdippk', 'info', 'title', 'Официални документи за учебната 2025/2026 година'),
 ('bg', 'zdippk', 'info', 'description', 'Всички документи в тази секция са актуални и одобрени от Министерството на образованието и науката. Те включват учебни планове, правилници, графици и други нормативни актове, които регламентират образователната дейност в нашето училище.'),
-('en', 'zdippk', 'info', 'title', 'Official Documents for Academic Year 2024/2025'),
+('en', 'zdippk', 'info', 'title', 'Official Documents for Academic Year 2025/2026'),
 ('en', 'zdippk', 'info', 'description', 'All documents in this section are current and approved by the Ministry of Education and Science. They include curricula, regulations, schedules and other normative acts that regulate the educational activity in our school.'),
 
 -- Documents Section
@@ -65,14 +65,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'zdippk', 'documents', 'qualification_plan_desc', 'Professional development program for teaching staff'),
 
 -- German translations
-('de', 'zdippk', 'header', 'title', 'Grundlegende Dokumente für ZDIPPK für das Schuljahr 2024/2025 - NTS'),
-('de', 'zdippk', 'hero', 'title', 'Grundlegende ZDIPPK-Dokumente für das Schuljahr 2024/2025'),
+('de', 'zdippk', 'header', 'title', 'Grundlegende Dokumente für ZDIPPK für das Schuljahr 2025/2026 - NTS'),
+('de', 'zdippk', 'hero', 'title', 'Grundlegende ZDIPPK-Dokumente für das Schuljahr 2025/2026'),
 ('de', 'zdippk', 'hero', 'subtitle', 'Alle notwendigen Dokumente, Pläne und Zeitpläne für das aktuelle Schuljahr'),
 ('de', 'zdippk', 'hero', 'documents_count', '3+'),
 ('de', 'zdippk', 'hero', 'documents_label', 'Dokumente'),
-('de', 'zdippk', 'hero', 'academic_year', '2024/25'),
+('de', 'zdippk', 'hero', 'academic_year', '2025/26'),
 ('de', 'zdippk', 'hero', 'academic_year_label', 'Schuljahr'),
-('de', 'zdippk', 'info', 'title', 'Offizielle Dokumente für das Schuljahr 2024/2025'),
+('de', 'zdippk', 'info', 'title', 'Offizielle Dokumente für das Schuljahr 2025/2026'),
 ('de', 'zdippk', 'info', 'description', 'Alle Dokumente in diesem Bereich sind aktuell und vom Ministerium für Bildung und Wissenschaft genehmigt. Sie umfassen Lehrpläne, Vorschriften, Zeitpläne und andere normative Akte, die die Bildungstätigkeit an unserer Schule regeln.'),
 ('de', 'zdippk', 'documents', 'title', 'Dokumente'),
 ('de', 'zdippk', 'documents', 'subtitle', 'Klicken Sie auf ein Dokument, um es anzusehen'),
@@ -95,14 +95,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'zdippk', 'documents', 'qualification_plan_desc', 'Programm zur beruflichen Entwicklung des Lehrpersonals'),
 
 -- French translations
-('fr', 'zdippk', 'header', 'title', 'Documents de base pour ZDIPPK pour l''année scolaire 2024/2025 - NTS'),
-('fr', 'zdippk', 'hero', 'title', 'Documents de base ZDIPPK pour l''année scolaire 2024/2025'),
+('fr', 'zdippk', 'header', 'title', 'Documents de base pour ZDIPPK pour l''année scolaire 2025/2026 - NTS'),
+('fr', 'zdippk', 'hero', 'title', 'Documents de base ZDIPPK pour l''année scolaire 2025/2026'),
 ('fr', 'zdippk', 'hero', 'subtitle', 'Tous les documents, plans et horaires nécessaires pour l''année scolaire en cours'),
 ('fr', 'zdippk', 'hero', 'documents_count', '3+'),
 ('fr', 'zdippk', 'hero', 'documents_label', 'Documents'),
-('fr', 'zdippk', 'hero', 'academic_year', '2024/25'),
+('fr', 'zdippk', 'hero', 'academic_year', '2025/26'),
 ('fr', 'zdippk', 'hero', 'academic_year_label', 'Année scolaire'),
-('fr', 'zdippk', 'info', 'title', 'Documents officiels pour l''année scolaire 2024/2025'),
+('fr', 'zdippk', 'info', 'title', 'Documents officiels pour l''année scolaire 2025/2026'),
 ('fr', 'zdippk', 'info', 'description', 'Tous les documents de cette section sont actuels et approuvés par le ministère de l''Éducation et des Sciences. Ils incluent des programmes d''études, des règlements, des horaires et d''autres actes normatifs qui régissent l''activité éducative dans notre école.'),
 ('fr', 'zdippk', 'documents', 'title', 'Documents'),
 ('fr', 'zdippk', 'documents', 'subtitle', 'Cliquez sur un document pour le visualiser'),
@@ -125,14 +125,14 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'zdippk', 'documents', 'qualification_plan_desc', 'Programme de développement professionnel pour le personnel enseignant'),
 
 -- Spanish translations
-('es', 'zdippk', 'header', 'title', 'Documentos básicos sobre ZDIPPK para el año académico 2024/2025 - NTS'),
-('es', 'zdippk', 'hero', 'title', 'Documentos básicos ZDIPPK para el año académico 2024/2025'),
+('es', 'zdippk', 'header', 'title', 'Documentos básicos sobre ZDIPPK para el año académico 2025/2026 - NTS'),
+('es', 'zdippk', 'hero', 'title', 'Documentos básicos ZDIPPK para el año académico 2025/2026'),
 ('es', 'zdippk', 'hero', 'subtitle', 'Todos los documentos, planes y horarios necesarios para el año académico actual'),
 ('es', 'zdippk', 'hero', 'documents_count', '3+'),
 ('es', 'zdippk', 'hero', 'documents_label', 'Documentos'),
-('es', 'zdippk', 'hero', 'academic_year', '2024/25'),
+('es', 'zdippk', 'hero', 'academic_year', '2025/26'),
 ('es', 'zdippk', 'hero', 'academic_year_label', 'Año académico'),
-('es', 'zdippk', 'info', 'title', 'Documentos oficiales para el año académico 2024/2025'),
+('es', 'zdippk', 'info', 'title', 'Documentos oficiales para el año académico 2025/2026'),
 ('es', 'zdippk', 'info', 'description', 'Todos los documentos en esta sección son actuales y aprobados por el Ministerio de Educación y Ciencia. Incluyen planes de estudio, reglamentos, horarios y otros actos normativos que regulan la actividad educativa en nuestra escuela.'),
 ('es', 'zdippk', 'documents', 'title', 'Documentos'),
 ('es', 'zdippk', 'documents', 'subtitle', 'Haga clic en un documento para verlo'),
@@ -152,4 +152,47 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'zdippk', 'documents', 'assessment_regulations_title', 'Reglamento de evaluación'),
 ('es', 'zdippk', 'documents', 'assessment_regulations_desc', 'Criterios y procedimientos para la evaluación de estudiantes'),
 ('es', 'zdippk', 'documents', 'qualification_plan_title', 'Plan de cualificación de profesores'),
-('es', 'zdippk', 'documents', 'qualification_plan_desc', 'Programa de desarrollo profesional para el personal docente');
+('es', 'zdippk', 'documents', 'qualification_plan_desc', 'Programa de desarrollo profesional para el personal docente'),
+
+
+-- DiMonZdippk Documents
+('bg', 'zdippk', 'dimonzdippk', 'doc1', 'Дати за провеждане на държавните зрелостни изпити'),
+('bg', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Дати за провеждане на държавните зрелостни изпити/задължителните държавни изпити за придобиване на професионална квалификация'),
+('en', 'zdippk', 'dimonzdippk', 'doc1', 'Dates for conducting state graduation exams'),
+('en', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Dates for conducting state graduation exams/compulsory state exams for acquiring professional qualification'),
+('de', 'zdippk', 'dimonzdippk', 'doc1', 'Termine für die Durchführung der staatlichen Abschlussprüfungen'),
+('de', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Termine für die Durchführung der staatlichen Abschlussprüfungen/verpflichtenden staatlichen Prüfungen zum Erwerb der beruflichen Qualifikation'),
+('fr', 'zdippk', 'dimonzdippk', 'doc1', 'Dates pour la conduite des examens de fin d''études d''État'),
+('fr', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Dates pour la conduite des examens de fin d''études d''État/examens d''État obligatoires pour l''acquisition de la qualification professionnelle'),
+('es', 'zdippk', 'dimonzdippk', 'doc1', 'Fechas para la realización de los exámenes estatales de graduación'),
+('es', 'zdippk', 'dimonzdippk', 'doc1_subtitle', 'Fechas para la realización de los exámenes estatales de graduación/exámenes estatales obligatorios para adquirir cualificación profesional'),
+
+
+-- За вас 12-то класници
+('bg', 'zdippk', 'finalyear', 'title', 'За вас дванайсетокласници'),
+('bg', 'zdippk', 'finalyear', 'subtitle', 'Кликнете върху документ за преглед'),
+('bg', 'zdippk', 'finalyear', 'view_download', 'Преглед и изтегляне'),
+('bg', 'zdippk', 'finalyear', 'timetable_title', 'График за провеждане на НИП за сесия Aвгуст-Септември 2025'),
+('en', 'zdippk', 'finalyear', 'title', 'For You 12th Graders'),
+('en', 'zdippk', 'finalyear', 'subtitle', 'Click on a document to view'),
+('en', 'zdippk', 'finalyear', 'view_download', 'View and Download'),
+('en', 'zdippk', 'finalyear', 'timetable_title', 'Schedule for conducting NIP for August-September 2025 session'),
+('de', 'zdippk', 'finalyear', 'title', 'Für Sie 12. Klässler'),
+('de', 'zdippk', 'finalyear', 'subtitle', 'Klicken Sie auf ein Dokument, um es anzusehen'),
+('de', 'zdippk', 'finalyear', 'view_download', 'Ansehen und Herunterladen'),
+('de', 'zdippk', 'finalyear', 'timetable_title', 'Zeitplan für die Durchführung von NIP für die August-September 2025 Session'),
+('fr', 'zdippk', 'finalyear', 'title', 'Pour vous élèves de 12e année'),
+('fr', 'zdippk', 'finalyear', 'subtitle', 'Cliquez sur un document pour le visualiser'),
+('fr', 'zdippk', 'finalyear', 'view_download', 'Voir et Télécharger'),
+('fr', 'zdippk', 'finalyear', 'timetable_title', 'Calendrier pour la conduite de NIP pour la session Août-Septembre 2025'),
+('es', 'zdippk', 'finalyear', 'title', 'Para ustedes estudiantes de 12º grado'),
+('es', 'zdippk', 'finalyear', 'subtitle', 'Haga clic en un documento para verlo'),
+('es', 'zdippk', 'finalyear', 'view_download', 'Ver y Descargar'),
+('es', 'zdippk', 'finalyear', 'timetable_title', 'Calendario para la realización de NIP para la sesión Agosto-Septiembre 2025'),
+
+-- No announced diploma project defense schedules
+('bg', 'zdippk', 'finalyear', 'no_schedules', 'В момента няма обявени графици за защита на дипломните проекти'),
+('en', 'zdippk', 'finalyear', 'no_schedules', 'Currently there are no announced schedules for diploma project defenses'),
+('de', 'zdippk', 'finalyear', 'no_schedules', 'Derzeit gibt es keine angekündigten Zeitpläne für die Verteidigung von Diplomarbeiten'),
+('fr', 'zdippk', 'finalyear', 'no_schedules', 'Actuellement, il n''y a pas de calendriers annoncés pour les soutenances de projets de diplôme'),
+('es', 'zdippk', 'finalyear', 'no_schedules', 'Actualmente no hay calendarios anunciados para las defensas de proyectos de diploma');

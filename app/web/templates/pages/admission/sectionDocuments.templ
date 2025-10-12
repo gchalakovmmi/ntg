@@ -1,0 +1,68 @@
+package admission
+
+templ admissionSectionDocuments(phrases map[string]map[string]string) {
+	<section class="section">
+		<div class="container">
+			<div class="section-title text-center mb-5 animate-on-scroll">
+				<h2>{ phrases["documents"]["title"] }</h2>
+				<p class="text-muted">{ phrases["documents"]["subtitle"] }</p>
+			</div>
+			<div class="documents-container">
+				<!-- Document Row 1 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["doc1_title"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["doc1_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/about_the_student/admission/1.zap2070-grafik-priem.pdf" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+				<!-- Document Row 2 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["doc2_title"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["doc2_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/about_the_student/admission/2.Информация-priem-sled-VII-klas 2026-27.docx" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+				<!-- Document Row 3 -->
+				<div class="document-row animate-on-scroll">
+					<div class="document-info">
+						<div class="document-icon">
+							<i class="fas fa-file-pdf text-danger"></i>
+						</div>
+						<div class="document-details">
+							<h5 class="document-title">{ phrases["documents"]["doc3_title"] }</h5>
+							<p class="document-description text-muted">{ phrases["documents"]["doc3_desc"] }</p>
+						</div>
+					</div>
+					<div class="document-action">
+						<a href="/docs/about_the_student/admission/3.осъществен план прием - 2025-2026.pptx" class="btn btn-success btn-sm">
+							<i class="fas fa-download me-1"></i>
+							{ phrases["documents"]["view_download"] }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}

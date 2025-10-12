@@ -126,6 +126,17 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'professional_education', 'dos', 'doc6', 'Contador Operativo'),
 ('es', 'professional_education', 'dos', 'doc6_subtitle', 'ORDENANZA No. 3 del 31 de enero de 2023 para adquirir cualificación en la profesión "Contador Operativo"'),
 
+('bg', 'professional_education', 'dos', 'doc7', 'Финансист'),
+('bg', 'professional_education', 'dos', 'doc7_subtitle', 'НАРЕДБА No 24 от 09.01.2012 г. за придобиване на квалификация по професията „Финансист"'),
+('en', 'professional_education', 'dos', 'doc7', 'Financial Specialist'),
+('en', 'professional_education', 'dos', 'doc7_subtitle', 'Order No. 24 of 09.01.2012 for acquiring qualification in the profession "Financial Specialist"'),
+('de', 'professional_education', 'dos', 'doc7', 'Finanzspezialist'),
+('de', 'professional_education', 'dos', 'doc7_subtitle', 'Verordnung Nr. 24 vom 09.01.2012 zum Erwerb der Qualifikation im Beruf "Finanzspezialist"'),
+('fr', 'professional_education', 'dos', 'doc7', 'Financier'),
+('fr', 'professional_education', 'dos', 'doc7_subtitle', 'Ordonnance n° 24 du 09.01.2012 pour l''acquisition de la qualification dans la profession "Financier"'),
+('es', 'professional_education', 'dos', 'doc7', 'Contador Financiero'),
+('es', 'professional_education', 'dos', 'doc7_subtitle', 'Orden No. 24 de 09.01.2012 para adquirir cualificación en la profesión "Contador Financiero"'),
+
 -- НИП Section
 ('bg', 'professional_education', 'nip', 'title', 'НИП Документи - Национални изпитни програми към 2024/2025 учебна година'),
 ('bg', 'professional_education', 'nip', 'subtitle', 'Кликнете върху документ за преглед'),
@@ -281,18 +292,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'professional_education', 'didocuments', 'doc1_subtitle', 'Dates pour la conduite des examens de fin d''études d''État/examens d''État obligatoires pour l''acquisition de la qualification professionnelle'),
 ('es', 'professional_education', 'didocuments', 'doc1', 'Fechas para la realización de los exámenes estatales de graduación'),
 ('es', 'professional_education', 'didocuments', 'doc1_subtitle', 'Fechas para la realización de los exámenes estatales de graduación/exámenes estatales obligatorios para adquirir cualificación profesional'),
-
--- DiMonZdippk Documents
-('bg', 'professional_education', 'dimonzdippk', 'doc1', 'Дати за провеждане на държавните зрелостни изпити'),
-('bg', 'professional_education', 'dimonzdippk', 'doc1_subtitle', 'Дати за провеждане на държавните зрелостни изпити/задължителните държавни изпити за придобиване на професионална квалификация'),
-('en', 'professional_education', 'dimonzdippk', 'doc1', 'Dates for conducting state graduation exams'),
-('en', 'professional_education', 'dimonzdippk', 'doc1_subtitle', 'Dates for conducting state graduation exams/compulsory state exams for acquiring professional qualification'),
-('de', 'professional_education', 'dimonzdippk', 'doc1', 'Termine für die Durchführung der staatlichen Abschlussprüfungen'),
-('de', 'professional_education', 'dimonzdippk', 'doc1_subtitle', 'Termine für die Durchführung der staatlichen Abschlussprüfungen/verpflichtenden staatlichen Prüfungen zum Erwerb der beruflichen Qualifikation'),
-('fr', 'professional_education', 'dimonzdippk', 'doc1', 'Dates pour la conduite des examens de fin d''études d''État'),
-('fr', 'professional_education', 'dimonzdippk', 'doc1_subtitle', 'Dates pour la conduite des examens de fin d''études d''État/examens d''État obligatoires pour l''acquisition de la qualification professionnelle'),
-('es', 'professional_education', 'dimonzdippk', 'doc1', 'Fechas para la realización de los exámenes estatales de graduación'),
-('es', 'professional_education', 'dimonzdippk', 'doc1_subtitle', 'Fechas para la realización de los exámenes estatales de graduación/exámenes estatales obligatorios para adquirir cualificación profesional'),
 
 -- RPP Documents
 ('bg', 'professional_education', 'rpp', 'doc1', 'Списък на учебните предмети, които ще се изучават под формата на разширена професионална подготовка'),
@@ -483,28 +482,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'professional_education', 'dizdippk', 'view_download', 'Ver y Descargar'),
 ('es', 'professional_education', 'dizdippk', 'timetable_title', 'Calendario para la realización de NIP para la sesión Agosto-Septiembre 2025'),
 
--- За вас 12-то класници
-('bg', 'professional_education', 'finalyear', 'title', 'За вас дванайсетокласници'),
-('bg', 'professional_education', 'finalyear', 'subtitle', 'Кликнете върху документ за преглед'),
-('bg', 'professional_education', 'finalyear', 'view_download', 'Преглед и изтегляне'),
-('bg', 'professional_education', 'finalyear', 'timetable_title', 'График за провеждане на НИП за сесия Aвгуст-Септември 2025'),
-('en', 'professional_education', 'finalyear', 'title', 'For You 12th Graders'),
-('en', 'professional_education', 'finalyear', 'subtitle', 'Click on a document to view'),
-('en', 'professional_education', 'finalyear', 'view_download', 'View and Download'),
-('en', 'professional_education', 'finalyear', 'timetable_title', 'Schedule for conducting NIP for August-September 2025 session'),
-('de', 'professional_education', 'finalyear', 'title', 'Für Sie 12. Klässler'),
-('de', 'professional_education', 'finalyear', 'subtitle', 'Klicken Sie auf ein Dokument, um es anzusehen'),
-('de', 'professional_education', 'finalyear', 'view_download', 'Ansehen und Herunterladen'),
-('de', 'professional_education', 'finalyear', 'timetable_title', 'Zeitplan für die Durchführung von NIP für die August-September 2025 Session'),
-('fr', 'professional_education', 'finalyear', 'title', 'Pour vous élèves de 12e année'),
-('fr', 'professional_education', 'finalyear', 'subtitle', 'Cliquez sur un document pour le visualiser'),
-('fr', 'professional_education', 'finalyear', 'view_download', 'Voir et Télécharger'),
-('fr', 'professional_education', 'finalyear', 'timetable_title', 'Calendrier pour la conduite de NIP pour la session Août-Septembre 2025'),
-('es', 'professional_education', 'finalyear', 'title', 'Para ustedes estudiantes de 12º grado'),
-('es', 'professional_education', 'finalyear', 'subtitle', 'Haga clic en un documento para verlo'),
-('es', 'professional_education', 'finalyear', 'view_download', 'Ver y Descargar'),
-('es', 'professional_education', 'finalyear', 'timetable_title', 'Calendario para la realización de NIP para la sesión Agosto-Septiembre 2025'),
-
 -- Училищни предмети РПП
 ('bg', 'professional_education', 'rpp', 'title', 'Списък на учебните предмети с за 25/26(РПП)'),
 ('bg', 'professional_education', 'rpp', 'subtitle', 'Кликнете върху документ за преглед'),
@@ -525,11 +502,4 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'professional_education', 'rpp', 'title', 'Lista de Materias Escolares para 25/26 (RPP)'),
 ('es', 'professional_education', 'rpp', 'subtitle', 'Haga clic en un documento para verlo'),
 ('es', 'professional_education', 'rpp', 'view_download', 'Ver y Descargar'),
-('es', 'professional_education', 'rpp', 'timetable_title', 'Calendario para la realización de NIP para la sesión Agosto-Septiembre 2025'),
-
--- No announced diploma project defense schedules
-('bg', 'professional_education', 'finalyear', 'no_schedules', 'В момента няма обявени графици за защита на дипломните проекти'),
-('en', 'professional_education', 'finalyear', 'no_schedules', 'Currently there are no announced schedules for diploma project defenses'),
-('de', 'professional_education', 'finalyear', 'no_schedules', 'Derzeit gibt es keine angekündigten Zeitpläne für die Verteidigung von Diplomarbeiten'),
-('fr', 'professional_education', 'finalyear', 'no_schedules', 'Actuellement, il n''y a pas de calendriers annoncés pour les soutenances de projets de diplôme'),
-('es', 'professional_education', 'finalyear', 'no_schedules', 'Actualmente no hay calendarios anunciados para las defensas de proyectos de diploma')
+('es', 'professional_education', 'rpp', 'timetable_title', 'Calendario para la realización de NIP para la sesión Agosto-Septiembre 2025');

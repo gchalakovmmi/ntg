@@ -83,7 +83,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'sfo', 'documents', 'title6_desc', 'Antrag auf Schulung im selbstgesteuerten Lernen für 2 Jahre in einem'),
 ('de', 'sfo', 'documents', 'title7', 'Bestellung 1. Sitzung für die 12. Klasse'),
 ('de', 'sfo', 'documents', 'title7_desc', 'Bestellung zur Durchführung der 1. Sitzung für die 12. Klasse'),
--- do fr and es translations as well
+
 -- French translations
 ('fr', 'sfo', 'header', 'title', 'SFO - NTS'),
 ('fr', 'sfo', 'banner', 'title', 'SFO - Forme d''apprentissage autonome'),
