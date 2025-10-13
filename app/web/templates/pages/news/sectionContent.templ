@@ -1,69 +1,84 @@
 package news
-
 import (
 	"NTG/internal/database"
 )
-
 templ newsContent(language string, phrases map[string]map[string]string, articles []database.NewsArticle, categories []string, currentPage, totalPages int, currentCategory, search, startDateStr, endDateStr string, pageURLs map[int]string) {
-	<main class="container-fluid my-5">
-		<div class="row g-4" style="height: calc(100vh - 200px);">
-			<!-- Filters Sidebar - Fixed width, no scrolling -->
-			<div class="col-lg-3 mobile-order-1">
-				<div class="card shadow-sm h-100">
-					<div class="card-header bg-danger text-white">
-						<h5 class="mb-0"><i class="fas fa-filter me-2"></i>{ phrases["filters"]["title"] }</h5>
-					</div>
-					<div class="card-body">
-						<form method="GET" action="" id="newsFilterForm">
-							<!-- Date Filter -->
-							<div class="mb-4 p-3 bg-light rounded">
-								<h6 class="mb-3">{ phrases["filters"]["date_title"] }</h6>
-								<div class="mb-3">
-									<label for="dateFrom" class="form-label">{ phrases["filters"]["date_from"] }</label>
-									<input type="date" class="form-control" id="dateFrom" name="start_date" value=""/>
-								</div>
-								<div class="mb-3">
-									<label for="dateTo" class="form-label">{ phrases["filters"]["date_to"] }</label>
-									<input type="date" class="form-control" id="dateTo" name="end_date" value=""/>
-								</div>
-							</div>
-							<!-- Search Filter -->
-							<div class="mb-4">
-								<h6 class="mb-3">{ phrases["filters"]["search_title"] }</h6>
-								<input type="text" class="form-control" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput" name="search" value={ search }/>
-							</div>
-							<!-- Category Filter -->
-							<div class="mb-4">
-								<h6 class="mb-3">{ phrases["filters"]["category_title"] }</h6>
-								<select class="form-select" name="category">
-									<option value="">{ phrases["filters"]["category_all"] }</option>
-									for _, category := range categories {
-										if category == currentCategory {
-											<option value={ category } selected>{ phrases["categories"]["categories_" + category] }</option>
-										} else {
-											<option value={ category }>{ phrases["categories"]["categories_" + category] }</option>
-										}
-									}
-								</select>
-							</div>
-							<button type="submit" class="btn btn-danger w-100">{ phrases["filters"]["apply_button"] }</button>
-							<button type="button" class="btn btn-outline-secondary w-100 mt-2" onclick="resetFilters()">{ phrases["filters"]["reset_button"] }</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			
-			<!-- News Content - Scrollable -->
-			<div class="col-lg-9 mobile-order-2 d-flex flex-column" style="height: 100%;">
-				<!-- Scrollable news container with visible scrollbar -->
-				<div class="news-scroll-container border rounded p-3 mb-3" style="overflow-y: auto; flex: 1;">
-					@newsGrid(language, phrases, articles)
-				</div>
+	<main class="container-fluid my-4 my-md-5">
+		<!-- Mobile Filter Toggle -->
+		<div class="row d-lg-none mb-3">
+			<div class="col-12">
+				<button class="btn btn-danger w-100 d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+					<i class="fas fa-filter me-2"></i>
+					{ phrases["filters"]["title"] }
+					<i class="fas fa-chevron-down ms-2"></i>
+				</button>
 			</div>
 		</div>
-				@pagination(phrases, currentPage, totalPages, pageURLs)
+
+		<div class="row g-3 g-md-4">
+			<!-- Filters Sidebar - Collapsible on mobile -->
+			<div class="col-lg-3">
+				<div class="collapse d-lg-block" id="filterCollapse">
+					<div class="card shadow-sm sticky-lg-top" style="top: 20px;">
+						<div class="card-header bg-danger text-white">
+							<h5 class="mb-0"><i class="fas fa-filter me-2"></i>{ phrases["filters"]["title"] }</h5>
+						</div>
+						<div class="card-body">
+							<form method="GET" action="" id="newsFilterForm">
+								<!-- Date Filter -->
+								<div class="mb-3 p-3 bg-light rounded">
+									<h6 class="mb-2">{ phrases["filters"]["date_title"] }</h6>
+									<div class="mb-2">
+										<label for="dateFrom" class="form-label small">{ phrases["filters"]["date_from"] }</label>
+										<input type="date" class="form-control form-control-sm" id="dateFrom" name="start_date" value={ startDateStr }/>
+									</div>
+									<div class="mb-2">
+										<label for="dateTo" class="form-label small">{ phrases["filters"]["date_to"] }</label>
+										<input type="date" class="form-control form-control-sm" id="dateTo" name="end_date" value={ endDateStr }/>
+									</div>
+								</div>
+								<!-- Search Filter -->
+								<div class="mb-3">
+									<h6 class="mb-2">{ phrases["filters"]["search_title"] }</h6>
+									<input type="text" class="form-control form-control-sm" placeholder={ phrases["filters"]["search_placeholder"] } id="searchInput" name="search" value={ search }/>
+								</div>
+								<!-- Category Filter -->
+								<div class="mb-3">
+									<h6 class="mb-2">{ phrases["filters"]["category_title"] }</h6>
+									<select class="form-select form-select-sm" name="category">
+										<option value="">{ phrases["filters"]["category_all"] }</option>
+										for _, category := range categories {
+											if category == currentCategory {
+												<option value={ category } selected>{ phrases["categories"]["categories_" + category] }</option>
+											} else {
+												<option value={ category }>{ phrases["categories"]["categories_" + category] }</option>
+											}
+										}
+									</select>
+								</div>
+								<div class="d-grid gap-2">
+									<button type="submit" class="btn btn-danger btn-sm">{ phrases["filters"]["apply_button"] }</button>
+									<button type="button" class="btn btn-outline-secondary btn-sm" onclick="resetFilters()">{ phrases["filters"]["reset_button"] }</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- News Content -->
+			<div class="col-lg-9">
+				<div class="news-scroll-container border rounded p-2 p-md-3">
+					@newsGrid(language, phrases, articles)
+				</div>
+				
+				<!-- Pagination - Now properly positioned -->
+				if totalPages > 1 {
+					@pagination(phrases, currentPage, totalPages, pageURLs)
+				}
+			</div>
+		</div>
 	</main>
-	
 	<script>
 		function resetFilters() {
 			document.getElementById('dateFrom').value = '';
@@ -72,5 +87,21 @@ templ newsContent(language string, phrases map[string]map[string]string, article
 			document.querySelector('select[name="category"]').value = '';
 			document.getElementById('newsFilterForm').submit();
 		}
+
+		// Auto-close mobile filters after applying on small screens
+		document.addEventListener('DOMContentLoaded', function() {
+			const filterForm = document.getElementById('newsFilterForm');
+			const filterCollapse = document.getElementById('filterCollapse');
+			
+			if (filterForm && window.innerWidth < 992) {
+				filterForm.addEventListener('submit', function() {
+					// Close the collapse after a short delay to allow form submission
+					setTimeout(() => {
+						const bsCollapse = new bootstrap.Collapse(filterCollapse);
+						bsCollapse.hide();
+					}, 100);
+				});
+			}
+		});
 	</script>
 }
