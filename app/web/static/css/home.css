@@ -5,10 +5,11 @@
     position: relative;
 }
 
-.hero-image{
+.hero-image {
     width: 100%;
     height: 100%;
-    object-position: center 10%;
+    object-position: center 25%;
+    /* Changed from center 10% to center 50% */
     object-fit: cover;
     display: block;
 }
