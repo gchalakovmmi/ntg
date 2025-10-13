@@ -2,6 +2,7 @@ package team
 
 import (
 	"fmt"
+	"net/url"
 	"sort"
 )
 
@@ -16,12 +17,18 @@ templ methodicalAssociations(phrases map[string]map[string]string) {
 				for row := 1; row <= 3; row++ {
 					<div class="row g-4 mb-5">
 						for col := 1; col <= 4; col++ {
-							if _, exists := phrases[sectionName][fmt.Sprintf("teacher%d_%d_name", row, col)]; exists {
+							if name, exists := phrases[sectionName][fmt.Sprintf("teacher%d_%d_name", row, col)]; exists {
 								<div class="col-lg-3 col-md-6">
 									<div class="leader-card team-card-clickable animate-on-scroll">
-										<div class="leader-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1b%2F2e%2F31%2F1b2e314e767a957a44ed8f992c6d9098.jpg&f=1&nofb=1&ipt=15fa6ad9f7e124e77af77a6e9f9ad823da215356728d0af05b4ee0033ab92772');"></div>
+										<div class="leader-image">
+											<img
+												src={ fmt.Sprintf("/static/images/team/%s.JPG", url.PathEscape(name)) }
+												onError="this.onerror=null; this.src='/static/images/team/default-avatar.jpg';"
+												style="width: 100%; height: 100%; object-fit: cover;"
+											/>
+										</div>
 										<div class="leader-content">
-											<h4>{ phrases[sectionName][fmt.Sprintf("teacher%d_%d_name", row, col)] }</h4>
+											<h4>{ name }</h4>
 											<div class="position">{ phrases[sectionName][fmt.Sprintf("teacher%d_%d_position", row, col)] }</div>
 											<div class="email"><a href={ templ.SafeURL("mailto:" + phrases[sectionName][fmt.Sprintf("teacher%d_%d_email", row, col)]) }>{ phrases[sectionName][fmt.Sprintf("teacher%d_%d_email", row, col)] }</a></div>
 										</div>
