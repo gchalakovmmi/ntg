@@ -58,6 +58,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'home', 'news', 'title', 'Latest News'),
 ('en', 'home', 'news', 'subtitle', 'Stay updated with the latest events at NTS'),
 ('en', 'home', 'news', 'view_all', 'View all news'),
+('en', 'home', 'news', 'read_more', 'Read more'),
 
 -- Read More
 ('bg', 'home', 'news', 'read_more', 'Прочети още'),
