@@ -41,9 +41,34 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 
 <p><a href="https://darik.bg/urok-po-chovechnost-i-mechti-poleteli-v-nebeto-dadoha-nachaloto-na-uchebnata-godina-v-ntg-plovdiv~501155.html" target="_blank" style="color: #0066cc; font-weight: bold;">Прочетете повече в Darik News</a></p>
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Прочетете повече в Nova</a></p>
-',
+
+<div class="image-gallery mt-4">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О1.jpg" alt="Ден на застрахователя 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О2.jpg" alt="Ден на застрахователя 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О3.jpg" alt="Ден на застрахователя 3" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О6.jpg" alt="Ден на застрахователя 6" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О7.jpg" alt="Ден на застрахователя 7" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О5.jpg" alt="Ден на застрахователя 5" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О4.jpg" alt="Ден на застрахователя 4" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>',
     'give-hope-instead-of-flowers',
-    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
+    '/static/images/news/den_na_angelite/О5.jpg'
 ),
 (
     'en', 
@@ -89,7 +114,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Read more at Nova</a></p>
 ',
     'give-hope-instead-of-flowers',
-    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
+    '/static/images/news/den_na_angelite/О5.jpg'
 ),
 (
     'de', 
@@ -133,9 +158,33 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 
 <p><a href="https://darik.bg/urok-po-chovechnost-i-mechti-poleteli-v-nebeto-dadoha-nachaloto-na-uchebnata-godina-v-ntg-plovdiv~501155.html" target="_blank" style="color: #0066cc; font-weight: bold;">Mehr lesen bei Darik News</a></p>
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Mehr lesen bei Nova</a></p>
-',
+<div class="image-gallery mt-4">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О1.jpg" alt="Ден на застрахователя 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О2.jpg" alt="Ден на застрахователя 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О3.jpg" alt="Ден на застрахователя 3" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О6.jpg" alt="Ден на застрахователя 6" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О7.jpg" alt="Ден на застрахователя 7" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О5.jpg" alt="Ден на застрахователя 5" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О4.jpg" alt="Ден на застрахователя 4" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>',
     'give-hope-instead-of-flowers',
-    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
+    '/static/images/news/den_na_angelite/О5.jpg'
 ),
 (
     'fr', 
@@ -179,9 +228,34 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 
 <p><a href="https://darik.bg/urok-po-chovechnost-i-mechti-poleteli-v-nebeto-dadoha-nachaloto-na-uchebnata-godina-v-ntg-plovdiv~501155.html" target="_blank" style="color: #0066cc; font-weight: bold;">Lire plus sur Darik News</a></p>
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Lire plus sur Nova</a></p>
-',
+
+<<div class="image-gallery mt-4">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О1.jpg" alt="Ден на застрахователя 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О2.jpg" alt="Ден на застрахователя 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О3.jpg" alt="Ден на застрахователя 3" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О6.jpg" alt="Ден на застрахователя 6" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О7.jpg" alt="Ден на застрахователя 7" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О5.jpg" alt="Ден на застрахователя 5" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О4.jpg" alt="Ден на застрахователя 4" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>',
     'give-hope-instead-of-flowers',
-    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
+    '/static/images/news/den_na_angelite/О5.jpg'
 ),
 (
     'es', 
@@ -225,7 +299,31 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 
 <p><a href="https://darik.bg/urok-po-chovechnost-i-mechti-poleteli-v-nebeto-dadoha-nachaloto-na-uchebnata-godina-v-ntg-plovdiv~501155.html" target="_blank" style="color: #0066cc; font-weight: bold;">Leer más en Darik News</a></p>
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Leer más en Nova</a></p>
-',
+<div class="image-gallery mt-4">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О1.jpg" alt="Ден на застрахователя 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О2.jpg" alt="Ден на застрахователя 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4">
+            <img src="/static/images/news/den_na_angelite/О3.jpg" alt="Ден на застрахователя 3" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О6.jpg" alt="Ден на застрахователя 6" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="/static/images/news/den_na_angelite/О7.jpg" alt="Ден на застрахователя 7" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О5.jpg" alt="Ден на застрахователя 5" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 mt-4">
+            <img src="/static/images/news/den_na_angelite/О4.jpg" alt="Ден на застрахователя 4" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>',
     'give-hope-instead-of-flowers',
-    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
+    '/static/images/news/den_na_angelite/О5.jpg'
 );
