@@ -27,7 +27,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 
 ',
 	'school-leaders-2025',
-	'/static/images/home/carousel/home.jpg'
+	'/static/images/news/teachers/БГ БА.jpg'
 ),
 (
 	'en',
@@ -56,7 +56,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><strong>#AmbassadorOfMovement, #HEPA</strong></p>
 ',
 	'school-leaders-2025',
-	'/static/images/home/carousel/home.jpg'
+	'/static/images/news/teachers/БГ БА.jpg'
 ),
 (
 	'de',
@@ -85,7 +85,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><strong>#BotschafterDerBewegung, #HEPA</strong></p>
 ',
 	'school-leaders-2025',
-	'/static/images/home/carousel/home.jpg'
+	'/static/images/news/teachers/БГ БА.jpg'
 ),
 (
 	'fr',
@@ -114,7 +114,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><strong>#AmbassadeurDuMouvement, #HEPA</strong></p>
 ',
 	'school-leaders-2025',
-	'/static/images/home/carousel/home.jpg'
+	'/static/images/news/teachers/БГ БА.jpg'
 ),
 (
 	'es',
@@ -143,6 +143,6 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><strong>#EmbajadorDelMovimiento, #HEPA</strong></p>
 ',
 	'school-leaders-2025',
-	'/static/images/home/carousel/home.jpg'
+	'/static/images/news/teachers/БГ БА.jpg'
 )
 ;

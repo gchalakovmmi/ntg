@@ -34,7 +34,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
     </div>
 </div>',
 	'day-of-insurer-2025',
-	'/static/images/news/den_na_zastrahovatelq/GRAWE TEAM.jpg'
+	'/static/images/news/den_na_zastrahovatelq/GRAWE_TEAM.jpg'
 ),
 (
 	'en', 
@@ -71,7 +71,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
     </div>
 </div>',
 	'day-of-insurer-2025',
-	'/static/images/news/den_na_zastrahovatelq/GRAWE TEAM.jpg'
+	'/static/images/news/den_na_zastrahovatelq/GRAWE_TEAM.jpg'
 ),
 (
 	'de', 
@@ -107,7 +107,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
     </div>
 </div>',
 	'day-of-insurer-2025',
-	'/static/images/news/den_na_zastrahovatelq/GRAWE TEAM.jpg'
+	'/static/images/news/den_na_zastrahovatelq/GRAWE_TEAM.jpg'
 ),
 (
 	'fr', 
@@ -143,7 +143,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
     </div>
 </div>',
 	'day-of-insurer-2025',
-	'/static/images/news/den_na_zastrahovatelq/GRAWE TEAM.jpg'
+	'/static/images/news/den_na_zastrahovatelq/GRAWE_TEAM.jpg'
 ),
 (
 	'es', 
@@ -179,5 +179,5 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
     </div>
 </div>',
 	'day-of-insurer-2025',
-	'/static/images/news/den_na_zastrahovatelq/GRAWE TEAM.jpg'
+	'/static/images/news/den_na_zastrahovatelq/GRAWE_TEAM.jpg'
 );
