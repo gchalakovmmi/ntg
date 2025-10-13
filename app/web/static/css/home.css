@@ -348,3 +348,19 @@
         min-width: 90px;
     }
 }
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .hero-title {
+        font-size: 1.6rem;
+        /* Even smaller */
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption {
+        padding: 15px;
+        max-width: 550px;
+    }
+}
