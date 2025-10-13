@@ -25,6 +25,22 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'team', 'deputies', 'subtitle', 'Заместник-директори на НТГ'),
 ('en', 'team', 'deputies', 'title', 'Deputy Directors at NTG'),
 ('en', 'team', 'deputies', 'subtitle', 'Deputy Directors at NTG'),
+-- Deputy Directors 3
+('bg', 'team', 'deputies', 'title_3', 'Мариана Филипова'),
+('bg', 'team', 'deputies', 'subtitle_3', 'Заместник-директор на НТГ'),
+('bg', 'team', 'deputies', 'deputy3_short_bio', 'Мариана Филипова координира и пряко участва в подготовката и реализацията на национални и европейски програми и проекти, както и извънкласните дейности в заниманията по интереси. Организира и контролира провеждането на олимипиади в НТГ, на НВО в X клас и ръководи училищната комисията за провеждане на ДЗИ.'),
+('en', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
+('en', 'team', 'deputies', 'subtitle_3', 'Deputy Directors at NTG'),
+('en', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova coordinates and directly participates in the preparation and implementation of national and European programs and projects, as well as extracurricular activities in interest-based activities. She organizes and controls the conduct of Olympiads at NTG, the NVO in 10th grade, and heads the school committee for conducting DZI.'),
+('de', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
+('de', 'team', 'deputies', 'subtitle_3', 'Stellvertretende Direktorin'),
+('de', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova koordiniert und wirkt unmittelbar an der Vorbereitung und Umsetzung nationaler und europäischer Programme und Projekte mit sowie an außerunterrichtlichen, interessenbezogenen Aktivitäten. Sie organisiert und überwacht die Durchführung von Olympiaden am NTG sowie der NVO in der 10. Klasse und steht dem schulischen Ausschuss für die Durchführung der DZI vor'),
+('fr', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
+('fr', 'team', 'deputies', 'subtitle_3', 'Directrice adjointe'),
+('fr', 'team', 'deputies', 'deputy3_short_bio', "Mariana Filipova coordonne et participe directement à la préparation et à la mise en œuvre de programmes et de projets nationaux et européens, ainsi qu'à des activités extrascolaires basées sur les intérêts. Elle organise et contrôle la tenue des Olympiades au NTG, du NVO en 10e année, et dirige le comité scolaire pour la conduite du DZI."),
+('es', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
+('es', 'team', 'deputies', 'subtitle_3', 'Subdirectora'),
+('es', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova coordina y participa directamente en la preparación e implementación de programas y proyectos nacionales y europeos, así como en actividades extracurriculares basadas en intereses. Organiza y controla la realización de Olimpiadas en NTG, el NVO en 10º grado, y dirige el comité escolar para la realización del DZI.'),
 
 -- English Department
 ('bg', 'team', 'english', 'title', 'Преподаватели по английски език'),
