@@ -88,8 +88,8 @@ Plovdiv eine Zukunft hat.</p>
     'fr', 
     'SL', 
     '2025-10-13', 
-    "Des élèves du lycée commercial participeront à nouveau au concours 'Meilleur jeune entrepreneur de Plovdiv'!", 
-    "Les élèves feront preuve de créativité, de connaissances et d'esprit entrepreneurial lors de la 17e édition de ce prestigieux concours.", 
+    'Des élèves du lycée commercial participeront à nouveau au concours ''Meilleur jeune entrepreneur de Plovdiv''!', 
+    'Les élèves feront preuve de créativité, de connaissances et d''esprit entrepreneurial lors de la 17e édition de ce prestigieux concours.', 
     '<p>Une forte motivation et un intérêt actif ont été manifestés par les diplômés du Lycée National Commercial de Plovdiv lors de la présentation du concours "Meilleur jeune entrepreneur de Plovdiv".</p>
 <h3>L événement sest tenu à lécole et a été dirigé par le vice-maire aux sports, à la jeunesse et aux activités sociales Nikolay Bukhalov</h3>
 <ul>

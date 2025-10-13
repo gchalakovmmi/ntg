@@ -103,9 +103,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'sfo', 'documents', 'title5', 'Demande de formation SFO 2025/26'),
 ('fr', 'sfo', 'documents', 'title5_desc', 'Demande de formation en apprentissage autonome'),
 ('fr', 'sfo', 'documents', 'title6', 'Demande de formation SFO pour 2 ans en un'),
-('fr', 'sfo', 'documents', 'title6_desc', "Demande de formation en apprentissage autonome pendant 2 ans en un"),
+('fr', 'sfo', 'documents', 'title6_desc', 'Demande de formation en apprentissage autonome pendant 2 ans en un'),
 ('fr', 'sfo', 'documents', 'title7', 'Ordre 1ère session pour la 12e classe'),
-('fr', 'sfo', 'documents', 'title7_desc', "Ordre pour la tenue de la 1ère session pour la 12e classe"),
+('fr', 'sfo', 'documents', 'title7_desc', 'Ordre pour la tenue de la 1ère session pour la 12e classe'),
 
 -- Spanish translations
 ('es', 'sfo', 'header', 'title', 'SFO - NTS'),
