@@ -355,6 +355,9 @@
 	.article-image img {
 		max-height: 600px;
 	}
+	.sticky-lg-top {
+		z-index: 1;
+	}
 }
 /* Extra large devices */
 @media (min-width: 1200px) {
