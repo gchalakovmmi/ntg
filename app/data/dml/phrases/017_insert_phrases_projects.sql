@@ -30,18 +30,18 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'projects', 'students', 'students'),
 ('en', 'programs_and_projects', 'projects', 'load_more', 'Load More'),
 
---Project Sections - Erazum
+--Project Sections - Erazum -----------!
 
 ('bg', 'programs_and_projects', 'projects', 'title-erazmus', 'Европейски програми и проекти'),
 ('bg', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Открийте иновативните проекти и програми в НТГ'),
-('en', 'programs_and_projects', 'projects', 'title-erazmus', 'Erasmus+ Projects at NTS'),
-('en', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Discover innovative Erasmus+ projects at NTS'),
-('de', 'programs_and_projects', 'projects', 'title-erazmus', 'Erasmus+ Projekte an der NTS'),
-('de', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Entdecken Sie innovative Erasmus+ Projekte an der NTS'),
-('fr', 'programs_and_projects', 'projects', 'title-erazmus', 'Projets Erasmus+ à l''ENC'),
-('fr', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Découvrez les projets Erasmus+ innovants à l''ENC'),
-('es', 'programs_and_projects', 'projects', 'title-erazmus', 'Proyectos Erasmus+ en NTS'),
-('es', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Descubra proyectos innovadores de Erasmus+ en NTS'),
+('en', 'programs_and_projects', 'projects', 'title-erazmus', 'European programs and projects at NTS'),
+('en', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Discover innovative European programs and projects at NTS'),
+('de', 'programs_and_projects', 'projects', 'title-erazmus', 'Europäische programme und Projekte an der NTS'),
+('de', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Entdecken Sie innovative europäische programme und projekte an der NTS'),
+('fr', 'programs_and_projects', 'projects', 'title-erazmus', 'Projets européens à l''ENC'),
+('fr', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Découvrez les projets européens innovants à l''ENC'),
+('es', 'programs_and_projects', 'projects', 'title-erazmus', 'Proyectos europeos en NTS'),
+('es', 'programs_and_projects', 'projects', 'subtitle-erazmus', 'Descubra proyectos innovadores europeos en NTS'),
 
 --Filter Section
 
@@ -79,103 +79,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'programs_and_projects', 'status', 'planned', 'Planned'),
 
 
--- Specific Projects
-
--- Project 1 - Erazumus+ Mobilities
-('bg', 'programs_and_projects', 'projects', 'project1_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Училищно образование 2021-2027 година'),
-('bg', 'programs_and_projects', 'projects', 'project1_desc', '<p>Национална търговска гимназия изгражда своята образователна стратегия, отчитайки основните приоритети, цели, стандарти и стратегии, които са заложени в ЗПУО, в национална стратегия за учене през целия живот и в стратегията за европейска интернационализация на НТГ.</p><p>Целите на тази акретитация са:</p><ol><li>Прилагане на съдържателно-езиково интегрирано обучение (CLIL/ИУПЧЕ) и развитие на езиковите компетентности на учителите.</li><li>Устойчиво развитие на околната среда и изграждане на устойчив начин на живот. Екологичен и здравословен живот.</li><li>Изкуственият интелект в образованието – приятел и помощник. Киберсигурност и дигитална грамотност.</li></ol>'),
-('en', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus Accreditation in the field of School Education 2021-2027'),
-('en', 'programs_and_projects', 'projects', 'project1_desc', '<p>National Trade School develops its educational strategy taking into account the main priorities, goals, standards and strategies set out in the Preschool and School Education Act, in the national lifelong learning strategy and in the European internationalization strategy of NTS.</p><p>The objectives of this accreditation are:</p><ol><li>Implementation of Content and Language Integrated Learning (CLIL) and development of teachers'' language competences.</li><li>Sustainable development of the environment and building a sustainable way of life. Ecological and healthy living.</li><li>Artificial Intelligence in education - friend and helper. Cybersecurity and digital literacy.</li></ol>'),
-('de', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus-Akkreditierung im Bereich der Schulbildung 2021-2027'),
-('de', 'programs_and_projects', 'projects', 'project1_desc', '<p>Die Nationale Handelsschule entwickelt ihre Bildungsstrategie unter Berücksichtigung der Hauptprioritäten, Ziele, Standards und Strategien, die im Vorschul- und Schulbildungsgesetz, in der nationalen Strategie für lebenslanges Lernen und in der europäischen Internationalisierungsstrategie der NTS festgelegt sind.</p><p>Die Ziele dieser Akkreditierung sind:</p><ol><li>Umsetzung von Content and Language Integrated Learning (CLIL) und Entwicklung der Sprachkompetenzen der Lehrkräfte.</li><li>Nachhaltige Entwicklung der Umwelt und Aufbau einer nachhaltigen Lebensweise. Ökologisches und gesundes Leben.</li><li>Künstliche Intelligenz in der Bildung - Freund und Helfer. Cybersicherheit und digitale Kompetenz.</li></ol>'),
-('fr', 'programs_and_projects', 'projects', 'project1_title', 'Accréditation Erasmus dans le domaine de l''éducation scolaire 2021-2027'),
-('fr', 'programs_and_projects', 'projects', 'project1_desc', '<p>École Nationale de Commerce développe sa stratégie éducative en tenant compte des principales priorités, objectifs, normes et stratégies énoncés dans la loi sur l''éducation préscolaire et scolaire, dans la stratégie nationale d''apprentissage tout au long de la vie et dans la stratégie d''internationalisation européenne de l''ENC.</p><p>Les objectifs de cette accréditation sont :</p><ol><li>Mise en œuvre de l''apprentissage intégré du contenu et des langues (AICL) et développement des compétences linguistiques des enseignants.</li><li>Développement durable de l''environnement et construction d''un mode de vie durable. Vie écologique et saine.</li><li>Intelligence artificielle dans l''éducation - amie et aide. Cybersécurité et littératie numérique.</li></ol>'),
-('es', 'programs_and_projects', 'projects', 'project1_title', 'Acreditación Erasmus en el campo de la educación escolar 2021-2027'),
-('es', 'programs_and_projects', 'projects', 'project1_desc', '<p>La Escuela Nacional de Comercio desarrolla su estrategia educativa teniendo en cuenta las principales prioridades, objetivos, normas y estrategias establecidas en la Ley de Educación Preescolar y Escolar, en la estrategia nacional de aprendizaje a lo largo de la vida y en la estrategia de internacionalización europea de NTS.</p><p>Los objetivos de esta acreditación son:</p><ol><li>Implementación del Aprendizaje Integrado de Contenidos y Lenguas (AICLE) y desarrollo de las competencias lingüísticas de los docentes.</li><li>Desarrollo sostenible del medio ambiente y construcción de un modo de vida sostenible. Vida ecológica y saludable.</li><li>Inteligencia Artificial en la educación: amiga y ayudante. Ciberseguridad y alfabetización digital.</li></ol>'),
-
--- Project 2 - National Program "Bulgaria - Educational Routes"
-('bg', 'programs_and_projects', 'projects', 'project2_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Професионалното образование и обучение за периода 2021-2027 година'),
-('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>С доказан опит в изпълнението и отчитането на проекти по национални и международни програми, Национална търговска гимназия успешно осигури и изпълни 14 проекта по програмата „Еразъм+" от първото кандидатстване през 2014 г.:</p>
-<ul>
-<li>7 проекта в сектор „Професионално образование и обучение"</li>
-<li>6 проекта в сектор „Училищно образование"</li>
-<li>Едно участие в консорциум</li>
-</ul>
-<p>Този опит не само обогати нашите образователни предложения, но също така засили нашите възможности за международно сътрудничество и управление на проекти.</p>
-<p>ЦЕЛИ на акредитацията:</p>
-<ul>
-<li>Професионално развитие на учителите</li>
-<li>Повишаване качеството на придобитото образование и професионална квалификация</li>
-<li>Цифрова трансформация на предлаганото образование и обучение</li>
-<li>Укрепване на трансверсалните когнитивни умения и междукултурни компетентности</li>
-<li>Личностно развитие на обучаемите</li>
-</ul>'),
-('en', 'programs_and_projects', 'projects', 'project2_title', 'Erasmus Accreditation in the field of Vocational Education and Training for the period 2021-2027'),
-('en', 'programs_and_projects', 'projects', 'project2_desc', '<p>With proven experience in implementing and reporting projects under national and international programs, National Trade School has successfully secured and implemented 14 projects under the "Erasmus+" program since its first application in 2014:</p> 
-<ul>
-<li>7 projects in the field of "Vocational Education and Training"</li>
-<li>6 projects in the field of "School Education"</li>
-<li>One participation in a consortium</li>
-</ul>
-<p>This experience has not only enriched our educational offerings but has also strengthened our capacity for international cooperation and project management.</p>
-<p>GOALS of the accreditation:</p>
-<ul>
-<li>Professional development of teachers</li>
-<li>Improving the quality of acquired education and professional qualifications</li>
-<li>Digital transformation of the offered education and training</li>
-<li>Strengthening transversal cognitive skills and intercultural competencies</li>
-<li>Personal development of learners</li>
-</ul>'),
-('de', 'programs_and_projects', 'projects', 'project2_title', 'Erasmus-Akkreditierung im Bereich der Berufsbildung für den Zeitraum 2021-2027'),
-('de', 'programs_and_projects', 'projects', 'project2_desc', '<p>Mit nachgewiesener Erfahrung in der Umsetzung und Berichterstattung von Projekten im Rahmen nationaler und internationaler Programme hat die Nationale Handelsschule seit ihrer ersten Bewerbung im Jahr 2014 erfolgreich 14 Projekte im Rahmen des Programms "Erasmus+" gesichert und umgesetzt:</p> 
-<ul>
-<li>7 Projekte im Bereich "Berufsbildung"</li>
-<li>6 Projekte im Bereich "Schulbildung"</li>
-<li>Eine Teilnahme an einem Konsortium</li>
-</ul>
-<p>Diese Erfahrung hat nicht nur unser Bildungsangebot bereichert, sondern auch unsere Kapazitäten für internationale Zusammenarbeit und Projektmanagement gestärkt.</p>
-<p>ZIELE der Akkreditierung:</p>
-<ul>
-<li>Berufliche Entwicklung der Lehrkräfte</li>
-<li>Verbesserung der Qualität der erworbenen Bildung und beruflichen Qualifikationen</li>
-<li>Digitale Transformation der angebotenen Bildung und Ausbildung
-</li>
-<li>Stärkung transversaler kognitiver Fähigkeiten und interkultureller Kompetenzen</li>
-<li>Persönliche Entwicklung der Lernenden</li>
-</ul>'),
-('fr', 'programs_and_projects', 'projects', 'project2_title', 'Accréditation Erasmus dans le domaine de la formation professionnelle pour la période 2021-2027'),
-('fr', 'programs_and_projects', 'projects', 'project2_desc', '<p>Avec une expérience avérée dans la mise en œuvre et le reporting de projets dans le cadre de programmes nationaux et internationaux, l''École Nationale de Commerce a réussi à obtenir et à mettre en œuvre 14 projets dans le cadre du programme "Erasmus+" depuis sa première candidature en 2014 :</p>
-<ul>
-<li>7 projets dans le domaine de la "Formation Professionnelle"</li>
-<li>6 projets dans le domaine de "l''Éducation Scolaire"</li>
-<li>Une participation à un consortium</li>
-</ul>
-<p>Cette expérience a non seulement enrichi nos offres éducatives, mais a également renforcé notre capacité de coopération internationale et de gestion de projets.</p>
-<p>OBJECTIFS de l''accréditation :</p>
-<ul>
-<li>Développement professionnel des enseignants</li>
-<li>Amélioration de la qualité de l''éducation et des qualifications professionnelles acquises</li>
-<li>Transformation numérique de l''éducation et de la formation offertes</li>
-<li>Renforcement des compétences cognitives transversales et des compétences interculturelles</li>
-<li>Développement personnel des apprenants</li>
-</ul>'),
-('es', 'programs_and_projects', 'projects', 'project2_title', 'Acreditación Erasmus en el campo de la Formación Profesional para el período 2021-2027'),
-('es', 'programs_and_projects', 'projects', 'project2_desc', '<p>Con una experiencia probada en la implementación y presentación de informes de proyectos bajo programas nacionales e internacionales, la Escuela Nacional de Comercio ha asegurado e implementado con éxito 14 proyectos bajo el programa "Erasmus+" desde su primera solicitud en 2014:</p>
-<ul>
-<li>7 proyectos en el campo de la "Formación Profesional"</li>
-<li>6 proyectos en el campo de la "Educación Escolar"</li>
-<li>Una participación en un consorcio</li>
-</ul>
-<p>Esta experiencia no solo ha enriquecido nuestras ofertas educativas, sino que también ha fortalecido nuestra capacidad para la cooperación internacional y la gestión de proyectos.</p>
-<p>OBJETIVOS de la acreditación:</p>
-<ul>
-<li>Desarrollo profesional de los docentes</li>
-<li>Mejora de la calidad de la educación y las cualificaciones profesionales adquiridas</li>
-<li>Transformación digital de la educación y la formación ofrecidas</li>
-<li>Fortalecimiento de las habilidades cognitivas transversales y las competencias interculturales</li>
-<li>Desarrollo personal de los aprendices</li>
-</ul>'),
-
+-- National Projects and Programs
 
 -- Project 3 - Business Project
 ('bg', 'programs_and_projects', 'projects', 'project3_title', 'Националната програма „Осигуряване на съвременна, сигурна и достъпна образователна среда“ 2025 г'),
@@ -448,4 +352,117 @@ ie-2004"</li>
 ('es', 'programs_and_projects', 'projects', 'student_company_desc', 'Proyecto práctico para crear y gestionar una empresa estudiantil real con productos y servicios reales.'),
 ('es', 'programs_and_projects', 'cta', 'title', 'Conviértase en nuestro socio'),
 ('es', 'programs_and_projects', 'cta', 'subtitle', 'Únase a nuestra misión por una educación de calidad e invierta en el futuro de los jóvenes'),
-('es', 'programs_and_projects', 'cta', 'button_text', 'Contáctenos');
+('es', 'programs_and_projects', 'cta', 'button_text', 'Contáctenos'),
+
+
+
+--- Eurupean Projects and Programs
+
+-- Project 1 - Erazumus+ Mobilities
+('bg', 'programs_and_projects', 'projects', 'project1_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Училищно образование 2021-2027 година'),
+('bg', 'programs_and_projects', 'projects', 'project1_desc', '<p>Национална търговска гимназия изгражда своята образователна стратегия, отчитайки основните приоритети, цели, стандарти и стратегии, които са заложени в ЗПУО, в национална стратегия за учене през целия живот и в стратегията за европейска интернационализация на НТГ.</p><p>Целите на тази акретитация са:</p><ol><li>Прилагане на съдържателно-езиково интегрирано обучение (CLIL/ИУПЧЕ) и развитие на езиковите компетентности на учителите.</li><li>Устойчиво развитие на околната среда и изграждане на устойчив начин на живот. Екологичен и здравословен живот.</li><li>Изкуственият интелект в образованието – приятел и помощник. Киберсигурност и дигитална грамотност.</li></ol>'),
+('en', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus Accreditation in the field of School Education 2021-2027'),
+('en', 'programs_and_projects', 'projects', 'project1_desc', '<p>National Trade School develops its educational strategy taking into account the main priorities, goals, standards and strategies set out in the Preschool and School Education Act, in the national lifelong learning strategy and in the European internationalization strategy of NTS.</p><p>The objectives of this accreditation are:</p><ol><li>Implementation of Content and Language Integrated Learning (CLIL) and development of teachers'' language competences.</li><li>Sustainable development of the environment and building a sustainable way of life. Ecological and healthy living.</li><li>Artificial Intelligence in education - friend and helper. Cybersecurity and digital literacy.</li></ol>'),
+('de', 'programs_and_projects', 'projects', 'project1_title', 'Erasmus-Akkreditierung im Bereich der Schulbildung 2021-2027'),
+('de', 'programs_and_projects', 'projects', 'project1_desc', '<p>Die Nationale Handelsschule entwickelt ihre Bildungsstrategie unter Berücksichtigung der Hauptprioritäten, Ziele, Standards und Strategien, die im Vorschul- und Schulbildungsgesetz, in der nationalen Strategie für lebenslanges Lernen und in der europäischen Internationalisierungsstrategie der NTS festgelegt sind.</p><p>Die Ziele dieser Akkreditierung sind:</p><ol><li>Umsetzung von Content and Language Integrated Learning (CLIL) und Entwicklung der Sprachkompetenzen der Lehrkräfte.</li><li>Nachhaltige Entwicklung der Umwelt und Aufbau einer nachhaltigen Lebensweise. Ökologisches und gesundes Leben.</li><li>Künstliche Intelligenz in der Bildung - Freund und Helfer. Cybersicherheit und digitale Kompetenz.</li></ol>'),
+('fr', 'programs_and_projects', 'projects', 'project1_title', 'Accréditation Erasmus dans le domaine de l''éducation scolaire 2021-2027'),
+('fr', 'programs_and_projects', 'projects', 'project1_desc', '<p>École Nationale de Commerce développe sa stratégie éducative en tenant compte des principales priorités, objectifs, normes et stratégies énoncés dans la loi sur l''éducation préscolaire et scolaire, dans la stratégie nationale d''apprentissage tout au long de la vie et dans la stratégie d''internationalisation européenne de l''ENC.</p><p>Les objectifs de cette accréditation sont :</p><ol><li>Mise en œuvre de l''apprentissage intégré du contenu et des langues (AICL) et développement des compétences linguistiques des enseignants.</li><li>Développement durable de l''environnement et construction d''un mode de vie durable. Vie écologique et saine.</li><li>Intelligence artificielle dans l''éducation - amie et aide. Cybersécurité et littératie numérique.</li></ol>'),
+('es', 'programs_and_projects', 'projects', 'project1_title', 'Acreditación Erasmus en el campo de la educación escolar 2021-2027'),
+('es', 'programs_and_projects', 'projects', 'project1_desc', '<p>La Escuela Nacional de Comercio desarrolla su estrategia educativa teniendo en cuenta las principales prioridades, objetivos, normas y estrategias establecidas en la Ley de Educación Preescolar y Escolar, en la estrategia nacional de aprendizaje a lo largo de la vida y en la estrategia de internacionalización europea de NTS.</p><p>Los objetivos de esta acreditación son:</p><ol><li>Implementación del Aprendizaje Integrado de Contenidos y Lenguas (AICLE) y desarrollo de las competencias lingüísticas de los docentes.</li><li>Desarrollo sostenible del medio ambiente y construcción de un modo de vida sostenible. Vida ecológica y saludable.</li><li>Inteligencia Artificial en la educación: amiga y ayudante. Ciberseguridad y alfabetización digital.</li></ol>'),
+
+
+-- Project 2 - National Program "Bulgaria - Educational Routes"
+('bg', 'programs_and_projects', 'projects', 'project2_title', 'ЕРАЗЪМ АКРЕДИТАЦИЯ в сферата на Професионалното образование и обучение за периода 2021-2027 година'),
+('bg', 'programs_and_projects', 'projects', 'project2_desc', '<p>С доказан опит в изпълнението и отчитането на проекти по национални и международни програми, Национална търговска гимназия успешно осигури и изпълни 14 проекта по програмата „Еразъм+" от първото кандидатстване през 2014 г.:</p>
+<ul>
+<li>7 проекта в сектор „Професионално образование и обучение"</li>
+<li>6 проекта в сектор „Училищно образование"</li>
+<li>Едно участие в консорциум</li>
+</ul>
+<p>Този опит не само обогати нашите образователни предложения, но също така засили нашите възможности за международно сътрудничество и управление на проекти.</p>
+<p>ЦЕЛИ на акредитацията:</p>
+<ul>
+<li>Професионално развитие на учителите</li>
+<li>Повишаване качеството на придобитото образование и професионална квалификация</li>
+<li>Цифрова трансформация на предлаганото образование и обучение</li>
+<li>Укрепване на трансверсалните когнитивни умения и междукултурни компетентности</li>
+<li>Личностно развитие на обучаемите</li>
+</ul>'),
+('en', 'programs_and_projects', 'projects', 'project2_title', 'Erasmus Accreditation in the field of Vocational Education and Training for the period 2021-2027'),
+('en', 'programs_and_projects', 'projects', 'project2_desc', '<p>With proven experience in implementing and reporting projects under national and international programs, National Trade School has successfully secured and implemented 14 projects under the "Erasmus+" program since its first application in 2014:</p> 
+<ul>
+<li>7 projects in the field of "Vocational Education and Training"</li>
+<li>6 projects in the field of "School Education"</li>
+<li>One participation in a consortium</li>
+</ul>
+<p>This experience has not only enriched our educational offerings but has also strengthened our capacity for international cooperation and project management.</p>
+<p>GOALS of the accreditation:</p>
+<ul>
+<li>Professional development of teachers</li>
+<li>Improving the quality of acquired education and professional qualifications</li>
+<li>Digital transformation of the offered education and training</li>
+<li>Strengthening transversal cognitive skills and intercultural competencies</li>
+<li>Personal development of learners</li>
+</ul>'),
+('de', 'programs_and_projects', 'projects', 'project2_title', 'Erasmus-Akkreditierung im Bereich der Berufsbildung für den Zeitraum 2021-2027'),
+('de', 'programs_and_projects', 'projects', 'project2_desc', '<p>Mit nachgewiesener Erfahrung in der Umsetzung und Berichterstattung von Projekten im Rahmen nationaler und internationaler Programme hat die Nationale Handelsschule seit ihrer ersten Bewerbung im Jahr 2014 erfolgreich 14 Projekte im Rahmen des Programms "Erasmus+" gesichert und umgesetzt:</p> 
+<ul>
+<li>7 Projekte im Bereich "Berufsbildung"</li>
+<li>6 Projekte im Bereich "Schulbildung"</li>
+<li>Eine Teilnahme an einem Konsortium</li>
+</ul>
+<p>Diese Erfahrung hat nicht nur unser Bildungsangebot bereichert, sondern auch unsere Kapazitäten für internationale Zusammenarbeit und Projektmanagement gestärkt.</p>
+<p>ZIELE der Akkreditierung:</p>
+<ul>
+<li>Berufliche Entwicklung der Lehrkräfte</li>
+<li>Verbesserung der Qualität der erworbenen Bildung und beruflichen Qualifikationen</li>
+<li>Digitale Transformation der angebotenen Bildung und Ausbildung
+</li>
+<li>Stärkung transversaler kognitiver Fähigkeiten und interkultureller Kompetenzen</li>
+<li>Persönliche Entwicklung der Lernenden</li>
+</ul>'),
+('fr', 'programs_and_projects', 'projects', 'project2_title', 'Accréditation Erasmus dans le domaine de la formation professionnelle pour la période 2021-2027'),
+('fr', 'programs_and_projects', 'projects', 'project2_desc', '<p>Avec une expérience avérée dans la mise en œuvre et le reporting de projets dans le cadre de programmes nationaux et internationaux, l''École Nationale de Commerce a réussi à obtenir et à mettre en œuvre 14 projets dans le cadre du programme "Erasmus+" depuis sa première candidature en 2014 :</p>
+<ul>
+<li>7 projets dans le domaine de la "Formation Professionnelle"</li>
+<li>6 projets dans le domaine de "l''Éducation Scolaire"</li>
+<li>Une participation à un consortium</li>
+</ul>
+<p>Cette expérience a non seulement enrichi nos offres éducatives, mais a également renforcé notre capacité de coopération internationale et de gestion de projets.</p>
+<p>OBJECTIFS de l''accréditation :</p>
+<ul>
+<li>Développement professionnel des enseignants</li>
+<li>Amélioration de la qualité de l''éducation et des qualifications professionnelles acquises</li>
+<li>Transformation numérique de l''éducation et de la formation offertes</li>
+<li>Renforcement des compétences cognitives transversales et des compétences interculturelles</li>
+<li>Développement personnel des apprenants</li>
+</ul>'),
+('es', 'programs_and_projects', 'projects', 'project2_title', 'Acreditación Erasmus en el campo de la Formación Profesional para el período 2021-2027'),
+('es', 'programs_and_projects', 'projects', 'project2_desc', '<p>Con una experiencia probada en la implementación y presentación de informes de proyectos bajo programas nacionales e internacionales, la Escuela Nacional de Comercio ha asegurado e implementado con éxito 14 proyectos bajo el programa "Erasmus+" desde su primera solicitud en 2014:</p>
+<ul>
+<li>7 proyectos en el campo de la "Formación Profesional"</li>
+<li>6 proyectos en el campo de la "Educación Escolar"</li>
+<li>Una participación en un consorcio</li>
+</ul>
+<p>Esta experiencia no solo ha enriquecido nuestras ofertas educativas, sino que también ha fortalecido nuestra capacidad para la cooperación internacional y la gestión de proyectos.</p>
+<p>OBJETIVOS de la acreditación:</p>
+<ul>
+<li>Desarrollo profesional de los docentes</li>
+<li>Mejora de la calidad de la educación y las cualificaciones profesionales adquiridas</li>
+<li>Transformación digital de la educación y la formación ofrecidas</li>
+<li>Fortalecimiento de las habilidades cognitivas transversales y las competencias interculturales</li>
+<li>Desarrollo personal de los aprendices</li>
+</ul>'),
+
+-- Project 7 - Erazumus+ Mobilities
+('bg', 'programs_and_projects', 'projects', 'project7_title', 'Модернизиране на професионалното образование и обучение'),
+('bg', 'programs_and_projects', 'projects', 'project7_desc', '<p>Министерството на образованието и науката печели европейски проект BG05SFPR001-3.001-0001</p><ol><li>Проектът е на обща стойност 70 000 000лв.</li><li>Финансира се по Програма „Образование“ 2021-2027 г.</li></ol>'),
+('en', 'programs_and_projects', 'projects', 'project7_title', 'Modernization of professional education and training'),
+('en', 'programs_and_projects', 'projects', 'project7_desc', '<p>The Ministry of Education and Science wins the European project BG05SFPR001-3.001-0001</p><ol><li>The project has a total value of BGN 70,000,000.</li><li>It is funded under the "Education" Program 2021-2027.</li></ol>'),
+('de', 'programs_and_projects', 'projects', 'project7_title', 'Modernisierung der beruflichen Bildung und Ausbildung'),
+('de', 'programs_and_projects', 'projects', 'project7_desc', '<p>Das Ministerium für Bildung und Wissenschaft gewinnt das europäische Projekt BG05SFPR001-3.001-0001</p><ol><li>Das Projekt hat einen Gesamtwert von 70.000.000 BGN.</li><li>Es wird im Rahmen des Programms "Bildung" 2021-2027 finanziert.</li></ol>'),
+('fr', 'programs_and_projects', 'projects', 'project7_title', 'Modernisation de l''éducation et de la formation professionnelles'),
+('fr', 'programs_and_projects', 'projects', 'project7_desc', '<p>Le Ministère de l''Éducation et des Sciences remporte le projet européen BG05SFPR001-3.001-0001</p><ol><li>Le projet a une valeur totale de 70 000 000 BGN.</li><li>Il est financé dans le cadre du programme "Éducation" 2021-2027.</li></ol>'),
+('es', 'programs_and_projects', 'projects', 'project7_title', 'Modernización de la educación y formación profesional'),
+('es', 'programs_and_projects', 'projects', 'project7_desc', '<p>El Ministerio de Educación y Ciencia gana el proyecto europeo BG05SFPR001-3.001-0001</p><ol><li>El proyecto tiene un valor total de 70.000.000 BGN.</li><li>Está financiado en el marco del Programa "Educación" 2021-2027.</li></ol>');
+
