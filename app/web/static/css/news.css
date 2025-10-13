@@ -56,9 +56,8 @@
 }
 
 .news-img {
-	height: 250px;
+	height: 400px;
 	object-fit: cover;
-	object-position: top;
 }
 
 .news-badge {

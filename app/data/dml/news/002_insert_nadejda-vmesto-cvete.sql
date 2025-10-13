@@ -11,7 +11,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 
 <p><strong>„Скъпи осмокласници, днес започвате едно голямо пътешествие. Предстои ви време на нови приятелства, трудности и победи. От този ден ставате част от една голяма и сплотена общност, в която всеки има своето място и значение. На всички ученици пожелавам смелост да мечтаят, воля да постигат и упоритост да вървят напред. На колегите – здраве и вдъхновение, защото вашата мисия е безкрайно отговорна. А на родителите – вяра и доверие, защото заедно с нас вие сте създатели на бъдещето. На добър час, Национална търговска гимназия - Пловдив!"</strong></p>
 
-<p>Специална мисия беляза този 15 септември – благотворителната инициатива „Подари надежда, вместо цвете", в подкрепа на лечението на 10-годишния Митко чрез фондация „Нощ на ангелите". Вместо букети за учителите - ученици, родители, Настоятелството и Обществения съвет, приятели и партньори дариха средства, доказвайки, че общността на Търговската гимназия е силна, защото умее да бъде единна в доброто.</p>
+<p>Специална мисия беляза този 15 септември – благотворителната инициатива „Подари надежда, вместо цвете“, в подкрепа на лечението на 10-годишния Митко чрез фондация „Нощ на ангелите“. Вместо букети за учителите -  ученици, родители, Настоятелството и Обществения съвет, приятели и партньори дариха средства, доказвайки, че общността на Търговската гимназия е силна, защото умее да бъде единна в доброто.</p>
 
 <p>Водещата подчерта, че училището е не само място за знания, а и общност с голямо сърце:</p>
 
@@ -43,7 +43,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Прочетете повече в Nova</a></p>
 ',
     'give-hope-instead-of-flowers',
-    '/static/images/gallery/nosht-na-angelite.jpg'
+    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 ),
 (
     'en', 
@@ -89,7 +89,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Read more at Nova</a></p>
 ',
     'give-hope-instead-of-flowers',
-    '/static/images/gallery/nosht-na-angelite.jpg'
+    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 ),
 (
     'de', 
@@ -135,7 +135,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Mehr lesen bei Nova</a></p>
 ',
     'give-hope-instead-of-flowers',
-    '/static/images/gallery/nosht-na-angelite.jpg'
+    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 ),
 (
     'fr', 
@@ -181,7 +181,7 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Lire plus sur Nova</a></p>
 ',
     'give-hope-instead-of-flowers',
-    '/static/images/gallery/nosht-na-angelite.jpg'
+    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 ),
 (
     'es', 
@@ -227,5 +227,5 @@ INSERT INTO news (language, category, upload_date, title, short_description, lon
 <p><a href="https://nova.bg/news/view/2025/09/15/510569/%D0%BA%D0%B0%D1%83%D0%B7%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%86%D0%B2%D0%B5%D1%82%D0%B5-%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D0%B2-%D0%BF%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0-%D1%80%D1%8A%D0%BA%D0%B0-%D0%BD%D0%B0-10-%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B8%D1%82%D0%BA%D0%BE-%D0%BA%D0%BE%D0%B9%D1%82%D0%BE-%D1%81%D0%B5-%D0%B1%D0%BE%D1%80%D0%B8-%D1%81-%D0%BA%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B1%D0%BE%D0%BB%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5/" target="_blank" style="color: #0066cc; font-weight: bold;">Leer más en Nova</a></p>
 ',
     'give-hope-instead-of-flowers',
-    '/static/images/gallery/nosht-na-angelite.jpg'
+    '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 );
