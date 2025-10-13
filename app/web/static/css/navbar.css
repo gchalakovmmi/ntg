@@ -311,9 +311,9 @@
 		cursor: pointer;
 	}
 	
-	/* FIX: Disable hover effects on mobile - use click only */
+	/* FIX: Enable hover effects on mobile */
 	.nav-item.dropdown:hover > .dropdown-menu {
-		display: none !important;
+		display: block !important;
 	}
 	
 	.dropdown-submenu:hover > .dropdown-menu {
