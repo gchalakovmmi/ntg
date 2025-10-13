@@ -266,20 +266,32 @@
 		color: white;
 	}
 	
-	/* Nested dropdowns on mobile */
+	/* FIX: Nested dropdowns on mobile - OPEN BY DEFAULT WITH DARKER RED BACKGROUND */
 	.dropdown-submenu > .dropdown-menu {
 		position: static;
 		margin-top: 0;
 		margin-left: 0;
 		border-radius: 0;
 		box-shadow: none;
-		display: none;
-		background: rgba(0, 0, 0, 0.1);
+		display: block !important; /* Changed from 'none' to 'block' to open by default */
+		background: #5a0000 !important; /* Darker red for nested dropdowns */
 	}
 	
-	/* Show nested dropdowns when they have show class */
+	/* Show nested dropdowns when they have show class (for toggling) */
 	.dropdown-submenu > .dropdown-menu.show {
 		display: block !important;
+	}
+	
+	/* FIX: Nested dropdown items - ensure white text on darker background */
+	.dropdown-submenu > .dropdown-menu .dropdown-item {
+		color: rgba(255, 255, 255, 0.9) !important;
+		background: transparent !important;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	}
+	
+	.dropdown-submenu > .dropdown-menu .dropdown-item:hover {
+		background: rgba(255, 255, 255, 0.08) !important;
+		color: white !important;
 	}
 	
 	/* Hide dropdown arrows on mobile */
@@ -299,7 +311,7 @@
 		cursor: pointer;
 	}
 	
-	/* FIX: Disable hover effects on mobile - use tap only */
+	/* FIX: Disable hover effects on mobile - use click only */
 	.nav-item.dropdown:hover > .dropdown-menu {
 		display: none !important;
 	}

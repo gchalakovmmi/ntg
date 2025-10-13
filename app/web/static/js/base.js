@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	// ===============================================================
-	// MOBILE NAVIGATION - COMPLETE MOBILE DROPDOWN FIX
+	// MOBILE NAVIGATION - UNIVERSAL CLICK HANDLING
 	// ===============================================================
 	
 	const navbarToggler = document.querySelector('.navbar-toggler');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		});
 		
-		// FIX: Proper mobile dropdown toggle functionality - TAP/CLICK
+		// UNIVERSAL CLICK HANDLER: Proper mobile dropdown toggle functionality
 		const dropdownToggles = navbarCollapse.querySelectorAll('.dropdown-toggle');
 		dropdownToggles.forEach(toggle => {
 			toggle.addEventListener('click', function(e) {
@@ -85,16 +85,19 @@ document.addEventListener('DOMContentLoaded', function() {
 					const parentDropdown = this.closest('.dropdown');
 					const dropdownMenu = parentDropdown.querySelector('.dropdown-menu');
 					
-					console.log('Dropdown toggle clicked on mobile');
-					
 					// Toggle the dropdown menu
 					if (dropdownMenu.classList.contains('show')) {
 						// Close this dropdown
 						dropdownMenu.classList.remove('show');
 						this.setAttribute('aria-expanded', 'false');
 					} else {
-						// Close other open dropdowns first
-						navbarCollapse.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+						// Close other open dropdowns first (except nested ones)
+						const allOpenMenus = navbarCollapse.querySelectorAll('.dropdown-menu.show');
+						allOpenMenus.forEach(menu => {
+							// Don't close nested dropdowns that are children of the current dropdown
+							if (!parentDropdown.contains(menu) || menu === dropdownMenu) {
+								return;
+							}
 							menu.classList.remove('show');
 							const otherToggle = menu.previousElementSibling;
 							if (otherToggle && otherToggle.classList.contains('dropdown-toggle')) {
@@ -106,7 +109,15 @@ document.addEventListener('DOMContentLoaded', function() {
 						dropdownMenu.classList.add('show');
 						this.setAttribute('aria-expanded', 'true');
 						
-						console.log('Dropdown should be visible now');
+						// FIX: Automatically open nested dropdowns when parent opens
+						const nestedDropdowns = dropdownMenu.querySelectorAll('.dropdown-menu');
+						nestedDropdowns.forEach(nestedMenu => {
+							nestedMenu.classList.add('show');
+							const nestedToggle = nestedMenu.previousElementSibling;
+							if (nestedToggle && nestedToggle.classList.contains('dropdown-toggle')) {
+								nestedToggle.setAttribute('aria-expanded', 'true');
+							}
+						});
 						
 						// Ensure the dropdown is visible in the viewport
 						setTimeout(() => {
@@ -120,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		});
 		
-		// Handle nested dropdowns on mobile
+		// Handle nested dropdowns on mobile - allow toggling if needed
 		const nestedDropdownToggles = navbarCollapse.querySelectorAll('.dropdown-item.dropdown-toggle');
 		nestedDropdownToggles.forEach(toggle => {
 			toggle.addEventListener('click', function(e) {
