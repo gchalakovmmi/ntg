@@ -151,7 +151,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'base', 'navbar', 'ntg_logo_alt', 'Logo NTG'),
 ('fr', 'base', 'navbar', 'innovative_logo_alt', 'Logo École Innovante'),
 ('fr', 'base', 'navbar', 'home', 'Accueil'),
-('fr', 'base', 'navbar', 'about', 'À propos'),
+('fr', 'base', 'navbar', 'about', 'À propos de nous'),
 ('fr', 'base', 'navbar', 'documents', 'Documents'),
 ('fr', 'base', 'navbar', 'admission', 'Admission'),
 ('fr', 'base', 'navbar', 'programs_and_projects', 'Programmes et projets'),

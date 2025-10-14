@@ -189,7 +189,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'home', 'partners', 'partner4_alt', 'Allianz Bank Bulgarien Logo'),
 
 -- French Translations
-('fr', 'home', 'header', 'title', 'NTS - École Nationale de Commerce'),
+('fr', 'home', 'header', 'title', ''),
 
 -- Carousel
 ('fr', 'home', 'carousel', 'slide1_title', 'ÉCOLE NATIONALE DE COMMERCE'),
