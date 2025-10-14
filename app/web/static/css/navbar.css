@@ -114,6 +114,8 @@
     border-bottom: 0;
     border-left: 0.3em solid transparent;
     transition: transform 0.15s ease;
+    position: relative;
+    top: -1px; /* Move the arrow up by 1px */
 }
 
 .nav-link.dropdown-toggle::after {
@@ -123,7 +125,7 @@
 .dropdown-item.dropdown-toggle::after {
     border-top-color: #000;
     float: right;
-    margin-top: 0.5em;
+    margin-top: 0.1em; /* Reduced from 0.5em to move it up */
 }
 
 .nav-link.dropdown-toggle:hover::after,
