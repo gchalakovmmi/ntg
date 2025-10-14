@@ -52,9 +52,6 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
 ('fr', 'team', 'deputies', 'subtitle_3', 'Directrice adjointe'),
 ('fr', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova coordonne et participe directement à la préparation et à la mise en œuvre de programmes et de projets nationaux et européens, ainsi qu''à des activités extrascolaires basées sur les intérêts. Elle organise et contrôle la tenue des Olympiades au NTG, du NVO en 10e année, et dirige le comité scolaire pour la conduite du DZI.'),
-('es', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
-('es', 'team', 'deputies', 'subtitle_3', 'Subdirectora'),
-('es', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova coordina y participa directamente en la preparación e implementación de programas y proyectos nacionales y europeos, así como en actividades extracurriculares basadas en intereses. Organiza и контролира la realización de Olimpiadas в NTG, el NVO en 10º grado, y dirige el comité escolar para la realización del DZI.'),
 
 ('bg', 'team', 'deputies', 'title_4', 'Искра Койчева'),
 ('bg', 'team', 'deputies', 'subtitle_4', 'Заместник-директор учебно творческа дейност'),
@@ -1225,3 +1222,911 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'team', 'administrative', 'staff3_2_name', 'Rositsa Demerdjieva'),
 ('de', 'team', 'administrative', 'staff3_2_position', 'Reinigungskraft'),
 ('de', 'team', 'administrative', 'staff3_2_email', 'r.demerdjieva@ntg-plovdiv.net');
+
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
+-- Title
+('fr', 'team', 'header', 'title', 'Notre équipe - NTG'),
+
+-- Carousel
+('fr', 'team', 'hero', 'title', 'Notre équipe à la NTG'),
+('fr', 'team', 'hero', 'subtitle', 'Une éducation de qualité pour les futurs leaders en économie et en affaires'),
+
+-- Director
+('fr', 'team', 'director', 'name', 'Directeur de la NTG'),
+('fr', 'team', 'director', 'position', 'Poste test'),
+('fr', 'team', 'director', 'short_bio', 'Description test'),
+
+-- Deputy Directors
+('fr', 'team', 'deputies', 'title', 'Directeurs adjoints à la NTG'),
+('fr', 'team', 'deputies', 'subtitle', 'Directeurs adjoints à la NTG'),
+
+-- Deputy Directors 1
+('fr', 'team', 'deputies', 'title_1', 'Veselka Tsekova'),
+('fr', 'team', 'deputies', 'subtitle_1', 'Directeur adjoint, enseignement général'),
+('fr', 'team', 'deputies', 'deputy1_short_bio', 'Directeur adjoint à l''enseignement général'),
+
+-- Deputy Directors 2
+('fr', 'team', 'deputies', 'title_2', 'Gergana Nikolova'),
+('fr', 'team', 'deputies', 'subtitle_2', 'Directeur adjoint, formation professionnelle'),
+('fr', 'team', 'deputies', 'deputy2_short_bio', 'Directeur adjoint à la formation professionnelle'),
+
+-- Deputy Directors 4
+('fr', 'team', 'deputies', 'title_4', 'Iskra Koycheva'),
+('fr', 'team', 'deputies', 'subtitle_4', 'Directeur adjoint chargé des activités éducatives et créatives'),
+('fr', 'team', 'deputies', 'deputy4_short_bio', 'Directeur adjoint chargé des activités éducatives et créatives'),
+
+-- English Department
+('fr', 'team', 'english', 'title', 'Enseignants d''anglais'),
+('fr', 'team', 'english', 'subtitle', 'Département d''anglais'),
+
+('fr', 'team', 'english', 'teacher1_1_name', 'Antonina Dimitrova'),
+('fr', 'team', 'english', 'teacher1_1_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher1_1_email', 'a.dimitrova@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher1_2_name', 'Bonka Velinova'),
+('fr', 'team', 'english', 'teacher1_2_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher1_2_email', 'b.velinova@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher1_3_name', 'Boris Biserov'),
+('fr', 'team', 'english', 'teacher1_3_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher1_3_email', 'b.borisov@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher1_4_name', 'Vladislava Pichurova'),
+('fr', 'team', 'english', 'teacher1_4_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher1_4_email', 'v.pichurova@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher2_2_name', 'Denitsa Boyadjieva'),
+('fr', 'team', 'english', 'teacher2_2_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher2_2_email', 'd.boyadjieva@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher2_3_name', 'Tatyana Delgado - Monserrat'),
+('fr', 'team', 'english', 'teacher2_3_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher2_3_email', 't.delgado@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher2_4_name', 'Teodora Stoycheva'),
+('fr', 'team', 'english', 'teacher2_4_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher2_4_email', 't.stoicheva@ntg-plovdiv.net'),
+
+('fr', 'team', 'english', 'teacher2_5_name', 'Krastina Mavrodieva'),
+('fr', 'team', 'english', 'teacher2_5_position', 'Anglais'),
+('fr', 'team', 'english', 'teacher2_5_email', 'k.mavrodieva@ntg-plovdiv.net'),
+
+-- Biology Department
+('fr', 'team', 'biology', 'title', 'Enseignants en biologie et éducation à la santé'),
+('fr', 'team', 'biology', 'subtitle', 'Département de biologie et éducation à la santé'),
+
+('fr', 'team', 'biology', 'teacher1_2_name', 'Julieta Gocheva'),
+('fr', 'team', 'biology', 'teacher1_2_position', 'Biologie et éducation à la santé'),
+('fr', 'team', 'biology', 'teacher1_2_email', 'z.gocheva@ntg-plovdiv.net'),
+
+('fr', 'team', 'biology', 'teacher1_3_name', 'Mariela Kehayova'),
+('fr', 'team', 'biology', 'teacher1_3_position', 'Biologie et éducation à la santé'),
+('fr', 'team', 'biology', 'teacher1_3_email', 'm.kehayova@ntg-plovdiv.net'),
+
+-- Bulgarian Language Department
+('fr', 'team', 'bulgarian', 'title', 'Enseignants de langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'subtitle', 'Département de langue et littérature bulgares'),
+
+('fr', 'team', 'bulgarian', 'teacher1_1_name', 'Daniela Stoyanova'),
+('fr', 'team', 'bulgarian', 'teacher1_1_position', 'Langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'teacher1_1_email', 'd.stoianova@ntg-plovdiv.net'),
+
+('fr', 'team', 'bulgarian', 'teacher1_2_name', 'Elena Stoilova'),
+('fr', 'team', 'bulgarian', 'teacher1_2_position', 'Langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'teacher1_2_email', 'e.stoilova@ntg-plovdiv.net'),
+
+('fr', 'team', 'bulgarian', 'teacher1_3_name', 'Lyubomir Trifonov'),
+('fr', 'team', 'bulgarian', 'teacher1_3_position', 'Langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'teacher1_3_email', 'l.trifonov@ntg-plovdiv.net'),
+
+('fr', 'team', 'bulgarian', 'teacher1_4_name', 'Maria Kostadinova'),
+('fr', 'team', 'bulgarian', 'teacher1_4_position', 'Langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'teacher1_4_email', 'm.kostadinova@ntg-plovdiv.net'),
+
+('fr', 'team', 'bulgarian', 'teacher2_1_name', 'Stanimira Dimitrova'),
+('fr', 'team', 'bulgarian', 'teacher2_1_position', 'Langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'teacher2_1_email', 's.dimitrova@ntg-plovdiv.net'),
+
+('fr', 'team', 'bulgarian', 'teacher2_2_name', 'Tanka Taranska'),
+('fr', 'team', 'bulgarian', 'teacher2_2_position', 'Langue et littérature bulgares'),
+('fr', 'team', 'bulgarian', 'teacher2_2_email', 't.tarunska@ntg-plovdiv.net'),
+
+-- Geography Department
+('fr', 'team', 'geography', 'title', 'Enseignants en géographie et économie'),
+('fr', 'team', 'geography', 'subtitle', 'Département de géographie et économie'),
+
+('fr', 'team', 'geography', 'teacher1_2_name', 'Yulia Kyoseva'),
+('fr', 'team', 'geography', 'teacher1_2_position', 'Géographie et économie'),
+('fr', 'team', 'geography', 'teacher1_2_email', 'j.kioseva@ntg-plovdiv.net'),
+
+-- Civil Rights / Civic Education Department
+('fr', 'team', 'civil_rights', 'title', 'Enseignants en éducation civique'),
+('fr', 'team', 'civil_rights', 'subtitle', 'Département d''éducation civique'),
+
+('fr', 'team', 'civil_rights', 'teacher1_1_name', 'Velichka Kalaydzhiyska'),
+('fr', 'team', 'civil_rights', 'teacher1_1_position', 'Éducation civique'),
+('fr', 'team', 'civil_rights', 'teacher1_1_email', 'v.kalaydzhiyska@ntg-plovdiv.net'),
+
+('fr', 'team', 'civil_rights', 'teacher1_2_name', 'Elena Angelova'),
+('fr', 'team', 'civil_rights', 'teacher1_2_position', 'Éducation civique'),
+('fr', 'team', 'civil_rights', 'teacher1_2_email', 'e.angelova@ntg-plovdiv.net'),
+
+('fr', 'team', 'civil_rights', 'teacher1_3_name', 'Tatyana Vancheva'),
+('fr', 'team', 'civil_rights', 'teacher1_3_position', 'Éducation civique'),
+('fr', 'team', 'civil_rights', 'teacher1_3_email', 't.vancheva@ntg-plovdiv.net'),
+
+-- Physics Department
+('fr', 'team', 'physics', 'title', 'Enseignants en physique et astronomie'),
+('fr', 'team', 'physics', 'subtitle', 'Département de physique et astronomie'),
+
+('fr', 'team', 'physics', 'teacher1_1_name', 'Vasilka Rubtsova'),
+('fr', 'team', 'physics', 'teacher1_1_position', 'Physique et astronomie'),
+('fr', 'team', 'physics', 'teacher1_1_email', 'v.rubtsova@ntg-plovdiv.net'),
+
+('fr', 'team', 'physics', 'teacher1_2_name', 'Galina Filipova'),
+('fr', 'team', 'physics', 'teacher1_2_position', 'Physique et astronomie'),
+('fr', 'team', 'physics', 'teacher1_2_email', 'g.filipova@ntg-plovdiv.net'),
+
+-- Physical Education Department
+('fr', 'team', 'pe', 'title', 'Enseignants en éducation physique et sport'),
+('fr', 'team', 'pe', 'subtitle', 'Département d''éducation physique et sport'),
+
+('fr', 'team', 'pe', 'teacher1_1_name', 'Bilyana Tyutyukova'),
+('fr', 'team', 'pe', 'teacher1_1_position', 'Éducation physique et sport'),
+('fr', 'team', 'pe', 'teacher1_1_email', 'b.tutukova@ntg-plovdiv.net'),
+
+('fr', 'team', 'pe', 'teacher1_2_name', 'Georgi Vaklushev'),
+('fr', 'team', 'pe', 'teacher1_2_position', 'Éducation physique et sport'),
+('fr', 'team', 'pe', 'teacher1_2_email', 'g.vaklushev@ntg-plovdiv.net'),
+
+('fr', 'team', 'pe', 'teacher1_4_name', 'Radoslav Boychev'),
+('fr', 'team', 'pe', 'teacher1_4_position', 'Éducation physique et sport'),
+('fr', 'team', 'pe', 'teacher1_4_email', 'r.boychev@ntg-plovdiv.net'),
+
+('fr', 'team', 'pe', 'teacher2_1_name', 'Silvia Anadolieva'),
+('fr', 'team', 'pe', 'teacher2_1_position', 'Éducation physique et sport'),
+('fr', 'team', 'pe', 'teacher2_1_email', 's.anadolieva@ntg-plovdiv.net'),
+
+('fr', 'team', 'pe', 'teacher2_2_name', 'Viktoria Delcheva'),
+('fr', 'team', 'pe', 'teacher2_2_position', 'Éducation physique et sport'),
+('fr', 'team', 'pe', 'teacher2_2_email', 'v.delcheva@ntg-plovdiv.net'),
+
+-- Philosophy Department
+('fr', 'team', 'philosophy', 'title', 'Enseignants en philosophie'),
+('fr', 'team', 'philosophy', 'subtitle', 'Département de philosophie'),
+
+('fr', 'team', 'philosophy', 'teacher1_1_name', 'Elena Angelova'),
+('fr', 'team', 'philosophy', 'teacher1_1_position', 'Philosophie'),
+('fr', 'team', 'philosophy', 'teacher1_1_email', 'e.angelova@ntg-plovdiv.net'),
+
+('fr', 'team', 'philosophy', 'teacher1_2_name', 'Tatyana Vancheva'),
+('fr', 'team', 'philosophy', 'teacher1_2_position', 'Philosophie'),
+('fr', 'team', 'philosophy', 'teacher1_2_email', 't.vancheva@ntg-plovdiv.net'),
+
+-- Chemistry Department
+('fr', 'team', 'chemistry', 'title', 'Enseignants en chimie et protection de l''environnement'),
+('fr', 'team', 'chemistry', 'subtitle', 'Département de chimie et protection de l''environnement'),
+
+('fr', 'team', 'chemistry', 'teacher1_1_name', 'Julieta Gocheva'),
+('fr', 'team', 'chemistry', 'teacher1_1_position', 'Chimie et protection de l''environnement'),
+('fr', 'team', 'chemistry', 'teacher1_1_email', 'z.gocheva@ntg-plovdiv.net'),
+
+('fr', 'team', 'chemistry', 'teacher1_2_name', 'Nevena Samohodova'),
+('fr', 'team', 'chemistry', 'teacher1_2_position', 'Chimie et protection de l''environnement'),
+('fr', 'team', 'chemistry', 'teacher1_2_email', 'n.samohodova@ntg-plovdiv.net'),
+
+-- Mathematics Department
+('fr', 'team', 'math', 'title', 'Enseignants en mathématiques'),
+('fr', 'team', 'math', 'subtitle', 'Département de mathématiques'),
+
+('fr', 'team', 'math', 'teacher1_1_name', 'Vanya Bizova-Laleva'),
+('fr', 'team', 'math', 'teacher1_1_position', 'Mathématiques'),
+('fr', 'team', 'math', 'teacher1_1_email', 'v.laleva@ntg-plovdiv.net'),
+
+('fr', 'team', 'math', 'teacher1_2_name', 'Vasilka Kuzeva'),
+('fr', 'team', 'math', 'teacher1_2_position', 'Mathématiques'),
+('fr', 'team', 'math', 'teacher1_2_email', 'v.kuzeva@ntg-plovdiv.net'),
+
+('fr', 'team', 'math', 'teacher1_3_name', 'Daniela Dzhurova'),
+('fr', 'team', 'math', 'teacher1_3_position', 'Mathématiques'),
+('fr', 'team', 'math', 'teacher1_3_email', 'd.djurova@ntg-plovdiv.net'),
+
+('fr', 'team', 'math', 'teacher1_4_name', 'Svetomira Ivanova'),
+('fr', 'team', 'math', 'teacher1_4_position', 'Mathématiques'),
+('fr', 'team', 'math', 'teacher1_4_email', 's.ivanova@ntg-plovdiv.net'),
+
+('fr', 'team', 'math', 'teacher2_1_name', 'Vasilka Rubtsova'),
+('fr', 'team', 'math', 'teacher2_1_position', 'Mathématiques'),
+('fr', 'team', 'math', 'teacher2_1_email', 'v.rubtsova@ntg-plovdiv.net'),
+
+-- German Language Department
+('fr', 'team', 'german', 'title', 'Enseignants d''allemand'),
+('fr', 'team', 'german', 'subtitle', 'Département d''allemand'),
+
+('fr', 'team', 'german', 'teacher1_1_name', 'Antoniya Pashova'),
+('fr', 'team', 'german', 'teacher1_1_position', 'Allemand'),
+('fr', 'team', 'german', 'teacher1_1_email', 'a.pashova@ntg-plovdiv.net'),
+
+('fr', 'team', 'german', 'teacher1_2_name', 'Emilian Georgiev'),
+('fr', 'team', 'german', 'teacher1_2_position', 'Allemand'),
+('fr', 'team', 'german', 'teacher1_2_email', 'e.georgiev@ntg-plovdiv.net'),
+
+('fr', 'team', 'german', 'teacher1_3_name', 'Maria Dzhokova'),
+('fr', 'team', 'german', 'teacher1_3_position', 'Allemand'),
+('fr', 'team', 'german', 'teacher1_3_email', 'm.djokova@ntg-plovdiv.net'),
+
+('fr', 'team', 'german', 'teacher1_4_name', 'Svetlana Cholakova'),
+('fr', 'team', 'german', 'teacher1_4_position', 'Allemand'),
+('fr', 'team', 'german', 'teacher1_4_email', 's.cholakova@ntg-plovdiv.net'),
+
+-- Spanish Language Department
+('fr', 'team', 'spanish', 'title', 'Enseignants d''espagnol'),
+('fr', 'team', 'spanish', 'subtitle', 'Département d''espagnol'),
+
+('fr', 'team', 'spanish', 'teacher1_1_name', 'Yozlem Ibriam'),
+('fr', 'team', 'spanish', 'teacher1_1_position', 'Espagnol'),
+('fr', 'team', 'spanish', 'teacher1_1_email', 'yo.ibriam@ntg-plovdiv.net'),
+
+-- History Department
+('fr', 'team', 'history', 'title', 'Enseignants en histoire et civilisations'),
+('fr', 'team', 'history', 'subtitle', 'Département d''histoire et civilisations'),
+
+('fr', 'team', 'history', 'teacher1_1_name', 'Vladimir Baev'),
+('fr', 'team', 'history', 'teacher1_1_position', 'Histoire et civilisations'),
+('fr', 'team', 'history', 'teacher1_1_email', 'v.baev@ntg-plovdiv.net'),
+
+('fr', 'team', 'history', 'teacher1_2_name', 'Rosen Ivanov'),
+('fr', 'team', 'history', 'teacher1_2_position', 'Histoire et civilisations'),
+('fr', 'team', 'history', 'teacher1_2_email', 'r.ivanov@ntg-plovdiv.net'),
+
+-- Informatics and IT Department
+('fr', 'team', 'it', 'title', 'Enseignants en informatique et TIC'),
+('fr', 'team', 'it', 'subtitle', 'Département d''informatique et technologies de l''information'),
+
+('fr', 'team', 'it', 'teacher1_1_name', 'Maria Grozeva'),
+('fr', 'team', 'it', 'teacher1_1_position', 'Informatique et TIC'),
+('fr', 'team', 'it', 'teacher1_1_email', 'm.grozeva@ntg-plovdiv.net'),
+
+('fr', 'team', 'it', 'teacher1_2_name', 'Nikolay Mitev'),
+('fr', 'team', 'it', 'teacher1_2_position', 'Chef du département TIC'),
+('fr', 'team', 'it', 'teacher1_2_email', 'n.mitev@ntg-plovdiv.net'),
+
+-- Professional Education Department
+('fr', 'team', 'professional', 'title', 'Enseignants en formation professionnelle'),
+('fr', 'team', 'professional', 'subtitle', 'Département de formation professionnelle'),
+
+('fr', 'team', 'professional', 'teacher1_1_name', 'Adelina Maneva'),
+('fr', 'team', 'professional', 'teacher1_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher1_1_email', 'a.maneva@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher1_2_name', 'Valeria Stamatova'),
+('fr', 'team', 'professional', 'teacher1_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher1_2_email', 'v.stamatova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher1_3_name', 'Veselin Atanasov'),
+('fr', 'team', 'professional', 'teacher1_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher1_3_email', 'v.atanasov@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher1_4_name', 'Vilislava Nikolova'),
+('fr', 'team', 'professional', 'teacher1_4_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher1_4_email', 'v.nikolova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher2_1_name', 'Vladka Marinova'),
+('fr', 'team', 'professional', 'teacher2_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher2_1_email', 'v.marinova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher2_2_name', 'Georgi Kaloferov'),
+('fr', 'team', 'professional', 'teacher2_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher2_2_email', 'g.kaloferov@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher2_3_name', 'Gergana Nikolova'),
+('fr', 'team', 'professional', 'teacher2_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher2_3_email', 'g.nikolova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher2_4_name', 'Delyana Nikolova'),
+('fr', 'team', 'professional', 'teacher2_4_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher2_4_email', 'd.nikolova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher3_1_name', 'Dzharir Amrun'),
+('fr', 'team', 'professional', 'teacher3_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher3_1_email', 'd.amrun@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher3_2_name', 'Dimitar Tenev'),
+('fr', 'team', 'professional', 'teacher3_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher3_2_email', 'd.tenev@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher3_3_name', 'Yordanka Arabadzhiyska'),
+('fr', 'team', 'professional', 'teacher3_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher3_3_email', 'y.arabadjiiska@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher3_4_name', 'Kalina Bobeva'),
+('fr', 'team', 'professional', 'teacher3_4_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher3_4_email', 'k.bobeva@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher4_1_name', 'Maria Atanasova'),
+('fr', 'team', 'professional', 'teacher4_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher4_1_email', 'm.atanasova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher4_2_name', 'Maria Kalinova'),
+('fr', 'team', 'professional', 'teacher4_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher4_2_email', 'm.kalinova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher4_3_name', 'Nedka Milenova'),
+('fr', 'team', 'professional', 'teacher4_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher4_3_email', 'n.milenova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher4_4_name', 'Navart Mardirosyan'),
+('fr', 'team', 'professional', 'teacher4_4_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher4_4_email', 'n.mardirosyan@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher5_1_name', 'Ognyan Ivanov'),
+('fr', 'team', 'professional', 'teacher5_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher5_1_email', 'o.ivanov@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher5_2_name', 'Polina Marinova'),
+('fr', 'team', 'professional', 'teacher5_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher5_2_email', 'p.marinova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher5_3_name', 'Radostina Stoyanova'),
+('fr', 'team', 'professional', 'teacher5_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher5_3_email', 'r.stoianova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher5_4_name', 'Reni Mihaylova'),
+('fr', 'team', 'professional', 'teacher5_4_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher5_4_email', 'r.mihailova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher6_1_name', 'Silvia Stoyanova'),
+('fr', 'team', 'professional', 'teacher6_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher6_1_email', 's.stoianova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher6_2_name', 'Stanislava Urumova'),
+('fr', 'team', 'professional', 'teacher6_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher6_2_email', 's.urumova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher6_3_name', 'Sofia Dimitrova'),
+('fr', 'team', 'professional', 'teacher6_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher6_3_email', 'sf.dimitrova@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher7_1_name', 'Gergana Boteva'),
+('fr', 'team', 'professional', 'teacher7_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher7_1_email', 'g.boteva@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher7_2_name', 'Ilian Pehlivanov'),
+('fr', 'team', 'professional', 'teacher7_2_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher7_2_email', 'i.pehlivanov@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher7_3_name', 'Miglena Kraevska'),
+('fr', 'team', 'professional', 'teacher7_3_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher7_3_email', 'm.kraevska@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher7_4_name', 'Nikolay Nikolov'),
+('fr', 'team', 'professional', 'teacher7_4_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher7_4_email', 'n.nikolov@ntg-plovdiv.net'),
+
+('fr', 'team', 'professional', 'teacher8_1_name', 'Tanya Arabadjieva'),
+('fr', 'team', 'professional', 'teacher8_1_position', 'Formation professionnelle'),
+('fr', 'team', 'professional', 'teacher8_1_email', 't.arabadjieva@ntg-plovdiv.net'),
+
+-- Support Staff Department
+('fr', 'team', 'support', 'title', 'Conseillers pédagogiques et psychologues'),
+('fr', 'team', 'support', 'subtitle', 'Conseillers pédagogiques et psychologues scolaires'),
+
+('fr', 'team', 'support', 'staff1_1_name', 'Stanimira Andonova'),
+('fr', 'team', 'support', 'staff1_1_position', 'Conseiller pédagogique'),
+('fr', 'team', 'support', 'staff1_1_email', 's.andonova@ntg-plovdiv.net'),
+
+('fr', 'team', 'support', 'staff1_2_name', 'Sofia Poryazova'),
+('fr', 'team', 'support', 'staff1_2_position', 'Psychologue scolaire'),
+('fr', 'team', 'support', 'staff1_2_email', 's.poriazova@ntg-plovdiv.net'),
+
+-- Non-teaching Staff Department
+('fr', 'team', 'administrative', 'title', 'Personnel non enseignant'),
+('fr', 'team', 'administrative', 'subtitle', 'Personnel administratif et technique'),
+
+('fr', 'team', 'administrative', 'staff1_1_name', 'Tsvetelina Tsvetkova'),
+('fr', 'team', 'administrative', 'staff1_1_position', 'Chef du service administratif'),
+('fr', 'team', 'administrative', 'staff1_1_email', 'c.cvetkova@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff1_2_name', 'Emilia Lisova'),
+('fr', 'team', 'administrative', 'staff1_2_position', 'Comptable'),
+('fr', 'team', 'administrative', 'staff1_2_email', 'e.lisova@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff1_3_name', 'Dobrinka Valkova'),
+('fr', 'team', 'administrative', 'staff1_3_position', 'Spécialiste RH'),
+('fr', 'team', 'administrative', 'staff1_3_email', 'd.valkova@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff1_4_name', 'Angelina Georgieva'),
+('fr', 'team', 'administrative', 'staff1_4_position', 'Spécialiste administratif avec fonctions de contrôle'),
+('fr', 'team', 'administrative', 'staff1_4_email', 'a.georgieva@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff2_1_name', 'Ekaterina Bakardjieva'),
+('fr', 'team', 'administrative', 'staff2_1_position', 'Assistant technique'),
+('fr', 'team', 'administrative', 'staff2_1_email', 'e.bakurdjieva@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff2_2_name', 'Maria Milanova'),
+('fr', 'team', 'administrative', 'staff2_2_position', 'Intendant'),
+('fr', 'team', 'administrative', 'staff2_2_email', 'm.milanova@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff2_3_name', 'Mina Boneva'),
+('fr', 'team', 'administrative', 'staff2_3_position', 'Bibliothécaire'),
+('fr', 'team', 'administrative', 'staff2_3_email', 'm.boneva@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff2_4_name', 'Dimitar Demerdjiev'),
+('fr', 'team', 'administrative', 'staff2_4_position', 'Chauffagiste'),
+('fr', 'team', 'administrative', 'staff2_4_email', 'd.demerdjiev@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff3_1_name', 'Albena Toseva'),
+('fr', 'team', 'administrative', 'staff3_1_position', 'Agent d''entretien'),
+('fr', 'team', 'administrative', 'staff3_1_email', 'a.toseva@ntg-plovdiv.net'),
+
+('fr', 'team', 'administrative', 'staff3_2_name', 'Rositsa Demerdjieva'),
+('fr', 'team', 'administrative', 'staff3_2_position', 'Agent d''entretien'),
+('fr', 'team', 'administrative', 'staff3_2_email', 'r.demerdjieva@ntg-plovdiv.net');
+
+
+
+
+INSERT INTO phrases (language, page, section, key, phrase) VALUES
+-- Título
+('es', 'team', 'header', 'title', 'Nuestro equipo - NTG'),
+
+-- Carrusel / Hero
+('es', 'team', 'hero', 'title', 'Nuestro equipo en la Escuela Secundaria Nacional de Comercio (NTG)'),
+('es', 'team', 'hero', 'subtitle', 'Educación de calidad para los futuros líderes en economía y negocios'),
+
+-- Director/a
+('es', 'team', 'director', 'name', 'Director/a de la NTG'),
+('es', 'team', 'director', 'position', 'Cargo de prueba'),
+('es', 'team', 'director', 'short_bio', 'Descripción de prueba'),
+
+-- Subdirectores
+('es', 'team', 'deputies', 'title', 'Subdirectores de la NTG'),
+('es', 'team', 'deputies', 'subtitle', 'Subdirectores de la NTG'),
+
+-- Subdirector 1
+('es', 'team', 'deputies', 'title_1', 'Veselka Tsekova'),
+('es', 'team', 'deputies', 'subtitle_1', 'Subdirectora, Educación general'),
+('es', 'team', 'deputies', 'deputy1_short_bio', 'Subdirectora de Educación General'),
+
+-- Subdirector 2
+('es', 'team', 'deputies', 'title_2', 'Gergana Nikolova'),
+('es', 'team', 'deputies', 'subtitle_2', 'Subdirectora, Formación profesional'),
+('es', 'team', 'deputies', 'deputy2_short_bio', 'Subdirectora de Formación Profesional'),
+
+-- Subdirector 3
+('es', 'team', 'deputies', 'title_3', 'Mariana Filipova'),
+('es', 'team', 'deputies', 'subtitle_3', 'Subdirectora de la NTG'),
+('es', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova coordina y participa directamente en la preparación y ejecución de programas y proyectos nacionales y europeos, así como en actividades extracurriculares basadas en intereses. Organiza y controla la realización de Olimpiadas en la NTG, la NVO en 10.º curso y preside la comisión escolar para la realización de los DZI.'),
+
+-- Subdirector 4
+('es', 'team', 'deputies', 'title_4', 'Iskra Koycheva'),
+('es', 'team', 'deputies', 'subtitle_4', 'Subdirectora de Actividades Educativas y Creativas'),
+('es', 'team', 'deputies', 'deputy4_short_bio', 'Subdirectora de Actividades Educativas y Creativas'),
+
+-- Departamento de Inglés
+('es', 'team', 'english', 'title', 'Profesores de inglés'),
+('es', 'team', 'english', 'subtitle', 'Departamento de Inglés'),
+
+-- Docentes de Inglés
+('es', 'team', 'english', 'teacher1_1_name', 'Antonina Dimitrova'),
+('es', 'team', 'english', 'teacher1_1_position', 'Inglés'),
+('es', 'team', 'english', 'teacher1_1_email', 'a.dimitrova@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher1_2_name', 'Bonka Velinova'),
+('es', 'team', 'english', 'teacher1_2_position', 'Inglés'),
+('es', 'team', 'english', 'teacher1_2_email', 'b.velinova@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher1_3_name', 'Boris Biserov'),
+('es', 'team', 'english', 'teacher1_3_position', 'Inglés'),
+('es', 'team', 'english', 'teacher1_3_email', 'b.borisov@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher1_4_name', 'Vladislava Pichurova'),
+('es', 'team', 'english', 'teacher1_4_position', 'Inglés'),
+('es', 'team', 'english', 'teacher1_4_email', 'v.pichurova@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher2_2_name', 'Denitsa Boyadjieva'),
+('es', 'team', 'english', 'teacher2_2_position', 'Inglés'),
+('es', 'team', 'english', 'teacher2_2_email', 'd.boyadjieva@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher2_3_name', 'Tatyana Delgado - Monserrat'),
+('es', 'team', 'english', 'teacher2_3_position', 'Inglés'),
+('es', 'team', 'english', 'teacher2_3_email', 't.delgado@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher2_4_name', 'Teodora Stoycheva'),
+('es', 'team', 'english', 'teacher2_4_position', 'Inglés'),
+('es', 'team', 'english', 'teacher2_4_email', 't.stoicheva@ntg-plovdiv.net'),
+
+('es', 'team', 'english', 'teacher2_5_name', 'Krastina Mavrodieva'),
+('es', 'team', 'english', 'teacher2_5_position', 'Inglés'),
+('es', 'team', 'english', 'teacher2_5_email', 'k.mavrodieva@ntg-plovdiv.net'),
+
+-- Departamento de Biología y Salud
+('es', 'team', 'biology', 'title', 'Profesores de biología y educación para la salud'),
+('es', 'team', 'biology', 'subtitle', 'Departamento de Biología y Educación para la Salud'),
+
+-- Docentes de Biología
+('es', 'team', 'biology', 'teacher1_2_name', 'Julieta Gocheva'),
+('es', 'team', 'biology', 'teacher1_2_position', 'Biología y Educación para la Salud'),
+('es', 'team', 'biology', 'teacher1_2_email', 'z.gocheva@ntg-plovdiv.net'),
+
+('es', 'team', 'biology', 'teacher1_3_name', 'Mariela Kehayova'),
+('es', 'team', 'biology', 'teacher1_3_position', 'Biología y Educación para la Salud'),
+('es', 'team', 'biology', 'teacher1_3_email', 'm.kehayova@ntg-plovdiv.net'),
+
+-- Departamento de Lengua y Literatura Búlgaras
+('es', 'team', 'bulgarian', 'title', 'Profesores de lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'subtitle', 'Departamento de Lengua y Literatura Búlgaras'),
+
+-- Docentes de Búlgaro
+('es', 'team', 'bulgarian', 'teacher1_1_name', 'Daniela Stoyanova'),
+('es', 'team', 'bulgarian', 'teacher1_1_position', 'Lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'teacher1_1_email', 'd.stoianova@ntg-plovdiv.net'),
+
+('es', 'team', 'bulgarian', 'teacher1_2_name', 'Elena Stoilova'),
+('es', 'team', 'bulgarian', 'teacher1_2_position', 'Lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'teacher1_2_email', 'e.stoilova@ntg-plovdiv.net'),
+
+('es', 'team', 'bulgarian', 'teacher1_3_name', 'Lyubomir Trifonov'),
+('es', 'team', 'bulgarian', 'teacher1_3_position', 'Lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'teacher1_3_email', 'l.trifonov@ntg-plovdiv.net'),
+
+('es', 'team', 'bulgarian', 'teacher1_4_name', 'Maria Kostadinova'),
+('es', 'team', 'bulgarian', 'teacher1_4_position', 'Lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'teacher1_4_email', 'm.kostadinova@ntg-plovdiv.net'),
+
+('es', 'team', 'bulgarian', 'teacher2_1_name', 'Stanimira Dimitrova'),
+('es', 'team', 'bulgarian', 'teacher2_1_position', 'Lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'teacher2_1_email', 's.dimitrova@ntg-plovdiv.net'),
+
+('es', 'team', 'bulgarian', 'teacher2_2_name', 'Tanka Taranska'),
+('es', 'team', 'bulgarian', 'teacher2_2_position', 'Lengua y literatura búlgaras'),
+('es', 'team', 'bulgarian', 'teacher2_2_email', 't.tarunska@ntg-plovdiv.net'),
+
+-- Departamento de Geografía y Economía
+('es', 'team', 'geography', 'title', 'Profesores de geografía y economía'),
+('es', 'team', 'geography', 'subtitle', 'Departamento de Geografía y Economía'),
+
+-- Docentes de Geografía
+('es', 'team', 'geography', 'teacher1_2_name', 'Yulia Kyoseva'),
+('es', 'team', 'geography', 'teacher1_2_position', 'Geografía y economía'),
+('es', 'team', 'geography', 'teacher1_2_email', 'j.kioseva@ntg-plovdiv.net'),
+
+-- Departamento de Educación Cívica
+('es', 'team', 'civil_rights', 'title', 'Profesores de educación cívica'),
+('es', 'team', 'civil_rights', 'subtitle', 'Departamento de Educación Cívica'),
+
+-- Docentes de Educación Cívica
+('es', 'team', 'civil_rights', 'teacher1_1_name', 'Velichka Kalaydzhiyska'),
+('es', 'team', 'civil_rights', 'teacher1_1_position', 'Educación cívica'),
+('es', 'team', 'civil_rights', 'teacher1_1_email', 'v.kalaydzhiyska@ntg-plovdiv.net'),
+
+('es', 'team', 'civil_rights', 'teacher1_2_name', 'Elena Angelova'),
+('es', 'team', 'civil_rights', 'teacher1_2_position', 'Educación cívica'),
+('es', 'team', 'civil_rights', 'teacher1_2_email', 'e.angelova@ntg-plovdiv.net'),
+
+('es', 'team', 'civil_rights', 'teacher1_3_name', 'Tatyana Vancheva'),
+('es', 'team', 'civil_rights', 'teacher1_3_position', 'Educación cívica'),
+('es', 'team', 'civil_rights', 'teacher1_3_email', 't.vancheva@ntg-plovdiv.net'),
+
+-- Departamento de Física y Astronomía
+('es', 'team', 'physics', 'title', 'Profesores de física y astronomía'),
+('es', 'team', 'physics', 'subtitle', 'Departamento de Física y Astronomía'),
+
+-- Docentes de Física
+('es', 'team', 'physics', 'teacher1_1_name', 'Vasilka Rubtsova'),
+('es', 'team', 'physics', 'teacher1_1_position', 'Física y astronomía'),
+('es', 'team', 'physics', 'teacher1_1_email', 'v.rubtsova@ntg-plovdiv.net'),
+
+('es', 'team', 'physics', 'teacher1_2_name', 'Galina Filipova'),
+('es', 'team', 'physics', 'teacher1_2_position', 'Física y astronomía'),
+('es', 'team', 'physics', 'teacher1_2_email', 'g.filipova@ntg-plovdiv.net'),
+
+-- Departamento de Educación Física y Deporte
+('es', 'team', 'pe', 'title', 'Profesores de educación física y deporte'),
+('es', 'team', 'pe', 'subtitle', 'Departamento de Educación Física y Deporte'),
+
+-- Docentes de EF
+('es', 'team', 'pe', 'teacher1_1_name', 'Bilyana Tyutyukova'),
+('es', 'team', 'pe', 'teacher1_1_position', 'Educación física y deporte'),
+('es', 'team', 'pe', 'teacher1_1_email', 'b.tutukova@ntg-plovdiv.net'),
+
+('es', 'team', 'pe', 'teacher1_2_name', 'Georgi Vaklushev'),
+('es', 'team', 'pe', 'teacher1_2_position', 'Educación física y deporte'),
+('es', 'team', 'pe', 'teacher1_2_email', 'g.vaklushev@ntg-plovdiv.net'),
+
+('es', 'team', 'pe', 'teacher1_4_name', 'Radoslav Boychev'),
+('es', 'team', 'pe', 'teacher1_4_position', 'Educación física y deporte'),
+('es', 'team', 'pe', 'teacher1_4_email', 'r.boychev@ntg-plovdiv.net'),
+
+('es', 'team', 'pe', 'teacher2_1_name', 'Silvia Anadolieva'),
+('es', 'team', 'pe', 'teacher2_1_position', 'Educación física y deporte'),
+('es', 'team', 'pe', 'teacher2_1_email', 's.anadolieva@ntg-plovdiv.net'),
+
+('es', 'team', 'pe', 'teacher2_2_name', 'Viktoria Delcheva'),
+('es', 'team', 'pe', 'teacher2_2_position', 'Educación física y deporte'),
+('es', 'team', 'pe', 'teacher2_2_email', 'v.delcheva@ntg-plovdiv.net'),
+
+-- Departamento de Filosofía
+('es', 'team', 'philosophy', 'title', 'Profesores de filosofía'),
+('es', 'team', 'philosophy', 'subtitle', 'Departamento de Filosofía'),
+
+-- Docentes de Filosofía
+('es', 'team', 'philosophy', 'teacher1_1_name', 'Elena Angelova'),
+('es', 'team', 'philosophy', 'teacher1_1_position', 'Filosofía'),
+('es', 'team', 'philosophy', 'teacher1_1_email', 'e.angelova@ntg-plovdiv.net'),
+
+('es', 'team', 'philosophy', 'teacher1_2_name', 'Tatyana Vancheva'),
+('es', 'team', 'philosophy', 'teacher1_2_position', 'Filosofía'),
+('es', 'team', 'philosophy', 'teacher1_2_email', 't.vancheva@ntg-plovdiv.net'),
+
+-- Departamento de Química y Medio Ambiente
+('es', 'team', 'chemistry', 'title', 'Profesores de química y protección del medio ambiente'),
+('es', 'team', 'chemistry', 'subtitle', 'Departamento de Química y Protección del Medio Ambiente'),
+
+-- Docentes de Química
+('es', 'team', 'chemistry', 'teacher1_1_name', 'Julieta Gocheva'),
+('es', 'team', 'chemistry', 'teacher1_1_position', 'Química y protección del medio ambiente'),
+('es', 'team', 'chemistry', 'teacher1_1_email', 'z.gocheva@ntg-plovdiv.net'),
+
+('es', 'team', 'chemistry', 'teacher1_2_name', 'Nevena Samohodova'),
+('es', 'team', 'chemistry', 'teacher1_2_position', 'Química y protección del medio ambiente'),
+('es', 'team', 'chemistry', 'teacher1_2_email', 'n.samohodova@ntg-plovdiv.net'),
+
+-- Departamento de Matemáticas
+('es', 'team', 'math', 'title', 'Profesores de matemáticas'),
+('es', 'team', 'math', 'subtitle', 'Departamento de Matemáticas'),
+
+-- Docentes de Matemáticas
+('es', 'team', 'math', 'teacher1_1_name', 'Vanya Bizova-Laleva'),
+('es', 'team', 'math', 'teacher1_1_position', 'Matemáticas'),
+('es', 'team', 'math', 'teacher1_1_email', 'v.laleva@ntg-plovdiv.net'),
+
+('es', 'team', 'math', 'teacher1_2_name', 'Vasilka Kuzeva'),
+('es', 'team', 'math', 'teacher1_2_position', 'Matemáticas'),
+('es', 'team', 'math', 'teacher1_2_email', 'v.kuzeva@ntg-plovdiv.net'),
+
+('es', 'team', 'math', 'teacher1_3_name', 'Daniela Dzhurova'),
+('es', 'team', 'math', 'teacher1_3_position', 'Matemáticas'),
+('es', 'team', 'math', 'teacher1_3_email', 'd.djurova@ntg-plovdiv.net'),
+
+('es', 'team', 'math', 'teacher1_4_name', 'Svetomira Ivanova'),
+('es', 'team', 'math', 'teacher1_4_position', 'Matemáticas'),
+('es', 'team', 'math', 'teacher1_4_email', 's.ivanova@ntg-plovdiv.net'),
+
+('es', 'team', 'math', 'teacher2_1_name', 'Vasilka Rubtsova'),
+('es', 'team', 'math', 'teacher2_1_position', 'Matemáticas'),
+('es', 'team', 'math', 'teacher2_1_email', 'v.rubtsova@ntg-plovdiv.net'),
+
+-- Departamento de Alemán
+('es', 'team', 'german', 'title', 'Profesores de alemán'),
+('es', 'team', 'german', 'subtitle', 'Departamento de Alemán'),
+
+-- Docentes de Alemán
+('es', 'team', 'german', 'teacher1_1_name', 'Antoniya Pashova'),
+('es', 'team', 'german', 'teacher1_1_position', 'Alemán'),
+('es', 'team', 'german', 'teacher1_1_email', 'a.pashova@ntg-plovdiv.net'),
+
+('es', 'team', 'german', 'teacher1_2_name', 'Emilian Georgiev'),
+('es', 'team', 'german', 'teacher1_2_position', 'Alemán'),
+('es', 'team', 'german', 'teacher1_2_email', 'e.georgiev@ntg-plovdiv.net'),
+
+('es', 'team', 'german', 'teacher1_3_name', 'Maria Dzhokova'),
+('es', 'team', 'german', 'teacher1_3_position', 'Alemán'),
+('es', 'team', 'german', 'teacher1_3_email', 'm.djokova@ntg-plovdiv.net'),
+
+('es', 'team', 'german', 'teacher1_4_name', 'Svetlana Cholakova'),
+('es', 'team', 'german', 'teacher1_4_position', 'Alemán'),
+('es', 'team', 'german', 'teacher1_4_email', 's.cholakova@ntg-plovdiv.net'),
+
+-- Departamento de Español
+('es', 'team', 'spanish', 'title', 'Profesores de español'),
+('es', 'team', 'spanish', 'subtitle', 'Departamento de Español'),
+
+-- Docentes de Español
+('es', 'team', 'spanish', 'teacher1_1_name', 'Yozlem Ibriam'),
+('es', 'team', 'spanish', 'teacher1_1_position', 'Español'),
+('es', 'team', 'spanish', 'teacher1_1_email', 'yo.ibriam@ntg-plovdiv.net'),
+
+-- Departamento de Historia y Civilizaciones
+('es', 'team', 'history', 'title', 'Profesores de historia y civilizaciones'),
+('es', 'team', 'history', 'subtitle', 'Departamento de Historia y Civilizaciones'),
+
+-- Docentes de Historia
+('es', 'team', 'history', 'teacher1_1_name', 'Vladimir Baev'),
+('es', 'team', 'history', 'teacher1_1_position', 'Historia y civilizaciones'),
+('es', 'team', 'history', 'teacher1_1_email', 'v.baev@ntg-plovdiv.net'),
+
+('es', 'team', 'history', 'teacher1_2_name', 'Rosen Ivanov'),
+('es', 'team', 'history', 'teacher1_2_position', 'Historia y civilizaciones'),
+('es', 'team', 'history', 'teacher1_2_email', 'r.ivanov@ntg-plovdiv.net'),
+
+-- Departamento de Informática y TI
+('es', 'team', 'it', 'title', 'Profesores de informática y TI'),
+('es', 'team', 'it', 'subtitle', 'Departamento de Informática y Tecnologías de la Información'),
+
+-- Docentes de Informática
+('es', 'team', 'it', 'teacher1_1_name', 'Maria Grozeva'),
+('es', 'team', 'it', 'teacher1_1_position', 'Informática y TI'),
+('es', 'team', 'it', 'teacher1_1_email', 'm.grozeva@ntg-plovdiv.net'),
+
+('es', 'team', 'it', 'teacher1_2_name', 'Nikolay Mitev'),
+('es', 'team', 'it', 'teacher1_2_position', 'Jefe del Departamento de TIC'),
+('es', 'team', 'it', 'teacher1_2_email', 'n.mitev@ntg-plovdiv.net'),
+
+-- Departamento de Formación Profesional
+('es', 'team', 'professional', 'title', 'Profesores de formación profesional'),
+('es', 'team', 'professional', 'subtitle', 'Departamento de Formación Profesional'),
+
+-- Docentes FP - primera fila
+('es', 'team', 'professional', 'teacher1_1_name', 'Adelina Maneva'),
+('es', 'team', 'professional', 'teacher1_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher1_1_email', 'a.maneva@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher1_2_name', 'Valeria Stamatova'),
+('es', 'team', 'professional', 'teacher1_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher1_2_email', 'v.stamatova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher1_3_name', 'Veselin Atanasov'),
+('es', 'team', 'professional', 'teacher1_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher1_3_email', 'v.atanasov@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher1_4_name', 'Vilislava Nikolova'),
+('es', 'team', 'professional', 'teacher1_4_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher1_4_email', 'v.nikolova@ntg-plovdiv.net'),
+
+-- Docentes FP - segunda fila
+('es', 'team', 'professional', 'teacher2_1_name', 'Vladka Marinova'),
+('es', 'team', 'professional', 'teacher2_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher2_1_email', 'v.marinova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher2_2_name', 'Georgi Kaloferov'),
+('es', 'team', 'professional', 'teacher2_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher2_2_email', 'g.kaloferov@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher2_3_name', 'Gergana Nikolova'),
+('es', 'team', 'professional', 'teacher2_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher2_3_email', 'g.nikolova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher2_4_name', 'Delyana Nikolova'),
+('es', 'team', 'professional', 'teacher2_4_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher2_4_email', 'd.nikolova@ntg-plovdiv.net'),
+
+-- Docentes FP - tercera fila
+('es', 'team', 'professional', 'teacher3_1_name', 'Dzharir Amrun'),
+('es', 'team', 'professional', 'teacher3_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher3_1_email', 'd.amrun@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher3_2_name', 'Dimitar Tenev'),
+('es', 'team', 'professional', 'teacher3_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher3_2_email', 'd.tenev@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher3_3_name', 'Yordanka Arabadzhiyska'),
+('es', 'team', 'professional', 'teacher3_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher3_3_email', 'y.arabadjiiska@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher3_4_name', 'Kalina Bobeva'),
+('es', 'team', 'professional', 'teacher3_4_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher3_4_email', 'k.bobeva@ntg-plovdiv.net'),
+
+-- Docentes FP - cuarta fila
+('es', 'team', 'professional', 'teacher4_1_name', 'Maria Atanasova'),
+('es', 'team', 'professional', 'teacher4_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher4_1_email', 'm.atanasova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher4_2_name', 'Maria Kalinova'),
+('es', 'team', 'professional', 'teacher4_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher4_2_email', 'm.kalinova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher4_3_name', 'Nedka Milenova'),
+('es', 'team', 'professional', 'teacher4_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher4_3_email', 'n.milenova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher4_4_name', 'Navart Mardirosyan'),
+('es', 'team', 'professional', 'teacher4_4_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher4_4_email', 'n.mardirosyan@ntg-plovdiv.net'),
+
+-- Docentes FP - quinta fila
+('es', 'team', 'professional', 'teacher5_1_name', 'Ognyan Ivanov'),
+('es', 'team', 'professional', 'teacher5_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher5_1_email', 'o.ivanov@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher5_2_name', 'Polina Marinova'),
+('es', 'team', 'professional', 'teacher5_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher5_2_email', 'p.marinova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher5_3_name', 'Radostina Stoyanova'),
+('es', 'team', 'professional', 'teacher5_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher5_3_email', 'r.stoianova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher5_4_name', 'Reni Mihaylova'),
+('es', 'team', 'professional', 'teacher5_4_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher5_4_email', 'r.mihailova@ntg-plovdiv.net'),
+
+-- Docentes FP - sexta fila
+('es', 'team', 'professional', 'teacher6_1_name', 'Silvia Stoyanova'),
+('es', 'team', 'professional', 'teacher6_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher6_1_email', 's.stoianova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher6_2_name', 'Stanislava Urumova'),
+('es', 'team', 'professional', 'teacher6_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher6_2_email', 's.urumova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher6_3_name', 'Sofia Dimitrova'),
+('es', 'team', 'professional', 'teacher6_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher6_3_email', 'sf.dimitrova@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher7_1_name', 'Gergana Boteva'),
+('es', 'team', 'professional', 'teacher7_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher7_1_email', 'g.boteva@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher7_2_name', 'Ilian Pehlivanov'),
+('es', 'team', 'professional', 'teacher7_2_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher7_2_email', 'i.pehlivanov@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher7_3_name', 'Miglena Kraevska'),
+('es', 'team', 'professional', 'teacher7_3_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher7_3_email', 'm.kraevska@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher7_4_name', 'Nikolay Nikolov'),
+('es', 'team', 'professional', 'teacher7_4_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher7_4_email', 'n.nikolov@ntg-plovdiv.net'),
+
+('es', 'team', 'professional', 'teacher8_1_name', 'Tanya Arabadjieva'),
+('es', 'team', 'professional', 'teacher8_1_position', 'Formación profesional'),
+('es', 'team', 'professional', 'teacher8_1_email', 't.arabadjieva@ntg-plovdiv.net'),
+
+-- Consejeros y Psicólogos
+('es', 'team', 'support', 'title', 'Consejeros pedagógicos y psicólogos'),
+('es', 'team', 'support', 'subtitle', 'Consejeros pedagógicos y psicólogos escolares'),
+
+('es', 'team', 'support', 'staff1_1_name', 'Stanimira Andonova'),
+('es', 'team', 'support', 'staff1_1_position', 'Consejera pedagógica'),
+('es', 'team', 'support', 'staff1_1_email', 's.andonova@ntg-plovdiv.net'),
+
+('es', 'team', 'support', 'staff1_2_name', 'Sofia Poryazova'),
+('es', 'team', 'support', 'staff1_2_position', 'Psicóloga escolar'),
+('es', 'team', 'support', 'staff1_2_email', 's.poriazova@ntg-plovdiv.net'),
+
+-- Personal no docente
+('es', 'team', 'administrative', 'title', 'Personal no docente'),
+('es', 'team', 'administrative', 'subtitle', 'Personal administrativo y de apoyo'),
+
+('es', 'team', 'administrative', 'staff1_1_name', 'Tsvetelina Tsvetkova'),
+('es', 'team', 'administrative', 'staff1_1_position', 'Jefa del Servicio Administrativo'),
+('es', 'team', 'administrative', 'staff1_1_email', 'c.cvetkova@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff1_2_name', 'Emilia Lisova'),
+('es', 'team', 'administrative', 'staff1_2_position', 'Contable'),
+('es', 'team', 'administrative', 'staff1_2_email', 'e.lisova@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff1_3_name', 'Dobrinka Valkova'),
+('es', 'team', 'administrative', 'staff1_3_position', 'Especialista en recursos humanos'),
+('es', 'team', 'administrative', 'staff1_3_email', 'd.valkova@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff1_4_name', 'Angelina Georgieva'),
+('es', 'team', 'administrative', 'staff1_4_position', 'Especialista administrativo con funciones de control'),
+('es', 'team', 'administrative', 'staff1_4_email', 'a.georgieva@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff2_1_name', 'Ekaterina Bakardjieva'),
+('es', 'team', 'administrative', 'staff2_1_position', 'Asistente técnica'),
+('es', 'team', 'administrative', 'staff2_1_email', 'e.bakurdjieva@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff2_2_name', 'Maria Milanova'),
+('es', 'team', 'administrative', 'staff2_2_position', 'Administradora de instalaciones'),
+('es', 'team', 'administrative', 'staff2_2_email', 'm.milanova@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff2_3_name', 'Mina Boneva'),
+('es', 'team', 'administrative', 'staff2_3_position', 'Bibliotecaria'),
+('es', 'team', 'administrative', 'staff2_3_email', 'm.boneva@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff2_4_name', 'Dimitar Demerdjiev'),
+('es', 'team', 'administrative', 'staff2_4_position', 'Técnico de calefacción'),
+('es', 'team', 'administrative', 'staff2_4_email', 'd.demerdjiev@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff3_1_name', 'Albena Toseva'),
+('es', 'team', 'administrative', 'staff3_1_position', 'Personal de limpieza'),
+('es', 'team', 'administrative', 'staff3_1_email', 'a.toseva@ntg-plovdiv.net'),
+
+('es', 'team', 'administrative', 'staff3_2_name', 'Rositsa Demerdjieva'),
+('es', 'team', 'administrative', 'staff3_2_position', 'Personal de limpieza'),
+('es', 'team', 'administrative', 'staff3_2_email', 'r.demerdjieva@ntg-plovdiv.net');
