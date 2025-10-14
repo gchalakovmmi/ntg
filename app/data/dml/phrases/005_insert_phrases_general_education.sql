@@ -29,7 +29,8 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'general_education', 'subjects', 'history_title', 'История и цивилизации'),
 ('bg', 'general_education', 'subjects', 'history_desc', 'Анализ на исторически събития и процеси, формиращи съвременния свят.'),
 ('bg', 'general_education', 'subjects', 'bulgarian_title', 'Български език'),
-('bg', 'general_education', 'subjects', 'bulgarian_desc', 'Изучаване на родния език, литература и културно наследство.'),
+('bg', 'general_education', 'subjects', 'bulgarian_desc', 'Учебният предмет български език и литература изгражда основата на компетентностите по български език и на
+грамотността за четене и е пряко свързан с постигането на базовата, функционалната и комплексната грамотност.'),
 ('bg', 'general_education', 'subjects', 'english_title', 'Чужд език'),
 ('bg', 'general_education', 'subjects', 'english_desc', 'Развиване на езикови компетенции за международна комуникация на английски език, немски език, руски или испански език.'),
 ('bg', 'general_education', 'subjects', 'art_title', 'Изобразително изкуство'),
