@@ -75,6 +75,15 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'partners', 'ads', 'contribution', 'Design services for NTG'),
 ('en', 'partners', 'ads', 'since', '2020'),
 
+('bg', 'partners', 'grawe', 'name', 'ГРАВЕ България'),
+('bg', 'partners', 'grawe', 'description', 'ГРАВЕ България Животозастраховане ЕАД е българско застрахователно дружество'),
+('bg', 'partners', 'grawe', 'contribution', 'Подпомага образователни инициативи на НТГ'),
+('bg', 'partners', 'grawe', 'since', '2020 г.'),
+('en', 'partners', 'grawe', 'name', 'GRAWE Bulgaria'),
+('en', 'partners', 'grawe', 'description', 'GRAWE Bulgaria Life Insurance EAD is a Bulgarian insurance company'),
+('en', 'partners', 'grawe', 'contribution', 'Supports educational initiatives at NTG'),
+('en', 'partners', 'grawe', 'since', '2020'),
+
 ('bg', 'partners', 'unicredit', 'name', 'УниКредит Булбанк'),
 ('bg', 'partners', 'unicredit', 'description', 'Водеща банка в България, която активно подкрепя образованието.'),
 ('bg', 'partners', 'unicredit', 'contribution', 'Стипендии, модерно оборудване, програми за стажове'),
