@@ -3,9 +3,10 @@ package academic_schedule
 import "NTG/web/templates/base"
 
 templ components(phrases map[string]map[string]string) {
-	<link rel="stylesheet" href="/static/css/academic_schedule.css"/>
+	<link rel="stylesheet" href="/static/css/dzi.css"/>
+	@sectionHero(phrases)
 	@documentsSection(phrases)
-	@gradeSchedules(phrases)
+	// @gradeSchedules(phrases)
 }
 
 templ Handler(page, language string, phrases map[string]map[string]string) {

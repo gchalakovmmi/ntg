@@ -199,4 +199,18 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'academic_schedule', 'documents', 'subtitle', 'Haga clic en un documento para verlo'),
 ('es', 'academic_schedule', 'documents', 'view_download', 'Ver y Descargar'),
 ('es', 'academic_schedule', 'documents', 'doc1', 'Orden Calendario Académico 2025-2026'),
-('es', 'academic_schedule', 'documents', 'doc1_desc', 'Orden para aprobar el calendario académico para el año escolar 2025/2026.');
+('es', 'academic_schedule', 'documents', 'doc1_desc', 'Orden para aprobar el calendario académico para el año escolar 2025/2026.'),
+
+-- Hero Section
+('bg', 'academic_schedule', 'hero', 'title', 'Основни документи по ДЗИ за учебната 2025/2026'),
+('bg', 'academic_schedule', 'hero', 'subtitle', 'Всички необходими документи, планове и графици за текущата учебна година'),
+('bg', 'academic_schedule', 'hero', 'documents_count', '1+'),
+('bg', 'academic_schedule', 'hero', 'documents_label', 'Документа'),
+('bg', 'academic_schedule', 'hero', 'academic_year', '2025/26'),
+('bg', 'academic_schedule', 'hero', 'academic_year_label', 'Учебна година'),
+('en', 'academic_schedule', 'hero', 'title', 'Basic Documents for Academic Year 2025/2026'),
+('en', 'academic_schedule', 'hero', 'subtitle', 'All necessary documents, plans and schedules for the current academic year'),
+('en', 'academic_schedule', 'hero', 'documents_count', '1+'),
+('en', 'academic_schedule', 'hero', 'documents_label', 'Documents'),
+('en', 'academic_schedule', 'hero', 'academic_year', '2025/26'),
+('en', 'academic_schedule', 'hero', 'academic_year_label', 'Academic Year');
