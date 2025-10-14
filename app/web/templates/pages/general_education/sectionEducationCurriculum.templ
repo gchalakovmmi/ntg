@@ -1,39 +1,7 @@
 package general_education
 
 templ sectionEducationCurriculum(phrases map[string]map[string]string) {
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 	<style>
-
-        .section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            position: relative;
-            margin-bottom: 50px;
-            text-align: center;
-        }
-
-        .section-title h2 {
-            font-weight: 800;
-            color: var(--dark-red);
-            position: relative;
-            display: inline-block;
-            padding-bottom: 15px;
-        }
-
-        .section-title h2:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--primary-gold);
-        }
-
         .curriculum-section {
             background-color: var(--light-bg);
         }
@@ -46,7 +14,7 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             margin-bottom: 40px;
         }
 
-        .subject-header {
+        .curriculum-subject-header {
             display: flex;
             align-items: center;
             margin-bottom: 30px;
@@ -54,22 +22,39 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             border-bottom: 3px solid var(--primary-gold);
         }
 
-        .subject-icon {
-            font-size: 2.5rem;
-            color: var(--primary-red);
-            margin-right: 20px;
-            min-width: 60px;
-            text-align: center;
+        .curriculum-subject-icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--primary-red);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
         }
 
-        .subject-title {
+        .curriculum-subject-icon:hover {
+            border-color: var(--primary-gold);
+            transform: translateY(-3px);
+        }
+
+        .curriculum-subject-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+        }
+
+        .curriculum-subject-title {
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--dark-red);
             margin: 0;
         }
 
-        .intro-text {
+        .curriculum-intro-text {
             font-size: 1.1rem;
             line-height: 1.8;
             color: #555;
@@ -77,11 +62,11 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             text-align: justify;
         }
 
-        .goals-section {
+        .curriculum-goals-section {
             margin-top: 30px;
         }
 
-        .goals-title {
+        .curriculum-goals-title {
             font-size: 1.3rem;
             font-weight: 700;
             color: var(--dark-red);
@@ -90,28 +75,28 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             align-items: center;
         }
 
-        .goals-title i {
+        .curriculum-goals-title i {
             color: var(--primary-gold);
             margin-right: 12px;
         }
 
-        .goals-list {
+        .curriculum-goals-list {
             list-style: none;
             padding: 0;
         }
 
-        .goals-list li {
+        .curriculum-goals-list li {
             padding: 15px 0 15px 35px;
             position: relative;
             line-height: 1.7;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
-        .goals-list li:last-child {
+        .curriculum-goals-list li:last-child {
             border-bottom: none;
         }
 
-        .goals-list li:before {
+        .curriculum-goals-list li:before {
             content: '\f058';
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
@@ -121,7 +106,7 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             font-size: 1.1rem;
         }
 
-        .stage-badge {
+        .curriculum-stage-badge {
             display: inline-block;
             background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
             color: white;
@@ -132,7 +117,7 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             margin-bottom: 20px;
         }
 
-        .highlight-box {
+        .curriculum-highlight-box {
             background: linear-gradient(135deg, rgba(178, 34, 34, 0.05), rgba(212, 175, 55, 0.05));
             border-left: 4px solid var(--primary-gold);
             padding: 25px;
@@ -140,7 +125,7 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
             margin: 25px 0;
         }
 
-        .highlight-box p {
+        .curriculum-highlight-box p {
             margin: 0;
             line-height: 1.7;
         }
@@ -151,37 +136,22 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
                 padding: 30px 20px;
             }
 
-            .subject-header {
+            .curriculum-subject-header {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .subject-icon {
+            .curriculum-subject-icon {
                 margin-right: 0;
                 margin-bottom: 15px;
             }
 
-            .subject-title {
+            .curriculum-subject-title {
                 font-size: 1.5rem;
             }
 
-            .intro-text {
+            .curriculum-intro-text {
                 text-align: left;
-            }
-        }
-
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
             }
         }
     </style>
@@ -192,48 +162,48 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 				<p>Изграждане на компетентности за пълноценно образование</p>
 			</div>
 			<!-- Bulgarian Language -->
-			<div class="curriculum-content animate-fade-in">
-				<div class="subject-header">
-					<div class="subject-icon">
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
 						<i class="fas fa-book"></i>
 					</div>
-					<h3 class="subject-title">Български език и литература</h3>
+					<h3 class="curriculum-subject-title">Български език и литература</h3>
 				</div>
-				<p class="intro-text">
+				<p class="curriculum-intro-text">
 					Учебният предмет български език и литература изгражда основата на компетентностите по български език и на грамотността за четене и е пряко свързан с постигането на базовата, функционалната и комплексната грамотност.
 				</p>
-				<div class="goals-section">
-					<h4 class="goals-title">
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
 						Целите на обучението са:
 					</h4>
-					<ul class="goals-list">
+					<ul class="curriculum-goals-list">
 						<li>Развиване на уменията на учениците да търсят, да извличат, да обработват и да използват информация от различни информационни източници за решаване на комуникативни задачи, както и на уменията за представяне на различни видове информация по зададени параметри</li>
 						<li>Познаване и прилагане на книжовните езикови норми</li>
 						<li>Придобиване на умения за сравняване и за анализиране на различни проблеми при участие в диалог и в дискусия, на умения за създаване на устни и на писмени текстове</li>
-						<li>Усъвършенстване на уменията на учениците да търсят, да анализират и да синтезират информация от различни информационни източници и развиване на уменията да я обработват и да я използват за решаване на комуникативни задачи</li>
+						<li>Усъвършенстване на уменията на учениците да търсят, да анализират и да синтезират информация от různи информационни източници и развиване на уменията да я обработват и да я използват за решаване на комуникативни задачи</li>
 						<li>Прилагане в речевата практика на книжовните езикови норми</li>
 						<li>Усъвършенстване на уменията за сравняване и за анализиране на различни гледни точки при участие в диалог и в дискусия, на умения за създаване на устни и на писмени текстове</li>
 					</ul>
 				</div>
 			</div>
 			<!-- Foreign Languages -->
-			<div class="curriculum-content animate-fade-in">
-				<div class="subject-header">
-					<div class="subject-icon">
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
 						<i class="fas fa-language"></i>
 					</div>
-					<h3 class="subject-title">Чужди езици</h3>
+					<h3 class="curriculum-subject-title">Чужди езици</h3>
 				</div>
-				<p class="intro-text">
+				<p class="curriculum-intro-text">
 					Учебният предмет чужд език е в основата на уменията за общуване на чужди езици. В НТГ като първи чужд език, разширена подготовка, се изучават английски, немски и испански език, а като втори чужд език – английски, немски и руски. Във втория гимназиален етап, вместо общообразователния учебен предмет чужд език, се осъществява обучение по чужд език по професията. За придобиване на общообразователна подготовка учебният предмет чужд език може да се изучава и с други, различни от посочените езици, ако училищният учебен план предвижда това.
 				</p>
-				<div class="goals-section">
-					<h4 class="goals-title">
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
 						Целите на обучението са:
 					</h4>
-					<ul class="goals-list">
+					<ul class="curriculum-goals-list">
 						<li>Да повишава езиковата и общата култура и културата на общуване на учениците</li>
 						<li>Да насърчава учениците да осмислят националната си идентичност в условията на езиково и културно многообразие</li>
 						<li>Да изгражда междукултурни компетентности у учениците и да ги подготвя за общуване с други културни и езикови общности</li>
@@ -247,78 +217,77 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 				</div>
 			</div>
 			<!-- Mathematics - First Stage -->
-			<div class="curriculum-content animate-fade-in">
-				<div class="subject-header">
-					<div class="subject-icon">
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
 						<i class="fas fa-square-root-alt"></i>
 					</div>
-					<h3 class="subject-title">Математика</h3>
+					<h3 class="curriculum-subject-title">Математика</h3>
 				</div>
-				<span class="stage-badge">Първи гимназиален етап</span>
-				<p class="intro-text">
+				<span class="curriculum-stage-badge">Първи гимназиален етап</span>
+				<p class="curriculum-intro-text">
 					Учебните предмети математика, физика и астрономия, биология и здравно образование, химия и опазване на околната среда и предприемачество са пряко свързани с придобиване съответно на математическа компетентност и на основни компетентности в областта на природните науки и технологиите и са насочени към постигане на математическа, на научна грамотност, придобиване на умения да се реагира на новости и да се поема отговорност, като се гради умение за инициативност и предприемчивост.
 				</p>
-				<div class="goals-section">
-					<h4 class="goals-title">
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
 						Целите на обучението по математика в първи гимназиален етап са:
 					</h4>
-					<ul class="goals-list">
+					<ul class="curriculum-goals-list">
 						<li>Формиране на логическо и пространствено мислене, наблюдателност и на математическа компетентност</li>
 						<li>Формирането на математическа компетентност за етапа е на познавателно, комуникационно и аналитично ниво, като се развие способността и желанието на индивида да използва математически методи на мислене и на представяне - чрез формули, модели, конструкции, графики, диаграми - най-общо казано "работа с данни"</li>
 						<li>Математическата компетентност за първи гимназиален етап включва стабилно познаване на факти, основни величини и закономерности, както и набор от познавателни и практически умения, необходими за решаване на задачи и проблеми чрез подбор и прилагане на основни методи и инструменти</li>
 						<li>Математическата компетентност на този етап предполага и поемане на отговорност за самостоятелно изпълнение на задачи в процеса на обучение, както и проява на отношение и избор на решение и поведение съобразно конкретни проблеми и обстоятелства</li>
 					</ul>
 				</div>
-				<div class="highlight-box">
+				<div class="curriculum-highlight-box">
 					<p><strong>Математическата компетентност за първи гимназиален етап</strong> включва стабилно познаване на факти, основни величини и закономерности, както и набор от познавателни и практически умения, необходими за решаване на задачи и проблеми чрез подбор и прилагане на основни методи и инструменти.</p>
 				</div>
 			</div>
 			<!-- Mathematics - Second Stage -->
-			<div class="curriculum-content animate-fade-in">
-				<div class="subject-header">
-					<div class="subject-icon">
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
 						<i class="fas fa-calculator"></i>
 					</div>
-					<h3 class="subject-title">Математика</h3>
+					<h3 class="curriculum-subject-title">Математика</h3>
 				</div>
-				<span class="stage-badge">Втори гимназиален етап</span>
-				<p class="intro-text">
+				<span class="curriculum-stage-badge">Втори гимназиален етап</span>
+				<p class="curriculum-intro-text">
 					Във втория гимназиален етап математическото образование се фокусира върху по-сложни аналитични умения и практическото приложение на математическите знания в реални ситуации и други предметни области.
 				</p>
-				<div class="goals-section">
-					<h4 class="goals-title">
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
 						Целите на обучението по математика във втори гимназиален етап са:
 					</h4>
-					<ul class="goals-list">
+					<ul class="curriculum-goals-list">
 						<li>Формиране на логическо мислене, комбинативност, наблюдателност и на математическа компетентност</li>
 						<li>Формирането на математическа компетентност за етапа е главно на комуникационно и аналитично ниво, като се развие способността да прилага математически разсъждения за решаване на проблеми в другите предметни области и ежедневието</li>
 						<li>Математическата компетентност на този етап включва фактологични и теоретични знания в широк контекст, както и набор от познавателни и практически умения, необходими за решаването на конкретни проблеми. Това означава разбиране на дадена реална ситуация, която води до математическа задача; решаване на задачата при използване на инструментни помощни материали (включително и технологии), които могат да подпомогнат математическите дейности, както и дълбоко разбиране на процеса</li>
 					</ul>
 				</div>
-				<div class="highlight-box">
+				<div class="curriculum-highlight-box">
 					<p><strong>Математическата компетентност на втори гимназиален етап</strong> е главно на комуникационно и аналитично ниво и включва фактологични и теоретични знания в широк контекст, както и набор от познавателни и практически умения, необходими за решаването на конкретни проблеми с използване на инструментни помощни материали и технологии.</p>
 				</div>
 			</div>
 			<!-- Natural Sciences -->
-			<div class="curriculum-content animate-fade-in">
-				<div class="subject-header">
-					<div class="subject-icon">
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
 						<i class="fas fa-flask"></i>
 					</div>
-					<h3 class="subject-title">Природни науки и технологии</h3>
+					<h3 class="curriculum-subject-title">Природни науки и технологии</h3>
 				</div>
-				<p class="intro-text">
+				<p class="curriculum-intro-text">
 					Учебните предмети математика, физика и астрономия, биология и здравно образование, химия и опазване на околната среда и предприемачество са пряко свързани с придобиване съответно на математическа компетентност и на основни компетентности в областта на природните науки и технологиите и са насочени към постигане на математическа, на научна грамотност, придобиване на умения да се реагира на новости и да се поема отговорност, като се гради умение за инициативност и предприемчивост.
 				</p>
-				<div class="highlight-box">
+				<div class="curriculum-highlight-box">
 					<p>Обучението по природни науки и технологии подготвя учениците за <strong>научна грамотност</strong> и развива способността им да прилагат научни методи за разбиране на света около тях, както и да взимат информирани решения в личния и професионалния си живот.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
         // Intersection Observer for animations
         const observerOptions = {
