@@ -125,7 +125,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'home', 'header', 'title', 'NTS - Nationale Handelsschule'),
 
 -- Carousel
-('de', 'home', 'carousel', 'slide1_title', 'NATIONALE HANDELSSCHULE'),
+('de', 'home', 'carousel', 'slide1_title', 'National Handelsgymnasium'),
 ('de', 'home', 'carousel', 'slide1_subtitle', 'Wir schaffen die Zukunftsführer in Wirtschaft und Business'),
 ('de', 'home', 'carousel', 'slide1_button', 'Virtueller Rundgang'),
 ('de', 'home', 'carousel', 'slide2_title', '115 Jahre Bildungstradition'),
