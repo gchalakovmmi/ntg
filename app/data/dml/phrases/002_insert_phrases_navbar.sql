@@ -242,4 +242,12 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'base', 'navbar', 'nvo', 'NVO'),
 ('es', 'base', 'navbar', 'dzi', 'DZI'),
 ('es', 'base', 'navbar', 'zdippk', 'ZDIPPK'),
-('es', 'base', 'navbar', 'academic_schedule', 'Horario Académico');
+('es', 'base', 'navbar', 'academic_schedule', 'Horario Académico'),
+('en', 'base', 'navbar', 'erazmus', 'European Programs'),
+('en', 'base', 'navbar', 'national-programs', 'National Programs'),
+('de', 'base', 'navbar', 'erazmus', 'Europäische Programme'),
+('de', 'base', 'navbar', 'national-programs', 'Nationale Programme'),
+('fr', 'base', 'navbar', 'erazmus', 'Programmes Européens'),
+('fr', 'base', 'navbar', 'national-programs', 'Programmes Nationaux'),
+('es', 'base', 'navbar', 'erazmus', 'Programas Europeos'),
+('es', 'base', 'navbar', 'national-programs', 'Programas Nacionales');

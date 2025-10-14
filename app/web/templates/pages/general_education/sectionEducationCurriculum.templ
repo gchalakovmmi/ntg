@@ -158,8 +158,8 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 	<section class="section curriculum-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>Цели на обучението</h2>
-				<p>Изграждане на компетентности за пълноценно образование</p>
+				<h2>{ phrases["curriculum"]["title"] }</h2>
+				<p>{ phrases["curriculum"]["subtitle"] }</p>
 			</div>
 			<!-- Bulgarian Language -->
 			<div class="curriculum-content animate-on-scroll">
@@ -167,23 +167,23 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 					<div class="curriculum-subject-icon">
 						<i class="fas fa-book"></i>
 					</div>
-					<h3 class="curriculum-subject-title">Български език и литература</h3>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["bulgarian_language_title"] }</h3>
 				</div>
 				<p class="curriculum-intro-text">
-					Учебният предмет български език и литература изгражда основата на компетентностите по български език и на грамотността за четене и е пряко свързан с постигането на базовата, функционалната и комплексната грамотност.
+					{ phrases["curriculum"]["bulgarian_language_intro"] }
 				</p>
 				<div class="curriculum-goals-section">
 					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
-						Целите на обучението са:
+						{ phrases["curriculum"]["goals_header"] }
 					</h4>
 					<ul class="curriculum-goals-list">
-						<li>Развиване на уменията на учениците да търсят, да извличат, да обработват и да използват информация от различни информационни източници за решаване на комуникативни задачи, както и на уменията за представяне на различни видове информация по зададени параметри</li>
-						<li>Познаване и прилагане на книжовните езикови норми</li>
-						<li>Придобиване на умения за сравняване и за анализиране на различни проблеми при участие в диалог и в дискусия, на умения за създаване на устни и на писмени текстове</li>
-						<li>Усъвършенстване на уменията на учениците да търсят, да анализират и да синтезират информация от různи информационни източници и развиване на уменията да я обработват и да я използват за решаване на комуникативни задачи</li>
-						<li>Прилагане в речевата практика на книжовните езикови норми</li>
-						<li>Усъвършенстване на уменията за сравняване и за анализиране на различни гледни точки при участие в диалог и в дискусия, на умения за създаване на устни и на писмени текстове</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal1"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal2"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal3"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal4"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal5"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal6"] }</li>
 					</ul>
 				</div>
 			</div>
@@ -193,26 +193,26 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 					<div class="curriculum-subject-icon">
 						<i class="fas fa-language"></i>
 					</div>
-					<h3 class="curriculum-subject-title">Чужди езици</h3>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["foreign_languages_title"] }</h3>
 				</div>
 				<p class="curriculum-intro-text">
-					Учебният предмет чужд език е в основата на уменията за общуване на чужди езици. В НТГ като първи чужд език, разширена подготовка, се изучават английски, немски и испански език, а като втори чужд език – английски, немски и руски. Във втория гимназиален етап, вместо общообразователния учебен предмет чужд език, се осъществява обучение по чужд език по професията. За придобиване на общообразователна подготовка учебният предмет чужд език може да се изучава и с други, различни от посочените езици, ако училищният учебен план предвижда това.
+					{ phrases["curriculum"]["foreign_languages_intro"] }
 				</p>
 				<div class="curriculum-goals-section">
 					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
-						Целите на обучението са:
+						{ phrases["curriculum"]["goals_header"] }
 					</h4>
 					<ul class="curriculum-goals-list">
-						<li>Да повишава езиковата и общата култура и културата на общуване на учениците</li>
-						<li>Да насърчава учениците да осмислят националната си идентичност в условията на езиково и културно многообразие</li>
-						<li>Да изгражда междукултурни компетентности у учениците и да ги подготвя за общуване с други културни и езикови общности</li>
-						<li>Да изгражда умения за самостоятелно развитие на учениците чрез: инициативност, творчество, решаване на проблеми, вземане на самостоятелни решения, критично мислене и др.</li>
-						<li>Да развива у учениците умения за работа в екип</li>
-						<li>Да научи учениците да използват информация от източници на чужд език</li>
-						<li>Да използва чуждия език като средство за обучение по различни общообразователни учебни предмети</li>
-						<li>Да изгради умения за учене, свързани с разбиране на информация, усвояване на знания и тяхното приложение в нови ситуации, извършване на анализ, синтез и оценка</li>
-						<li>Да създаде условия за изграждане на езикови компетентности на съответния език, включващи знания, умения и стратегии за успешно общуване</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal1"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal2"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal3"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal4"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal5"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal6"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal7"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal8"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal9"] }</li>
 					</ul>
 				</div>
 			</div>
@@ -222,26 +222,26 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 					<div class="curriculum-subject-icon">
 						<i class="fas fa-square-root-alt"></i>
 					</div>
-					<h3 class="curriculum-subject-title">Математика</h3>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["math_first_title"] }</h3>
 				</div>
-				<span class="curriculum-stage-badge">Първи гимназиален етап</span>
+				<span class="curriculum-stage-badge">{ phrases["curriculum"]["math_first_stage"] }</span>
 				<p class="curriculum-intro-text">
-					Учебните предмети математика, физика и астрономия, биология и здравно образование, химия и опазване на околната среда и предприемачество са пряко свързани с придобиване съответно на математическа компетентност и на основни компетентности в областта на природните науки и технологиите и са насочени към постигане на математическа, на научна грамотност, придобиване на умения да се реагира на новости и да се поема отговорност, като се гради умение за инициативност и предприемчивост.
+					{ phrases["curriculum"]["math_first_intro"] }
 				</p>
 				<div class="curriculum-goals-section">
 					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
-						Целите на обучението по математика в първи гимназиален етап са:
+						{ phrases["curriculum"]["math_first_goals_header"] }
 					</h4>
 					<ul class="curriculum-goals-list">
-						<li>Формиране на логическо и пространствено мислене, наблюдателност и на математическа компетентност</li>
-						<li>Формирането на математическа компетентност за етапа е на познавателно, комуникационно и аналитично ниво, като се развие способността и желанието на индивида да използва математически методи на мислене и на представяне - чрез формули, модели, конструкции, графики, диаграми - най-общо казано "работа с данни"</li>
-						<li>Математическата компетентност за първи гимназиален етап включва стабилно познаване на факти, основни величини и закономерности, както и набор от познавателни и практически умения, необходими за решаване на задачи и проблеми чрез подбор и прилагане на основни методи и инструменти</li>
-						<li>Математическата компетентност на този етап предполага и поемане на отговорност за самостоятелно изпълнение на задачи в процеса на обучение, както и проява на отношение и избор на решение и поведение съобразно конкретни проблеми и обстоятелства</li>
+						<li>{ phrases["curriculum"]["math_first_goal1"] }</li>
+						<li>{ phrases["curriculum"]["math_first_goal2"] }</li>
+						<li>{ phrases["curriculum"]["math_first_goal3"] }</li>
+						<li>{ phrases["curriculum"]["math_first_goal4"] }</li>
 					</ul>
 				</div>
 				<div class="curriculum-highlight-box">
-					<p><strong>Математическата компетентност за първи гимназиален етап</strong> включва стабилно познаване на факти, основни величини и закономерности, както и набор от познавателни и практически умения, необходими за решаване на задачи и проблеми чрез подбор и прилагане на основни методи и инструменти.</p>
+					<p>{ phrases["curriculum"]["math_first_highlight"] }</p>
 				</div>
 			</div>
 			<!-- Mathematics - Second Stage -->
@@ -250,25 +250,25 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 					<div class="curriculum-subject-icon">
 						<i class="fas fa-calculator"></i>
 					</div>
-					<h3 class="curriculum-subject-title">Математика</h3>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["math_second_title"] }</h3>
 				</div>
-				<span class="curriculum-stage-badge">Втори гимназиален етап</span>
+				<span class="curriculum-stage-badge">{ phrases["curriculum"]["math_second_stage"] }</span>
 				<p class="curriculum-intro-text">
-					Във втория гимназиален етап математическото образование се фокусира върху по-сложни аналитични умения и практическото приложение на математическите знания в реални ситуации и други предметни области.
+					{ phrases["curriculum"]["math_second_intro"] }
 				</p>
 				<div class="curriculum-goals-section">
 					<h4 class="curriculum-goals-title">
 						<i class="fas fa-target"></i>
-						Целите на обучението по математика във втори гимназиален етап са:
+						{ phrases["curriculum"]["math_second_goals_header"] }
 					</h4>
 					<ul class="curriculum-goals-list">
-						<li>Формиране на логическо мислене, комбинативност, наблюдателност и на математическа компетентност</li>
-						<li>Формирането на математическа компетентност за етапа е главно на комуникационно и аналитично ниво, като се развие способността да прилага математически разсъждения за решаване на проблеми в другите предметни области и ежедневието</li>
-						<li>Математическата компетентност на този етап включва фактологични и теоретични знания в широк контекст, както и набор от познавателни и практически умения, необходими за решаването на конкретни проблеми. Това означава разбиране на дадена реална ситуация, която води до математическа задача; решаване на задачата при използване на инструментни помощни материали (включително и технологии), които могат да подпомогнат математическите дейности, както и дълбоко разбиране на процеса</li>
+						<li>{ phrases["curriculum"]["math_second_goal1"] }</li>
+						<li>{ phrases["curriculum"]["math_second_goal2"] }</li>
+						<li>{ phrases["curriculum"]["math_second_goal3"] }</li>
 					</ul>
 				</div>
 				<div class="curriculum-highlight-box">
-					<p><strong>Математическата компетентност на втори гимназиален етап</strong> е главно на комуникационно и аналитично ниво и включва фактологични и теоретични знания в широк контекст, както и набор от познавателни и практически умения, необходими за решаването на конкретни проблеми с използване на инструментни помощни материали и технологии.</p>
+					<p><strong>{ phrases["curriculum"]["math_second_highlight"] }</strong></p>
 				</div>
 			</div>
 			<!-- Natural Sciences -->
@@ -277,13 +277,13 @@ templ sectionEducationCurriculum(phrases map[string]map[string]string) {
 					<div class="curriculum-subject-icon">
 						<i class="fas fa-flask"></i>
 					</div>
-					<h3 class="curriculum-subject-title">Природни науки и технологии</h3>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["natural_sciences_title"] }</h3>
 				</div>
 				<p class="curriculum-intro-text">
-					Учебните предмети математика, физика и астрономия, биология и здравно образование, химия и опазване на околната среда и предприемачество са пряко свързани с придобиване съответно на математическа компетентност и на основни компетентности в областта на природните науки и технологиите и са насочени към постигане на математическа, на научна грамотност, придобиване на умения да се реагира на новости и да се поема отговорност, като се гради умение за инициативност и предприемчивост.
+					{ phrases["curriculum"]["natural_sciences_intro"] }
 				</p>
 				<div class="curriculum-highlight-box">
-					<p>Обучението по природни науки и технологии подготвя учениците за <strong>научна грамотност</strong> и развива способността им да прилагат научни методи за разбиране на света около тях, както и да взимат информирани решения в личния и професионалния си живот.</p>
+					<p>{ phrases["curriculum"]["natural_sciences_highlight"] }</p>
 				</div>
 			</div>
 		</div>

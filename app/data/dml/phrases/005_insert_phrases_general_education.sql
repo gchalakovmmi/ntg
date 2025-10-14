@@ -226,4 +226,281 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'general_education', 'subjects', 'entrepreneurship_title', 'Emprendimiento'),
 ('es', 'general_education', 'subjects', 'entrepreneurship_desc', 'Desarrollo de habilidades emprendedoras y pensamiento innovador.'),
 ('es', 'general_education', 'subjects', 'physical_education_title', 'Educación Física'),
-('es', 'general_education', 'subjects', 'physical_education_desc', 'Desarrollo de la actividad física y un estilo de vida saludable.');
+('es', 'general_education', 'subjects', 'physical_education_desc', 'Desarrollo de la actividad física y un estilo de vida saludable.'),
+
+
+--Phrases for EducationCurriculum section
+-- Add Education Curriculum section phrases
+
+-- Bulgarian
+('bg', 'general_education', 'curriculum', 'title', 'Цели на обучението'),
+('bg', 'general_education', 'curriculum', 'subtitle', 'Изграждане на компетентности за пълноценно образование'),
+
+-- Bulgarian Language subject
+('bg', 'general_education', 'curriculum', 'bulgarian_language_title', 'Български език и литература'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_intro', 'Учебният предмет български език и литература изгражда основата на компетентностите по български език и на грамотността за четене и е пряко свързан с постигането на базовата, функционалната и комплексната грамотност.'),
+('bg', 'general_education', 'curriculum', 'goals_header', 'Целите на обучението са:'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_goal1', 'Развиване на уменията на учениците да търсят, да извличат, да обработват и да използват информация от различни информационни източници за решаване на комуникативни задачи, както и на уменията за представяне на различни видове информация по зададени параметри'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_goal2', 'Познаване и прилагане на книжовните езикови норми'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_goal3', 'Придобиване на умения за сравняване и за анализиране на различни проблеми при участие в диалог и в дискусия, на умения за създаване на устни и на писмени текстове'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_goal4', 'Усъвършенстване на уменията на учениците да търсят, да анализират и да синтезират информация от různи информационни източници и развиване на уменията да я обработват и да я използват за решаване на комуникативни задачи'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_goal5', 'Прилагане в речевата практика на книжовните езикови норми'),
+('bg', 'general_education', 'curriculum', 'bulgarian_language_goal6', 'Усъвършенстване на уменията за сравняване и за анализиране на различни гледни точки при участие в диалог и в дискусия, на умения за създаване на устни и на писмени текстове'),
+
+-- Foreign Languages subject
+('bg', 'general_education', 'curriculum', 'foreign_languages_title', 'Чужди езици'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_intro', 'Учебният предмет чужд език е в основата на уменията за общуване на чужди езици. В НТГ като първи чужд език, разширена подготовка, се изучават английски, немски и испански език, а като втори чужд език – английски, немски и руски. Във втория гимназиален етап, вместо общообразователния учебен предмет чужд език, се осъществява обучение по чужд език по професията. За придобиване на общообразователна подготовка учебният предмет чужд език може да се изучава и с други, различни от посочените езици, ако училищният учебен план предвижда това.'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal1', 'Да повишава езиковата и общата култура и културата на общуване на учениците'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal2', 'Да насърчава учениците да осмислят националната си идентичност в условията на езиково и културно многообразие'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal3', 'Да изгражда междукултурни компетентности у учениците и да ги подготвя за общуване с други културни и езикови общности'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal4', 'Да изгражда умения за самостоятелно развитие на учениците чрез: инициативност, творчество, решаване на проблеми, вземане на самостоятелни решения, критично мислене и др.'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal5', 'Да развива у учениците умения за работа в екип'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal6', 'Да научи учениците да използват информация от източници на чужд език'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal7', 'Да използва чуждия език като средство за обучение по различни общообразователни учебни предмети'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal8', 'Да изгради умения за учене, свързани с разбиране на информация, усвояване на знания и тяхното приложение в нови ситуации, извършване на анализ, синтез и оценка'),
+('bg', 'general_education', 'curriculum', 'foreign_languages_goal9', 'Да създаде условия за изграждане на езикови компетентности на съответния език, включващи знания, умения и стратегии за успешно общуване'),
+
+-- Mathematics First Stage
+('bg', 'general_education', 'curriculum', 'math_first_title', 'Математика'),
+('bg', 'general_education', 'curriculum', 'math_first_stage', 'Първи гимназиален етап'),
+('bg', 'general_education', 'curriculum', 'math_first_intro', 'Учебните предмети математика, физика и астрономия, биология и здравно образование, химия и опазване на околната среда и предприемачество са пряко свързани с придобиване съответно на математическа компетентност и на основни компетентности в областта на природните науки и технологиите и са насочени към постигане на математическа, на научна грамотност, придобиване на умения да се реагира на новости и да се поема отговорност, като се гради умение за инициативност и предприемчивост.'),
+('bg', 'general_education', 'curriculum', 'math_first_goals_header', 'Целите на обучението по математика в първи гимназиален етап са:'),
+('bg', 'general_education', 'curriculum', 'math_first_goal1', 'Формиране на логическо и пространствено мислене, наблюдателност и на математическа компетентност'),
+('bg', 'general_education', 'curriculum', 'math_first_goal2', 'Формирането на математическа компетентност за етапа е на познавателно, комуникационно и аналитично ниво, като се развие способността и желанието на индивида да използва математически методи на мислене и на представяне - чрез формули, модели, конструкции, графики, диаграми - най-общо казано "работа с данни"'),
+('bg', 'general_education', 'curriculum', 'math_first_goal3', 'Математическата компетентност за първи гимназиален етап включва стабилно познаване на факти, основни величини и закономерности, както и набор от познавателни и практически умения, необходими за решаване на задачи и проблеми чрез подбор и прилагане на основни методи и инструменти'),
+('bg', 'general_education', 'curriculum', 'math_first_goal4', 'Математическата компетентност на този етап предполага и поемане на отговорност за самостоятелно изпълнение на задачи в процеса на обучение, както и проява на отношение и избор на решение и поведение съобразно конкретни проблеми и обстоятелства'),
+('bg', 'general_education', 'curriculum', 'math_first_highlight', 'Математическата компетентност за първи гимназиален етап включва стабилно познаване на факти, основни величини и закономерности, както и набор от познавателни и практически умения, необходими за решаване на задачи и проблеми чрез подбор и прилагане на основни методи и инструменти.'),
+
+-- Mathematics Second Stage
+('bg', 'general_education', 'curriculum', 'math_second_title', 'Математика'),
+('bg', 'general_education', 'curriculum', 'math_second_stage', 'Втори гимназиален етап'),
+('bg', 'general_education', 'curriculum', 'math_second_intro', 'Във втория гимназиален етап математическото образование се фокусира върху по-сложни аналитични умения и практическото приложение на математическите знания в реални ситуации и други предметни области.'),
+('bg', 'general_education', 'curriculum', 'math_second_goals_header', 'Целите на обучението по математика във втори гимназиален етап са:'),
+('bg', 'general_education', 'curriculum', 'math_second_goal1', 'Формиране на логическо мислене, комбинативност, наблюдателност и на математическа компетентност'),
+('bg', 'general_education', 'curriculum', 'math_second_goal2', 'Формирането на математическа компетентност за етапа е главно на комуникационно и аналитично ниво, като се развие способността да прилага математически разсъждения за решаване на проблеми в другите предметни области и ежедневието'),
+('bg', 'general_education', 'curriculum', 'math_second_goal3', 'Математическата компетентност на този етап включва фактологични и теоретични знания в широк контекст, както и набор от познавателни и практически умения, необходими за решаването на конкретни проблеми. Това означава разбиране на дадена реална ситуация, която води до математическа задача; решаване на задачата при използване на инструментни помощни материали (включително и технологии), които могат да подпомогнат математическите дейности, както и дълбоко разбиране на процеса'),
+('bg', 'general_education', 'curriculum', 'math_second_highlight', 'Математическата компетентност на втори гимназиален етап е главно на комуникационно и аналитично ниво и включва фактологични и теоретични знания в широк контекст, както и набор от познавателни и практически умения, необходими за решаването на конкретни проблеми с използване на инструментни помощни материали и технологии.'),
+
+-- Natural Sciences
+('bg', 'general_education', 'curriculum', 'natural_sciences_title', 'Природни науки и технологии'),
+('bg', 'general_education', 'curriculum', 'natural_sciences_intro', 'Учебните предмети математика, физика и астрономия, биология и здравно образование, химия и опазване на околната среда и предприемачество са пряко свързани с придобиване съответно на математическа компетентност и на основни компетентности в областта на природните науки и технологиите и са насочени към постигане на математическа, на научна грамотност, придобиване на умения да се реагира на новости и да се поема отговорност, като се гради умение за инициативност и предприемчивост.'),
+('bg', 'general_education', 'curriculum', 'natural_sciences_highlight', 'Обучението по природни науки и технологии подготвя учениците за научна грамотност и развива способността им да прилагат научни методи за разбиране на света около тях, както и да взимат информирани решения в личния и професионалния си живот.'),
+
+-- English translations
+('en', 'general_education', 'curriculum', 'title', 'Learning Objectives'),
+('en', 'general_education', 'curriculum', 'subtitle', 'Building competencies for comprehensive education'),
+
+-- Bulgarian Language subject (English)
+('en', 'general_education', 'curriculum', 'bulgarian_language_title', 'Bulgarian Language and Literature'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_intro', 'The subject Bulgarian language and literature builds the foundation of competencies in Bulgarian language and reading literacy and is directly related to achieving basic, functional, and complex literacy.'),
+('en', 'general_education', 'curriculum', 'goals_header', 'The learning objectives are:'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_goal1', 'Developing students ability to search, extract, process, and use information from various information sources for solving communication tasks, as well as skills for presenting different types of information according to given parameters'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_goal2', 'Knowledge and application of literary language norms'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_goal3', 'Acquiring skills for comparing and analyzing various problems when participating in dialogue and discussion, skills for creating oral and written texts'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_goal4', 'Improving students ability to search, analyze, and synthesize information from various information sources and developing skills to process and use it for solving communication tasks'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_goal5', 'Application of literary language norms in speech practice'),
+('en', 'general_education', 'curriculum', 'bulgarian_language_goal6', 'Improving skills for comparing and analyzing different viewpoints when participating in dialogue and discussion, skills for creating oral and written texts'),
+
+-- Foreign Languages subject (English)
+('en', 'general_education', 'curriculum', 'foreign_languages_title', 'Foreign Languages'),
+('en', 'general_education', 'curriculum', 'foreign_languages_intro', 'The foreign language subject forms the foundation of skills for communication in foreign languages. At NTS, as a first foreign language with expanded preparation, students learn English, German, and Spanish, while as a second foreign language – English, German, and Russian. In the second high school stage, instead of the general education foreign language subject, training in a professional foreign language is provided. For general education preparation, the foreign language subject can also be studied in other languages different from those mentioned if the school curriculum provides for it.'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal1', 'To enhance students language and general culture, and communication culture'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal2', 'To encourage students to understand their national identity in conditions of linguistic and cultural diversity'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal3', 'To build intercultural competencies in students and prepare them for communication with other cultural and linguistic communities'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal4', 'To build skills for students independent development through: initiative, creativity, problem-solving, making independent decisions, critical thinking, etc.'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal5', 'To develop students teamwork skills'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal6', 'To teach students to use information from foreign language sources'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal7', 'To use the foreign language as a medium of instruction for various general education subjects'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal8', 'To build learning skills related to understanding information, acquiring knowledge and applying it in new situations, performing analysis, synthesis, and evaluation'),
+('en', 'general_education', 'curriculum', 'foreign_languages_goal9', 'To create conditions for building language competencies in the respective language, including knowledge, skills, and strategies for successful communication'),
+
+-- Mathematics First Stage (English)
+('en', 'general_education', 'curriculum', 'math_first_title', 'Mathematics'),
+('en', 'general_education', 'curriculum', 'math_first_stage', 'First high school stage'),
+('en', 'general_education', 'curriculum', 'math_first_intro', 'The subjects mathematics, physics and astronomy, biology and health education, chemistry and environmental protection, and entrepreneurship are directly related to acquiring mathematical competence and basic competencies in natural sciences and technologies. They aim to achieve mathematical and scientific literacy, acquire skills to respond to innovations and take responsibility, while building initiative and entrepreneurial skills.'),
+('en', 'general_education', 'curriculum', 'math_first_goals_header', 'The objectives of mathematics education in the first high school stage are:'),
+('en', 'general_education', 'curriculum', 'math_first_goal1', 'Formation of logical and spatial thinking, observation skills, and mathematical competence'),
+('en', 'general_education', 'curriculum', 'math_first_goal2', 'The formation of mathematical competence for this stage is at a cognitive, communicational, and analytical level, developing the individuals ability and desire to use mathematical methods of thinking and representation - through formulas, models, constructions, graphs, diagrams - generally speaking "working with data"'),
+('en', 'general_education', 'curriculum', 'math_first_goal3', 'Mathematical competence for the first high school stage includes solid knowledge of facts, basic quantities, and patterns, as well as a set of cognitive and practical skills needed to solve tasks and problems through selection and application of basic methods and tools'),
+('en', 'general_education', 'curriculum', 'math_first_goal4', 'Mathematical competence at this stage also implies taking responsibility for independently performing tasks in the learning process, as well as demonstrating attitude and choosing solutions and behaviors according to specific problems and circumstances'),
+('en', 'general_education', 'curriculum', 'math_first_highlight', 'Mathematical competence for the first high school stage includes solid knowledge of facts, basic quantities, and patterns, as well as a set of cognitive and practical skills needed to solve tasks and problems through selection and application of basic methods and tools.'),
+
+-- Mathematics Second Stage (English)
+('en', 'general_education', 'curriculum', 'math_second_title', 'Mathematics'),
+('en', 'general_education', 'curriculum', 'math_second_stage', 'Second high school stage'),
+('en', 'general_education', 'curriculum', 'math_second_intro', 'In the second high school stage, mathematics education focuses on more complex analytical skills and the practical application of mathematical knowledge in real situations and other subject areas.'),
+('en', 'general_education', 'curriculum', 'math_second_goals_header', 'The objectives of mathematics education in the second high school stage are:'),
+('en', 'general_education', 'curriculum', 'math_second_goal1', 'Formation of logical thinking, combinatorial skills, observation, and mathematical competence'),
+('en', 'general_education', 'curriculum', 'math_second_goal2', 'The formation of mathematical competence for this stage is mainly at a communicational and analytical level, developing the ability to apply mathematical reasoning to solve problems in other subject areas and everyday life'),
+('en', 'general_education', 'curriculum', 'math_second_goal3', 'Mathematical competence at this stage includes factual and theoretical knowledge in a broad context, as well as a set of cognitive and practical skills needed to solve specific problems. This means understanding a given real situation that leads to a mathematical task; solving the task using instrumental support materials (including technologies) that can aid mathematical activities, as well as deep understanding of the process'),
+('en', 'general_education', 'curriculum', 'math_second_highlight', 'Mathematical competence at the second high school stage is mainly at a communicational and analytical level and includes factual and theoretical knowledge in a broad context, as well as a set of cognitive and practical skills needed to solve specific problems using instrumental support materials and technologies.'),
+
+-- Natural Sciences (English)
+('en', 'general_education', 'curriculum', 'natural_sciences_title', 'Natural Sciences and Technologies'),
+('en', 'general_education', 'curriculum', 'natural_sciences_intro', 'The subjects mathematics, physics and astronomy, biology and health education, chemistry and environmental protection, and entrepreneurship are directly related to acquiring mathematical competence and basic competencies in natural sciences and technologies. They aim to achieve mathematical and scientific literacy, acquire skills to respond to innovations and take responsibility, while building initiative and entrepreneurial skills.'),
+('en', 'general_education', 'curriculum', 'natural_sciences_highlight', 'Education in natural sciences and technologies prepares students for scientific literacy and develops their ability to apply scientific methods to understand the world around them, as well as to make informed decisions in their personal and professional lives.'),
+
+-- German translations for EducationCurriculum section
+-- Main curriculum headers
+('de', 'general_education', 'curriculum', 'title', 'Lernziele'),
+('de', 'general_education', 'curriculum', 'subtitle', 'Aufbau von Kompetenzen für eine umfassende Bildung'),
+
+-- Bulgarian Language subject (German)
+('de', 'general_education', 'curriculum', 'bulgarian_language_title', 'Bulgarische Sprache und Literatur'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_intro', 'Das Fach Bulgarische Sprache und Literatur bildet die Grundlage für Kompetenzen in bulgarischer Sprache und Lesefähigkeit und ist direkt mit der Erreichung grundlegender, funktionaler und komplexer Alphabetisierung verbunden.'),
+('de', 'general_education', 'curriculum', 'goals_header', 'Die Lernziele sind:'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_goal1', 'Entwicklung der Fähigkeit der Schüler, Informationen aus verschiedenen Informationsquellen zu suchen, zu extrahieren, zu verarbeiten und zu nutzen, um Kommunikationsaufgaben zu lösen, sowie Fähigkeiten zur Präsentation verschiedener Arten von Informationen nach vorgegebenen Parametern'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_goal2', 'Kenntnis und Anwendung literarischer Sprachnormen'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_goal3', 'Erwerb von Fähigkeiten zum Vergleichen und Analysieren verschiedener Probleme bei der Teilnahme an Dialog und Diskussion, Fähigkeiten zur Erstellung mündlicher und schriftlicher Texte'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_goal4', 'Verbesserung der Fähigkeit der Schüler, Informationen aus verschiedenen Informationsquellen zu suchen, zu analysieren und zu synthetisieren und Entwicklung von Fähigkeiten, diese zu verarbeiten und zur Lösung von Kommunikationsaufgaben zu nutzen'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_goal5', 'Anwendung literarischer Sprachnormen in der Sprachpraxis'),
+('de', 'general_education', 'curriculum', 'bulgarian_language_goal6', 'Verbesserung der Fähigkeiten zum Vergleichen und Analysieren verschiedener Standpunkte bei der Teilnahme an Dialog und Diskussion, Fähigkeiten zur Erstellung mündlicher und schriftlicher Texte'),
+
+-- Foreign Languages subject (German)
+('de', 'general_education', 'curriculum', 'foreign_languages_title', 'Fremdsprachen'),
+('de', 'general_education', 'curriculum', 'foreign_languages_intro', 'Das Fremdsprachenfach bildet die Grundlage für Kommunikationsfähigkeiten in Fremdsprachen. An der NHG werden als erste Fremdsprache mit erweiterter Vorbereitung Englisch, Deutsch und Spanisch gelernt, als zweite Fremdsprache Englisch, Deutsch und Russisch. In der zweiten Gymnasialstufe wird anstelle des allgemeinbildenden Fremdsprachenfachs eine Ausbildung in berufsbezogener Fremdsprache angeboten. Für die allgemeine Bildungsvorbereitung kann das Fremdsprachenfach auch in anderen als den genannten Sprachen studiert werden, wenn der Schulcurriculum dies vorsieht.'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal1', 'Die Sprach- und Allgemeinbildung sowie die Kommunikationskultur der Schüler zu verbessern'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal2', 'Die Schüler zu ermutigen, ihre nationale Identität unter Bedingungen sprachlicher und kultureller Vielfalt zu verstehen'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal3', 'Interkulturelle Kompetenzen bei den Schülern aufzubauen und sie auf die Kommunikation mit anderen kulturellen und sprachlichen Gemeinschaften vorzubereiten'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal4', 'Fähigkeiten für die eigenständige Entwicklung der Schüler durch: Initiative, Kreativität, Problemlösung, eigenständige Entscheidungsfindung, kritisches Denken usw. aufzubauen'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal5', 'Die Teamfähigkeit der Schüler zu entwickeln'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal6', 'Den Schülern beizubringen, Informationen aus fremdsprachigen Quellen zu nutzen'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal7', 'Die Fremdsprache als Unterrichtsmedium für verschiedene allgemeinbildende Fächer zu nutzen'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal8', 'Lernfähigkeiten aufzubauen, die mit dem Verständnis von Informationen, dem Erwerb von Wissen und dessen Anwendung in neuen Situationen, der Durchführung von Analyse, Synthese und Bewertung zusammenhängen'),
+('de', 'general_education', 'curriculum', 'foreign_languages_goal9', 'Bedingungen für den Aufbau von Sprachkompetenzen in der jeweiligen Sprache zu schaffen, einschließlich Wissen, Fähigkeiten und Strategien für erfolgreiche Kommunikation'),
+
+-- Mathematics First Stage (German)
+('de', 'general_education', 'curriculum', 'math_first_title', 'Mathematik'),
+('de', 'general_education', 'curriculum', 'math_first_stage', 'Erste Gymnasialstufe'),
+('de', 'general_education', 'curriculum', 'math_first_intro', 'Die Fächer Mathematik, Physik und Astronomie, Biologie und Gesundheitserziehung, Chemie und Umweltschutz sowie Unternehmertum stehen in direktem Zusammenhang mit dem Erwerb mathematischer Kompetenz und grundlegender Kompetenzen in Naturwissenschaften und Technologien. Sie zielen darauf ab, mathematische und wissenschaftliche Grundkenntnisse zu vermitteln, Fähigkeiten zu erwerben, auf Innovationen zu reagieren und Verantwortung zu übernehmen, während Initiative und unternehmerische Fähigkeiten aufgebaut werden.'),
+('de', 'general_education', 'curriculum', 'math_first_goals_header', 'Die Ziele des Mathematikunterrichts in der ersten Gymnasialstufe sind:'),
+('de', 'general_education', 'curriculum', 'math_first_goal1', 'Bildung von logischem und räumlichem Denken, Beobachtungsfähigkeiten und mathematischer Kompetenz'),
+('de', 'general_education', 'curriculum', 'math_first_goal2', 'Die Bildung mathematischer Kompetenz für diese Stufe erfolgt auf kognitiver, kommunikativer und analytischer Ebene, wobei die Fähigkeit und der Wunsch des Einzelnen entwickelt werden, mathematische Denk- und Darstellungsmethoden zu verwenden - durch Formeln, Modelle, Konstruktionen, Grafiken, Diagramme - allgemein gesprochen "Arbeit mit Daten"'),
+('de', 'general_education', 'curriculum', 'math_first_goal3', 'Mathematische Kompetenz für die erste Gymnasialstufe umfasst solide Kenntnisse von Fakten, grundlegenden Größen und Mustern sowie eine Reihe von kognitiven und praktischen Fähigkeiten, die zur Lösung von Aufgaben und Problemen durch Auswahl und Anwendung grundlegender Methoden und Werkzeuge erforderlich sind'),
+('de', 'general_education', 'curriculum', 'math_first_goal4', 'Mathematische Kompetenz auf dieser Stufe impliziert auch die Übernahme von Verantwortung für die selbstständige Ausführung von Aufgaben im Lernprozess sowie das Demonstrieren von Haltung und die Auswahl von Lösungen und Verhaltensweisen entsprechend spezifischen Problemen und Umständen'),
+('de', 'general_education', 'curriculum', 'math_first_highlight', 'Mathematische Kompetenz für die erste Gymnasialstufe umfasst solide Kenntnisse von Fakten, grundlegenden Größen und Mustern sowie eine Reihe von kognitiven und praktischen Fähigkeiten, die zur Lösung von Aufgaben und Problemen durch Auswahl und Anwendung grundlegender Methoden und Werkzeuge erforderlich sind.'),
+
+-- Mathematics Second Stage (German)
+('de', 'general_education', 'curriculum', 'math_second_title', 'Mathematik'),
+('de', 'general_education', 'curriculum', 'math_second_stage', 'Zweite Gymnasialstufe'),
+('de', 'general_education', 'curriculum', 'math_second_intro', 'In der zweiten Gymnasialstufe konzentriert sich der Mathematikunterricht auf komplexere analytische Fähigkeiten und die praktische Anwendung mathematischer Kenntnisse in realen Situationen und anderen Fachgebieten.'),
+('de', 'general_education', 'curriculum', 'math_second_goals_header', 'Die Ziele des Mathematikunterrichts in der zweiten Gymnasialstufe sind:'),
+('de', 'general_education', 'curriculum', 'math_second_goal1', 'Bildung von logischem Denken, kombinatorischen Fähigkeiten, Beobachtung und mathematischer Kompetenz'),
+('de', 'general_education', 'curriculum', 'math_second_goal2', 'Die Bildung mathematischer Kompetenz für diese Stufe erfolgt hauptsächlich auf kommunikativer und analytischer Ebene, wobei die Fähigkeit entwickelt wird, mathematisches Denken zur Lösung von Problemen in anderen Fachbereichen und im Alltag anzuwenden'),
+('de', 'general_education', 'curriculum', 'math_second_goal3', 'Mathematische Kompetenz auf dieser Stufe umfasst faktisches und theoretisches Wissen in einem breiten Kontext sowie eine Reihe kognitiver und praktischer Fähigkeiten, die zur Lösung spezifischer Probleme erforderlich sind. Dies bedeutet, eine gegebene reale Situation zu verstehen, die zu einer mathematischen Aufgabe führt; die Aufgabe unter Verwendung von instrumentellen Hilfsmitteln (einschließlich Technologien) zu lösen, die mathematische Aktivitäten unterstützen können, sowie ein tiefes Verständnis des Prozesses'),
+('de', 'general_education', 'curriculum', 'math_second_highlight', 'Mathematische Kompetenz in der zweiten Gymnasialstufe liegt hauptsächlich auf kommunikativer und analytischer Ebene und umfasst faktisches und theoretisches Wissen in einem breiten Kontext sowie eine Reihe kognitiver und praktischer Fähigkeiten, die zur Lösung spezifischer Probleme unter Verwendung instrumenteller Hilfsmittel und Technologien erforderlich sind.'),
+
+-- Natural Sciences (German)
+('de', 'general_education', 'curriculum', 'natural_sciences_title', 'Naturwissenschaften und Technologien'),
+('de', 'general_education', 'curriculum', 'natural_sciences_intro', 'Die Fächer Mathematik, Physik und Astronomie, Biologie und Gesundheitserziehung, Chemie und Umweltschutz sowie Unternehmertum stehen in direktem Zusammenhang mit dem Erwerb mathematischer Kompetenz und grundlegender Kompetenzen in Naturwissenschaften und Technologien. Sie zielen darauf ab, mathematische und wissenschaftliche Grundkenntnisse zu vermitteln, Fähigkeiten zu erwerben, auf Innovationen zu reagieren und Verantwortung zu übernehmen, während Initiative und unternehmerische Fähigkeiten aufgebaut werden.'),
+('de', 'general_education', 'curriculum', 'natural_sciences_highlight', 'Die Ausbildung in Naturwissenschaften und Technologien bereitet die Schüler auf wissenschaftliche Grundkenntnisse vor und entwickelt ihre Fähigkeit, wissenschaftliche Methoden anzuwenden, um die Welt um sie herum zu verstehen sowie fundierte Entscheidungen in ihrem persönlichen und beruflichen Leben zu treffen.'),
+
+-- French translations for EducationCurriculum section
+-- Main curriculum headers
+('fr', 'general_education', 'curriculum', 'title', 'Objectifs d''apprentissage'),
+('fr', 'general_education', 'curriculum', 'subtitle', 'Développement de compétences pour une éducation complète'),
+
+-- Bulgarian Language subject (French)
+('fr', 'general_education', 'curriculum', 'bulgarian_language_title', 'Langue et Littérature Bulgares'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_intro', 'La matière langue et littérature bulgares constitue la base des compétences en langue bulgare et en littératie de lecture, et est directement liée à l''acquisition d''une alphabétisation de base, fonctionnelle et complexe.'),
+('fr', 'general_education', 'curriculum', 'goals_header', 'Les objectifs d''apprentissage sont:'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_goal1', 'Développer la capacité des élèves à rechercher, extraire, traiter et utiliser des informations provenant de diverses sources pour résoudre des tâches de communication, ainsi que les compétences pour présenter différents types d''informations selon des paramètres donnés'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_goal2', 'Connaissance et application des normes de la langue littéraire'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_goal3', 'Acquisition de compétences pour comparer et analyser différents problèmes lors de la participation à un dialogue et à une discussion, compétences pour créer des textes oraux et écrits'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_goal4', 'Amélioration de la capacité des élèves à rechercher, analyser et synthétiser des informations provenant de diverses sources et développement des compétences pour les traiter et les utiliser pour résoudre des tâches de communication'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_goal5', 'Application des normes de la langue littéraire dans la pratique orale'),
+('fr', 'general_education', 'curriculum', 'bulgarian_language_goal6', 'Amélioration des compétences pour comparer et analyser différents points de vue lors de la participation à un dialogue et à une discussion, compétences pour créer des textes oraux et écrits'),
+
+-- Foreign Languages subject (French)
+('fr', 'general_education', 'curriculum', 'foreign_languages_title', 'Langues Étrangères'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_intro', 'La matière langue étrangère constitue le fondement des compétences de communication en langues étrangères. Au LNC, comme première langue étrangère avec préparation étendue, les élèves apprennent l''anglais, l''allemand et l''espagnol, tandis que comme deuxième langue étrangère – l''anglais, l''allemand et le russe. Dans la deuxième étape du lycée, au lieu de la matière générale de langue étrangère, une formation en langue étrangère professionnelle est dispensée. Pour la préparation générale, la matière langue étrangère peut également être étudiée dans d''autres langues différentes de celles mentionnées si le programme scolaire le prévoit.'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal1', 'Améliorer la culture linguistique et générale des élèves, ainsi que leur culture de communication'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal2', 'Encourager les élèves à comprendre leur identité nationale dans des conditions de diversité linguistique et culturelle'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal3', 'Développer des compétences interculturelles chez les élèves et les préparer à communiquer avec d''autres communautés culturelles et linguistiques'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal4', 'Développer des compétences pour l''épanouissement autonome des élèves par: l''initiative, la créativité, la résolution de problèmes, la prise de décisions indépendantes, la pensée critique, etc.'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal5', 'Développer les compétences de travail en équipe des élèves'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal6', 'Apprendre aux élèves à utiliser des informations provenant de sources en langue étrangère'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal7', 'Utiliser la langue étrangère comme moyen d''enseignement pour diverses matières d''enseignement général'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal8', 'Développer des compétences d''apprentissage liées à la compréhension de l''information, à l''acquisition de connaissances et à leur application dans de nouvelles situations, à la réalisation d''analyses, de synthèses et d''évaluations'),
+('fr', 'general_education', 'curriculum', 'foreign_languages_goal9', 'Créer des conditions pour développer des compétences linguistiques dans la langue respective, comprenant des connaissances, des compétences et des stratégies pour une communication réussie'),
+
+-- Mathematics First Stage (French)
+('fr', 'general_education', 'curriculum', 'math_first_title', 'Mathématiques'),
+('fr', 'general_education', 'curriculum', 'math_first_stage', 'Première étape du lycée'),
+('fr', 'general_education', 'curriculum', 'math_first_intro', 'Les matières mathématiques, physique et astronomie, biologie et éducation à la santé, chimie et protection de l''environnement, et entrepreneuriat sont directement liées à l''acquisition de compétences mathématiques et de compétences de base en sciences naturelles et technologies. Elles visent à atteindre une littératie mathématique et scientifique, à acquérir des compétences pour réagir aux innovations et prendre des responsabilités, tout en développant l''esprit d''initiative et d''entreprise.'),
+('fr', 'general_education', 'curriculum', 'math_first_goals_header', 'Les objectifs de l''enseignement des mathématiques dans la première étape du lycée sont:'),
+('fr', 'general_education', 'curriculum', 'math_first_goal1', 'Formation de la pensée logique et spatiale, des capacités d''observation et de la compétence mathématique'),
+('fr', 'general_education', 'curriculum', 'math_first_goal2', 'La formation de la compétence mathématique pour cette étape se situe au niveau cognitif, communicationnel et analytique, développant la capacité et le désir de l''individu d''utiliser des méthodes mathématiques de pensée et de représentation - par des formules, modèles, constructions, graphiques, diagrammes - généralement appelé "travail avec les données"'),
+('fr', 'general_education', 'curriculum', 'math_first_goal3', 'La compétence mathématique pour la première étape du lycée comprend une solide connaissance des faits, des grandeurs de base et des modèles, ainsi qu''un ensemble de compétences cognitives et pratiques nécessaires pour résoudre des tâches et des problèmes par la sélection et l''application de méthodes et d''outils de base'),
+('fr', 'general_education', 'curriculum', 'math_first_goal4', 'La compétence mathématique à ce stade implique également la prise de responsabilité pour l''exécution indépendante de tâches dans le processus d''apprentissage, ainsi que la démonstration d''attitude et le choix de solutions et de comportements en fonction de problèmes et de circonstances spécifiques'),
+('fr', 'general_education', 'curriculum', 'math_first_highlight', 'La compétence mathématique pour la première étape du lycée comprend une solide connaissance des faits, des grandeurs de base et des modèles, ainsi qu''un ensemble de compétences cognitives et pratiques nécessaires pour résoudre des tâches et des problèmes par la sélection et l''application de méthodes et d''outils de base.'),
+
+-- Mathematics Second Stage (French)
+('fr', 'general_education', 'curriculum', 'math_second_title', 'Mathématiques'),
+('fr', 'general_education', 'curriculum', 'math_second_stage', 'Deuxième étape du lycée'),
+('fr', 'general_education', 'curriculum', 'math_second_intro', 'Dans la deuxième étape du lycée, l''enseignement des mathématiques se concentre sur des compétences analytiques plus complexes et l''application pratique des connaissances mathématiques dans des situations réelles et d''autres domaines disciplinaires.'),
+('fr', 'general_education', 'curriculum', 'math_second_goals_header', 'Les objectifs de l''enseignement des mathématiques dans la deuxième étape du lycée sont:'),
+('fr', 'general_education', 'curriculum', 'math_second_goal1', 'Formation de la pensée logique, des compétences combinatoires, de l''observation et de la compétence mathématique'),
+('fr', 'general_education', 'curriculum', 'math_second_goal2', 'La formation de la compétence mathématique pour cette étape se situe principalement au niveau communicationnel et analytique, développant la capacité d''appliquer un raisonnement mathématique pour résoudre des problèmes dans d''autres domaines disciplinaires et dans la vie quotidienne'),
+('fr', 'general_education', 'curriculum', 'math_second_goal3', 'La compétence mathématique à ce stade comprend des connaissances factuelles et théoriques dans un large contexte, ainsi qu''un ensemble de compétences cognitives et pratiques nécessaires pour résoudre des problèmes spécifiques. Cela signifie comprendre une situation réelle donnée qui mène à une tâche mathématique; résoudre la tâche en utilisant des supports instrumentaux (y compris les technologies) qui peuvent aider les activités mathématiques, ainsi qu''une compréhension approfondie du processus'),
+('fr', 'general_education', 'curriculum', 'math_second_highlight', 'La compétence mathématique à la deuxième étape du lycée se situe principalement au niveau communicationnel et analytique et comprend des connaissances factuelles et théoriques dans un large contexte, ainsi qu''un ensemble de compétences cognitives et pratiques nécessaires pour résoudre des problèmes spécifiques en utilisant des supports instrumentaux et des technologies.'),
+
+-- Natural Sciences (French)
+('fr', 'general_education', 'curriculum', 'natural_sciences_title', 'Sciences Naturelles et Technologies'),
+('fr', 'general_education', 'curriculum', 'natural_sciences_intro', 'Les matières mathématiques, physique et astronomie, biologie et éducation à la santé, chimie et protection de l''environnement, et entrepreneuriat sont directement liées à l''acquisition de compétences mathématiques et de compétences de base en sciences naturelles et technologies. Elles visent à atteindre une littératie mathématique et scientifique, à acquérir des compétences pour réagir aux innovations et prendre des responsabilités, tout en développant l''esprit d''initiative et d''entreprise.'),
+('fr', 'general_education', 'curriculum', 'natural_sciences_highlight', 'L''éducation en sciences naturelles et technologies prépare les élèves à la littératie scientifique et développe leur capacité à appliquer des méthodes scientifiques pour comprendre le monde qui les entoure, ainsi qu''à prendre des décisions éclairées dans leur vie personnelle et professionnelle.'),
+
+-- Spanish translations for EducationCurriculum section
+-- Main curriculum headers
+('es', 'general_education', 'curriculum', 'title', 'Objetivos de Aprendizaje'),
+('es', 'general_education', 'curriculum', 'subtitle', 'Construcción de competencias para una educación integral'),
+
+-- Bulgarian Language subject (Spanish)
+('es', 'general_education', 'curriculum', 'bulgarian_language_title', 'Lengua y Literatura Búlgara'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_intro', 'La asignatura de lengua y literatura búlgara establece la base de las competencias en lengua búlgara y alfabetización lectora y está directamente relacionada con el logro de una alfabetización básica, funcional y compleja.'),
+('es', 'general_education', 'curriculum', 'goals_header', 'Los objetivos de aprendizaje son:'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_goal1', 'Desarrollar la capacidad de los estudiantes para buscar, extraer, procesar y utilizar información de diversas fuentes para resolver tareas comunicativas, así como habilidades para presentar diferentes tipos de información según parámetros dados'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_goal2', 'Conocimiento y aplicación de las normas del lenguaje literario'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_goal3', 'Adquisición de habilidades para comparar y analizar varios problemas al participar en diálogos y discusiones, habilidades para crear textos orales y escritos'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_goal4', 'Mejorar la capacidad de los estudiantes para buscar, analizar y sintetizar información de diversas fuentes y desarrollar habilidades para procesarla y utilizarla en la resolución de tareas comunicativas'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_goal5', 'Aplicación de las normas del lenguaje literario en la práctica oral'),
+('es', 'general_education', 'curriculum', 'bulgarian_language_goal6', 'Mejorar las habilidades para comparar y analizar diferentes puntos de vista al participar en diálogos y discusiones, habilidades para crear textos orales y escritos'),
+
+-- Foreign Languages subject (Spanish)
+('es', 'general_education', 'curriculum', 'foreign_languages_title', 'Lenguas Extranjeras'),
+('es', 'general_education', 'curriculum', 'foreign_languages_intro', 'La asignatura de lengua extranjera forma la base de las habilidades para la comunicación en lenguas extranjeras. En el LNC, como primera lengua extranjera con preparación ampliada, los estudiantes aprenden inglés, alemán y español, mientras que como segunda lengua extranjera – inglés, alemán y ruso. En la segunda etapa del liceo, en lugar de la asignatura general de lengua extranjera, se proporciona formación en una lengua extranjera profesional. Para la preparación en educación general, la asignatura de lengua extranjera también puede estudiarse en otros idiomas diferentes a los mencionados si el plan de estudios del colegio lo contempla.'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal1', 'Mejorar la cultura lingüística y general de los estudiantes, y la cultura comunicativa'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal2', 'Animar a los estudiantes a comprender su identidad nacional en condiciones de diversidad lingüística y cultural'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal3', 'Construir competencias interculturales en los estudiantes y prepararlos para la comunicación con otras comunidades culturales y lingüísticas'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal4', 'Desarrollar habilidades para el desarrollo independiente de los estudiantes a través de: iniciativa, creatividad, resolución de problemas, toma de decisiones independientes, pensamiento crítico, etc.'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal5', 'Desarrollar las habilidades de trabajo en equipo de los estudiantes'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal6', 'Enseñar a los estudiantes a utilizar información de fuentes en lengua extranjera'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal7', 'Utilizar la lengua extranjera como medio de instrucción para diversas asignaturas de educación general'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal8', 'Desarrollar habilidades de aprendizaje relacionadas con la comprensión de información, la adquisición de conocimientos y su aplicación en nuevas situaciones, la realización de análisis, síntesis y evaluación'),
+('es', 'general_education', 'curriculum', 'foreign_languages_goal9', 'Crear condiciones para desarrollar competencias lingüísticas en el idioma respectivo, incluyendo conocimientos, habilidades y estrategias para una comunicación exitosa'),
+
+-- Mathematics First Stage (Spanish)
+('es', 'general_education', 'curriculum', 'math_first_title', 'Matemáticas'),
+('es', 'general_education', 'curriculum', 'math_first_stage', 'Primera etapa del liceo'),
+('es', 'general_education', 'curriculum', 'math_first_intro', 'Las asignaturas de matemáticas, física y astronomía, biología y educación para la salud, química y protección del medio ambiente, y emprendimiento están directamente relacionadas con la adquisición de competencia matemática y competencias básicas en ciencias naturales y tecnologías. Su objetivo es lograr una alfabetización matemática y científica, adquirir habilidades para responder a las innovaciones y asumir responsabilidades, mientras se desarrollan habilidades de iniciativa y emprendimiento.'),
+('es', 'general_education', 'curriculum', 'math_first_goals_header', 'Los objetivos de la educación matemática en la primera etapa del liceo son:'),
+('es', 'general_education', 'curriculum', 'math_first_goal1', 'Formación del pensamiento lógico y espacial, habilidades de observación y competencia matemática'),
+('es', 'general_education', 'curriculum', 'math_first_goal2', 'La formación de la competencia matemática para esta etapa está en un nivel cognitivo, comunicacional y analítico, desarrollando la capacidad y el deseo del individuo de utilizar métodos matemáticos de pensamiento y representación - mediante fórmulas, modelos, construcciones, gráficos, diagramas - en general, "trabajando con datos"'),
+('es', 'general_education', 'curriculum', 'math_first_goal3', 'La competencia matemática para la primera etapa del liceo incluye un conocimiento sólido de hechos, cantidades básicas y patrones, así como un conjunto de habilidades cognitivas y prácticas necesarias para resolver tareas y problemas mediante la selección y aplicación de métodos y herramientas básicas'),
+('es', 'general_education', 'curriculum', 'math_first_goal4', 'La competencia matemática en esta etapa también implica asumir la responsabilidad de realizar tareas de forma independiente en el proceso de aprendizaje, así como demostrar actitud y elegir soluciones y comportamientos de acuerdo con problemas y circunstancias específicas'),
+('es', 'general_education', 'curriculum', 'math_first_highlight', 'La competencia matemática para la primera etapa del liceo incluye un conocimiento sólido de hechos, cantidades básicas y patrones, así como un conjunto de habilidades cognitivas y prácticas necesarias para resolver tareas y problemas mediante la selección y aplicación de métodos y herramientas básicas.'),
+
+-- Mathematics Second Stage (Spanish)
+('es', 'general_education', 'curriculum', 'math_second_title', 'Matemáticas'),
+('es', 'general_education', 'curriculum', 'math_second_stage', 'Segunda etapa del liceo'),
+('es', 'general_education', 'curriculum', 'math_second_intro', 'En la segunda etapa del liceo, la educación matemática se centra en habilidades analíticas más complejas y la aplicación práctica de conocimientos matemáticos en situaciones reales y otras áreas temáticas.'),
+('es', 'general_education', 'curriculum', 'math_second_goals_header', 'Los objetivos de la educación matemática en la segunda etapa del liceo son:'),
+('es', 'general_education', 'curriculum', 'math_second_goal1', 'Formación del pensamiento lógico, habilidades combinatorias, observación y competencia matemática'),
+('es', 'general_education', 'curriculum', 'math_second_goal2', 'La formación de la competencia matemática para esta etapa es principalmente a nivel comunicacional y analítico, desarrollando la capacidad de aplicar razonamiento matemático para resolver problemas en otras áreas temáticas y en la vida cotidiana'),
+('es', 'general_education', 'curriculum', 'math_second_goal3', 'La competencia matemática en esta etapa incluye conocimientos fácticos y teóricos en un contexto amplio, así como un conjunto de habilidades cognitivas y prácticas necesarias para resolver problemas específicos. Esto significa comprender una situación real dada que lleva a una tarea matemática; resolver la tarea utilizando materiales de apoyo instrumental (incluidas tecnologías) que pueden ayudar a las actividades matemáticas, así como una comprensión profunda del proceso'),
+('es', 'general_education', 'curriculum', 'math_second_highlight', 'La competencia matemática en la segunda etapa del liceo es principalmente a nivel comunicacional y analítico e incluye conocimientos fácticos y teóricos en un contexto amplio, así como un conjunto de habilidades cognitivas y prácticas necesarias para resolver problemas específicos utilizando materiales de apoyo instrumental y tecnologías.'),
+
+-- Natural Sciences (Spanish)
+('es', 'general_education', 'curriculum', 'natural_sciences_title', 'Ciencias Naturales y Tecnologías'),
+('es', 'general_education', 'curriculum', 'natural_sciences_intro', 'Las asignaturas de matemáticas, física y astronomía, biología y educación para la salud, química y protección del medio ambiente, y emprendimiento están directamente relacionadas con la adquisición de competencia matemática y competencias básicas en ciencias naturales y tecnologías. Su objetivo es lograr una alfabetización matemática y científica, adquirir habilidades para responder a las innovaciones y asumir responsabilidades, mientras se desarrollan habilidades de iniciativa y emprendimiento.'),
+('es', 'general_education', 'curriculum', 'natural_sciences_highlight', 'La educación en ciencias naturales y tecnologías prepara a los estudiantes para la alfabetización científica y desarrolla su capacidad para aplicar métodos científicos para comprender el mundo que les rodea, así como para tomar decisiones informadas en su vida personal y profesional.');

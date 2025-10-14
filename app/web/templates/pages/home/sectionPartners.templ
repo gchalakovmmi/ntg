@@ -1,47 +1,177 @@
 package home
 
 templ partners(phrases map[string]map[string]string) {
-	<section class="section donors-section">
+	<style>
+	/* Partners CTA Section */
+.partners-cta-section {
+    background: linear-gradient(135deg, #fffaf0 0%, #fff 100%);
+    padding: 80px 0;
+}
+
+.partners-cta-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.partners-cta-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #b22222, #d4af37, #b22222);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.partners-cta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.partners-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: linear-gradient(135deg, #b22222, #8b0000);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(178, 34, 34, 0.3);
+}
+
+.partners-icon i {
+    font-size: 3rem;
+    color: #d4af37;
+}
+
+.partners-cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+.partners-cta-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.partners-cta-text {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-partners-cta {
+    background: linear-gradient(135deg, #b22222, #8b0000);
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(178, 34, 34, 0.3);
+    text-decoration: none;
+}
+
+.btn-partners-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(178, 34, 34, 0.4);
+    background: linear-gradient(135deg, #8b0000, #b22222);
+    color: #ffffff;
+}
+
+.btn-partners-cta i {
+    transition: transform 0.3s ease;
+}
+
+.btn-partners-cta:hover i {
+    transform: translateX(5px);
+}
+
+/* Mobile Responsiveness for Partners Section */
+@media (max-width: 768px) {
+    .partners-cta-section {
+        padding: 60px 0;
+    }
+    
+    .partners-cta-card {
+        padding: 40px 25px;
+    }
+
+    .partners-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 25px;
+    }
+
+    .partners-icon i {
+        font-size: 2.5rem;
+    }
+
+    .partners-cta-title {
+        font-size: 1.8rem;
+    }
+
+    .partners-cta-description {
+        font-size: 1rem;
+    }
+
+    .partners-cta-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-partners-cta {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+	</style>
+	<section class="section partners-cta-section">
 		<div class="container">
-			<div class="section-title animate-on-scroll">
-				<h2>{ phrases["partners"]["title"] }</h2>
-				<p>{ phrases["partners"]["subtitle"] }</p>
-			</div>
-			<div class="row g-4">
-				<div class="col-lg-3 col-md-6">
-					<div class="donor-card animate-on-scroll">
-						<div class="donor-logo">
-							<img src="/static/images/home/partners/ubb.png" alt={ phrases["partners"]["partner1_alt"] }/>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="partners-cta-card animate-on-scroll">
+						<div class="partners-icon">
+							<i class="fas fa-handshake"></i>
 						</div>
-						<h4>{ phrases["partners"]["partner1_name"] }</h4>
-						<p>{ phrases["partners"]["partner1_description"] }</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="donor-card animate-on-scroll delay-1">
-						<div class="donor-logo">
-							<img src="/static/images/home/partners/unicredit.jpg" alt={ phrases["partners"]["partner2_alt"] }/>
-						</div>
-						<h4>{ phrases["partners"]["partner2_name"] }</h4>
-						<p>{ phrases["partners"]["partner2_description"] }</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="donor-card animate-on-scroll delay-2">
-						<div class="donor-logo">
-							<img src="/static/images/home/partners/dsk.png" alt={ phrases["partners"]["partner3_alt"] }/>
-						</div>
-						<h4>{ phrases["partners"]["partner3_name"] }</h4>
-						<p>{ phrases["partners"]["partner3_description"] }</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="donor-card animate-on-scroll delay-3">
-						<div class="donor-logo">
-							<img src="/static/images/home/partners/allianz.png" alt={ phrases["partners"]["partner4_alt"] }/>
-						</div>
-						<h4>{ phrases["partners"]["partner4_name"] }</h4>
-						<p>{ phrases["partners"]["partner4_description"] }</p>
+						<h2 class="partners-cta-title">{ phrases["partners"]["title"] }</h2>
+						<p class="partners-cta-description">
+							{ phrases["partners"]["subtitle"] }
+						</p>
+						<p class="partners-cta-text">
+							{ phrases["partners"]["cta_text"] }
+						</p>
+						<a href="/partners" class="btn btn-partners-cta">
+							{ phrases["partners"]["view_all_button"] }
+							<i class="fas fa-arrow-right ms-2"></i>
+						</a>
 					</div>
 				</div>
 			</div>
