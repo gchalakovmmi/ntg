@@ -213,4 +213,24 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'academic_schedule', 'hero', 'documents_count', '1+'),
 ('en', 'academic_schedule', 'hero', 'documents_label', 'Documents'),
 ('en', 'academic_schedule', 'hero', 'academic_year', '2025/26'),
-('en', 'academic_schedule', 'hero', 'academic_year_label', 'Academic Year');
+('en', 'academic_schedule', 'hero', 'academic_year_label', 'Academic Year'),
+('de', 'academic_schedule', 'hero', 'title', 'Wichtige Dokumente zu den staatlichen Reifeprüfungen (DZI) für das Schuljahr 2025/2026'),
+('de', 'academic_schedule', 'hero', 'subtitle', 'Alle erforderlichen Dokumente, Pläne und Zeitpläne für das laufende Schuljahr'),
+('de', 'academic_schedule', 'hero', 'documents_count', '1+'),
+('de', 'academic_schedule', 'hero', 'documents_label', 'Dokumente'),
+('de', 'academic_schedule', 'hero', 'academic_year', '2025/26'),
+('de', 'academic_schedule', 'hero', 'academic_year_label', 'Schuljahr'),
+
+('fr', 'academic_schedule', 'hero', 'title', 'Documents clés pour les examens d’État (DZI) de l’année scolaire 2025/2026'),
+('fr', 'academic_schedule', 'hero', 'subtitle', 'Tous les documents, plans et calendriers nécessaires pour l’année scolaire en cours'),
+('fr', 'academic_schedule', 'hero', 'documents_count', '1+'),
+('fr', 'academic_schedule', 'hero', 'documents_label', 'Documents'),
+('fr', 'academic_schedule', 'hero', 'academic_year', '2025/26'),
+('fr', 'academic_schedule', 'hero', 'academic_year_label', 'Année scolaire'),
+
+('es', 'academic_schedule', 'hero', 'title', 'Documentos clave para los exámenes estatales (DZI) del año escolar 2025/2026'),
+('es', 'academic_schedule', 'hero', 'subtitle', 'Todos los documentos, planes y calendarios necesarios para el año escolar actual'),
+('es', 'academic_schedule', 'hero', 'documents_count', '1+'),
+('es', 'academic_schedule', 'hero', 'documents_label', 'Documentos'),
+('es', 'academic_schedule', 'hero', 'academic_year', '2025/26'),
+('es', 'academic_schedule', 'hero', 'academic_year_label', 'Año escolar');
