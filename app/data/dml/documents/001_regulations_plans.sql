@@ -1,10 +1,10 @@
 -- Regulations and plans section phrases
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
-('bg', 'base', 'regulations_plans', 'title', 'Училищни учебни планове'),
-('en', 'base', 'regulations_plans', 'title', 'School Curriculum Plans'),
-('de', 'base', 'regulations_plans', 'title', 'Schulcurriculumspläne'),
-('fr', 'base', 'regulations_plans', 'title', 'Plans de programme scolaire'),
-('es', 'base', 'regulations_plans', 'title', 'Planes de currículo escolar');
+('bg', 'base', 'regulations_plans', 'title', 'Вътрешни правила и планове'),
+('en', 'base', 'regulations_plans', 'title', 'Internal Rules and Plans'),
+('de', 'base', 'regulations_plans', 'title', 'Interne Regeln und Pläne'),
+('fr', 'base', 'regulations_plans', 'title', 'Règles et plans internes'),
+('es', 'base', 'regulations_plans', 'title', 'Reglas y planes internos');
 
 -- Rules base display names
 INSERT INTO phrases (language, page, section, key, phrase) VALUES

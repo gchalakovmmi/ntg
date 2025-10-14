@@ -83,7 +83,7 @@ Der gesammelte Betrag wurde der Stiftung "Nacht der Engel" übergeben und wird f
 <p>Die Dokumente werden beim Einwohnermeldeamt der Gemeinde Plovdiv eingereicht oder per Post versandt. Weitere Informationen und die vollständigen Teilnahmebedingungen sind auf der offiziellen Website der Gemeinde verfügbar.
 Mit ihrer Teilnahme werden die Schüler der Handelsschule erneut zeigen, dass der Unternehmergeist in Plovdiv eine Zukunft hat.</p>
 ',
-    'schenke-hoffnung-10-2025',
+    'podari-nadejda-10-2025',
     '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 ),
 (
@@ -110,7 +110,7 @@ Le montant collecté a été remis à la fondation "Nuit des Anges" et sera util
 <p>Les documents sont soumis au bureau du registre de la municipalité de Plovdiv ou envoyés par courrier. Plus dinformations et les conditions complètes de participation sont disponibles sur le site officiel de la municipalité.
 Avec leur participation, les élèves du Lycée de Commerce montreront une fois de plus que lesprit dentreprise à Plovdiv a un avenir.</p>
 ',
-    'offrez-de-lespoir-10-2025',
+    'podari-nadejda-10-2025',
     '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 ),
 (
@@ -137,6 +137,6 @@ El monto recaudado fue entregado a la fundación "Noche de Ángeles" y se utiliz
 <p>Los documentos se presentan en la oficina del registro del Municipio de Plovdiv o se envían por correo. Más información y las condiciones completas de participación están disponibles en el sitio web oficial del municipio.
 Con su participación, los estudiantes del Instituto de Comercio demostrarán una vez más que el espíritu emprendedor en Plovdiv tiene un futuro.</p>
 ',
-    'da-esperanza-en-lugar-de-flores-10-2025',
+    'podari-nadejda-10-2025',
     '/static/images/news/den_na_angelite/Помощ_Митко.jpg'
 );
