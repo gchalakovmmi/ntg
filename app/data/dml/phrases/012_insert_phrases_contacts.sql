@@ -39,7 +39,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'contacts', 'departments', 'director_title', 'Директор'),
 ('bg', 'contacts', 'departments', 'director_phone', '032 64 23 63'),
 ('bg', 'contacts', 'departments', 'zam_director_title', 'Заместник директори'),
-('bg', 'contacts', 'departments', 'zam_director_phone', '64 23 23'),
+('bg', 'contacts', 'departments', 'zam_director_phone', '032 64 23 23'),
 ('bg', 'contacts', 'departments', 'maintenance_title', 'Поддръжка'),
 ('bg', 'contacts', 'departments', 'maintenance_email', 'maintenance@ntg-school.bg'),
 ('bg', 'contacts', 'departments', 'security_title', 'Охрана'),
