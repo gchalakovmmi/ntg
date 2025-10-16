@@ -1,10 +1,10 @@
 -- Curriculum section phrases
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
-('bg', 'base', 'curriculum', 'title', 'Учебни планове'),
-('en', 'base', 'curriculum', 'title', 'Curriculum'),
-('de', 'base', 'curriculum', 'title', 'Lehrpläne'),
-('fr', 'base', 'curriculum', 'title', 'Programmes Scolaires'),
-('es', 'base', 'curriculum', 'title', 'Plan de Estudios');
+('bg', 'base', 'curriculum', 'title', 'Училищни учебни планове'),
+('en', 'base', 'curriculum', 'title', 'School Curricula'),
+('de', 'base', 'curriculum', 'title', 'Schulcurricula'),
+('fr', 'base', 'curriculum', 'title', 'Programmes scolaires'),
+('es', 'base', 'curriculum', 'title', 'Planes de estudio escolares');
 
 -- School Board documents display names
 INSERT INTO phrases (language, page, section, key, phrase) VALUES

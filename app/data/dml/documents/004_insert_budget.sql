@@ -33,4 +33,20 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'base', 'budget', 'Обяснителна_записка_към_30.06.2025', 'Explanatory Note as of 30.06.2025 - Second Quarter 2025'),
 ('de', 'base', 'budget', 'Обяснителна_записка_към_30.06.2025', 'Erläuternder Hinweis zum 30.06.2025 - Zweites Quartal 2025'),
 ('fr', 'base', 'budget', 'Обяснителна_записка_към_30.06.2025', 'Note explicative au 30.06.2025 - Deuxième trimestre 2025'),
-('es', 'base', 'budget', 'Обяснителна_записка_към_30.06.2025', 'Nota explicativa a 30.06.2025 - Segundo trimestre 2025');
+('es', 'base', 'budget', 'Обяснителна_записка_към_30.06.2025', 'Nota explicativa a 30.06.2025 - Segundo trimestre 2025'),
+
+-- Doc5
+('bg', 'base', 'budget', 'ОТЧЕТ_м.09.2025', 'ОТЧЕТ м.09.2025'),
+('en', 'base', 'budget', 'ОТЧЕТ_м.09.2025', 'REPORT - 09.2025'),
+('de', 'base', 'budget', 'ОТЧЕТ_м.09.2025', 'REPORT - 09.2025'),
+('fr', 'base', 'budget', 'ОТЧЕТ_м.09.2025', 'REPORT - 09.2025'),
+('es', 'base', 'budget', 'ОТЧЕТ_м.09.2025', 'REPORT - 09.2025'),
+
+-- Doc6
+('bg', 'base', 'budget', 'ОБЯСНИТЕЛНА_ЗАПИСКА_БЮДЖЕТ_КЪМ_30.09.2025_год._НТГ', 'ОБЯСНИТЕЛНА ЗАПИСКА БЮДЖЕТ КЪМ 30.09.2025 год. НТГ'),
+('en', 'base', 'budget', 'ОБЯСНИТЕЛНА_ЗАПИСКА_БЮДЖЕТ_КЪМ_30.09.2025_год._НТГ', 'Explanatory Note Budget as of 30.09.2025 year NTG'),
+('de', 'base', 'budget', 'ОБЯСНИТЕЛНА_ЗАПИСКА_БЮДЖЕТ_КЪМ_30.09.2025_год._НТГ', 'Erläuternder Hinweis Budget zum 30.09.2025 Jahr NTG'),
+('fr', 'base', 'budget', 'ОБЯСНИТЕЛНА_ЗАПИСКА_БЮДЖЕТ_КЪМ_30.09.2025_год._НТГ', 'Note explicative Budget au 30.09.2025 année NTG'),
+('es', 'base', 'budget', 'ОБЯСНИТЕЛНА_ЗАПИСКА_БЮДЖЕТ_КЪМ_30.09.2025_год._НТГ', 'Nota explicativa Presupuesto a 30.09.2025 año NTG');
+
+

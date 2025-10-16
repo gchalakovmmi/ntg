@@ -1,9 +1,9 @@
 -- School Board section phrases
 INSERT INTO phrases (language, page, section, key, phrase) VALUES
-('bg', 'base', 'school_board', 'title', 'Училищен съвет'),
-('en', 'base', 'school_board', 'title', 'School Board'),
-('de', 'base', 'school_board', 'title', 'Schulbeirat'),
-('fr', 'base', 'school_board', 'title', 'Conseil d''École'),
+('bg', 'base', 'school_board', 'title', 'Училищно настоятелство'),
+('en', 'base', 'school_board', 'title', 'School Governing Board'),
+('de', 'base', 'school_board', 'title', 'Schulkuratorium'),
+('fr', 'base', 'school_board', 'title', 'Conseil d’administration de l’école'),
 ('es', 'base', 'school_board', 'title', 'Consejo Escolar');
 
 -- School Board documents display names

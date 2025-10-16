@@ -1,0 +1,314 @@
+package general_education
+
+templ sectionEducationCurriculum(phrases map[string]map[string]string) {
+	<style>
+        .curriculum-section {
+            background-color: var(--light-bg);
+        }
+
+        .curriculum-content {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+        }
+
+        .curriculum-subject-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-gold);
+        }
+
+        .curriculum-subject-icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--primary-red);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .curriculum-subject-icon:hover {
+            border-color: var(--primary-gold);
+            transform: translateY(-3px);
+        }
+
+        .curriculum-subject-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+        }
+
+        .curriculum-subject-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-red);
+            margin: 0;
+        }
+
+        .curriculum-intro-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .curriculum-goals-section {
+            margin-top: 30px;
+        }
+
+        .curriculum-goals-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark-red);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .curriculum-goals-title i {
+            color: var(--primary-gold);
+            margin-right: 12px;
+        }
+
+        .curriculum-goals-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .curriculum-goals-list li {
+            padding: 15px 0 15px 35px;
+            position: relative;
+            line-height: 1.7;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .curriculum-goals-list li:last-child {
+            border-bottom: none;
+        }
+
+        .curriculum-goals-list li:before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+        }
+
+        .curriculum-stage-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .curriculum-highlight-box {
+            background: linear-gradient(135deg, rgba(178, 34, 34, 0.05), rgba(212, 175, 55, 0.05));
+            border-left: 4px solid var(--primary-gold);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .curriculum-highlight-box p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .curriculum-content {
+                padding: 30px 20px;
+            }
+
+            .curriculum-subject-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .curriculum-subject-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .curriculum-subject-title {
+                font-size: 1.5rem;
+            }
+
+            .curriculum-intro-text {
+                text-align: left;
+            }
+        }
+    </style>
+	<section class="section curriculum-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>{ phrases["curriculum"]["title"] }</h2>
+				<p>{ phrases["curriculum"]["subtitle"] }</p>
+			</div>
+			<!-- Bulgarian Language -->
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
+						<i class="fas fa-book"></i>
+					</div>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["bulgarian_language_title"] }</h3>
+				</div>
+				<p class="curriculum-intro-text">
+					{ phrases["curriculum"]["bulgarian_language_intro"] }
+				</p>
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
+						<i class="fas fa-target"></i>
+						{ phrases["curriculum"]["goals_header"] }
+					</h4>
+					<ul class="curriculum-goals-list">
+						<li>{ phrases["curriculum"]["bulgarian_language_goal1"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal2"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal3"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal4"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal5"] }</li>
+						<li>{ phrases["curriculum"]["bulgarian_language_goal6"] }</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Foreign Languages -->
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
+						<i class="fas fa-language"></i>
+					</div>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["foreign_languages_title"] }</h3>
+				</div>
+				<p class="curriculum-intro-text">
+					{ phrases["curriculum"]["foreign_languages_intro"] }
+				</p>
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
+						<i class="fas fa-target"></i>
+						{ phrases["curriculum"]["goals_header"] }
+					</h4>
+					<ul class="curriculum-goals-list">
+						<li>{ phrases["curriculum"]["foreign_languages_goal1"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal2"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal3"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal4"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal5"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal6"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal7"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal8"] }</li>
+						<li>{ phrases["curriculum"]["foreign_languages_goal9"] }</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Mathematics - First Stage -->
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
+						<i class="fas fa-square-root-alt"></i>
+					</div>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["math_first_title"] }</h3>
+				</div>
+				<span class="curriculum-stage-badge">{ phrases["curriculum"]["math_first_stage"] }</span>
+				<p class="curriculum-intro-text">
+					{ phrases["curriculum"]["math_first_intro"] }
+				</p>
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
+						<i class="fas fa-target"></i>
+						{ phrases["curriculum"]["math_first_goals_header"] }
+					</h4>
+					<ul class="curriculum-goals-list">
+						<li>{ phrases["curriculum"]["math_first_goal1"] }</li>
+						<li>{ phrases["curriculum"]["math_first_goal2"] }</li>
+						<li>{ phrases["curriculum"]["math_first_goal3"] }</li>
+						<li>{ phrases["curriculum"]["math_first_goal4"] }</li>
+					</ul>
+				</div>
+				<div class="curriculum-highlight-box">
+					<p>{ phrases["curriculum"]["math_first_highlight"] }</p>
+				</div>
+			</div>
+			<!-- Mathematics - Second Stage -->
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
+						<i class="fas fa-calculator"></i>
+					</div>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["math_second_title"] }</h3>
+				</div>
+				<span class="curriculum-stage-badge">{ phrases["curriculum"]["math_second_stage"] }</span>
+				<p class="curriculum-intro-text">
+					{ phrases["curriculum"]["math_second_intro"] }
+				</p>
+				<div class="curriculum-goals-section">
+					<h4 class="curriculum-goals-title">
+						<i class="fas fa-target"></i>
+						{ phrases["curriculum"]["math_second_goals_header"] }
+					</h4>
+					<ul class="curriculum-goals-list">
+						<li>{ phrases["curriculum"]["math_second_goal1"] }</li>
+						<li>{ phrases["curriculum"]["math_second_goal2"] }</li>
+						<li>{ phrases["curriculum"]["math_second_goal3"] }</li>
+					</ul>
+				</div>
+				<div class="curriculum-highlight-box">
+					<p><strong>{ phrases["curriculum"]["math_second_highlight"] }</strong></p>
+				</div>
+			</div>
+			<!-- Natural Sciences -->
+			<div class="curriculum-content animate-on-scroll">
+				<div class="curriculum-subject-header">
+					<div class="curriculum-subject-icon">
+						<i class="fas fa-flask"></i>
+					</div>
+					<h3 class="curriculum-subject-title">{ phrases["curriculum"]["natural_sciences_title"] }</h3>
+				</div>
+				<p class="curriculum-intro-text">
+					{ phrases["curriculum"]["natural_sciences_intro"] }
+				</p>
+				<div class="curriculum-highlight-box">
+					<p>{ phrases["curriculum"]["natural_sciences_highlight"] }</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.curriculum-content').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+}

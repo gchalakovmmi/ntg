@@ -72,6 +72,25 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'about_us', 'leadership', 'deputy4_position', 'Deputy Principal for Academic Affairs'),
 ('en', 'about_us', 'leadership', 'deputy4_desc', 'Iskra Koycheva is responsible for academic affairs. She is a specialist in business education with over 15 years of experience.'),
 
+('bg', 'about_us', 'leadership', 'button_text', 'Вижте целия ни екип'),
+('en', 'about_us', 'leadership', 'button_text', 'See our full team'),
+('de', 'about_us', 'leadership', 'button_text', 'Unser gesamtes Team ansehen'),
+('fr', 'about_us', 'leadership', 'button_text', 'Voir toute notre équipe'),
+('es', 'about_us', 'leadership', 'button_text', '¡Descubre más sobre nosotros!'),
+
+
+('bg', 'about_us', 'leadership', 'deputi_text', 'Зам.-ДИРЕКТОР'),
+('en', 'about_us', 'leadership', 'deputi_text', 'Deputy Director'),
+('de', 'about_us', 'leadership', 'deputi_text', 'Stellvertretender Direktor'),
+('fr', 'about_us', 'leadership', 'deputi_text', 'Directeur adjoint'),
+('es', 'about_us', 'leadership', 'deputi_text', 'Subdirector'),
+
+('bg', 'about_us', 'leadership', 'director_text', 'ДИРЕКТОР'),
+('en', 'about_us', 'leadership', 'director_text', 'Principal'),
+('de', 'about_us', 'leadership', 'director_text', 'Schulleiter'),
+('fr', 'about_us', 'leadership', 'director_text', 'Directrice'),
+('es', 'about_us', 'leadership', 'director_text', 'Directora'),
+
 -- Values Section
 ('bg', 'about_us', 'values', 'title', 'Нашите Ценности'),
 ('bg', 'about_us', 'values', 'subtitle', 'Принципите, които ни ръководят всеки ден'),
@@ -525,3 +544,5 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'about_us', 'cooperation', 'iban', 'IBAN BG 12 UBBS 8155 1085 0971 10'),
 ('es', 'about_us', 'cooperation', 'bank_name', 'United Bulgarian Bank AD'),
 ('es', 'about_us', 'cooperation', 'button_text', '¡Descubre más sobre nosotros!');
+
+

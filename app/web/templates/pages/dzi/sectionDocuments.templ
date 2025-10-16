@@ -9,23 +9,23 @@ templ sectionDocument(phrases map[string]map[string]string) {
 			</div>
 			<div class="documents-container">
 				<!-- Document Row 1 -->
-				<div class="document-row animate-on-scroll">
-					<div class="document-info">
-						<div class="document-icon">
-							<i class="fas fa-file-pdf text-danger"></i>
-						</div>
-						<div class="document-details">
-							<h5 class="document-title">{ phrases["documents"]["timetable_title"] }</h5>
-							<p class="document-description text-muted">{ phrases["documents"]["timetable_desc"] }</p>
-						</div>
-					</div>
-					<div class="document-action">
-						<a href="/docs/about_the_student/dzi/zap2470_dzi_30082024.pdf" class="btn btn-success btn-sm">
-							<i class="fas fa-download me-1"></i>
-							{ phrases["documents"]["view_download"] }
-						</a>
-					</div>
-				</div>
+				// <div class="document-row animate-on-scroll">
+				// 	<div class="document-info">
+				// 		<div class="document-icon">
+				// 			<i class="fas fa-file-pdf text-danger"></i>
+				// 		</div>
+				// 		<div class="document-details">
+				// 			<h5 class="document-title">{ phrases["documents"]["timetable_title"] }</h5>
+				// 			<p class="document-description text-muted">{ phrases["documents"]["timetable_desc"] }</p>
+				// 		</div>
+				// 	</div>
+				// 	<div class="document-action">
+				// 		<a href="/docs/about_the_student/dzi/zap2470_dzi_30082024.pdf" class="btn btn-success btn-sm">
+				// 			<i class="fas fa-download me-1"></i>
+				// 			{ phrases["documents"]["view_download"] }
+				// 		</a>
+				// 	</div>
+				// </div>
 				<div class="document-row animate-on-scroll">
 					<div class="document-info">
 						<div class="document-icon">
@@ -37,7 +37,7 @@ templ sectionDocument(phrases map[string]map[string]string) {
 						</div>
 					</div>
 					<div class="document-action">
-						<a href="/docs/about_the_student/dzi/grafik_dzi_2025_2026.docx" class="btn btn-success btn-sm">
+						<a href="/static/docs/about_the_student/dzi/grafik_dzi_2025_2026.pdf" class="btn btn-success btn-sm">
 							<i class="fas fa-download me-1"></i>
 							{ phrases["documents"]["view_download"] }
 						</a>
