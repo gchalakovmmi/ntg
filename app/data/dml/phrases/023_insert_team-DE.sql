@@ -25,7 +25,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'team', 'deputies', 'subtitle_3', 'Stellvertretende Direktorin für akademische Angelegenheiten'),
 ('de', 'team', 'deputies', 'deputy3_short_bio', 'Mariana Filipova koordiniert und beteiligt sich direkt an der Vorbereitung und Umsetzung nationaler und europäischer Programme und Projekte sowie an außerschulischen Aktivitäten in Interessensgebieten. Sie organisiert und kontrolliert die Durchführung von Olympiaden am NTG, die NVO in der 10. Klasse und leitet die schulische Kommission für die Durchführung von DZI.'),
 -- Deputy Director 4
-('de', 'team', 'deputies', 'title_4', 'Stellvertretende Direktoren von NTG'),
+('de', 'team', 'deputies', 'title_4', 'Iskra Koycheva'),
 ('de', 'team', 'deputies', 'subtitle_4', 'Stellvertretende Direktorin für akademische Angelegenheiten'),
 ('de', 'team', 'deputies', 'deputy4_short_bio', 'Keine Beschreibung'),
 -- English Department
