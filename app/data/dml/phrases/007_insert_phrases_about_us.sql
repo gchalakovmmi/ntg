@@ -218,7 +218,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'about_us', 'cooperation', 'phone', '+359 889 814 164'),
 ('bg', 'about_us', 'cooperation', 'email', 'koop_ntg@abv.bg'),
 ('bg', 'about_us', 'cooperation', 'bank_info', 'Банкова информация - BIC UBBSBGSF'),
-('bg', 'about_us', 'cooperation', 'iban', 'IBAN BG 12 UBBS 8155 1085 0971 10'),
+('bg', 'about_us', 'cooperation', 'iban', 'IBAN: BG 87UBBS 8155 1002 5616 61'),
 ('bg', 'about_us', 'cooperation', 'bank_name', 'Обединена българска банка АД'),
 ('bg', 'about_us', 'cooperation', 'button_text', 'Открийте повече за нас!'),
 ('en', 'about_us', 'cooperation', 'title', 'Educational Cooperative "Soglasie 2004"'),
@@ -235,7 +235,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'about_us', 'cooperation', 'phone', '+359 889 814 164'),
 ('en', 'about_us', 'cooperation', 'email', 'koop_ntg@abv.bg'),
 ('en', 'about_us', 'cooperation', 'bank_info', 'Banking Information - BIC UBBSBGSF'),
-('en', 'about_us', 'cooperation', 'iban', 'IBAN BG 12 UBBS 8155 1085 0971 10'),
+('en', 'about_us', 'cooperation', 'iban', 'IBAN: BG 87UBBS 8155 1002 5616 61'),
 ('en', 'about_us', 'cooperation', 'bank_name', 'United Bulgarian Bank AD'),
 ('en', 'about_us', 'cooperation', 'button_text', 'Find out more about us!'),
 
@@ -337,7 +337,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'about_us', 'cooperation', 'phone', '+359 889 814 164'),
 ('de', 'about_us', 'cooperation', 'email', 'koop_ntg@abv.bg'),
 ('de', 'about_us', 'cooperation', 'bank_info', 'Bankverbindung - BIC UBBSBGSF'),
-('de', 'about_us', 'cooperation', 'iban', 'IBAN BG 12 UBBS 8155 1085 0971 10'),
+('de', 'about_us', 'cooperation', 'iban', 'IBAN: BG 87UBBS 8155 1002 5616 61'),
 ('de', 'about_us', 'cooperation', 'bank_name', 'United Bulgarian Bank AD'),
 ('de', 'about_us', 'cooperation', 'button_text', 'Erfahren Sie mehr über uns!'),
 
@@ -439,7 +439,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'about_us', 'cooperation', 'phone', '+359 889 814 164'),
 ('fr', 'about_us', 'cooperation', 'email', 'koop_ntg@abv.bg'),
 ('fr', 'about_us', 'cooperation', 'bank_info', 'Informations Bancaires - BIC UBBSBGSF'),
-('fr', 'about_us', 'cooperation', 'iban', 'IBAN BG 12 UBBS 8155 1085 0971 10'),
+('fr', 'about_us', 'cooperation', 'iban', 'IBAN: BG 87UBBS 8155 1002 5616 61'),
 ('fr', 'about_us', 'cooperation', 'bank_name', 'United Bulgarian Bank AD'),
 ('fr', 'about_us', 'cooperation', 'button_text', 'Découvrez-en plus sur nous !'),
 
@@ -541,7 +541,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('es', 'about_us', 'cooperation', 'phone', '+359 889 814 164'),
 ('es', 'about_us', 'cooperation', 'email', 'koop_ntg@abv.bg'),
 ('es', 'about_us', 'cooperation', 'bank_info', 'Información Bancaria - BIC UBBSBGSF'),
-('es', 'about_us', 'cooperation', 'iban', 'IBAN BG 12 UBBS 8155 1085 0971 10'),
+('es', 'about_us', 'cooperation', 'iban', 'IBAN: BG 87UBBS 8155 1002 5616 61'),
 ('es', 'about_us', 'cooperation', 'bank_name', 'United Bulgarian Bank AD'),
 ('es', 'about_us', 'cooperation', 'button_text', '¡Descubre más sobre nosotros!');
 
