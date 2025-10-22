@@ -17,6 +17,7 @@ push: app
 	@echo "=== Push ==="
 	@docker tag $(IMAGE) $(DREG)/$(IMAGE):latest
 	@docker push $(DREG)/$(IMAGE):latest
+	@ssh root@ntg-plovdiv.net
 
 app-logs:
 	@docker logs --follow $(NAME)-app-1
