@@ -6,9 +6,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('en', 'team', 'hero', 'title', 'Our Team at National Trade High School'),
 ('en', 'team', 'hero', 'subtitle', 'Quality education for future leaders in economics and business'),
 -- Director
-('en', 'team', 'director', 'name', 'Dr. Petya Gerasimova'),
+('en', 'team', 'director', 'name', ''),
 ('en', 'team', 'director', 'position', 'Director of NTG'),
-('en', 'team', 'director', 'short_bio', 'Dr. Petya Gerasimova has been leading the school since 2024. She has extensive experience in the educational field and is the author of numerous publications in the field of economic education.'),
+('en', 'team', 'director', 'short_bio', ''),
 -- Deputy Director section
 ('en', 'team', 'deputies', 'title', 'Deputy Directors'),
 ('en', 'team', 'deputies', 'subtitle', 'Deputy Directors for Academic Affairs'),

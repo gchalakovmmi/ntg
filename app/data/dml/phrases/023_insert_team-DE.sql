@@ -6,9 +6,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'team', 'hero', 'title', 'Unser Team an der Nationalen Handelsgymnasium'),
 ('de', 'team', 'hero', 'subtitle', 'Qualitätsbildung für zukünftige Führungskräfte in Wirtschaft und Business'),
 -- Director
-('de', 'team', 'director', 'name', 'Dr. Petya Gerasimova'),
+('de', 'team', 'director', 'name', ''),
 ('de', 'team', 'director', 'position', 'Direktorin von NTG'),
-('de', 'team', 'director', 'short_bio', 'Dr. Petya Gerasimova leitet die Schule seit 2024. Sie verfügt über umfangreiche Erfahrung im Bildungsbereich und ist Autorin zahlreicher Publikationen im Bereich Wirtschaftsbildung.'),
+('de', 'team', 'director', 'short_bio', ''),
 -- Deputy Director section
 ('de', 'team', 'deputies', 'title', 'Stellvertretende Direktoren'),
 ('de', 'team', 'deputies', 'subtitle', 'Stellvertretende Direktoren für akademische Angelegenheiten'),

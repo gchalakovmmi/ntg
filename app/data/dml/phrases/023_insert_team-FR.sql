@@ -6,9 +6,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'team', 'hero', 'title', 'Notre Équipe au Lycée National de Commerce'),
 ('fr', 'team', 'hero', 'subtitle', 'Éducation de qualité pour les futurs leaders en économie et commerce'),
 -- Director
-('fr', 'team', 'director', 'name', 'Dr. Petya Gerasimova'),
+('fr', 'team', 'director', 'name', ''),
 ('fr', 'team', 'director', 'position', 'Directrice du NTG'),
-('fr', 'team', 'director', 'short_bio', 'Dr. Petya Gerasimova dirige l''école depuis 2024. Elle a une vaste expérience dans le domaine éducatif et est l''auteur de nombreuses publications dans le domaine de l''éducation économique.'),
+('fr', 'team', 'director', 'short_bio', ''),
 -- Deputy Director section
 ('fr', 'team', 'deputies', 'title', 'Directeurs Adjoints'),
 ('fr', 'team', 'deputies', 'subtitle', 'Directeurs adjoints pour les affaires académiques'),

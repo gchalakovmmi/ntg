@@ -6,9 +6,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'team', 'hero', 'title', 'Нашият екип в Национална търговска гимназия'),
 ('bg', 'team', 'hero', 'subtitle', 'Качествено образование за бъдещите лидери в икономиката и бизнеса'),
 -- Director
-('bg', 'team', 'director', 'name', 'д-р Петя Герасимова'),
+('bg', 'team', 'director', 'name', ''),
 ('bg', 'team', 'director', 'position', 'Директор на НТГ'),
-('bg', 'team', 'director', 'short_bio', 'д-р Петя Герасимова ръководи училището от 2024 година. Има богат опит в образователната сфера и е автор на множество публикации в областта на икономическото образование.'),
+('bg', 'team', 'director', 'short_bio', ''),
 -- Deputy Director section
 ('bg', 'team', 'deputies', 'title', 'Заместник-директори'),
 ('bg', 'team', 'deputies', 'subtitle', 'Заместник-директори по учебната дейност'),
