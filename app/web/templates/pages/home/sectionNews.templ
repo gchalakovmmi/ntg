@@ -27,7 +27,9 @@ templ news(phrases map[string]map[string]string, articles []database.NewsArticle
 								</div>
 								<div class="news-content">
 									<h4 class="news-title">{ article.Title }</h4>
-									<p>{ article.ShortDescription }</p>
+									<p>
+										@templ.Raw(article.ShortDescription)
+									</p>
 									<a href={ templ.URL("/" + article.Language + "/news/" + article.Slug) } class="btn btn-sm btn-outline-danger">{ phrases["news"]["read_more"] }</a>
 								</div>
 							</div>

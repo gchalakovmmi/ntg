@@ -26,7 +26,9 @@ templ newsGrid(language string, phrases map[string]map[string]string, articles [
 								<small class="text-muted news-date"><i class="far fa-calendar me-1"></i> { article.UploadDate.Format("02/01/2006") }</small>
 							</div>
 							<h5 class="card-title news-title flex-grow-0">{ article.Title }</h5>
-							<p class="card-text news-description flex-grow-1">{ article.ShortDescription }</p>
+							<p class="card-text news-description flex-grow-1">
+								@templ.Raw(article.ShortDescription)
+							</p>
 							<div class="mt-auto pt-2">
 								<a href={ templ.URL("/" + language + "/news/" + article.Slug) } class="btn btn-outline-danger btn-sm">{ phrases["news"]["read_more"] }</a>
 							</div>

@@ -265,8 +265,6 @@ ie-2004"</li>
 <p>Implementación de la reparación de un gabinete de formación profesional y compra de software adecuado para la formación profesional en NTS-Plovdiv.</p>'),
 
 
-
-
 -- German translations
 ('de', 'programs_and_projects', 'header', 'title', 'Programme und Projekte - NTS - Nationale Handelsschule'),
 ('de', 'programs_and_projects', 'projects', 'title', 'Projekte und Programme an der NTS'),
@@ -476,4 +474,3 @@ ie-2004"</li>
 ('fr', 'programs_and_projects', 'projects', 'project7_desc', '<p>Le Ministère de l''Éducation et des Sciences remporte le projet européen BG05SFPR001-3.001-0001</p><ol><li>Le projet a une valeur totale de 70 000 000 BGN.</li><li>Il est financé dans le cadre du programme "Éducation" 2021-2027.</li></ol>'),
 ('es', 'programs_and_projects', 'projects', 'project7_title', 'Modernización de la educación y formación profesional'),
 ('es', 'programs_and_projects', 'projects', 'project7_desc', '<p>El Ministerio de Educación y Ciencia gana el proyecto europeo BG05SFPR001-3.001-0001</p><ol><li>El proyecto tiene un valor total de 70.000.000 BGN.</li><li>Está financiado en el marco del Programa "Educación" 2021-2027.</li></ol>');
-
