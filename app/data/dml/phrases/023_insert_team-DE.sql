@@ -6,9 +6,9 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('de', 'team', 'hero', 'title', 'Unser Team an der Nationalen Handelsgymnasium'),
 ('de', 'team', 'hero', 'subtitle', 'Qualitätsbildung für zukünftige Führungskräfte in Wirtschaft und Business'),
 -- Director
-('de', 'team', 'director', 'name', ''),
-('de', 'team', 'director', 'position', 'Direktorin von NTG'),
-('de', 'team', 'director', 'short_bio', ''),
+('de', 'team', 'director', 'name', 'Nikolay Mitev'),
+('de', 'team', 'director', 'position', 'Direktor von NTG'),
+('de', 'team', 'director', 'short_bio', 'Nikolay Mitev leitet die Schule seit 2025.'),
 -- Deputy Director section
 ('de', 'team', 'deputies', 'title', 'Stellvertretende Direktoren'),
 ('de', 'team', 'deputies', 'subtitle', 'Stellvertretende Direktoren für akademische Angelegenheiten'),
