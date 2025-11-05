@@ -5,7 +5,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- Carousel
 ('bg', 'home', 'carousel', 'slide1_title', 'НАЦИОНАЛНА ТЪРГОВСКА ГИМНАЗИЯ'),
-('bg', 'home', 'carousel', 'slide1_subtitle', 'Създаваме бъдещите лидери в икономиката и бизнеса'),
+('bg', 'home', 'carousel', 'slide1_subtitle', 'Традиции, Съвременост, Преспективи'),
 ('bg', 'home', 'carousel', 'slide1_button', 'Виртуална разходка'),
 ('bg', 'home', 'carousel', 'slide2_title', '115 Години Образователна Традиция'),
 ('bg', 'home', 'carousel', 'slide2_subtitle', 'От 1910 година във върховището на българското образование'),
@@ -17,7 +17,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('bg', 'home', 'carousel', 'prev_slide', 'Предишен слайд'),
 ('bg', 'home', 'carousel', 'next_slide', 'Следващ слайд'),
 ('en', 'home', 'carousel', 'slide1_title', 'NTG - National Trade School'),
-('en', 'home', 'carousel', 'slide1_subtitle', 'Creating future leaders in economics and business'),
+('en', 'home', 'carousel', 'slide1_subtitle', 'Tradition, Modernity, Perspectives'),
 ('en', 'home', 'carousel', 'slide1_button', 'Virtual Tour'),
 ('en', 'home', 'carousel', 'slide2_title', '115 Years of Educational Tradition'),
 ('en', 'home', 'carousel', 'slide2_subtitle', 'Since 1910 at the forefront of Bulgarian education'),
@@ -126,7 +126,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- Carousel
 ('de', 'home', 'carousel', 'slide1_title', 'National Handelsgymnasium'),
-('de', 'home', 'carousel', 'slide1_subtitle', 'Wir schaffen die Zukunftsführer in Wirtschaft und Business'),
+('de', 'home', 'carousel', 'slide1_subtitle', 'Tradition, Moderne, Perspektiven'),
 ('de', 'home', 'carousel', 'slide1_button', 'Virtueller Rundgang'),
 ('de', 'home', 'carousel', 'slide2_title', '115 Jahre Bildungstradition'),
 ('de', 'home', 'carousel', 'slide2_subtitle', 'Seit 1910 an der Spitze der bulgarischen Bildung'),
@@ -193,7 +193,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- Carousel
 ('fr', 'home', 'carousel', 'slide1_title', 'ÉCOLE NATIONALE DE COMMERCE'),
-('fr', 'home', 'carousel', 'slide1_subtitle', 'Nous formons les futurs leaders en économie et en affaires'),
+('fr', 'home', 'carousel', 'slide1_subtitle', 'Tradition, Modernité, Perspectives'),
 ('fr', 'home', 'carousel', 'slide1_button', 'Visite Virtuelle'),
 ('fr', 'home', 'carousel', 'slide2_title', '115 Ans de Tradition Éducative'),
 ('fr', 'home', 'carousel', 'slide2_subtitle', 'Depuis 1910 à l avant-garde de l éducation bulgare'),
@@ -260,7 +260,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 
 -- Carousel
 ('es', 'home', 'carousel', 'slide1_title', 'ESCUELA NACIONAL DE COMERCIO'),
-('es', 'home', 'carousel', 'slide1_subtitle', 'Creando a los futuros líderes en economía y negocios'),
+('es', 'home', 'carousel', 'slide1_subtitle', 'Tradición, Modernidad, Perspectivas'),
 ('es', 'home', 'carousel', 'slide1_button', 'Recorrido Virtual'),
 ('es', 'home', 'carousel', 'slide2_title', '115 Años de Tradición Educativa'),
 ('es', 'home', 'carousel', 'slide2_subtitle', 'Desde 1910 a la vanguardia de la educación búlgara'),
