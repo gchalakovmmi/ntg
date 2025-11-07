@@ -73,39 +73,59 @@ func getSectionNames(phrases map[string]map[string]string) []string {
 		"deputies": true,
 	}
 
-	// Administrative section to be placed at the end
-	const adminSection = "administrative"
+	// Staff sections to be placed at the end (in this order)
+	staffSections := []string{"support", "admin"}
 
-	// Check if admin section exists
-	adminExists := false
-	if _, hasTitle := phrases[adminSection]["title"]; hasTitle {
-		if _, hasSubtitle := phrases[adminSection]["subtitle"]; hasSubtitle {
-			adminExists = true
-		}
-	}
+	// Collect regular sections and check which staff sections exist
+	regularSections := make([]string, 0, len(phrases))
+	existingStaffSections := make([]string, 0, len(staffSections))
 
-	sections := make([]string, 0, len(phrases))
 	for section := range phrases {
-		// Skip sections that are in the excluded list or the admin section (we'll add it later)
-		if excludedSections[section] || section == adminSection {
+		// Skip excluded sections
+		if excludedSections[section] {
 			continue
 		}
 
 		// Only include sections that have title and subtitle
-		if _, hasTitle := phrases[section]["title"]; hasTitle {
-			if _, hasSubtitle := phrases[section]["subtitle"]; hasSubtitle {
-				sections = append(sections, section)
+		if _, hasTitle := phrases[section]["title"]; !hasTitle {
+			continue
+		}
+		if _, hasSubtitle := phrases[section]["subtitle"]; !hasSubtitle {
+			continue
+		}
+
+		// Check if it's a staff section
+		isStaffSection := false
+		for _, staffSec := range staffSections {
+			if section == staffSec {
+				isStaffSection = true
+				existingStaffSections = append(existingStaffSections, section)
+				break
 			}
+		}
+
+		// If not a staff section, add to regular sections
+		if !isStaffSection {
+			regularSections = append(regularSections, section)
 		}
 	}
 
 	// Sort the regular sections alphabetically
-	sort.Strings(sections)
+	sort.Strings(regularSections)
 
-	// Add admin section at the end if it exists
-	if adminExists {
-		sections = append(sections, adminSection)
+	// Combine: regular sections first, then staff sections in defined order
+	result := make([]string, 0, len(regularSections)+len(existingStaffSections))
+	result = append(result, regularSections...)
+
+	// Add staff sections in the predefined order (support, admin)
+	for _, staffSec := range staffSections {
+		for _, existingSec := range existingStaffSections {
+			if staffSec == existingSec {
+				result = append(result, existingSec)
+				break
+			}
+		}
 	}
 
-	return sections
+	return result
 }

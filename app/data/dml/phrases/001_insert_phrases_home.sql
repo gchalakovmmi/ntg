@@ -192,7 +192,7 @@ INSERT INTO phrases (language, page, section, key, phrase) VALUES
 ('fr', 'home', 'header', 'title', ''),
 
 -- Carousel
-('fr', 'home', 'carousel', 'slide1_title', 'ÉCOLE NATIONALE DE COMMERCE'),
+('fr', 'home', 'carousel', 'slide1_title', 'Lycée National de Commerce'),
 ('fr', 'home', 'carousel', 'slide1_subtitle', 'Tradition, Modernité, Perspectives'),
 ('fr', 'home', 'carousel', 'slide1_button', 'Visite Virtuelle'),
 ('fr', 'home', 'carousel', 'slide2_title', '115 Ans de Tradition Éducative'),

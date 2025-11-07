@@ -473,4 +473,31 @@ ie-2004"</li>
 ('fr', 'programs_and_projects', 'projects', 'project7_title', 'Modernisation de l''éducation et de la formation professionnelles'),
 ('fr', 'programs_and_projects', 'projects', 'project7_desc', '<p>Le Ministère de l''Éducation et des Sciences remporte le projet européen BG05SFPR001-3.001-0001</p><ol><li>Le projet a une valeur totale de 70 000 000 BGN.</li><li>Il est financé dans le cadre du programme "Éducation" 2021-2027.</li></ol>'),
 ('es', 'programs_and_projects', 'projects', 'project7_title', 'Modernización de la educación y formación profesional'),
-('es', 'programs_and_projects', 'projects', 'project7_desc', '<p>El Ministerio de Educación y Ciencia gana el proyecto europeo BG05SFPR001-3.001-0001</p><ol><li>El proyecto tiene un valor total de 70.000.000 BGN.</li><li>Está financiado en el marco del Programa "Educación" 2021-2027.</li></ol>');
+('es', 'programs_and_projects', 'projects', 'project7_desc', '<p>El Ministerio de Educación y Ciencia gana el proyecto europeo BG05SFPR001-3.001-0001</p><ol><li>El proyecto tiene un valor total de 70.000.000 BGN.</li><li>Está financiado en el marco del Programa "Educación" 2021-2027.</li></ol>'),
+
+
+-- Project 7 - National Programs
+
+('bg', 'programs_and_projects', 'projects', 'project8_title', 'Занимания по интереси в НТГ – пространство за развитие, творчество и личен избор'),
+('bg', 'programs_and_projects', 'projects', 'project8_desc', '<section lang="bg" aria-labelledby="news-title" class="news-section">
+  <p>Националната търговска гимназия – Пловдив, традиционно насърчава своите ученици да развиват таланти, умения и компетентности отвъд учебната програма. В тази посока училището предлага богата и разнообразна програма от занимания по интереси, съобразена както с желанията на учениците и техните родители, така и с възможностите на училищната база и педагогическия екип.</p>
+  <p>Заниманията по интереси са организирани за ученици от I до XII клас в съответствие с държавната политика за подкрепа на личностното развитие. Те осигуряват възможност за изява, задълбочаване на знанията по определени предмети и развиване на нови практически умения в различни направления – наука, технологии, изкуство и спорт. </p>
+  <p>През учебната 2025/2026 година в НТГ функционират следните <strong>клубове по занимания по интереси:</strong></p>
+  <ul style="margin-top: 0.1rem !important; margin-bottom: 1rem !important; padding-left: 1.5rem !important; line-height: 1.4 !important;">
+    <li >Компютърно счетоводство</li>
+    <li>Приложна математика</li>
+    <li>Дигитална география</li>
+    <li>Език и литература 1</li>
+    <li>Език и литература 2</li>
+    <li>Езикови норми и художествена условност</li>
+    <li>Стокознание в бизнеса с хранителни стоки</li>
+    <li>Стокознание в бизнеса с нехранителни стоки</li>
+    <li>Финансова грамотност</li>
+    <li>Финансова математика</li>
+    <li>Технологии и забавление 1</li>
+    <li>Технологии и забавление 2</li>
+    <li>Актьорско майсторство</li>
+    <li>Фитнес</li>
+    <li>Футбол</li>
+  </ul>
+</section>');
