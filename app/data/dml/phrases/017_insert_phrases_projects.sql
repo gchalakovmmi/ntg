@@ -476,7 +476,7 @@ ie-2004"</li>
 ('es', 'programs_and_projects', 'projects', 'project7_desc', '<p>El Ministerio de Educación y Ciencia gana el proyecto europeo BG05SFPR001-3.001-0001</p><ol><li>El proyecto tiene un valor total de 70.000.000 BGN.</li><li>Está financiado en el marco del Programa "Educación" 2021-2027.</li></ol>'),
 
 
--- Project 7 - National Programs
+-- Project 8 - National Programs
 
 ('bg', 'programs_and_projects', 'projects', 'project8_title', 'Занимания по интереси в НТГ – пространство за развитие, творчество и личен избор'),
 ('bg', 'programs_and_projects', 'projects', 'project8_desc', '<section lang="bg" aria-labelledby="news-title" class="news-section">
@@ -484,7 +484,7 @@ ie-2004"</li>
   <p>Заниманията по интереси са организирани за ученици от I до XII клас в съответствие с държавната политика за подкрепа на личностното развитие. Те осигуряват възможност за изява, задълбочаване на знанията по определени предмети и развиване на нови практически умения в различни направления – наука, технологии, изкуство и спорт. </p>
   <p>През учебната 2025/2026 година в НТГ функционират следните <strong>клубове по занимания по интереси:</strong></p>
   <ul style="margin-top: 0.1rem !important; margin-bottom: 1rem !important; padding-left: 1.5rem !important; line-height: 1.4 !important;">
-    <li >Компютърно счетоводство</li>
+    <li>Компютърно счетоводство</li>
     <li>Приложна математика</li>
     <li>Дигитална география</li>
     <li>Език и литература 1</li>
@@ -500,4 +500,148 @@ ie-2004"</li>
     <li>Фитнес</li>
     <li>Футбол</li>
   </ul>
-</section>');
+</section>'),
+('en', 'programs_and_projects', 'projects', 'project8_title', 'Interest-Based Activities at NTG – A Space for Development, Creativity, and Personal Choice'),
+('en', 'programs_and_projects', 'projects', 'project8_desc', '<section lang="en" aria-labelledby="news-title" class="news-section">
+  <p>The National Trade High School – Plovdiv traditionally encourages its students to develop talents, skills, and competencies beyond the standard curriculum. In this direction, the school offers a rich and diverse program of interest-based activities, tailored to the preferences of students and their parents, as well as to the resources of the school environment and its teaching staff.</p>
+  <p>The interest-based activities are organized for students from grades I to XII in accordance with national policies supporting personal development. They provide opportunities for self-expression, deepening knowledge in specific subjects, and developing new practical skills in various fields – science, technology, arts, and sports.</p>
+  <p>During the 2025/2026 school year, the following <strong>interest-based clubs</strong> operate at NTG:</p>
+  <ul style="margin-top: 0.1rem !important; margin-bottom: 1rem !important; padding-left: 1.5rem !important; line-height: 1.4 !important;">
+    <li>Computer Accounting</li>
+    <li>Applied Mathematics</li>
+    <li>Digital Geography</li>
+    <li>Language and Literature 1</li>
+    <li>Language and Literature 2</li>
+    <li>Language Norms and Artistic Expression</li>
+    <li>Merchandise Studies in the Food Industry</li>
+    <li>Merchandise Studies in the Non-Food Industry</li>
+    <li>Financial Literacy</li>
+    <li>Financial Mathematics</li>
+    <li>Technology and Fun 1</li>
+    <li>Technology and Fun 2</li>
+    <li>Acting</li>
+    <li>Fitness</li>
+    <li>Football</li>
+  </ul>
+</section>'),
+('de', 'programs_and_projects', 'projects', 'project8_title', 'Interessensbasierte Aktivitäten an der HTG – Raum für Entwicklung, Kreativität und persönliche Wahl'),
+('de', 'programs_and_projects', 'projects', 'project8_desc', '<section lang="de" aria-labelledby="news-title" class="news-section">
+  <p>Die Nationale Handelsschule – Plovdiv ermutigt traditionell ihre Schüler, Talente, Fähigkeiten und Kompetenzen über den regulären Lehrplan hinaus zu entwickeln. In diesem Sinne bietet die Schule ein reichhaltiges und vielfältiges Programm an Interessengruppen, das sowohl auf die Wünsche der Schüler und ihrer Eltern als auch auf die Möglichkeiten der Schulbasis und des pädagogischen Teams abgestimmt ist.</p>
+  <p>Die Interessengruppen werden für Schüler der Klassen I bis XII gemäß der staatlichen Politik zur Unterstützung der persönlichen Entwicklung organisiert. Sie bieten Möglichkeiten zur Entfaltung, zur Vertiefung von Fachkenntnissen und zur Entwicklung neuer praktischer Fähigkeiten in Bereichen wie Wissenschaft, Technologie, Kunst und Sport.</p>
+  <p>Im Schuljahr 2025/2026 bestehen an der HTG folgende <strong>Interessengruppen:</strong></p>
+  <ul style="margin-top: 0.1rem !important; margin-bottom: 1rem !important; padding-left: 1.5rem !important; line-height: 1.4 !important;">
+    <li>Computerbuchhaltung</li>
+    <li>Angewandte Mathematik</li>
+    <li>Digitale Geografie</li>
+    <li>Sprache und Literatur 1</li>
+    <li>Sprache und Literatur 2</li>
+    <li>Sprachnormen und künstlerischer Ausdruck</li>
+    <li>Warenkunde – Lebensmittel</li>
+    <li>Warenkunde – Nichtlebensmittel</li>
+    <li>Finanzielle Grundbildung</li>
+    <li>Finanzmathematik</li>
+    <li>Technologie und Unterhaltung 1</li>
+    <li>Technologie und Unterhaltung 2</li>
+    <li>Schauspiel</li>
+    <li>Fitness</li>
+    <li>Fußball</li>
+  </ul>
+</section>'),
+('fr', 'programs_and_projects', 'projects', 'project8_title', 'Activités d’Intérêt à l’École NTG – Un Espace de Développement, de Créativité et de Choix Personnel'),
+('fr', 'programs_and_projects', 'projects', 'project8_desc', '<section lang="fr" aria-labelledby="news-title" class="news-section">
+  <p>Le Lycée National de Commerce de Plovdiv encourage traditionnellement ses élèves à développer des talents, des compétences et des aptitudes au-delà du programme scolaire. Dans ce cadre, l’école propose un programme riche et varié d’activités extrascolaires, adapté aux souhaits des élèves et de leurs parents, ainsi qu’aux ressources de l’établissement et de son équipe pédagogique.</p>
+  <p>Les activités sont organisées pour les élèves de la 1re à la 12e année conformément à la politique nationale de soutien au développement personnel. Elles offrent des opportunités d’expression personnelle, d’approfondissement des connaissances et d’acquisition de nouvelles compétences pratiques dans divers domaines – sciences, technologies, arts et sports.</p>
+  <p>Pour l’année scolaire 2025/2026, les <strong>clubs d’activités d’intérêt</strong> suivants fonctionnent à NTG :</p>
+  <ul style="margin-top: 0.1rem !important; margin-bottom: 1rem !important; padding-left: 1.5rem !important; line-height: 1.4 !important;">
+    <li>Comptabilité Informatique</li>
+    <li>Mathématiques Appliquées</li>
+    <li>Géographie Numérique</li>
+    <li>Langue et Littérature 1</li>
+    <li>Langue et Littérature 2</li>
+    <li>Normes Linguistiques et Expression Artistique</li>
+    <li>Marchandisage des Produits Alimentaires</li>
+    <li>Marchandisage des Produits Non Alimentaires</li>
+    <li>Littératie Financière</li>
+    <li>Mathématiques Financières</li>
+    <li>Technologies et Divertissement 1</li>
+    <li>Technologies et Divertissement 2</li>
+    <li>Art Dramatique</li>
+    <li>Fitness</li>
+    <li>Football</li>
+  </ul>
+</section>'),
+('es', 'programs_and_projects', 'projects', 'project8_title', 'Actividades por Interés en NTG – Un Espacio para el Desarrollo, la Creatividad y la Elección Personal'),
+('es', 'programs_and_projects', 'projects', 'project8_desc', '<section lang="es" aria-labelledby="news-title" class="news-section">
+  <p>La Escuela Secundaria Nacional de Comercio de Plovdiv tradicionalmente anima a sus estudiantes a desarrollar talentos, habilidades y competencias más allá del programa académico estándar. En esta dirección, la escuela ofrece un programa rico y variado de actividades extracurriculares, adaptado a los intereses de los estudiantes y sus familias, así como a los recursos de la institución y su equipo docente.</p>
+  <p>Las actividades se organizan para estudiantes desde 1º hasta 12º grado, de acuerdo con la política estatal de apoyo al desarrollo personal. Estas brindan oportunidades para la expresión, la profundización del conocimiento y el desarrollo de nuevas habilidades prácticas en áreas como la ciencia, la tecnología, el arte y el deporte.</p>
+  <p>Durante el año escolar 2025/2026, en NTG funcionan los siguientes <strong>clubes de actividades por interés:</strong></p>
+  <ul style="margin-top: 0.1rem !important; margin-bottom: 1rem !important; padding-left: 1.5rem !important; line-height: 1.4 !important;">
+    <li>Contabilidad Informática</li>
+    <li>Matemáticas Aplicadas</li>
+    <li>Geografía Digital</li>
+    <li>Lengua y Literatura 1</li>
+    <li>Lengua y Literatura 2</li>
+    <li>Normas Lingüísticas y Expresión Artística</li>
+    <li>Mercadotecnia de Productos Alimentarios</li>
+    <li>Mercadotecnia de Productos No Alimentarios</li>
+    <li>Educación Financiera</li>
+    <li>Matemáticas Financieras</li>
+    <li>Tecnología y Diversión 1</li>
+    <li>Tecnología y Diversión 2</li>
+    <li>Arte Dramático</li>
+    <li>Fitness</li>
+    <li>Fútbol</li>
+  </ul>
+</section>'),
+
+
+-- Project 9 - National program - 
+
+('bg', 'programs_and_projects', 'projects', 'project9_title', 'Националната програма „Ученически олимпиади и състезания“'),
+('bg', 'programs_and_projects', 'projects', 'project9_desc', '<p>През учебната 2025/2026 година Националната търговска гимназия – Пловдив активно участва в реализацията на Националната програма „Ученически олимпиади и състезания“, Модул „Осигуряване на обучение на талантливи ученици за участие в ученическите олимпиади“.</p>
+<p>В рамките на програмата в училището са сформирани три учебни групи за допълнителна подготовка на мотивирани ученици: </p>
+<ul>
+<li><strong>Две групи по „Гражданско образование“</strong></li>
+<li><strong>Една група по „География и икономика“</strong></li>
+</ul>
+<p>Целта на програмата е да се създадат условия за системна и целенасочена работа с ученици с повишен интерес и високи резултати в дадена предметна област, като се осигури допълнително обучение с фокус върху подготовка за участие в националните кръгове на олимпиади.</p>
+<p>Участието в тази програма е част от стратегията на НТГ да насърчава личностното и академично развитие на своите възпитаници и да създава условия за изява на техния потенциал.</p>  '),
+('en', 'programs_and_projects', 'projects', 'project9_title', 'National Program “Student Olympiads and Competitions”'),
+('en', 'programs_and_projects', 'projects', 'project9_desc', '<p>During the 2025/2026 school year, the National Trade High School – Plovdiv actively participates in the implementation of the National Program “Student Olympiads and Competitions”, Module “Providing Training for Talented Students for Participation in Student Olympiads”.</p>
+<p>Within the framework of the program, three study groups have been formed at the school for additional preparation of motivated students:</p>
+<ul>
+<li><strong>Two groups in “Civic Education”</strong></li>
+<li><strong>One group in “Geography and Economics”</strong></li>
+</ul>
+<p>The aim of the program is to create conditions for systematic and targeted work with students who show increased interest and high achievements in a specific subject area, by providing additional training focused on preparing them for participation in the national rounds of olympiads.</p>
+<p>Participation in this program is part of NTG’s strategy to encourage the personal and academic development of its students and to create opportunities for the expression of their potential.</p>'),
+('de', 'programs_and_projects', 'projects', 'project9_title', 'Nationales Programm „Schülerolympiaden und Wettbewerbe“'),
+('de', 'programs_and_projects', 'projects', 'project9_desc', '<p>Im Schuljahr 2025/2026 beteiligt sich die Nationale Handelsschule – Plovdiv aktiv an der Umsetzung des Nationalen Programms „Schülerolympiaden und Wettbewerbe“, Modul „Bereitstellung von Förderung für talentierte Schüler zur Teilnahme an Schülerolympiaden“.</p>
+<p>Im Rahmen des Programms wurden an der Schule drei Lerngruppen zur zusätzlichen Vorbereitung motivierter Schüler gebildet:</p>
+<ul>
+<li><strong>Zwei Gruppen für „Bürgerkunde“</strong></li>
+<li><strong>Eine Gruppe für „Geografie und Wirtschaft“</strong></li>
+</ul>
+<p>Ziel des Programms ist es, Bedingungen für eine systematische und zielgerichtete Arbeit mit Schülern zu schaffen, die besonderes Interesse und hohe Leistungen in einem bestimmten Fachbereich zeigen, indem zusätzliche Schulung zur Vorbereitung auf die Teilnahme an den nationalen Runden der Olympiaden angeboten wird.</p>
+<p>Die Teilnahme an diesem Programm ist Teil der Strategie der HTG, die persönliche und akademische Entwicklung ihrer Schüler zu fördern und Möglichkeiten zur Entfaltung ihres Potenzials zu schaffen.</p>'),
+('fr', 'programs_and_projects', 'projects', 'project9_title', 'Programme National « Olympiades et Concours Scolaires »'),
+('fr', 'programs_and_projects', 'projects', 'project9_desc', '<p>Au cours de l’année scolaire 2025/2026, le Lycée National de Commerce de Plovdiv participe activement à la mise en œuvre du Programme National « Olympiades et Concours Scolaires », Module « Soutien à la formation des élèves talentueux pour leur participation aux olympiades scolaires ».</p>
+<p>Dans le cadre du programme, trois groupes d’étude ont été constitués à l’école pour la préparation supplémentaire d’élèves motivés :</p>
+<ul>
+<li><strong>Deux groupes en « Éducation Civique »</strong></li>
+<li><strong>Un groupe en « Géographie et Économie »</strong></li>
+</ul>
+<p>L’objectif du programme est de créer des conditions pour un travail systématique et ciblé avec des élèves présentant un intérêt accru et de bons résultats dans un domaine spécifique, en leur offrant une formation supplémentaire axée sur la préparation aux phases nationales des olympiades.</p>
+<p>La participation à ce programme fait partie de la stratégie du lycée visant à encourager le développement personnel et académique de ses élèves et à favoriser l’expression de leur potentiel.</p>'),
+('es', 'programs_and_projects', 'projects', 'project9_title', 'Programa Nacional “Olimpiadas y Competiciones Escolares”'),
+('es', 'programs_and_projects', 'projects', 'project9_desc', '<p>Durante el año escolar 2025/2026, la Escuela Secundaria Nacional de Comercio de Plovdiv participa activamente en la implementación del Programa Nacional “Olimpiadas y Competiciones Escolares”, Módulo “Apoyo a la formación de estudiantes talentosos para su participación en olimpiadas escolares”.</p>
+<p>Dentro del marco del programa, en la escuela se han formado tres grupos de estudio para la preparación adicional de estudiantes motivados:</p>
+<ul>
+<li><strong>Dos grupos de “Educación Cívica”</strong></li>
+<li><strong>Un grupo de “Geografía y Economía”</strong></li>
+</ul>
+<p>El objetivo del programa es crear condiciones para un trabajo sistemático y dirigido con estudiantes que muestran mayor interés y altos resultados en un área específica, proporcionando formación adicional enfocada en la preparación para las fases nacionales de las olimpiadas.</p>
+<p>La participación en este programa forma parte de la estrategia de NTG para fomentar el desarrollo personal y académico de sus estudiantes y para crear oportunidades para la expresión de su potencial.</p>');
+
+
+

@@ -8,7 +8,26 @@ templ projectsGrid(phrases map[string]map[string]string) {
 				<p>{ phrases["projects"]["subtitle"] }</p>
 			</div>
 			<div class="row" id="projects-grid">
-				<!-- Project 7 with formatted description -->
+				<!-- Project 9 with formatted description -->
+				<div class="col-lg-4 col-md-4 col-sm-12 project-item show" data-category="educational">
+					<div class="project-card animate-on-scroll delay-1">
+						<div class="project-image" style="background-image: url('/static/images/home/carousel/home1.jpg');"></div>
+						<div class="project-content">
+							<h3 class="project-title">{ phrases["projects"]["project9_title"] }</h3>
+							<div class="project-description formatted-description">
+								@templ.Raw(phrases["projects"]["project9_desc"])
+							</div>
+							<div class="project-meta">
+								<span><i class="fas fa-calendar"></i> 07.11.2025</span>
+							</div>
+							<div class="project-labels">
+								<div class="project-category-bottom">{ phrases["categories"]["educational"] }</div>
+								<div class="project-category-bottom status-completed">{ phrases["status"]["completed"] }</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Project 8 with formatted description -->
 				<div class="col-lg-4 col-md-4 col-sm-12 project-item show" data-category="educational">
 					<div class="project-card animate-on-scroll delay-1">
 						<div class="project-image" style="background-image: url('/static/images/home/carousel/home1.jpg');"></div>
